@@ -1,0 +1,22 @@
+---
+import { classNames } from '@lib/utils/classNames';
+
+interface Props {
+  variant?: 'neutral' | 'primary' | 'accent' | 'success' | 'danger';
+  class?: string;
+}
+
+const { variant = 'neutral', class: className } = Astro.props;
+
+const variants = {
+  neutral: 'border-ses-line bg-surface-container-low text-on-surface',
+  primary: 'border-primary-fixed-dim bg-primary-fixed text-on-primary-fixed-variant',
+  accent: 'border-cyan-200 bg-ses-cyan-soft text-cyan-800',
+  success: 'border-green-200 bg-green-50 text-green-700',
+  danger: 'border-red-200 bg-error-container text-on-error-container'
+};
+---
+
+<span class={classNames('inline-flex items-center rounded-pill border px-2.5 py-1 text-label-xs', variants[variant], className)}>
+  <slot />
+</span>

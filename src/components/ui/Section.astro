@@ -1,0 +1,39 @@
+---
+import Container from './Container.astro';
+import { classNames } from '@lib/utils/classNames';
+
+interface Props {
+  as?: keyof HTMLElementTagNameMap;
+  id?: string;
+  class?: string;
+  containerClass?: string;
+  containerSize?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'full';
+  spacing?: 'sm' | 'md' | 'lg' | 'none';
+  ariaLabel?: string;
+  ariaLabelledby?: string;
+}
+
+const {
+  as: Tag = 'section',
+  id,
+  class: className,
+  containerClass,
+  containerSize = 'lg',
+  spacing = 'md',
+  ariaLabel,
+  ariaLabelledby
+} = Astro.props;
+
+const spacingClass = {
+  sm: 'section-y-sm',
+  md: 'section-y',
+  lg: 'py-20 sm:py-24 lg:py-32',
+  none: ''
+}[spacing];
+---
+
+<Tag id={id} class={classNames(spacingClass, className)} aria-label={ariaLabel} aria-labelledby={ariaLabelledby}>
+  <Container size={containerSize} class={containerClass}>
+    <slot />
+  </Container>
+</Tag>

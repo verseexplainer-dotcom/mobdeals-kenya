@@ -1,0 +1,24 @@
+---
+import { classNames } from '@lib/utils/classNames';
+
+interface Props {
+  as?: keyof HTMLElementTagNameMap;
+  class?: string;
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'full';
+}
+
+const { as: Tag = 'div', class: className, size = 'lg' } = Astro.props;
+
+const sizes: Record<NonNullable<Props['size']>, string> = {
+  xs: 'container-xs',
+  sm: 'container-sm',
+  md: 'container-md',
+  lg: 'container-lg',
+  xl: 'container-xl',
+  full: 'container-full'
+};
+---
+
+<Tag class={classNames(sizes[size], className)}>
+  <slot />
+</Tag>

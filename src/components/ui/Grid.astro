@@ -1,0 +1,36 @@
+---
+import { classNames } from '@lib/utils/classNames';
+
+interface Props {
+  as?: keyof HTMLElementTagNameMap;
+  class?: string;
+  columns?: 'auto' | 'products' | 'features' | 'two' | 'three' | 'four';
+  gap?: 'sm' | 'md' | 'lg';
+}
+
+const {
+  as: Tag = 'div',
+  class: className,
+  columns = 'auto',
+  gap = 'md'
+} = Astro.props;
+
+const columnsClass = {
+  auto: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3',
+  products: 'grid-cols-2 md:grid-cols-3 xl:grid-cols-4',
+  features: 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3',
+  two: 'grid-cols-1 md:grid-cols-2',
+  three: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3',
+  four: 'grid-cols-2 md:grid-cols-3 xl:grid-cols-4'
+}[columns];
+
+const gapClass = {
+  sm: 'gap-3 sm:gap-4',
+  md: 'gap-4 sm:gap-6',
+  lg: 'gap-6 lg:gap-8'
+}[gap];
+---
+
+<Tag class={classNames('grid', columnsClass, gapClass, className)}>
+  <slot />
+</Tag>

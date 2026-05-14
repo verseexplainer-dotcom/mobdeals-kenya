@@ -1,0 +1,28 @@
+---
+import { classNames } from '@lib/utils/classNames';
+
+interface Props {
+  as?: keyof HTMLElementTagNameMap;
+  class?: string;
+  interactive?: boolean;
+  padding?: 'none' | 'sm' | 'md' | 'lg';
+}
+
+const {
+  as: Tag = 'article',
+  class: className,
+  interactive = false,
+  padding = 'md'
+} = Astro.props;
+
+const paddingClass = {
+  none: '',
+  sm: 'p-4',
+  md: 'p-5 sm:p-6',
+  lg: 'p-6 sm:p-8'
+}[padding];
+---
+
+<Tag class={classNames(interactive ? 'premium-card-interactive' : 'premium-card', paddingClass, className)}>
+  <slot />
+</Tag>

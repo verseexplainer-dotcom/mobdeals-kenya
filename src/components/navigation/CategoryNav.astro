@@ -1,0 +1,23 @@
+---
+import { primaryNavigation } from '@config/navigation';
+import { classNames } from '@lib/utils/classNames';
+
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<nav aria-label="Product categories" class={classNames('border-y border-ses-line bg-surface-container-lowest', className)}>
+  <div class="page-x mx-auto flex max-w-7xl gap-2 overflow-x-auto py-2">
+    {primaryNavigation.map((item) => (
+      <a
+        href={item.href}
+        class="whitespace-nowrap rounded-pill px-3 py-2 text-label-md text-on-surface-variant transition duration-200 hover:bg-surface-container-low hover:text-ses-accent"
+      >
+        {item.label}
+      </a>
+    ))}
+  </div>
+</nav>

@@ -1,0 +1,66 @@
+---
+import Badge from '@components/ui/Badge.astro';
+import Button from '@components/ui/Button.astro';
+import { formatProductPrice, type ProductSummary } from '@lib/products';
+import { classNames } from '@lib/utils/classNames';
+
+interface Props {
+  product: ProductSummary;
+  class?: string;
+  ctaLabel?: string;
+}
+
+const { product, class: className, ctaLabel = 'View product' } = Astro.props;
+const image = product.images[0];
+const categoryLabel = product.category.replace(/-/g, ' ');
+---
+
+<article class={classNames('premium-card-interactive group flex h-full flex-col overflow-hidden', className)}>
+  <a href={`/products/${product.slug}`} class="block bg-surface-container-low p-3">
+    <div class="aspect-square overflow-hidden rounded-card bg-surface-container-lowest">
+      {image ? (
+        <img
+          src={image.src}
+          alt={image.alt}
+          width={image.width}
+          height={image.height}
+          loading="lazy"
+          decoding="async"
+          class="size-full object-contain p-4 transition duration-300 ease-standard group-hover:scale-[1.03]"
+        />
+      ) : (
+        <div class="flex size-full items-center justify-center px-6 text-center text-body-sm text-on-surface-variant">
+          Product image coming soon
+        </div>
+      )}
+    </div>
+  </a>
+
+  <div class="flex flex-1 flex-col p-5">
+    <div class="flex flex-wrap items-center gap-2">
+      <Badge variant={product.inStock ? 'success' : 'neutral'}>{product.inStock ? 'In stock' : 'Check availability'}</Badge>
+      {product.featured && <Badge variant="primary">Featured</Badge>}
+    </div>
+
+    <p class="mt-4 text-label-xs uppercase text-on-surface-variant">{categoryLabel}</p>
+    <h3 class="mt-2 text-headline-sm text-on-surface">
+      <a href={`/products/${product.slug}`} class="transition duration-200 hover:text-ses-accent">{product.name}</a>
+    </h3>
+    {product.brand && <p class="mt-1 text-body-sm text-on-surface-variant">{product.brand}</p>}
+
+    <div class="mt-5 flex items-end justify-between gap-4">
+      <div>
+        <p class="text-headline-lg text-on-surface">{formatProductPrice(product.price)}</p>
+        {product.price.compareAtAmount && (
+          <p class="text-body-sm text-on-surface-variant line-through">
+            {formatProductPrice({ amount: product.price.compareAtAmount, currency: product.price.currency })}
+          </p>
+        )}
+      </div>
+    </div>
+
+    <Button href={`/products/${product.slug}`} variant="secondary" size="sm" class="mt-5 w-full">
+      {ctaLabel}
+    </Button>
+  </div>
+</article>

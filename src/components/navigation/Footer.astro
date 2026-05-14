@@ -1,0 +1,46 @@
+---
+import { footerNavigation } from '@config/navigation';
+import { siteConfig } from '@config/site';
+import Container from '@components/ui/Container.astro';
+---
+
+<footer class="border-t border-ses-line bg-surface-container-lowest">
+  <Container size="xl" class="py-10 sm:py-12">
+    <div class="grid gap-8 lg:grid-cols-[1.2fr_2fr]">
+      <div>
+        <a href="/" class="inline-flex items-center gap-2" aria-label={`${siteConfig.name} home`}>
+          <span class="flex size-10 items-center justify-center rounded-pill bg-primary text-label-md text-on-primary">SN</span>
+          <span class="text-headline-sm text-on-surface">{siteConfig.name}</span>
+        </a>
+        <p class="mt-4 max-w-sm text-body-sm text-on-surface-variant">
+          Premium electronics for Kenya: laptops, smartphones, desktops, printers, and storage.
+        </p>
+        <a href="/contact" class="mt-5 inline-flex rounded-control bg-whatsapp px-4 py-2 text-label-md text-white transition duration-200 hover:bg-whatsapp-dark">
+          WhatsApp support
+        </a>
+      </div>
+
+      <nav aria-label="Footer navigation" class="grid gap-6 sm:grid-cols-3">
+        {footerNavigation.map((group) => (
+          <section>
+            <h2 class="text-label-md text-on-surface">{group.title}</h2>
+            <ul class="mt-4 grid gap-3">
+              {group.links.map((link) => (
+                <li>
+                  <a href={link.href} class="text-body-sm text-on-surface-variant transition duration-200 hover:text-ses-accent">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </nav>
+    </div>
+
+    <div class="mt-10 flex flex-col gap-3 border-t border-ses-line pt-6 text-body-sm text-on-surface-variant sm:flex-row sm:items-center sm:justify-between">
+      <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
+      <p>Nairobi, Kenya</p>
+    </div>
+  </Container>
+</footer>

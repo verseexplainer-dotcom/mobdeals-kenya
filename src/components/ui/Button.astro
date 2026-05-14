@@ -1,0 +1,57 @@
+---
+import { classNames } from '@lib/utils/classNames';
+
+interface Props {
+  href?: string;
+  type?: 'button' | 'submit' | 'reset';
+  variant?: 'primary' | 'blue' | 'accent' | 'secondary' | 'ghost' | 'whatsapp';
+  size?: 'sm' | 'md' | 'lg';
+  class?: string;
+  ariaLabel?: string;
+  target?: '_blank' | '_self' | '_parent' | '_top';
+  rel?: string;
+}
+
+const {
+  href,
+  type = 'button',
+  variant = 'primary',
+  size = 'md',
+  class: className,
+  ariaLabel,
+  target,
+  rel
+} = Astro.props;
+
+const base =
+  'inline-flex items-center justify-center rounded-control font-semibold transition-[background-color,border-color,color,box-shadow,transform] duration-200 ease-standard hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:hover:translate-y-0';
+
+const variants = {
+  primary: 'bg-primary text-on-primary shadow-xs hover:bg-primary-container hover:shadow-soft focus-visible:outline-primary',
+  blue: 'bg-ses-accent text-white shadow-xs hover:bg-ses-accent-dark hover:shadow-soft focus-visible:outline-ses-accent',
+  accent: 'bg-tertiary text-white shadow-xs hover:bg-cyan-600 hover:shadow-soft focus-visible:outline-tertiary',
+  secondary: 'border border-ses-line bg-surface-container-lowest text-on-surface shadow-xs hover:border-primary-fixed-dim hover:bg-surface-container-low',
+  ghost: 'text-on-surface hover:bg-surface-container-low hover:text-ses-accent',
+  whatsapp: 'bg-whatsapp text-white hover:bg-whatsapp-dark focus-visible:outline-whatsapp'
+};
+
+const sizes = {
+  sm: 'min-h-9 px-3 text-label-md',
+  md: 'min-h-11 px-5 text-label-md',
+  lg: 'min-h-12 px-6 text-body-md'
+};
+
+const buttonClass = classNames(base, variants[variant], sizes[size], className);
+---
+
+{
+  href ? (
+    <a href={href} class={buttonClass} aria-label={ariaLabel} target={target} rel={rel ?? (target === '_blank' ? 'noreferrer' : undefined)}>
+      <slot />
+    </a>
+  ) : (
+    <button type={type} class={buttonClass} aria-label={ariaLabel}>
+      <slot />
+    </button>
+  )
+}

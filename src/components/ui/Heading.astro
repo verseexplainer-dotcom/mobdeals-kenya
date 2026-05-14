@@ -1,0 +1,38 @@
+---
+import { classNames } from '@lib/utils/classNames';
+
+interface Props {
+  as?: 'h1' | 'h2' | 'h3' | 'h4';
+  id?: string;
+  class?: string;
+  eyebrow?: string;
+  align?: 'left' | 'center';
+  size?: 'sm' | 'md' | 'lg' | 'xl';
+  description?: string;
+}
+
+const {
+  as: Tag = 'h2',
+  id,
+  class: className,
+  eyebrow,
+  align = 'left',
+  size = 'lg',
+  description
+} = Astro.props;
+
+const sizes = {
+  sm: 'text-headline-sm',
+  md: 'text-headline-lg md:text-headline-xl',
+  lg: 'text-headline-xl md:text-display-lg-mobile',
+  xl: 'text-display-lg-mobile md:text-display-lg'
+};
+---
+
+<div class={classNames(align === 'center' && 'mx-auto text-center', align === 'center' ? 'max-w-3xl' : 'max-w-4xl')}>
+  {eyebrow && <p class="mb-3 text-label-xs uppercase text-ses-accent">{eyebrow}</p>}
+  <Tag id={id} class={classNames('text-balance font-display text-on-surface', sizes[size], className)}>
+    <slot />
+  </Tag>
+  {description && <p class={classNames('mt-4 max-w-2xl text-pretty text-body-md text-on-surface-variant', align === 'center' && 'mx-auto')}>{description}</p>}
+</div>
