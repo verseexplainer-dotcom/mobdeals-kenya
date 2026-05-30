@@ -1,0 +1,70 @@
+---
+import Section from '@components/ui/Section.astro';
+import SectionHeading from '@components/ui/SectionHeading.astro';
+import type { HomeCategory } from '@data/homepage';
+
+interface Props {
+  categories: HomeCategory[];
+}
+
+const { categories } = Astro.props;
+---
+
+<Section id="categories" containerSize="xl" ariaLabelledby="categories-title">
+  <div class="grid gap-6 lg:grid-cols-[0.72fr_1fr] lg:items-end">
+    <SectionHeading
+      id="categories-title"
+      eyebrow="Shop by category"
+      title="Start with the device family that solves the job."
+      description="Mobile-first paths for Kenya shoppers comparing price, condition, warranty, and practical specs."
+    />
+    <p class="max-w-[36rem] text-body-md text-on-surface-variant lg:justify-self-end">
+      The catalog is organized for fast decisions across laptops, smartphones, desktops, printers, and storage.
+    </p>
+  </div>
+
+  <div class="-mx-[var(--spacing-page)] mt-10 flex snap-x gap-4 overflow-x-auto px-[var(--spacing-page)] pb-4 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-5 md:overflow-visible md:px-0 [&::-webkit-scrollbar]:hidden">
+    {categories.map((category) => (
+      <a href={category.href} class="group flex min-w-[16rem] snap-start flex-col overflow-hidden rounded-card border border-ses-line bg-surface-container-lowest shadow-sm transition-[border-color,box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:border-primary-fixed-dim hover:shadow-soft md:min-w-0">
+        <div class="flex h-40 items-center justify-center bg-surface-container-low p-5 text-on-surface">
+          {category.icon === 'laptop' && (
+            <div class="w-40 text-primary">
+              <div class="aspect-[16/10] rounded-md border-[6px] border-current bg-white"></div>
+              <div class="mx-auto h-3 w-44 rounded-b-md bg-current opacity-25"></div>
+            </div>
+          )}
+          {category.icon === 'phone' && (
+            <div class="h-32 w-16 rounded-[1.25rem] border-[6px] border-ses-accent bg-white shadow-sm"></div>
+          )}
+          {category.icon === 'desktop' && (
+            <div class="flex items-end gap-3 text-primary">
+              <div class="h-24 w-32 rounded-md border-[6px] border-current bg-white"></div>
+              <div class="h-28 w-12 rounded-md bg-current opacity-20"></div>
+            </div>
+          )}
+          {category.icon === 'printer' && (
+            <div class="w-36 text-tertiary">
+              <div class="mx-auto h-10 w-28 rounded-t-md bg-current opacity-25"></div>
+              <div class="h-20 rounded-md border-[6px] border-current bg-white"></div>
+              <div class="mx-auto h-10 w-24 rounded-b-md bg-current opacity-20"></div>
+            </div>
+          )}
+          {category.icon === 'storage' && (
+            <div class="grid grid-cols-2 gap-3 text-primary">
+              <div class="h-24 w-14 rounded-md border-[5px] border-current bg-white"></div>
+              <div class="mt-7 h-20 w-14 rounded-md bg-ses-accent/20"></div>
+            </div>
+          )}
+        </div>
+        <div class="flex flex-1 flex-col p-5">
+          <p class="text-label-xs uppercase text-ses-accent">{category.meta}</p>
+          <h3 class="mt-3 text-title-md text-on-surface">{category.label}</h3>
+          <p class="mt-3 text-body-sm text-on-surface-variant">{category.description}</p>
+          <span class="mt-auto pt-6 text-label-md text-on-surface group-hover:text-ses-accent">
+            Shop {category.label}
+          </span>
+        </div>
+      </a>
+    ))}
+  </div>
+</Section>

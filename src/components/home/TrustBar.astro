@@ -1,0 +1,27 @@
+---
+import Container from '@components/ui/Container.astro';
+import type { TrustItem } from '@data/homepage';
+
+interface Props {
+  items: TrustItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<section class="border-y border-ses-line bg-surface-container-low" aria-labelledby="trust-bar-title">
+  <Container size="xl" class="py-5 sm:py-6">
+    <h2 id="trust-bar-title" class="sr-only">Store trust signals</h2>
+    <div class="grid divide-y divide-ses-line sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+      {items.map((item) => (
+        <article class="grid gap-3 py-5 first:pt-0 last:pb-0 sm:px-6 sm:py-0 sm:first:pl-0 sm:last:pr-0">
+          <p class="text-label-xs uppercase text-ses-accent">{item.label}</p>
+          <div>
+            <h3 class="text-title-md text-on-surface">{item.title}</h3>
+            <p class="mt-2 text-body-sm text-on-surface-variant">{item.description}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </Container>
+</section>

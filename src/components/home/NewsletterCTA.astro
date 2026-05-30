@@ -1,0 +1,33 @@
+---
+import Button from '@components/ui/Button.astro';
+import Section from '@components/ui/Section.astro';
+---
+
+<Section containerSize="xl" spacing="lg" ariaLabelledby="newsletter-title">
+  <div class="grid gap-8 rounded-card border border-ses-line bg-surface p-6 text-on-surface shadow-soft sm:p-8 lg:grid-cols-[1fr_0.9fr] lg:items-center lg:p-12">
+    <div>
+      <p class="text-label-xs uppercase text-tertiary">Product updates</p>
+      <h2 id="newsletter-title" class="mt-4 max-w-[42rem] text-headline-xl font-display text-balance sm:text-display-lg-mobile">
+        Get arrival notes for laptops, phones, printers, and office tech.
+      </h2>
+      <p class="mt-5 max-w-[36rem] text-body-md text-on-surface-variant">
+        Join the buying list for new ranges, useful accessories, and business supply updates in Kenya.
+      </p>
+    </div>
+
+    <form action="/contact" method="get" class="grid gap-3 sm:grid-cols-[1fr_auto]" aria-label="Product updates request">
+      <label for="home-newsletter-email" class="sr-only">Email address</label>
+      <input
+        id="home-newsletter-email"
+        name="email"
+        type="email"
+        autocomplete="email"
+        placeholder="Email address"
+        class="min-h-12 min-w-0 rounded-control border border-ses-line bg-inverse-surface px-5 text-body-md text-inverse-on-surface shadow-xs placeholder:text-slate-500"
+      />
+      <Button type="submit" variant="accent" size="lg" class="sm:px-7">
+        Request updates
+      </Button>
+    </form>
+  </div>
+</Section>

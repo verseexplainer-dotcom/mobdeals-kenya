@@ -1,0 +1,215 @@
+---
+import Button from '@components/ui/Button.astro';
+import type { HeroSlide } from '@data/homepage';
+
+interface Props {
+  slides: HeroSlide[];
+}
+
+const { slides } = Astro.props;
+
+const backdropClasses = {
+  ink: 'bg-background text-on-background',
+  blue: 'bg-primary text-on-primary',
+  light: 'bg-surface text-on-surface'
+};
+
+const mutedTextClasses = {
+  ink: 'text-white/70',
+  blue: 'text-white/75',
+  light: 'text-on-surface-variant'
+};
+
+const eyebrowClasses = {
+  ink: 'text-primary-fixed-dim',
+  blue: 'text-cyan-100',
+  light: 'text-ses-accent'
+};
+
+const panelClasses = {
+  ink: 'border-ses-line bg-white/8 text-on-surface backdrop-blur',
+  blue: 'border-white/15 bg-white/10 text-white',
+  light: 'border-ses-line bg-white/8 text-on-surface backdrop-blur'
+};
+---
+
+<section
+  class="relative isolate overflow-hidden bg-background"
+  aria-labelledby="home-hero-title"
+  data-home-hero
+>
+  <div class="relative min-h-[48rem] overflow-hidden sm:min-h-[44rem] lg:min-h-[42rem]">
+    {slides.map((slide, index) => (
+      <article
+        id={`home-hero-slide-${index}`}
+        class={`pointer-events-none absolute inset-0 grid items-center opacity-0 transition-opacity duration-500 ease-standard data-[active=true]:pointer-events-auto data-[active=true]:opacity-100 ${backdropClasses[slide.backdrop]}`}
+        data-hero-slide
+        data-active={index === 0 ? 'true' : 'false'}
+        aria-hidden={index === 0 ? 'false' : 'true'}
+        inert={index === 0 ? undefined : true}
+      >
+        <div class="absolute inset-0 opacity-80" aria-hidden="true">
+          <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-tertiary/40 to-transparent"></div>
+          <div class="absolute inset-0 bg-[linear-gradient(135deg,rgba(37,99,235,0.24),transparent_42%,rgba(56,189,248,0.14))]"></div>
+          <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(2,6,23,0.36)_70%)]"></div>
+        </div>
+
+        <div class="container-xl relative grid gap-10 py-12 sm:py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:py-20">
+          <div class="max-w-[42rem]">
+            <p class={`text-label-xs uppercase ${eyebrowClasses[slide.backdrop]}`}>{slide.eyebrow}</p>
+            {index === 0 ? (
+              <h1 id="home-hero-title" class="mt-4 text-display-lg-mobile font-display text-balance sm:text-display-lg">
+                {slide.title}
+              </h1>
+            ) : (
+              <h2 class="mt-4 text-display-lg-mobile font-display text-balance sm:text-display-lg">
+                {slide.title}
+              </h2>
+            )}
+            <p class={`mt-5 max-w-[36rem] text-body-lg text-pretty ${mutedTextClasses[slide.backdrop]}`}>
+              {slide.description}
+            </p>
+
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Button href={slide.primaryCta.href} variant="blue" size="lg">
+                {slide.primaryCta.label}
+              </Button>
+              <Button href={slide.secondaryCta.href} variant="secondary" size="lg">
+                {slide.secondaryCta.label}
+              </Button>
+            </div>
+
+            <dl class="mt-10 grid max-w-[32rem] grid-cols-2 divide-x divide-current/20 border-y border-current/15 py-4">
+              {slide.metrics.map((metric) => (
+                <div class="px-4 first:pl-0">
+                  <dt class={`text-label-xs uppercase ${mutedTextClasses[slide.backdrop]}`}>{metric.label}</dt>
+                  <dd class="mt-2 text-title-md">{metric.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          <div class="relative min-h-[24rem] sm:min-h-[28rem] lg:min-h-[34rem]" aria-label={`${slide.productKicker}: ${slide.productName}`}>
+            <div class="absolute inset-x-6 bottom-0 h-44 rounded-t-card bg-current/10"></div>
+
+            {slide.visual === 'laptop' && (
+              <div class="absolute inset-x-0 top-8 mx-auto w-[min(39rem,94%)]">
+                <div class={`rounded-card border p-3 shadow-ambient ${panelClasses[slide.backdrop]}`}>
+                  <div class="aspect-[16/10] rounded-md border border-current/15 bg-current/10 p-5">
+                    <div class="flex h-full flex-col justify-between">
+                      <div class="flex items-center gap-2">
+                        <span class="size-2 rounded-full bg-current/40"></span>
+                        <span class="size-2 rounded-full bg-current/30"></span>
+                        <span class="size-2 rounded-full bg-current/20"></span>
+                      </div>
+                      <div>
+                        <div class="h-3 w-2/3 rounded-pill bg-current/35"></div>
+                        <div class="mt-3 h-3 w-1/2 rounded-pill bg-current/20"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mx-auto h-4 w-[82%] rounded-b-md bg-current/20"></div>
+                </div>
+              </div>
+            )}
+
+            {slide.visual === 'phone' && (
+              <div class="absolute inset-x-0 top-4 mx-auto flex w-[min(30rem,92%)] items-end justify-center gap-4">
+                <div class={`h-72 w-32 rounded-[1.75rem] border-[8px] border-current/80 bg-current/10 shadow-ambient sm:h-88 sm:w-40 ${panelClasses[slide.backdrop]}`}></div>
+                <div class={`mb-8 h-60 w-28 rounded-[1.55rem] border-[7px] border-current/70 bg-current/10 shadow-soft sm:h-76 sm:w-36 ${panelClasses[slide.backdrop]}`}></div>
+              </div>
+            )}
+
+            {slide.visual === 'printer' && (
+              <div class="absolute inset-x-0 top-12 mx-auto w-[min(34rem,92%)]">
+                <div class={`rounded-card border p-5 shadow-ambient ${panelClasses[slide.backdrop]}`}>
+                  <div class="mx-auto h-12 w-4/5 rounded-md bg-current/15"></div>
+                  <div class="mt-4 rounded-card border border-current/15 bg-current/10 p-5">
+                    <div class="h-4 w-24 rounded-pill bg-current/30"></div>
+                    <div class="mt-10 h-32 rounded-md bg-current/10"></div>
+                  </div>
+                  <div class="mx-auto mt-4 h-20 w-3/4 rounded-b-md border border-current/15 bg-current/10"></div>
+                </div>
+              </div>
+            )}
+
+            <div class={`absolute bottom-8 left-4 w-[min(22rem,82%)] rounded-card border p-4 shadow-soft sm:left-10 ${panelClasses[slide.backdrop]}`}>
+              <p class={`text-label-xs uppercase ${mutedTextClasses[slide.backdrop]}`}>{slide.productKicker}</p>
+              <p class="mt-2 text-title-md">{slide.productName}</p>
+              <p class={`mt-2 text-body-sm ${mutedTextClasses[slide.backdrop]}`}>{slide.productSpec}</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    ))}
+
+    {slides.length > 1 && (
+      <div class="container-xl pointer-events-none absolute inset-x-0 bottom-6 z-10 flex items-center justify-between gap-4">
+        <div class="pointer-events-auto flex items-center gap-2 rounded-pill border border-white/15 bg-black/20 p-1 backdrop-blur">
+          {slides.map((slide, index) => (
+            <button
+              type="button"
+              class="size-3 rounded-pill bg-white/35 transition-[background-color,width] duration-200 data-[active=true]:w-8 data-[active=true]:bg-white"
+              aria-label={`Show ${slide.eyebrow}`}
+              aria-controls={`home-hero-slide-${index}`}
+              data-hero-dot
+              data-active={index === 0 ? 'true' : 'false'}
+            ></button>
+          ))}
+        </div>
+
+        <div class="pointer-events-auto flex gap-2">
+          <button type="button" class="flex size-11 items-center justify-center rounded-pill border border-white/20 bg-black/20 text-white backdrop-blur hover:bg-black/35" data-hero-prev aria-label="Previous hero slide">
+            <span aria-hidden="true">&lt;</span>
+          </button>
+          <button type="button" class="flex size-11 items-center justify-center rounded-pill border border-white/20 bg-black/20 text-white backdrop-blur hover:bg-black/35" data-hero-next aria-label="Next hero slide">
+            <span aria-hidden="true">&gt;</span>
+          </button>
+        </div>
+      </div>
+    )}
+  </div>
+</section>
+
+<script>
+  const heroSliders = document.querySelectorAll<HTMLElement>('[data-home-hero]');
+
+  heroSliders.forEach((slider) => {
+    const slides = Array.from(slider.querySelectorAll<HTMLElement>('[data-hero-slide]'));
+    const dots = Array.from(slider.querySelectorAll<HTMLButtonElement>('[data-hero-dot]'));
+    const previousButton = slider.querySelector<HTMLButtonElement>('[data-hero-prev]');
+    const nextButton = slider.querySelector<HTMLButtonElement>('[data-hero-next]');
+    let activeIndex = Math.max(slides.findIndex((slide) => slide.dataset.active === 'true'), 0);
+
+    const setSlide = (nextIndex: number) => {
+      activeIndex = (nextIndex + slides.length) % slides.length;
+
+      slides.forEach((slide, index) => {
+        const isActive = index === activeIndex;
+        slide.dataset.active = String(isActive);
+        slide.setAttribute('aria-hidden', String(!isActive));
+        slide.inert = !isActive;
+      });
+
+      dots.forEach((dot, index) => {
+        dot.dataset.active = String(index === activeIndex);
+      });
+    };
+
+    previousButton?.addEventListener('click', () => {
+      setSlide(activeIndex - 1);
+    });
+
+    nextButton?.addEventListener('click', () => {
+      setSlide(activeIndex + 1);
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        setSlide(index);
+      });
+    });
+
+    setSlide(activeIndex);
+  });
+</script>
