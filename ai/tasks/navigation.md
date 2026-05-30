@@ -1,24 +1,67 @@
 # Navigation Task
 
-Status: implemented.
+Build premium ecommerce navigation system for SES NEXT GEN.
 
-Scope:
+Requirements:
 
-- Sticky header
-- Responsive navbar
-- Static mega menu
-- No-JS mobile slide menu using native details/summary
-- Search bar UI only
-- Category navigation
-- Breadcrumbs
-- Footer
+1. Sticky Header
+- transparent on hero
+- solid on scroll
+- smooth transitions
 
-Rules followed:
+2. Desktop Navbar
+- logo left
+- category navigation
+- search trigger
+- account/cart placeholders
+- clean spacing
 
-- No live search
-- No auth logic
-- No cart logic
-- No React
-- No unnecessary JavaScript
-- Semantic Astro components
-- Mobile-first layout
+3. Mega Menu
+Categories:
+- laptops
+- smartphones
+- desktops
+- printers
+- storage
+
+Requirements:
+- modern dropdown layout
+- responsive
+- premium ecommerce style
+
+4. Mobile Navigation
+- slide-in drawer
+- smooth transitions
+- category accordion
+- mobile optimized
+
+5. Breadcrumb Component
+
+6. Footer
+Include:
+- company info
+- categories
+- quick links
+- social placeholders
+- newsletter placeholder
+
+Design direction:
+- Apple
+- Anker
+- Framework
+
+Requirements:
+- mobile-first
+- semantic HTML
+- reusable components
+- Tailwind only
+- accessible navigation
+- Cloudflare optimized
+
+DO NOT:
+- implement real search
+- implement cart logic
+- implement auth logic
+- implement backend
+- use React
+- add unnecessary JavaScript
