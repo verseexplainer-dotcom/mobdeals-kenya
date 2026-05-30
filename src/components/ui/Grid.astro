@@ -5,7 +5,7 @@ interface Props {
   as?: keyof HTMLElementTagNameMap;
   class?: string;
   columns?: 'auto' | 'products' | 'features' | 'two' | 'three' | 'four';
-  gap?: 'sm' | 'md' | 'lg';
+  gap?: 'xs' | 'sm' | 'md' | 'lg';
 }
 
 const {
@@ -25,6 +25,7 @@ const columnsClass = {
 }[columns];
 
 const gapClass = {
+  xs: 'gap-2 sm:gap-3',
   sm: 'gap-3 sm:gap-4',
   md: 'gap-4 sm:gap-6',
   lg: 'gap-6 lg:gap-8'

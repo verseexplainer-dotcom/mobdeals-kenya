@@ -6,13 +6,15 @@ interface Props {
   class?: string;
   interactive?: boolean;
   padding?: 'none' | 'sm' | 'md' | 'lg';
+  variant?: 'default' | 'soft' | 'outlined';
 }
 
 const {
   as: Tag = 'article',
   class: className,
   interactive = false,
-  padding = 'md'
+  padding = 'md',
+  variant = 'default'
 } = Astro.props;
 
 const paddingClass = {
@@ -21,8 +23,14 @@ const paddingClass = {
   md: 'p-5 sm:p-6',
   lg: 'p-6 sm:p-8'
 }[padding];
+
+const variantClass = {
+  default: interactive ? 'premium-card-interactive' : 'premium-card',
+  soft: 'rounded-card border border-ses-line bg-surface-container-low',
+  outlined: 'rounded-card border border-ses-line bg-transparent'
+}[variant];
 ---
 
-<Tag class={classNames(interactive ? 'premium-card-interactive' : 'premium-card', paddingClass, className)}>
+<Tag class={classNames(variantClass, paddingClass, className)}>
   <slot />
 </Tag>

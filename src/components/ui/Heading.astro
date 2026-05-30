@@ -29,10 +29,10 @@ const sizes = {
 };
 ---
 
-<div class={classNames(align === 'center' && 'mx-auto text-center', align === 'center' ? 'max-w-3xl' : 'max-w-4xl')}>
+<div class={classNames(align === 'center' && 'mx-auto text-center', align === 'center' ? 'max-w-[48rem]' : 'max-w-[56rem]')}>
   {eyebrow && <p class="mb-3 text-label-xs uppercase text-ses-accent">{eyebrow}</p>}
   <Tag id={id} class={classNames('text-balance font-display text-on-surface', sizes[size], className)}>
     <slot />
   </Tag>
-  {description && <p class={classNames('mt-4 max-w-2xl text-pretty text-body-md text-on-surface-variant', align === 'center' && 'mx-auto')}>{description}</p>}
+  {description && <p class={classNames('mt-4 max-w-[42rem] text-pretty text-body-md text-on-surface-variant', align === 'center' && 'mx-auto')}>{description}</p>}
 </div>

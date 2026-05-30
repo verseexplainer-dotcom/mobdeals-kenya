@@ -2,16 +2,18 @@
 import Heading from './Heading.astro';
 
 interface Props {
+  id?: string;
   eyebrow?: string;
   title: string;
   description?: string;
   align?: 'left' | 'center';
   size?: 'md' | 'lg' | 'xl';
+  class?: string;
 }
 
-const { eyebrow, title, description, align = 'left', size = 'lg' } = Astro.props;
+const { id, eyebrow, title, description, align = 'left', size = 'lg', class: className } = Astro.props;
 ---
 
-<Heading as="h2" eyebrow={eyebrow} description={description} align={align} size={size}>
+<Heading id={id} as="h2" eyebrow={eyebrow} description={description} align={align} size={size} class={className}>
   {title}
 </Heading>

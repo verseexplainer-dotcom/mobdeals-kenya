@@ -6,7 +6,7 @@ export const siteConfig = {
   defaultTitle: 'SES NEXT GEN | Premium Electronics in Nairobi',
   defaultDescription: 'Premium ecommerce experience for laptops, smartphones, printers, desktops, accessories, and modern tech essentials in Nairobi and across Kenya.',
   defaultImage: '/images/og-default.jpg',
-  themeColor: '#0f172a',
+  themeColor: '#020617',
   twitterHandle: '',
   storageBucket: 'products',
   supabaseUrl: import.meta.env.PUBLIC_SUPABASE_URL,

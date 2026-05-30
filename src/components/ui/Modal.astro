@@ -1,0 +1,47 @@
+---
+import { classNames } from '@lib/utils/classNames';
+
+interface Props {
+  id?: string;
+  open?: boolean;
+  title?: string;
+  description?: string;
+  labelledby?: string;
+  describedby?: string;
+  class?: string;
+}
+
+const {
+  id,
+  open = false,
+  title,
+  description,
+  labelledby,
+  describedby,
+  class: className
+} = Astro.props;
+
+const titleId = title && id ? `${id}-title` : undefined;
+const descriptionId = description && id ? `${id}-description` : undefined;
+---
+
+<dialog
+  id={id}
+  open={open}
+  aria-labelledby={labelledby ?? titleId}
+  aria-describedby={describedby ?? descriptionId}
+  class={classNames('m-auto w-[min(100%-2rem,36rem)] rounded-card border border-ses-line bg-surface-container-lowest p-0 text-on-surface shadow-premium backdrop:bg-ses-ink/40', className)}
+>
+  <div class="grid gap-5 p-5 sm:p-6">
+    {(title || description) && (
+      <header class="grid gap-2">
+        {title && <h2 id={titleId} class="text-title-md text-on-surface">{title}</h2>}
+        {description && <p id={descriptionId} class="text-body-sm text-on-surface-variant">{description}</p>}
+      </header>
+    )}
+    <div>
+      <slot />
+    </div>
+    <slot name="footer" />
+  </div>
+</dialog>

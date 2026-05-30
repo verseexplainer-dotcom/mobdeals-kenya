@@ -1,0 +1,21 @@
+---
+import { classNames } from '@lib/utils/classNames';
+
+interface Props {
+  as?: 'hr' | 'div';
+  orientation?: 'horizontal' | 'vertical';
+  class?: string;
+}
+
+const {
+  as: Tag = 'hr',
+  orientation = 'horizontal',
+  class: className
+} = Astro.props;
+
+const classes = orientation === 'vertical'
+  ? 'h-full min-h-6 w-px border-0 bg-ses-line'
+  : 'h-px w-full border-0 bg-ses-line';
+---
+
+<Tag class={classNames(classes, className)} aria-orientation={orientation} />

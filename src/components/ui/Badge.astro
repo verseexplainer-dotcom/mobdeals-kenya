@@ -3,20 +3,26 @@ import { classNames } from '@lib/utils/classNames';
 
 interface Props {
   variant?: 'neutral' | 'primary' | 'accent' | 'success' | 'danger';
+  size?: 'sm' | 'md';
   class?: string;
 }
 
-const { variant = 'neutral', class: className } = Astro.props;
+const { variant = 'neutral', size = 'sm', class: className } = Astro.props;
 
 const variants = {
-  neutral: 'border-ses-line bg-surface-container-low text-on-surface',
-  primary: 'border-primary-fixed-dim bg-primary-fixed text-on-primary-fixed-variant',
-  accent: 'border-cyan-200 bg-ses-cyan-soft text-cyan-800',
-  success: 'border-green-200 bg-green-50 text-green-700',
-  danger: 'border-red-200 bg-error-container text-on-error-container'
+  neutral: 'border-ses-line bg-white/8 text-on-surface-variant',
+  primary: 'border-primary-fixed-dim bg-primary/15 text-primary-fixed-dim',
+  accent: 'border-secondary/30 bg-secondary/12 text-secondary',
+  success: 'border-secondary/30 bg-secondary/12 text-secondary',
+  danger: 'border-error/30 bg-error-container text-on-error-container'
+};
+
+const sizes = {
+  sm: 'px-2.5 py-1 text-label-xs',
+  md: 'px-3 py-1.5 text-label-md'
 };
 ---
 
-<span class={classNames('inline-flex items-center rounded-pill border px-2.5 py-1 text-label-xs', variants[variant], className)}>
+<span class={classNames('inline-flex items-center rounded-pill border backdrop-blur', variants[variant], sizes[size], className)}>
   <slot />
 </span>
