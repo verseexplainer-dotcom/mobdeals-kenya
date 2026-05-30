@@ -1,33 +1,43 @@
 ---
-import { footerNavigation } from '@config/navigation';
+import { footerNavigation, socialNavigation } from '@config/navigation';
 import { siteConfig } from '@config/site';
 import Container from '@components/ui/Container.astro';
+import Divider from '@components/ui/Divider.astro';
 ---
 
 <footer class="border-t border-ses-line bg-surface-container-lowest">
-  <Container size="xl" class="py-10 sm:py-12">
-    <div class="grid gap-8 lg:grid-cols-[1.2fr_2fr]">
+  <Container size="xl" class="py-12 sm:py-16">
+    <div class="grid gap-10 lg:grid-cols-[1fr_1.8fr]">
       <div>
         <a href="/" class="inline-flex items-center gap-2" aria-label={`${siteConfig.name} home`}>
-          <span class="flex size-10 items-center justify-center rounded-pill bg-primary text-label-md text-on-primary">SN</span>
+          <span class="flex size-10 items-center justify-center rounded-pill bg-primary text-label-md text-on-primary">{siteConfig.shortName}</span>
           <span class="text-headline-sm text-on-surface">{siteConfig.name}</span>
         </a>
-        <p class="mt-4 max-w-sm text-body-sm text-on-surface-variant">
-          Premium electronics for Kenya: laptops, smartphones, desktops, printers, and storage.
+        <p class="mt-4 max-w-[28rem] text-body-sm text-on-surface-variant">
+          Premium electronics for Kenya: laptops, smartphones, desktops, printers, storage, and business supply support from Nairobi.
         </p>
-        <a href="/contact" class="mt-5 inline-flex rounded-control bg-whatsapp px-4 py-2 text-label-md text-white transition duration-200 hover:bg-whatsapp-dark">
+
+        <a href="/contact" class="mt-5 inline-flex rounded-control bg-primary px-4 py-2 text-label-md text-on-primary hover:bg-primary-container">
           WhatsApp support
         </a>
+
+        <nav aria-label="Social links" class="mt-6 flex flex-wrap gap-2">
+          {socialNavigation.map((item) => (
+            <a href={item.href} class="rounded-control border border-ses-line px-3 py-2 text-label-xs text-on-surface-variant hover:border-tertiary hover:text-tertiary">
+              {item.label}
+            </a>
+          ))}
+        </nav>
       </div>
 
-      <nav aria-label="Footer navigation" class="grid gap-6 sm:grid-cols-3">
+      <nav aria-label="Footer navigation" class="grid gap-8 sm:grid-cols-3">
         {footerNavigation.map((group) => (
           <section>
             <h2 class="text-label-md text-on-surface">{group.title}</h2>
             <ul class="mt-4 grid gap-3">
               {group.links.map((link) => (
                 <li>
-                  <a href={link.href} class="text-body-sm text-on-surface-variant transition duration-200 hover:text-ses-accent">
+                  <a href={link.href} class="text-body-sm text-on-surface-variant hover:text-ses-accent">
                     {link.label}
                   </a>
                 </li>
@@ -38,9 +48,27 @@ import Container from '@components/ui/Container.astro';
       </nav>
     </div>
 
-    <div class="mt-10 flex flex-col gap-3 border-t border-ses-line pt-6 text-body-sm text-on-surface-variant sm:flex-row sm:items-center sm:justify-between">
+    <Divider class="my-10" />
+
+    <section class="grid gap-4 rounded-card border border-ses-line bg-surface-container-low p-4 sm:grid-cols-[1fr_auto] sm:items-center sm:p-5" aria-labelledby="footer-newsletter-title">
+      <div>
+        <h2 id="footer-newsletter-title" class="text-title-md text-on-surface">Product updates for Kenya shoppers</h2>
+        <p class="mt-1 text-body-sm text-on-surface-variant">
+          Get product arrivals, useful offers, and business supply notices.
+        </p>
+      </div>
+      <form action="/contact" method="get" class="flex gap-2" aria-label="Product updates request">
+        <label for="footer-email" class="sr-only">Email address</label>
+        <input id="footer-email" name="email" type="email" autocomplete="email" placeholder="Email address" class="h-11 min-w-0 rounded-control border border-ses-line bg-surface-container-lowest px-4 text-body-sm text-on-surface" />
+        <button type="submit" class="h-11 rounded-control bg-primary px-4 text-label-md text-on-primary hover:bg-primary-container">
+          Notify me
+        </button>
+      </form>
+    </section>
+
+    <div class="mt-10 flex flex-col gap-3 text-body-sm text-on-surface-variant sm:flex-row sm:items-center sm:justify-between">
       <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
-      <p>Nairobi, Kenya</p>
+      <p>Nairobi, Kenya · Electronics for work and everyday tech</p>
     </div>
   </Container>
 </footer>

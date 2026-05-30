@@ -1,5 +1,5 @@
 ---
-import { primaryNavigation, supportNavigation } from '@config/navigation';
+import { accountNavigation, primaryNavigation, supportNavigation } from '@config/navigation';
 import { siteConfig } from '@config/site';
 import Container from '@components/ui/Container.astro';
 import MegaMenu from './MegaMenu.astro';
@@ -7,13 +7,13 @@ import MobileMenu from './MobileMenu.astro';
 import SearchBar from './SearchBar.astro';
 ---
 
-<header class="sticky top-0 z-40 border-b border-ses-line bg-background/90 backdrop-blur">
-  <div class="hidden border-b border-ses-line bg-primary text-on-primary md:block">
+<header id="site-header" class="sticky top-0 z-40 border-b border-transparent bg-background/75 backdrop-blur-xl transition-[background-color,border-color,box-shadow] duration-200 data-[scrolled=true]:border-ses-line data-[scrolled=true]:bg-background/95 data-[scrolled=true]:shadow-xs">
+  <div class="hidden border-b border-ses-line bg-surface-container-lowest text-on-surface md:block">
     <Container size="xl" class="flex min-h-9 items-center justify-between gap-4 text-label-xs">
       <p>Fast delivery in Nairobi. Business supply available across Kenya.</p>
       <nav aria-label="Support links" class="flex items-center gap-4">
         {supportNavigation.map((item) => (
-          <a href={item.href} class="text-white/80 transition duration-200 hover:text-white">
+          <a href={item.href} class="text-on-surface-variant hover:text-tertiary">
             {item.label}
           </a>
         ))}
@@ -21,32 +21,47 @@ import SearchBar from './SearchBar.astro';
     </Container>
   </div>
 
-  <Container size="xl" class="flex min-h-16 items-center gap-4">
+  <Container size="xl" class="flex min-h-16 items-center gap-3 lg:gap-5">
     <MobileMenu />
 
     <a href="/" class="flex shrink-0 items-center gap-2 rounded-pill focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ses-accent" aria-label={`${siteConfig.name} home`}>
-      <span class="flex size-9 items-center justify-center rounded-pill bg-primary text-label-md text-on-primary">SN</span>
+      <span class="flex size-9 items-center justify-center rounded-pill bg-primary text-label-md text-on-primary">{siteConfig.shortName}</span>
       <span class="hidden text-label-md text-on-surface sm:inline">{siteConfig.name}</span>
     </a>
 
-    <nav aria-label="Primary navigation" class="hidden items-center gap-1 lg:flex">
+    <nav aria-label="Primary navigation" class="hidden items-center gap-1 xl:flex">
       <MegaMenu />
-      {primaryNavigation.slice(0, 4).map((item) => (
-        <a href={item.href} class="rounded-pill px-3 py-2 text-label-md text-on-surface transition duration-200 hover:bg-surface-container-low hover:text-ses-accent">
+      {primaryNavigation.map((item) => (
+        <a href={item.href} class="rounded-control px-3 py-2 text-label-md text-on-surface hover:bg-white/8 hover:text-tertiary">
           {item.label}
         </a>
       ))}
     </nav>
 
-    <SearchBar class="ml-auto hidden max-w-sm md:block xl:max-w-md" />
+    <SearchBar class="ml-auto hidden max-w-[20rem] md:block lg:max-w-[24rem] 2xl:max-w-[28rem]" compact />
 
     <div class="ml-auto flex items-center gap-2 md:ml-0">
-      <a href="/contact" class="hidden rounded-pill border border-ses-line bg-surface-container-lowest px-4 py-2 text-label-md text-on-surface shadow-xs transition duration-200 hover:border-primary-fixed-dim hover:text-ses-accent sm:inline-flex">
-        Contact
-      </a>
-      <a href="/shop" class="rounded-pill bg-ses-accent px-4 py-2 text-label-md text-white shadow-xs transition duration-200 hover:bg-ses-accent-dark hover:shadow-soft">
+      {accountNavigation.map((item) => (
+        <a href={item.href} class="hidden size-10 items-center justify-center rounded-control border border-ses-line bg-white/8 text-label-md text-on-surface shadow-xs hover:border-tertiary hover:text-tertiary md:inline-flex" aria-label={item.description ?? item.label}>
+          {item.label === 'Cart' ? 'Bag' : 'User'}
+        </a>
+      ))}
+      <a href="/shop" class="rounded-control bg-primary px-4 py-2 text-label-md text-on-primary shadow-xs hover:bg-primary-container hover:shadow-soft">
         Shop
       </a>
     </div>
   </Container>
 </header>
+
+<script>
+  const header = document.getElementById('site-header');
+
+  if (header) {
+    const setHeaderState = () => {
+      header.dataset.scrolled = window.scrollY > 8 ? 'true' : 'false';
+    };
+
+    setHeaderState();
+    window.addEventListener('scroll', setHeaderState, { passive: true });
+  }
+</script>

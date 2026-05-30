@@ -6,6 +6,7 @@ export interface NavigationLink {
 
 export interface NavigationCategory extends NavigationLink {
   featured?: boolean;
+  eyebrow?: string;
   links?: NavigationLink[];
 }
 
@@ -21,7 +22,8 @@ export const categoryNavigation: NavigationCategory[] = [
   {
     label: 'Laptops',
     href: '/category/laptops',
-    description: 'Business, student, gaming, and creator laptops.',
+    eyebrow: 'Work and study',
+    description: 'Business, student, gaming, and creator laptops for Kenya.',
     featured: true,
     links: [
       { label: 'HP Laptops', href: '/category/laptops/hp' },
@@ -33,7 +35,8 @@ export const categoryNavigation: NavigationCategory[] = [
   {
     label: 'Smartphones',
     href: '/category/smartphones',
-    description: 'Android phones, iPhones, and accessories.',
+    eyebrow: 'New and refurbished',
+    description: 'Android phones, iPhones, chargers, cases, and accessories.',
     links: [
       { label: 'Samsung', href: '/category/smartphones/samsung' },
       { label: 'iPhone', href: '/category/smartphones/iphone' },
@@ -44,7 +47,8 @@ export const categoryNavigation: NavigationCategory[] = [
   {
     label: 'Desktops',
     href: '/category/desktops',
-    description: 'Office towers, all-in-ones, and workstations.',
+    eyebrow: 'Office setups',
+    description: 'Office towers, all-in-ones, mini PCs, and workstations.',
     links: [
       { label: 'Office Desktops', href: '/category/desktops/office' },
       { label: 'All-in-One PCs', href: '/category/desktops/all-in-one' },
@@ -54,7 +58,8 @@ export const categoryNavigation: NavigationCategory[] = [
   {
     label: 'Printers',
     href: '/category/printers',
-    description: 'Inkjet, laser, refill, and office printers.',
+    eyebrow: 'Home and business',
+    description: 'Inkjet, laser, refill, and office printers with supplies.',
     links: [
       { label: 'HP Printers', href: '/category/printers/hp' },
       { label: 'Epson Printers', href: '/category/printers/epson' },
@@ -64,7 +69,8 @@ export const categoryNavigation: NavigationCategory[] = [
   {
     label: 'Storage',
     href: '/category/storage',
-    description: 'SSDs, hard drives, flash drives, and memory cards.',
+    eyebrow: 'Upgrade essentials',
+    description: 'SSDs, hard drives, flash drives, memory cards, and RAM.',
     links: [
       { label: 'SSDs', href: '/category/storage/ssd' },
       { label: 'Hard Drives', href: '/category/storage/hard-drives' },
@@ -80,10 +86,28 @@ export const supportNavigation: NavigationLink[] = [
   { label: 'Contact', href: '/contact' }
 ];
 
+export const quickNavigation: NavigationLink[] = [
+  { label: 'Shop all', href: '/shop' },
+  { label: 'Business supply', href: '/business' },
+  { label: 'Nairobi store', href: '/store' },
+  { label: 'Contact', href: '/contact' }
+];
+
+export const accountNavigation: NavigationLink[] = [
+  { label: 'Account', href: '/account', description: 'Placeholder account link' },
+  { label: 'Cart', href: '/cart', description: 'Placeholder cart link' }
+];
+
+export const socialNavigation: NavigationLink[] = [
+  { label: 'Instagram', href: '/social/instagram' },
+  { label: 'Facebook', href: '/social/facebook' },
+  { label: 'TikTok', href: '/social/tiktok' }
+];
+
 export const footerNavigation = [
   {
-    title: 'Shop',
-    links: primaryNavigation
+    title: 'Categories',
+    links: categoryNavigation.map(({ label, href }) => ({ label, href }))
   },
   {
     title: 'Support',
@@ -91,10 +115,6 @@ export const footerNavigation = [
   },
   {
     title: 'Company',
-    links: [
-      { label: 'About SES NEXT GEN', href: '/about' },
-      { label: 'Nairobi Store', href: '/store' },
-      { label: 'Business Supply', href: '/business' }
-    ]
+    links: quickNavigation
   }
 ] as const;

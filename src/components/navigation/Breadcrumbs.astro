@@ -6,25 +6,29 @@ interface BreadcrumbItem {
 
 interface Props {
   items: BreadcrumbItem[];
+  class?: string;
 }
 
-const { items } = Astro.props;
+const { items, class: className } = Astro.props;
 ---
 
 {items.length > 0 && (
-  <nav aria-label="Breadcrumb" class="text-body-sm text-on-surface-variant">
-    <ol class="flex flex-wrap items-center gap-2">
+  <nav aria-label="Breadcrumb" class:list={['text-body-sm text-on-surface-variant', className]}>
+    <ol class="flex flex-wrap items-center gap-2" itemscope itemtype="https://schema.org/BreadcrumbList">
       <li>
-        <a href="/" class="transition duration-200 hover:text-ses-accent">Home</a>
+        <a href="/" class="hover:text-ses-accent">Home</a>
       </li>
       {items.map((item, index) => (
-        <li class="flex items-center gap-2">
-          <span aria-hidden="true">/</span>
+        <li class="flex items-center gap-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span aria-hidden="true">›</span>
           {item.href && index < items.length - 1 ? (
-            <a href={item.href} class="transition duration-200 hover:text-ses-accent">{item.label}</a>
+            <a href={item.href} class="hover:text-ses-accent" itemprop="item">
+              <span itemprop="name">{item.label}</span>
+            </a>
           ) : (
-            <span aria-current="page" class="text-on-surface">{item.label}</span>
+            <span aria-current="page" class="text-on-surface" itemprop="name">{item.label}</span>
           )}
+          <meta itemprop="position" content={String(index + 2)} />
         </li>
       ))}
     </ol>
