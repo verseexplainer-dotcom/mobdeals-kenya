@@ -1,17 +1,43 @@
 ---
-
+import BaseLayout from '@layouts/BaseLayout.astro';
+import {
+  BrandCarousel,
+  CategoryScroller,
+  FeaturedProducts,
+  HomeHeroSlider,
+  NewsletterCTA,
+  SplitBanners,
+  Testimonials,
+  TrustBar,
+  WhyChooseUs
+} from '@components/home';
+import {
+  featuredBrands,
+  featuredProducts,
+  heroSlides,
+  homeCategories,
+  promoBanners,
+  testimonials,
+  trustItems,
+  whyChooseItems
+} from '@data/homepage';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  mainClass="overflow-hidden"
+  seo={{
+    title: 'Premium Electronics in Nairobi',
+    description:
+      'SES NEXT GEN is a premium ecommerce experience for laptops, smartphones, printers, desktops, storage, and accessories in Nairobi and across Kenya.'
+  }}
+>
+  <HomeHeroSlider slides={heroSlides} />
+  <TrustBar items={trustItems} />
+  <CategoryScroller categories={homeCategories} />
+  <FeaturedProducts products={featuredProducts} />
+  <SplitBanners banners={promoBanners} />
+  <BrandCarousel brands={featuredBrands} />
+  <WhyChooseUs items={whyChooseItems} />
+  <Testimonials testimonials={testimonials} />
+  <NewsletterCTA />
+</BaseLayout>

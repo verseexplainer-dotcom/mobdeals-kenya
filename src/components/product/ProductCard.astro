@@ -6,17 +6,33 @@ import { classNames } from '@lib/utils/classNames';
 
 interface Props {
   product: ProductSummary;
+  href?: string;
   class?: string;
   ctaLabel?: string;
+  priority?: boolean;
 }
 
-const { product, class: className, ctaLabel = 'View product' } = Astro.props;
+const { product, href, class: className, ctaLabel = 'View product', priority = false } = Astro.props;
 const image = product.images[0];
-const categoryLabel = product.category.replace(/-/g, ' ');
+const productHref = href ?? `/products/${product.slug}`;
+const categoryLabel = product.category
+  .replace(/-/g, ' ')
+  .replace(/\b\w/g, (character) => character.toUpperCase());
+const categoryKey = product.category.toLowerCase();
+
+const fallbackTone = categoryKey.includes('smartphone')
+  ? 'bg-secondary text-on-secondary'
+  : categoryKey.includes('printer')
+    ? 'bg-tertiary text-on-tertiary'
+    : categoryKey.includes('desktop')
+      ? 'bg-primary text-on-primary'
+      : categoryKey.includes('storage')
+        ? 'bg-surface-container-high text-on-surface'
+        : 'bg-primary text-on-primary';
 ---
 
-<article class={classNames('premium-card-interactive group flex h-full flex-col overflow-hidden', className)}>
-  <a href={`/products/${product.slug}`} class="block bg-surface-container-low p-3">
+<article class={classNames('premium-card flex h-full flex-col overflow-hidden', className)}>
+  <a href={productHref} class="block bg-surface-container-low p-2.5 sm:p-3" aria-label={`View ${product.name}`}>
     <div class="aspect-square overflow-hidden rounded-card bg-surface-container-lowest">
       {image ? (
         <img
@@ -24,31 +40,60 @@ const categoryLabel = product.category.replace(/-/g, ' ');
           alt={image.alt}
           width={image.width}
           height={image.height}
-          loading="lazy"
+          loading={priority ? 'eager' : 'lazy'}
           decoding="async"
-          class="size-full object-contain p-4 transition duration-300 ease-standard group-hover:scale-[1.03]"
+          class="size-full object-contain p-3 sm:p-4"
         />
       ) : (
-        <div class="flex size-full items-center justify-center px-6 text-center text-body-sm text-on-surface-variant">
-          Product image coming soon
+        <div class={`flex size-full items-center justify-center overflow-hidden ${fallbackTone}`} aria-hidden="true">
+          {categoryKey.includes('smartphone') && (
+            <div class="h-[72%] w-[38%] rounded-[1.4rem] border-[7px] border-current bg-white/15 shadow-soft"></div>
+          )}
+          {categoryKey.includes('printer') && (
+            <div class="w-[68%]">
+              <div class="mx-auto h-8 w-3/4 rounded-t-md bg-current/20"></div>
+              <div class="rounded-card border-[6px] border-current bg-white/15 p-4">
+                <div class="h-3 w-20 rounded-pill bg-current/30"></div>
+                <div class="mt-8 h-16 rounded-md bg-current/10"></div>
+              </div>
+            </div>
+          )}
+          {categoryKey.includes('desktop') && (
+            <div class="flex items-end gap-3">
+              <div class="h-28 w-36 rounded-md border-[7px] border-current bg-white/10"></div>
+              <div class="h-32 w-12 rounded-md bg-current/20"></div>
+            </div>
+          )}
+          {categoryKey.includes('storage') && (
+            <div class="grid grid-cols-2 gap-3">
+              <div class="h-28 w-16 rounded-md border-[6px] border-current bg-white/20"></div>
+              <div class="mt-8 h-20 w-16 rounded-md bg-current/20"></div>
+            </div>
+          )}
+          {!categoryKey.includes('smartphone') && !categoryKey.includes('printer') && !categoryKey.includes('desktop') && !categoryKey.includes('storage') && (
+            <div class="w-[76%]">
+              <div class="aspect-[16/10] rounded-md border-[7px] border-current bg-white/10"></div>
+              <div class="mx-auto h-4 w-[86%] rounded-b-md bg-current/25"></div>
+            </div>
+          )}
         </div>
       )}
     </div>
   </a>
 
-  <div class="flex flex-1 flex-col p-5">
+  <div class="flex flex-1 flex-col p-4 sm:p-5">
     <div class="flex flex-wrap items-center gap-2">
       <Badge variant={product.inStock ? 'success' : 'neutral'}>{product.inStock ? 'In stock' : 'Check availability'}</Badge>
       {product.featured && <Badge variant="primary">Featured</Badge>}
     </div>
 
     <p class="mt-4 text-label-xs uppercase text-on-surface-variant">{categoryLabel}</p>
-    <h3 class="mt-2 text-headline-sm text-on-surface">
-      <a href={`/products/${product.slug}`} class="transition duration-200 hover:text-ses-accent">{product.name}</a>
+    <h3 class="mt-2 text-title-md text-on-surface">
+      <a href={productHref} class="hover:text-ses-accent">{product.name}</a>
     </h3>
     {product.brand && <p class="mt-1 text-body-sm text-on-surface-variant">{product.brand}</p>}
 
-    <div class="mt-5 flex items-end justify-between gap-4">
+    <div class="mt-auto pt-5">
       <div>
         <p class="text-headline-lg text-on-surface">{formatProductPrice(product.price)}</p>
         {product.price.compareAtAmount && (
@@ -59,7 +104,7 @@ const categoryLabel = product.category.replace(/-/g, ' ');
       </div>
     </div>
 
-    <Button href={`/products/${product.slug}`} variant="secondary" size="sm" class="mt-5 w-full">
+    <Button href={productHref} variant="secondary" size="sm" class="mt-5 w-full" ariaLabel={`View ${product.name}`}>
       {ctaLabel}
     </Button>
   </div>
