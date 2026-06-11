@@ -1,0 +1,44 @@
+---
+import { getCollection, render } from 'astro:content';
+import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
+import Badge from '@components/ui/Badge.astro';
+import Section from '@components/ui/Section.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const guides = (await getCollection('guides')).filter((guide) => !guide.data.draft);
+  return guides.map((guide) => ({
+    params: { slug: guide.id },
+    props: { guide }
+  }));
+}
+
+const { guide } = Astro.props;
+const { Content } = await render(guide);
+---
+
+<BaseLayout
+  seo={{
+    title: guide.data.title,
+    description: guide.data.description,
+    pathname: `/blog/${guide.id}`
+  }}
+>
+  <Section class="bg-surface-container-low/40" containerSize="md" spacing="sm">
+    <Breadcrumbs items={[{ label: 'Blog', href: '/blog' }, { label: guide.data.title }]} />
+    <article class="mt-10">
+      <Badge variant="accent" size="md">Buying guide</Badge>
+      <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">{guide.data.title}</h1>
+      <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">{guide.data.description}</p>
+      <p class="mt-4 text-body-sm text-on-surface-variant">
+        Published {guide.data.publishedAt.toLocaleDateString('en-KE', { year: 'numeric', month: 'long', day: 'numeric' })}
+      </p>
+    </article>
+  </Section>
+
+  <Section containerSize="md" spacing="sm">
+    <article class="prose prose-slate max-w-none prose-p:text-body-lg prose-p:text-on-surface-variant prose-a:text-ses-accent">
+      <Content />
+    </article>
+  </Section>
+</BaseLayout>

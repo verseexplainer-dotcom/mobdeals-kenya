@@ -1,0 +1,127 @@
+---
+import ProductGallery from '@components/product/ProductGallery.astro';
+import ProductSpecsTable from '@components/product/ProductSpecsTable.astro';
+import RelatedProducts from '@components/product/RelatedProducts.astro';
+import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
+import Badge from '@components/ui/Badge.astro';
+import Button from '@components/ui/Button.astro';
+import Section from '@components/ui/Section.astro';
+import SectionHeading from '@components/ui/SectionHeading.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { getAllProducts, getCategoryBySlug, getRelatedProducts } from '@data/products';
+import { formatProductPrice } from '@lib/products';
+import { absoluteUrl, createBreadcrumbSchema, createProductSchema, createProductSeo, stringifyJsonLd } from '@lib/seo';
+
+export function getStaticPaths() {
+  return getAllProducts().map((product) => ({
+    params: { slug: product.slug },
+    props: { product }
+  }));
+}
+
+const { product } = Astro.props;
+const category = getCategoryBySlug(product.category);
+const relatedProducts = getRelatedProducts(product);
+const productUrl = absoluteUrl(`/products/${product.slug}`) ?? `/products/${product.slug}`;
+const whatsappMessage = encodeURIComponent(
+  `Hi SES NEXT GEN, I am interested in ${product.name} (${formatProductPrice(product.price)}). Product link: ${productUrl}`
+);
+const whatsappHref = `https://wa.me/?text=${whatsappMessage}`;
+const productSchema = stringifyJsonLd(createProductSchema(product));
+const breadcrumbSchema = stringifyJsonLd(
+  createBreadcrumbSchema([
+    { label: 'Home', href: '/' },
+    { label: 'Shop', href: '/shop' },
+    { label: category?.label ?? product.category, href: `/category/${product.category}` },
+    { label: product.name, href: `/products/${product.slug}` }
+  ])
+);
+---
+
+<BaseLayout seo={createProductSeo(product)}>
+  <script slot="head" type="application/ld+json" set:html={productSchema} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+
+  <Section class="bg-surface-container-low/35" containerSize="xl" spacing="sm">
+    <Breadcrumbs items={[{ label: 'Shop', href: '/shop' }, { label: category?.label ?? product.category, href: `/category/${product.category}` }, { label: product.name }]} />
+    <div class="mt-10 grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+      <ProductGallery product={product} />
+
+      <div class="lg:sticky lg:top-28">
+        <div class="flex flex-wrap items-center gap-2">
+          <Badge variant={product.inStock ? 'success' : 'neutral'} size="md">{product.inStock ? 'In stock' : 'Check availability'}</Badge>
+          <Badge variant="primary" size="md">{product.condition}</Badge>
+          {product.brand && <Badge variant="neutral" size="md">{product.brand}</Badge>}
+        </div>
+
+        <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl lg:text-[3.25rem] lg:leading-[1.08]">
+          {product.name}
+        </h1>
+        <p class="mt-5 text-body-lg text-on-surface-variant">{product.description}</p>
+
+        <div class="mt-8 rounded-card border border-ses-line bg-surface-container-lowest/75 p-5">
+          <div>
+            <div>
+              <p class="text-label-xs uppercase text-ses-accent">Price</p>
+              <p class="mt-2 font-display text-headline-xl text-on-surface">{formatProductPrice(product.price)}</p>
+              {product.price.compareAtAmount && (
+                <p class="text-body-sm text-on-surface-variant line-through">
+                  {formatProductPrice({ amount: product.price.compareAtAmount, currency: product.price.currency })}
+                </p>
+              )}
+            </div>
+            <p class="mt-4 block w-full text-body-sm text-on-surface-variant">{product.availabilityNote}</p>
+          </div>
+          <div class="mt-5 grid gap-3 sm:grid-cols-2">
+            <Button href={whatsappHref} variant="whatsapp" size="lg" target="_blank" rel="noreferrer" class="w-full">
+              Ask on WhatsApp
+            </Button>
+            <Button href="/contact" variant="secondary" size="lg" class="w-full">
+              Talk to support
+            </Button>
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-3 sm:grid-cols-2">
+          <div class="rounded-card border border-ses-line bg-surface-container-lowest/60 p-4">
+            <p class="text-label-xs uppercase text-ses-accent">Warranty</p>
+            <p class="mt-2 text-title-sm text-on-surface">{product.warranty}</p>
+          </div>
+          <div class="rounded-card border border-ses-line bg-surface-container-lowest/60 p-4">
+            <p class="text-label-xs uppercase text-ses-accent">Category</p>
+            <a href={`/category/${product.category}`} class="mt-2 block text-title-sm text-on-surface hover:text-ses-accent">
+              {category?.label ?? product.category}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <Section containerSize="xl" spacing="sm" ariaLabelledby="product-details-title">
+    <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+      <div>
+        <SectionHeading
+          id="product-details-title"
+          eyebrow="Buying details"
+          title="What to confirm before purchase"
+          description="The page structure keeps core content ready before the catalog moves to richer media and live inventory workflows."
+        />
+        <ul class="mt-8 space-y-3">
+          {product.highlights.map((highlight) => (
+            <li class="flex gap-3 rounded-card border border-ses-line bg-surface-container-lowest/60 p-4 text-body-md text-on-surface">
+              <span class="mt-2 size-2 shrink-0 rounded-full bg-secondary" aria-hidden="true"></span>
+              <span>{highlight}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h2 class="mb-4 text-title-md text-on-surface">Specifications</h2>
+        <ProductSpecsTable specs={product.specs} />
+      </div>
+    </div>
+  </Section>
+
+  <RelatedProducts products={relatedProducts} />
+</BaseLayout>

@@ -1,0 +1,59 @@
+---
+import ProductCard from '@components/product/ProductCard.astro';
+import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
+import Badge from '@components/ui/Badge.astro';
+import Button from '@components/ui/Button.astro';
+import Grid from '@components/ui/Grid.astro';
+import Section from '@components/ui/Section.astro';
+import SectionHeading from '@components/ui/SectionHeading.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { getAllProducts } from '@data/products';
+import { brandProfiles, getBrandBySlug } from '@data/support';
+
+export function getStaticPaths() {
+  return brandProfiles.map((brand) => ({ params: { slug: brand.slug } }));
+}
+
+const { slug } = Astro.params;
+const brand = getBrandBySlug(slug ?? '');
+
+if (!brand) {
+  return Astro.redirect('/brands');
+}
+
+const brandProducts = getAllProducts().filter((product) => product.brand?.toLowerCase() === brand.slug);
+---
+
+<BaseLayout
+  seo={{
+    title: `${brand.name} Products in Nairobi`,
+    description: `${brand.summary} Browse current ${brand.name} products and request availability support from SES NEXT GEN.`,
+    pathname: `/brands/${brand.slug}`
+  }}
+>
+  <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
+    <Breadcrumbs items={[{ label: 'Brands', href: '/brands' }, { label: brand.name }]} />
+    <div class="mt-10 max-w-4xl">
+      <Badge variant="accent" size="md">{brand.categories.join(' / ')}</Badge>
+      <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">
+        {brand.name} products and buying support.
+      </h1>
+      <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">{brand.summary}</p>
+      <Button href="/contact" variant="secondary" class="mt-7">Ask about {brand.name}</Button>
+    </div>
+  </Section>
+
+  <Section containerSize="xl" spacing="sm">
+    <SectionHeading eyebrow="Catalog" title={`${brand.name} products`} description="Listed products update as real inventory and media are added." />
+    {brandProducts.length > 0 ? (
+      <Grid columns="products" gap="md" class="mt-8">
+        {brandProducts.map((product) => <ProductCard product={product} />)}
+      </Grid>
+    ) : (
+      <div class="mt-8 rounded-card border border-ses-line bg-surface-container-lowest p-8">
+        <h2 class="text-title-md text-on-surface">No listed products yet</h2>
+        <p class="mt-2 text-body-md text-on-surface-variant">Contact support for current {brand.name} availability and incoming stock.</p>
+      </div>
+    )}
+  </Section>
+</BaseLayout>

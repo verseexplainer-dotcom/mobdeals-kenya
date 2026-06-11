@@ -1,0 +1,19 @@
+---
+import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
+import Button from '@components/ui/Button.astro';
+import Section from '@components/ui/Section.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+---
+
+<BaseLayout seo={{ title: 'Cart', description: 'Cart workflow placeholder for SES NEXT GEN.', pathname: '/cart', noIndex: true }}>
+  <Section class="bg-surface-container-low/40" containerSize="lg" spacing="sm">
+    <Breadcrumbs items={[{ label: 'Cart' }]} />
+    <div class="mt-10 rounded-card-lg border border-ses-line bg-surface-container-lowest p-8">
+      <h1 class="font-display text-headline-xl text-on-surface">Cart workflow is next.</h1>
+      <p class="mt-4 max-w-2xl text-body-lg text-on-surface-variant">
+        The current buying path uses product pages, WhatsApp, and contact requests while the full cart and checkout flow is planned.
+      </p>
+      <Button href="/shop" variant="secondary" class="mt-6">Return to shop</Button>
+    </div>
+  </Section>
+</BaseLayout>

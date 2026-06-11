@@ -11,6 +11,11 @@ export interface ProductPrice {
   compareAtAmount?: number;
 }
 
+export interface ProductSpec {
+  label: string;
+  value: string;
+}
+
 export interface ProductSummary {
   id: string;
   slug: string;
@@ -21,4 +26,27 @@ export interface ProductSummary {
   images: ProductImage[];
   inStock: boolean;
   featured?: boolean;
+}
+
+export type ProductCondition = 'New' | 'Refurbished' | 'Pre-owned' | 'Open box';
+
+export interface Product extends ProductSummary {
+  description: string;
+  highlights: string[];
+  specs: ProductSpec[];
+  condition: ProductCondition;
+  warranty: string;
+  availabilityNote: string;
+  relatedProductSlugs?: string[];
+  seoTitle?: string;
+  seoDescription?: string;
+}
+
+export interface ProductCategory {
+  slug: string;
+  label: string;
+  eyebrow: string;
+  description: string;
+  seoTitle: string;
+  seoDescription: string;
 }

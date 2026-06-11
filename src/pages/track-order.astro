@@ -1,0 +1,48 @@
+---
+import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
+import Badge from '@components/ui/Badge.astro';
+import Section from '@components/ui/Section.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { servicePages } from '@data/support';
+
+const page = servicePages.find((item) => item.slug === 'track-order')!;
+---
+
+<BaseLayout
+  seo={{
+    title: page.title,
+    description: page.description,
+    pathname: '/track-order'
+  }}
+>
+  <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
+    <Breadcrumbs items={[{ label: 'Track Order' }]} />
+    <div class="mt-10 grid gap-10 lg:grid-cols-[1fr_0.8fr]">
+      <div>
+        <Badge variant="accent" size="md">{page.eyebrow}</Badge>
+        <h1 class="mt-5 max-w-3xl font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">{page.title}</h1>
+        <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">{page.description}</p>
+      </div>
+      <form action="/contact" method="get" class="rounded-card border border-ses-line bg-surface-container-lowest p-5">
+        <h2 class="text-title-lg text-on-surface">Order lookup request</h2>
+        <div class="mt-5 grid gap-4">
+          <input name="order" placeholder="Order, invoice, or quote reference" class="h-11 rounded-control border border-ses-line bg-background px-4 text-on-surface" />
+          <input name="contact" placeholder="Phone or email used" class="h-11 rounded-control border border-ses-line bg-background px-4 text-on-surface" />
+          <button type="submit" class="rounded-control bg-primary px-5 py-3 font-display text-label-md text-on-primary hover:bg-primary-container">
+            Request update
+          </button>
+        </div>
+      </form>
+    </div>
+  </Section>
+
+  <Section containerSize="xl" spacing="sm">
+    <div class="grid gap-4 md:grid-cols-3">
+      {page.points.map((point) => (
+        <article class="rounded-card border border-ses-line bg-surface-container-lowest p-5">
+          <p class="text-body-md text-on-surface-variant">{point}</p>
+        </article>
+      ))}
+    </div>
+  </Section>
+</BaseLayout>

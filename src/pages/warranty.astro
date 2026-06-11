@@ -1,0 +1,42 @@
+---
+import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
+import Badge from '@components/ui/Badge.astro';
+import Button from '@components/ui/Button.astro';
+import Section from '@components/ui/Section.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { servicePages } from '@data/support';
+
+const page = servicePages.find((item) => item.slug === 'warranty')!;
+---
+
+<BaseLayout
+  seo={{
+    title: page.title,
+    description: page.description,
+    pathname: '/warranty'
+  }}
+>
+  <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
+    <Breadcrumbs items={[{ label: 'Warranty' }]} />
+    <div class="mt-10 max-w-4xl">
+      <Badge variant="accent" size="md">{page.eyebrow}</Badge>
+      <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">{page.title}</h1>
+      <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">{page.description}</p>
+    </div>
+  </Section>
+
+  <Section containerSize="xl" spacing="sm">
+    <div class="grid gap-4 md:grid-cols-3">
+      {page.points.map((point) => (
+        <article class="rounded-card border border-ses-line bg-surface-container-lowest p-5">
+          <h2 class="text-title-md text-on-surface">{point}</h2>
+        </article>
+      ))}
+    </div>
+    <div class="mt-8 rounded-card-lg border border-ses-line bg-primary p-8 text-on-primary">
+      <p class="text-label-xs uppercase">Warranty check</p>
+      <h2 class="mt-3 max-w-2xl font-display text-headline-lg">Ask for the exact warranty term on the specific unit before payment.</h2>
+      <Button href="/contact" variant="secondary" class="mt-6">Ask support</Button>
+    </div>
+  </Section>
+</BaseLayout>

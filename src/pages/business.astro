@@ -1,0 +1,52 @@
+---
+import ProductCard from '@components/product/ProductCard.astro';
+import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
+import Badge from '@components/ui/Badge.astro';
+import Button from '@components/ui/Button.astro';
+import Grid from '@components/ui/Grid.astro';
+import Section from '@components/ui/Section.astro';
+import SectionHeading from '@components/ui/SectionHeading.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { getAllProducts } from '@data/products';
+
+const businessProducts = getAllProducts().filter((product) => ['laptops', 'desktops', 'printers', 'storage'].includes(product.category)).slice(0, 4);
+---
+
+<BaseLayout
+  seo={{
+    title: 'Business Electronics Supply in Kenya',
+    description: 'Request laptops, desktops, printers, storage, and office technology supply support for teams, schools, and businesses in Kenya.',
+    pathname: '/business'
+  }}
+>
+  <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
+    <Breadcrumbs items={[{ label: 'Business Supply' }]} />
+    <div class="mt-10 grid gap-10 lg:grid-cols-[1fr_0.8fr] lg:items-end">
+      <div>
+        <Badge variant="accent" size="md">Business supply</Badge>
+        <h1 class="mt-5 max-w-3xl font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">
+          Build a practical technology list for your team.
+        </h1>
+        <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">
+          Request quotes for laptops, desktops, printers, upgrades, and accessories with quantity, condition, warranty, and delivery guidance.
+        </p>
+        <Button href="/contact" variant="secondary" class="mt-7">Request a quote</Button>
+      </div>
+      <div class="rounded-card border border-ses-line bg-surface-container-lowest p-5">
+        <p class="text-label-xs uppercase text-ses-accent">Useful request details</p>
+        <ul class="mt-4 grid gap-3 text-body-md text-on-surface-variant">
+          <li>Quantity and preferred brands</li>
+          <li>Budget range per item</li>
+          <li>Delivery location and invoice needs</li>
+        </ul>
+      </div>
+    </div>
+  </Section>
+
+  <Section containerSize="xl" spacing="sm">
+    <SectionHeading eyebrow="Business-ready" title="Common office supply items" />
+    <Grid columns="products" gap="md" class="mt-8">
+      {businessProducts.map((product) => <ProductCard product={product} />)}
+    </Grid>
+  </Section>
+</BaseLayout>

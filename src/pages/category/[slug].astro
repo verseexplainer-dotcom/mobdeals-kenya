@@ -1,0 +1,79 @@
+---
+import ProductCard from '@components/product/ProductCard.astro';
+import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
+import Badge from '@components/ui/Badge.astro';
+import Grid from '@components/ui/Grid.astro';
+import Section from '@components/ui/Section.astro';
+import SectionHeading from '@components/ui/SectionHeading.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { getProductsByCategory, productCategories } from '@data/products';
+import { createBreadcrumbSchema, createCategorySeo, createItemListSchema, stringifyJsonLd } from '@lib/seo';
+
+export function getStaticPaths() {
+  return productCategories.map((category) => ({
+    params: { slug: category.slug },
+    props: { category }
+  }));
+}
+
+const { category } = Astro.props;
+const products = getProductsByCategory(category.slug);
+const breadcrumbSchema = stringifyJsonLd(
+  createBreadcrumbSchema([
+    { label: 'Home', href: '/' },
+    { label: 'Shop', href: '/shop' },
+    { label: category.label, href: `/category/${category.slug}` }
+  ])
+);
+const itemListSchema = stringifyJsonLd(createItemListSchema(products, `/category/${category.slug}`));
+---
+
+<BaseLayout seo={createCategorySeo(category, products.length)}>
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <script slot="head" type="application/ld+json" set:html={itemListSchema} />
+
+  <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
+    <Breadcrumbs items={[{ label: 'Shop', href: '/shop' }, { label: category.label }]} />
+    <div class="mt-10 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+      <div>
+        <Badge variant="accent" size="md">{category.eyebrow}</Badge>
+        <h1 class="mt-5 max-w-3xl font-display text-display-lg-mobile text-on-surface sm:text-headline-xl lg:text-display-lg">
+          {category.label}
+        </h1>
+        <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">{category.description}</p>
+      </div>
+      <div class="rounded-card border border-ses-line bg-surface-container-lowest/70 p-5">
+        <p class="text-label-xs uppercase text-ses-accent">Category snapshot</p>
+        <dl class="mt-4 grid grid-cols-2 gap-4">
+          <div>
+            <dt class="text-body-sm text-on-surface-variant">Listed products</dt>
+            <dd class="font-display text-headline-lg text-on-surface">{products.length}</dd>
+          </div>
+          <div>
+            <dt class="text-body-sm text-on-surface-variant">Buying focus</dt>
+            <dd class="text-title-md text-on-surface">Specs first</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </Section>
+
+  <Section containerSize="xl" spacing="sm" ariaLabelledby="category-products-title">
+    <SectionHeading
+      id="category-products-title"
+      eyebrow="Products"
+      title={`Shop ${category.label.toLowerCase()}`}
+      description="Each product includes price, stock state, condition, warranty notes, specs, and a direct inquiry path."
+    />
+    {products.length > 0 ? (
+      <Grid columns="products" gap="md" class="mt-8">
+        {products.map((product) => <ProductCard product={product} />)}
+      </Grid>
+    ) : (
+      <div class="mt-8 rounded-card border border-ses-line bg-surface-container-lowest/70 p-8">
+        <h2 class="text-title-md text-on-surface">No products in this category yet</h2>
+        <p class="mt-2 text-body-md text-on-surface-variant">This category route is ready for content when products are added.</p>
+      </div>
+    )}
+  </Section>
+</BaseLayout>

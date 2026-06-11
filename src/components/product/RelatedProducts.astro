@@ -1,0 +1,28 @@
+---
+import ProductCard from './ProductCard.astro';
+import Grid from '@components/ui/Grid.astro';
+import SectionHeading from '@components/ui/SectionHeading.astro';
+import type { ProductSummary } from '@lib/products';
+
+interface Props {
+  products: ProductSummary[];
+}
+
+const { products } = Astro.props;
+---
+
+{products.length > 0 && (
+  <section aria-labelledby="related-products-title" class="section-y-sm">
+    <div class="container-xl">
+      <SectionHeading
+        id="related-products-title"
+        eyebrow="Related products"
+        title="Useful options to compare"
+        description="Nearby choices from the same buying path or practical companion categories."
+      />
+      <Grid columns="products" gap="md" class="mt-8">
+        {products.map((product) => <ProductCard product={product} />)}
+      </Grid>
+    </div>
+  </section>
+)}

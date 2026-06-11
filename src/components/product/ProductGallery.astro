@@ -1,0 +1,75 @@
+---
+import type { Product } from '@lib/products';
+
+interface Props {
+  product: Product;
+}
+
+const { product } = Astro.props;
+const images = product.images;
+const categoryKey = product.category.toLowerCase();
+const fallbackTone = categoryKey.includes('smartphone')
+  ? 'from-secondary-container to-surface'
+  : categoryKey.includes('printer')
+    ? 'from-tertiary-container to-surface'
+    : categoryKey.includes('desktop')
+      ? 'from-primary-container to-surface'
+      : categoryKey.includes('storage')
+        ? 'from-surface-container-high to-surface'
+        : 'from-primary-container to-surface';
+---
+
+<div class="space-y-4">
+  <div class={`relative aspect-square overflow-hidden rounded-card-lg border border-ses-line bg-gradient-to-br ${fallbackTone} shadow-premium`}>
+    {images[0] ? (
+      <img
+        src={images[0].src}
+        alt={images[0].alt}
+        width={images[0].width}
+        height={images[0].height}
+        loading="eager"
+        decoding="async"
+        class="size-full object-contain p-6 sm:p-10"
+      />
+    ) : (
+      <div class="flex size-full items-center justify-center p-8 text-white/90" aria-hidden="true">
+        {categoryKey.includes('smartphone') ? (
+          <div class="h-[76%] w-[40%] rounded-[2rem] border-[10px] border-current bg-white/10 shadow-ambient"></div>
+        ) : categoryKey.includes('printer') ? (
+          <div class="w-[70%]">
+            <div class="mx-auto h-10 w-3/4 rounded-t-md bg-current/20"></div>
+            <div class="rounded-card border-[8px] border-current bg-white/10 p-5">
+              <div class="h-3 w-24 rounded-pill bg-current/35"></div>
+              <div class="mt-10 h-20 rounded-md bg-current/12"></div>
+            </div>
+          </div>
+        ) : categoryKey.includes('desktop') ? (
+          <div class="flex items-end gap-5">
+            <div class="h-36 w-48 rounded-lg border-[9px] border-current bg-white/10"></div>
+            <div class="h-44 w-16 rounded-lg bg-current/20"></div>
+          </div>
+        ) : categoryKey.includes('storage') ? (
+          <div class="grid grid-cols-2 gap-5">
+            <div class="h-36 w-20 rounded-lg border-[8px] border-current bg-white/20"></div>
+            <div class="mt-10 h-28 w-20 rounded-lg bg-current/20"></div>
+          </div>
+        ) : (
+          <div class="w-[74%]">
+            <div class="aspect-[16/10] rounded-lg border-[10px] border-current bg-white/10"></div>
+            <div class="mx-auto h-6 w-[84%] rounded-b-md bg-current/25"></div>
+          </div>
+        )}
+      </div>
+    )}
+  </div>
+
+  {images.length > 1 && (
+    <div class="grid grid-cols-4 gap-3">
+      {images.slice(0, 4).map((image) => (
+        <div class="aspect-square overflow-hidden rounded-lg border border-ses-line bg-surface-container-lowest">
+          <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" decoding="async" class="size-full object-contain p-3" />
+        </div>
+      ))}
+    </div>
+  )}
+</div>

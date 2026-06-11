@@ -1,2 +1,10 @@
-export type { ProductImage, ProductPrice, ProductSummary } from './types';
+export type {
+  Product,
+  ProductCategory,
+  ProductCondition,
+  ProductImage,
+  ProductPrice,
+  ProductSpec,
+  ProductSummary
+} from './types';
 export { formatProductPrice } from './format';

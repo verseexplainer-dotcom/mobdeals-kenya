@@ -1,0 +1,27 @@
+---
+import type { ProductSpec } from '@lib/products';
+
+interface Props {
+  specs: ProductSpec[];
+}
+
+const { specs } = Astro.props;
+---
+
+{specs.length > 0 && (
+  <div class="overflow-hidden rounded-card border border-ses-line bg-surface-container-lowest/70">
+    <table class="w-full text-left text-body-sm">
+      <caption class="sr-only">Product specifications</caption>
+      <tbody class="divide-y divide-ses-line">
+        {specs.map((spec) => (
+          <tr>
+            <th scope="row" class="w-2/5 px-4 py-3 text-on-surface-variant sm:px-5">
+              {spec.label}
+            </th>
+            <td class="px-4 py-3 font-semibold text-on-surface sm:px-5">{spec.value}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}

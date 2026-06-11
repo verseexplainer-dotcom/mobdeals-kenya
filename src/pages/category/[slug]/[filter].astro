@@ -1,0 +1,76 @@
+---
+import ProductCard from '@components/product/ProductCard.astro';
+import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
+import Badge from '@components/ui/Badge.astro';
+import Button from '@components/ui/Button.astro';
+import Grid from '@components/ui/Grid.astro';
+import Section from '@components/ui/Section.astro';
+import SectionHeading from '@components/ui/SectionHeading.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { categoryNavigation } from '@config/navigation';
+import { getCategoryBySlug, getProductsByCategory } from '@data/products';
+
+export function getStaticPaths() {
+  return categoryNavigation.flatMap((category) => {
+    const parentSlug = category.href.split('/').filter(Boolean).at(-1);
+
+    return (category.links ?? []).map((link) => ({
+      params: {
+        slug: parentSlug,
+        filter: link.href.split('/').filter(Boolean).at(-1)
+      },
+      props: {
+        label: link.label,
+        parentLabel: category.label
+      }
+    }));
+  });
+}
+
+const { slug, filter } = Astro.params;
+const { label, parentLabel } = Astro.props;
+const category = getCategoryBySlug(slug ?? '');
+
+if (!category) {
+  return Astro.redirect('/shop');
+}
+
+const normalizedFilter = (filter ?? '').replace(/-/g, ' ').toLowerCase();
+const categoryProducts = getProductsByCategory(category.slug);
+const filteredProducts = categoryProducts.filter((product) => {
+  const haystack = `${product.name} ${product.brand ?? ''} ${product.description} ${product.specs.map((spec) => `${spec.label} ${spec.value}`).join(' ')}`.toLowerCase();
+  return haystack.includes(normalizedFilter);
+});
+const products = filteredProducts.length > 0 ? filteredProducts : categoryProducts;
+---
+
+<BaseLayout
+  seo={{
+    title: `${label} in Nairobi`,
+    description: `Browse ${label.toLowerCase()} from SES NEXT GEN. Compare ${parentLabel.toLowerCase()} by price, condition, warranty, specs, and availability in Kenya.`,
+    pathname: `/category/${slug}/${filter}`
+  }}
+>
+  <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
+    <Breadcrumbs items={[{ label: 'Shop', href: '/shop' }, { label: category.label, href: `/category/${category.slug}` }, { label }]} />
+    <div class="mt-10 max-w-4xl">
+      <Badge variant="accent" size="md">{category.label}</Badge>
+      <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">{label}</h1>
+      <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">
+        A focused path for {label.toLowerCase()}. If the exact subcategory is not listed yet, use the broader {category.label.toLowerCase()} products below and ask support for current supplier stock.
+      </p>
+    </div>
+  </Section>
+
+  <Section containerSize="xl" spacing="sm">
+    <SectionHeading
+      eyebrow={filteredProducts.length > 0 ? 'Matched products' : 'Broader category'}
+      title={filteredProducts.length > 0 ? `${label} products` : `${category.label} options`}
+      description="These pages are ready for deeper product content as inventory expands."
+    />
+    <Grid columns="products" gap="md" class="mt-8">
+      {products.map((product) => <ProductCard product={product} />)}
+    </Grid>
+    <Button href="/contact" variant="secondary" class="mt-8">Ask about {label}</Button>
+  </Section>
+</BaseLayout>

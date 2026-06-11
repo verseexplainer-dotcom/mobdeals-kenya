@@ -13,6 +13,10 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# local test artifacts
+.playwright-cli/
+output/
+
 
 # environment variables
 .env

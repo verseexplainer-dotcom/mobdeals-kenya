@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
+import Badge from '@components/ui/Badge.astro';
+import Section from '@components/ui/Section.astro';
+import SectionHeading from '@components/ui/SectionHeading.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const guides = (await getCollection('guides'))
+  .filter((guide) => !guide.data.draft)
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+---
+
+<BaseLayout
+  seo={{
+    title: 'Electronics Buying Guides',
+    description: 'Practical SES NEXT GEN buying guides for laptops, phones, printers, storage, warranty, and electronics shopping in Kenya.',
+    pathname: '/blog'
+  }}
+>
+  <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
+    <Breadcrumbs items={[{ label: 'Blog' }]} />
+    <div class="mt-10 max-w-4xl">
+      <Badge variant="accent" size="md">Buying guides</Badge>
+      <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">
+        Practical electronics advice before you buy.
+      </h1>
+      <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">
+        Short guides for comparing specs, condition, warranty, running cost, and real Kenya buying decisions.
+      </p>
+    </div>
+  </Section>
+
+  <Section containerSize="xl" spacing="sm">
+    <SectionHeading eyebrow="Latest guides" title="Use-case first advice" />
+    <div class="mt-8 grid gap-4 md:grid-cols-3">
+      {guides.map((guide) => (
+        <article class="rounded-card border border-ses-line bg-surface-container-lowest p-5">
+          <p class="text-label-xs uppercase text-ses-accent">
+            {guide.data.publishedAt.toLocaleDateString('en-KE', { year: 'numeric', month: 'short', day: 'numeric' })}
+          </p>
+          <h2 class="mt-3 text-title-lg text-on-surface">
+            <a href={`/blog/${guide.id}`} class="hover:text-ses-accent">{guide.data.title}</a>
+          </h2>
+          <p class="mt-3 text-body-md text-on-surface-variant">{guide.data.description}</p>
+        </article>
+      ))}
+    </div>
+  </Section>
+</BaseLayout>

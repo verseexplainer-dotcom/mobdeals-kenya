@@ -1,0 +1,132 @@
+---
+import ProductCard from '@components/product/ProductCard.astro';
+import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
+import Badge from '@components/ui/Badge.astro';
+import Grid from '@components/ui/Grid.astro';
+import Section from '@components/ui/Section.astro';
+import SectionHeading from '@components/ui/SectionHeading.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { getAllProducts, productCategories } from '@data/products';
+
+const products = getAllProducts();
+const searchableProducts = products.map((product) => ({
+  slug: product.slug,
+  name: product.name,
+  brand: product.brand ?? '',
+  category: product.category,
+  description: product.description,
+  specs: product.specs.map((spec) => `${spec.label} ${spec.value}`).join(' ')
+}));
+---
+
+<BaseLayout
+  seo={{
+    title: 'Search Products',
+    description: 'Search laptops, smartphones, desktops, printers, and storage products available from SES NEXT GEN in Nairobi.',
+    pathname: '/search'
+  }}
+>
+  <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
+    <Breadcrumbs items={[{ label: 'Search' }]} />
+    <div class="mt-10 max-w-4xl">
+      <Badge variant="accent" size="md">Product search</Badge>
+      <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">
+        Search the current catalog.
+      </h1>
+      <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">
+        Filter by product name, brand, category, use case, memory, storage, or other visible specs.
+      </p>
+      <form action="/search" method="get" class="mt-8 grid gap-3 sm:grid-cols-[1fr_auto]" role="search">
+        <label for="catalog-search" class="sr-only">Search products</label>
+        <input
+          id="catalog-search"
+          name="q"
+          type="search"
+          autocomplete="off"
+          placeholder="Search laptops, iPhone, SSD, printer..."
+          class="h-12 rounded-control border border-ses-line bg-surface-container-lowest px-4 text-body-md text-on-surface outline-none transition focus:border-primary"
+          data-search-input
+        />
+        <button class="rounded-control bg-primary px-6 font-display text-label-md text-on-primary hover:bg-primary-container" type="submit">Search</button>
+      </form>
+    </div>
+  </Section>
+
+  <Section containerSize="xl" spacing="sm" ariaLabelledby="search-results-title">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <SectionHeading
+        id="search-results-title"
+        eyebrow="Results"
+        title="Matching products"
+        description="Results update in your browser from the current static catalog."
+      />
+      <p class="text-body-sm text-on-surface-variant" data-search-count>{products.length} products</p>
+    </div>
+
+    <div class="mt-6 flex flex-wrap gap-2" aria-label="Suggested searches">
+      {productCategories.map((category) => (
+        <button type="button" class="rounded-pill border border-ses-line px-4 py-2 text-body-sm text-on-surface-variant hover:border-primary-fixed-dim hover:text-ses-accent" data-search-chip={category.label}>
+          {category.label}
+        </button>
+      ))}
+    </div>
+
+    <Grid columns="products" gap="md" class="mt-8" data-search-grid>
+      {products.map((product) => (
+        <div data-product-card data-product-slug={product.slug}>
+          <ProductCard product={product} />
+        </div>
+      ))}
+    </Grid>
+
+    <div class="mt-8 hidden rounded-card border border-ses-line bg-surface-container-lowest p-8" data-empty-state>
+      <h2 class="text-title-md text-on-surface">No matching products yet</h2>
+      <p class="mt-2 text-body-md text-on-surface-variant">Try a broader term or contact support for a product that is not listed.</p>
+    </div>
+  </Section>
+
+  <script define:vars={{ searchableProducts }}>
+    const params = new URLSearchParams(window.location.search);
+    const input = document.querySelector('[data-search-input]');
+    const cards = Array.from(document.querySelectorAll('[data-product-card]'));
+    const count = document.querySelector('[data-search-count]');
+    const emptyState = document.querySelector('[data-empty-state]');
+    const productsBySlug = new Map(searchableProducts.map((product) => [product.slug, product]));
+
+    const normalize = (value) => value.toLowerCase().trim();
+    const matchesQuery = (product, query) =>
+      !query ||
+      normalize(`${product.name} ${product.brand} ${product.category} ${product.description} ${product.specs}`).includes(query);
+
+    const runSearch = () => {
+      const query = normalize(input?.value ?? '');
+      let visible = 0;
+
+      cards.forEach((card) => {
+        const product = productsBySlug.get(card.dataset.productSlug);
+        const isVisible = product ? matchesQuery(product, query) : false;
+        card.hidden = !isVisible;
+        if (isVisible) visible += 1;
+      });
+
+      if (count) count.textContent = `${visible} product${visible === 1 ? '' : 's'}`;
+      if (emptyState) emptyState.classList.toggle('hidden', visible !== 0);
+    };
+
+    if (input) {
+      input.value = params.get('q') ?? '';
+      input.addEventListener('input', runSearch);
+    }
+
+    document.querySelectorAll('[data-search-chip]').forEach((chip) => {
+      chip.addEventListener('click', () => {
+        if (!input) return;
+        input.value = chip.dataset.searchChip ?? '';
+        runSearch();
+        input.focus();
+      });
+    });
+
+    runSearch();
+  </script>
+</BaseLayout>
