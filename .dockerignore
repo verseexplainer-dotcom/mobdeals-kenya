@@ -1,0 +1,10 @@
+.astro
+.git
+.github
+.playwright-cli
+.venv
+dist
+node_modules
+output
+npm-debug.log*
+README.md
