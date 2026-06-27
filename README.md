@@ -4,7 +4,15 @@ Static Astro storefront for MobDeals Kenya, a premium electronics ecommerce expe
 
 ## Project Overview
 
-This project is built with Astro, Tailwind CSS, Supabase client utilities, and a static-first deployment model. It focuses on laptops, smartphones, printers, desktops, storage, accessories, and related technology buying flows.
+This is the canonical MobDeals Kenya storefront repository. It is built with Astro, Tailwind CSS, Supabase client utilities, and a static-first deployment model. It focuses on laptops, smartphones, printers, desktops, storage, accessories, and related technology buying flows.
+
+The production target is intentionally lean:
+
+- Frontend hosting: Cloudflare Pages on the Cloudflare free tier.
+- Data and media: Supabase free tier, using public anon client access only where browser code needs it.
+- Product media: Supabase Storage public bucket named `products`.
+- Runtime model: static Astro output in `dist`; no global SSR.
+- Container package: GitHub Container Registry image for portable static serving, separate from the primary Cloudflare Pages frontend.
 
 ## Local Setup
 
@@ -37,32 +45,29 @@ Preview the production build:
 npm run preview
 ```
 
-## Repository And Deployment Notes
+## Repository And Deployment
 
-This project is prepared to live as its own MobDeals Kenya repository with an independent Docker image.
+Repository:
 
-Current status:
+- GitHub: `git@github.com:verseexplainer-dotcom/mobdeals-kenya.git`
+- Production branch: `main`
+- Package name: `mobdeals-kenya`
+- Container image: `ghcr.io/verseexplainer-dotcom/mobdeals-kenya`
 
-- Git remote currently points to `git@github.com:sesict/Ses_ict_hub.git`.
-- Recommended GitHub repo target is `github.com/<owner>/mobdeals-kenya`.
-- Recommended local folder name is `mobdeals-kenya`.
-- Container workflow image target is `ghcr.io/<owner>/mobdeals-kenya`, derived from the GitHub repository owner.
-- Current branch remains `master`.
+Cloudflare Pages settings:
 
-After the GitHub repository exists, update the local remote with:
+- Framework preset: Astro
+- Production branch: `main`
+- Build command: `npm run build`
+- Build output directory: `dist`
 
-```sh
-git remote set-url origin git@github.com:<owner>/mobdeals-kenya.git
-git remote -v
-```
+Required public environment variables:
 
-If the local folder should match the repo slug:
+- `PUBLIC_SITE_URL`
+- `PUBLIC_SUPABASE_URL`
+- `PUBLIC_SUPABASE_ANON_KEY`
 
-```sh
-cd /home/paulaflare/projects
-mv ses-next-gen mobdeals-kenya
-cd mobdeals-kenya
-```
+Keep secrets such as Supabase service role keys out of Cloudflare Pages public environment variables and out of frontend code.
 
 ## Project Structure
 
@@ -76,6 +81,6 @@ cd mobdeals-kenya
 └── package.json
 ```
 
-## Final Handover Step
+## Release Package
 
-When the GitHub account/repository is provided, set the new remote, commit the prepared changes, and push. The container workflow will publish the Docker image to GitHub Container Registry for that owner.
+Pushing `main` or a version tag runs the container publishing workflow. Version tags such as `v0.1.0` publish tagged images to GitHub Container Registry.

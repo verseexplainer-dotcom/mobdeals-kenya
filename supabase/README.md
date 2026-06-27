@@ -1,12 +1,14 @@
 # Supabase
 
-Supabase project notes, storage bucket conventions, and local metadata belong here.
+Supabase project notes, storage bucket conventions, and local metadata belong here. MobDeals Kenya uses Supabase free tier for product media and lightweight browser-readable data.
 
 Do not commit service role keys or secrets.
 
 ## Product Media Workflow
 
 Product media uses a public Supabase Storage bucket named `products`, matching `siteConfig.storageBucket`.
+
+Use public buckets only for assets intended to be visible to shoppers. Do not place private documents, supplier records, customer data, or operational secrets in public buckets.
 
 Recommended object paths:
 

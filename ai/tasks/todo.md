@@ -5,5 +5,5 @@
 - [ ] Build homepage sections.
 - [ ] Build product grid and detail page patterns.
 - [ ] Add SEO metadata helpers to pages.
-- [ ] Prepare Supabase Storage media workflow.
-- [ ] Prepare Cloudflare deployment notes.
+- [x] Prepare Supabase Storage media workflow.
+- [x] Prepare Cloudflare Pages free-tier deployment notes.

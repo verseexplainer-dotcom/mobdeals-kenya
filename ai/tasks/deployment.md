@@ -1,7 +1,8 @@
 # Deployment Tasks
 
-- [ ] Confirm Cloudflare Pages build command.
-- [ ] Confirm output directory.
-- [ ] Document environment variables.
+- [x] Confirm Cloudflare Pages build command: `npm run build`.
+- [x] Confirm output directory: `dist`.
+- [x] Document environment variables: `PUBLIC_SITE_URL`, `PUBLIC_SUPABASE_URL`, `PUBLIC_SUPABASE_ANON_KEY`.
 - [ ] Run production build before deployment.
-- [ ] Add deployment rollback notes.
+- [ ] Confirm Cloudflare Pages project is connected to `verseexplainer-dotcom/mobdeals-kenya` on branch `main`.
+- [ ] Add Cloudflare Pages rollback notes.

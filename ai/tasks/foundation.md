@@ -44,7 +44,7 @@ Requirements:
 
 IMPORTANT:
 - Keep static-first architecture
-- Optimize for Cloudflare free tier
+- Optimize for Cloudflare Pages free tier
 - Avoid hydration
 - No React
 - No unnecessary JS

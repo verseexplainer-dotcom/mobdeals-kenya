@@ -1,6 +1,8 @@
 # Architecture Context
 
-Keep the project static-first. Pages should be data-driven, component-based, and optimized for Cloudflare static hosting.
+Keep the project static-first. Pages should be data-driven, component-based, and optimized for Cloudflare Pages free-tier static hosting.
+
+Supabase free tier is the data and media backing service. Public browser code may read via the anon key, while service role keys and other privileged credentials must remain outside the frontend.
 
 Primary source areas:
 

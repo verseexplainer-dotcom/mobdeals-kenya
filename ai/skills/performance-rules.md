@@ -5,4 +5,4 @@
 - Avoid large client bundles.
 - Prefer Astro components over hydrated framework components.
 - Keep third-party scripts minimal.
-- Run production builds before handoff.
+- Run production builds before deployment.
