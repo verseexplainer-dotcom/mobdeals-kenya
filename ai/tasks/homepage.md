@@ -1,6 +1,6 @@
 # HOMEPAGE TASK
 
-Build premium ecommerce homepage for SES NEXT GEN.
+Build premium ecommerce homepage for MobDeals Kenya.
 
 Requirements:
 

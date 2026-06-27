@@ -1,5 +1,5 @@
 ---
-name: SES ICT HUB Design System
+name: MobDeals Kenya Design System
 colors:
   surface: '#faf8ff'
   surface-dim: '#d2d9f4'

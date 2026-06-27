@@ -12,13 +12,13 @@ export function getStaticPaths() {
 const label = (Astro.params.slug ?? 'social').replace(/-/g, ' ');
 ---
 
-<BaseLayout seo={{ title: `${label} Link`, description: 'Social channel placeholder for SES NEXT GEN.', pathname: `/social/${Astro.params.slug}`, noIndex: true }}>
+<BaseLayout seo={{ title: `${label} Link`, description: 'Social channel placeholder for MobDeals Kenya.', pathname: `/social/${Astro.params.slug}`, noIndex: true }}>
   <Section class="bg-surface-container-low/40" containerSize="lg" spacing="sm">
     <Breadcrumbs items={[{ label }]} />
     <div class="mt-10 rounded-card-lg border border-ses-line bg-surface-container-lowest p-8">
       <h1 class="font-display text-headline-xl capitalize text-on-surface">{label}</h1>
       <p class="mt-4 max-w-2xl text-body-lg text-on-surface-variant">
-        This social channel can be wired to the live SES NEXT GEN profile when the final account URLs are available.
+        This social channel can be wired to the live MobDeals Kenya profile when the final account URLs are available.
       </p>
       <Button href="/contact" variant="secondary" class="mt-6">Contact support</Button>
     </div>

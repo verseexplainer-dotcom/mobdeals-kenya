@@ -1,6 +1,6 @@
 # FOUNDATION TASK
 
-Build the SES NEXT GEN project foundation.
+Build the MobDeals Kenya project foundation.
 
 Requirements:
 

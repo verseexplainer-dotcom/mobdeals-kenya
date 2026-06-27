@@ -1,4 +1,4 @@
-# SES NEXT GEN RESTRICTIONS
+# MobDeals Kenya Restrictions
 
 - Keep Astro static-first
 - Use Supabase only

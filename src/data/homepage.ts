@@ -67,7 +67,7 @@ export interface TestimonialItem {
 export const heroSlides: HeroSlide[] = [
   {
     eyebrow: 'Nairobi electronics store',
-    title: 'SES NEXT GEN',
+    title: 'MobDeals Kenya',
     description:
       'Premium laptops, smartphones, printers, and desktop setups for Kenya shoppers who want clear specs before they spend.',
     primaryCta: { label: 'Shop products', href: '/shop' },

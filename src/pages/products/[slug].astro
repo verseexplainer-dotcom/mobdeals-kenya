@@ -24,7 +24,7 @@ const category = getCategoryBySlug(product.category);
 const relatedProducts = getRelatedProducts(product);
 const productUrl = absoluteUrl(`/products/${product.slug}`) ?? `/products/${product.slug}`;
 const whatsappMessage = encodeURIComponent(
-  `Hi SES NEXT GEN, I am interested in ${product.name} (${formatProductPrice(product.price)}). Product link: ${productUrl}`
+  `Hi MobDeals Kenya, I am interested in ${product.name} (${formatProductPrice(product.price)}). Product link: ${productUrl}`
 );
 const whatsappHref = `https://wa.me/?text=${whatsappMessage}`;
 const productSchema = stringifyJsonLd(createProductSchema(product));

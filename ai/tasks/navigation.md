@@ -1,6 +1,6 @@
 # Navigation Task
 
-Build premium ecommerce navigation system for SES NEXT GEN.
+Build premium ecommerce navigation system for MobDeals Kenya.
 
 Requirements:
 

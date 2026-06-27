@@ -14,8 +14,8 @@ RUN npm run build
 
 FROM nginx:1.27-alpine AS runtime
 
-LABEL org.opencontainers.image.source="https://github.com/sesict/Ses_ict_hub"
-LABEL org.opencontainers.image.description="Static Astro storefront for SES ICT HUB"
+LABEL org.opencontainers.image.title="MobDeals Kenya"
+LABEL org.opencontainers.image.description="Static Astro storefront for MobDeals Kenya"
 
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/dist /usr/share/nginx/html

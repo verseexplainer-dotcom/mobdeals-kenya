@@ -1,5 +1,5 @@
 ---
-name: SES Premium Tech
+name: MobDeals Kenya
 colors:
   background: '#020617'
   on-background: '#F8FAFC'
@@ -111,7 +111,7 @@ shape:
 
 ## Brand & Style
 
-SES NEXT GEN is a premium electronics ecommerce experience for Nairobi and Kenya. The interface should feel smart, professional, fast, modern, minimal, clean, and reliable.
+MobDeals Kenya is a premium electronics ecommerce experience for Nairobi and Kenya. The interface should feel smart, professional, fast, modern, minimal, clean, and reliable.
 
 The visual direction is a premium technology showcase: deep navy surfaces, electric blue conversion moments, soft cyan highlights, slate dividers, premium white text, and graphite depth. It should feel refined, technology-led, and commerce-ready.
 

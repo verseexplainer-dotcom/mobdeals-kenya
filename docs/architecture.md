@@ -1,6 +1,6 @@
-# SES NEXT GEN Architecture
+# MobDeals Kenya Architecture
 
-SES NEXT GEN is structured as a static-first Astro ecommerce frontend optimized for Cloudflare free tier hosting.
+MobDeals Kenya is structured as a static-first Astro ecommerce frontend optimized for Cloudflare free tier hosting.
 
 - Product media should come from Supabase Storage public buckets.
 - Product rendering should stay data-driven and component-based.
