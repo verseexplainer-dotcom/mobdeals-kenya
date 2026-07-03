@@ -1,4 +1,13 @@
 import type { ProductSummary } from '@lib/products';
+import { getAllProducts, productCategories } from '@data/products';
+
+const catalogProducts = getAllProducts();
+const catalogProductCount = catalogProducts.length;
+const catalogCategoryCount = productCategories.length;
+const featuredCategoryOrder = ['laptops', 'desktops', 'printers', 'monitors'] as const;
+const featuredCatalogProducts = featuredCategoryOrder
+  .map((category) => catalogProducts.find((product) => product.category === category))
+  .filter((product): product is ProductSummary => Boolean(product));
 
 export interface HomeCta {
   label: string;
@@ -9,6 +18,11 @@ export interface HeroSlide {
   eyebrow: string;
   title: string;
   description: string;
+  image: {
+    desktopSrc: string;
+    mobileSrc: string;
+    alt: string;
+  };
   primaryCta: HomeCta;
   secondaryCta: HomeCta;
   productKicker: string;
@@ -33,7 +47,7 @@ export interface HomeCategory {
   href: string;
   description: string;
   meta: string;
-  icon: 'laptop' | 'phone' | 'desktop' | 'printer' | 'storage';
+  icon: 'laptop' | 'phone' | 'desktop' | 'printer' | 'storage' | 'monitor' | 'projector' | 'internet';
 }
 
 export interface PromoBanner {
@@ -69,29 +83,39 @@ export const heroSlides: HeroSlide[] = [
     eyebrow: 'Nairobi electronics store',
     title: 'MobDeals Kenya',
     description:
-      'Premium laptops, smartphones, printers, and desktop setups for Kenya shoppers who want clear specs before they spend.',
+      'Current laptops, desktops, printers, monitors, storage, phones, projectors, and internet hardware for Kenya shoppers who want clear specs before they spend.',
+    image: {
+      desktopSrc: '/images/home/home-hero-laptops-desktop.webp',
+      mobileSrc: '/images/home/home-hero-laptops-mobile.webp',
+      alt: 'Premium business laptop setup in a dark electronics retail studio'
+    },
     primaryCta: { label: 'Shop products', href: '/shop' },
     secondaryCta: { label: 'Talk to support', href: '/contact' },
     productKicker: 'Business laptops',
-    productName: 'Work-ready machines',
-    productSpec: 'HP, Dell, Lenovo, MacBook guidance',
+    productName: '340 listed products',
+    productSpec: 'HP, Lenovo, Dell, Epson, Samsung, and more',
     visual: 'laptop',
     backdrop: 'ink',
     metrics: [
-      { label: 'Categories', value: '5' },
-      { label: 'Focus', value: 'Kenya' }
+      { label: 'Categories', value: String(catalogCategoryCount) },
+      { label: 'Products', value: String(catalogProductCount) }
     ]
   },
   {
-    eyebrow: 'Smartphone essentials',
-    title: 'Devices that fit the way Nairobi moves.',
+    eyebrow: 'Device catalog',
+    title: 'Devices that fit the way Nairobi works.',
     description:
-      'Compare iPhone, Samsung, and everyday Android options with practical advice on storage, battery, warranty, and accessories.',
-    primaryCta: { label: 'Browse smartphones', href: '/category/smartphones' },
+      'Compare laptops, desktops, monitors, printers, storage, and phones with practical notes on price, condition, warranty, and availability.',
+    image: {
+      desktopSrc: '/images/home/home-hero-smartphones-desktop.webp',
+      mobileSrc: '/images/home/home-hero-smartphones-mobile.webp',
+      alt: 'Modern smartphones and accessories arranged in a premium electronics store scene'
+    },
+    primaryCta: { label: 'Browse monitors', href: '/category/monitors' },
     secondaryCta: { label: 'Compare options', href: '/contact' },
-    productKicker: 'Phones and accessories',
-    productName: 'Daily carry tech',
-    productSpec: 'Chargers, cases, power, and storage',
+    productKicker: 'Office displays',
+    productName: 'Monitors and setups',
+    productSpec: 'HP, Dell, desktops, and productivity hardware',
     visual: 'phone',
     backdrop: 'blue',
     metrics: [
@@ -103,14 +127,19 @@ export const heroSlides: HeroSlide[] = [
     eyebrow: 'Office supply ready',
     title: 'Printers, storage, and desktops for teams.',
     description:
-      'Build dependable setups for reception desks, admin teams, home offices, and small businesses across Kenya.',
+      'Build dependable setups for reception desks, admin teams, home offices, schools, and small businesses across Kenya.',
+    image: {
+      desktopSrc: '/images/home/home-hero-office-tech-desktop.webp',
+      mobileSrc: '/images/home/home-hero-office-tech-mobile.webp',
+      alt: 'Office printer, desktop, storage, and accessories arranged for business procurement'
+    },
     primaryCta: { label: 'Explore office tech', href: '/category/printers' },
     secondaryCta: { label: 'Business supply', href: '/business' },
     productKicker: 'Office systems',
     productName: 'Practical procurement',
-    productSpec: 'Printers, desktops, SSDs, and supplies',
+    productSpec: 'Printers, desktops, monitors, projectors, and internet hardware',
     visual: 'printer',
-    backdrop: 'light',
+    backdrop: 'ink',
     metrics: [
       { label: 'Use cases', value: 'Home + office' },
       { label: 'Delivery', value: 'Kenya' }
@@ -132,7 +161,7 @@ export const trustItems: TrustItem[] = [
   {
     label: '03',
     title: 'Customer trust built in',
-    description: 'Human support for laptops, phones, printers, desktops, storage, and accessories.'
+    description: 'Human support for laptops, desktops, printers, monitors, phones, storage, projectors, and internet hardware.'
   }
 ];
 
@@ -140,86 +169,62 @@ export const homeCategories: HomeCategory[] = [
   {
     label: 'Laptops',
     href: '/category/laptops',
-    description: 'Business, student, creator, and performance laptops.',
-    meta: 'HP, Dell, Lenovo, MacBook',
+    description: 'HP, Dell, Lenovo, Microsoft, and Apple laptop listings.',
+    meta: '280 products',
     icon: 'laptop'
-  },
-  {
-    label: 'Smartphones',
-    href: '/category/smartphones',
-    description: 'iPhones, Samsung Galaxy, Android phones, and accessories.',
-    meta: 'iPhone, Samsung, Tecno, Xiaomi',
-    icon: 'phone'
   },
   {
     label: 'Desktops',
     href: '/category/desktops',
-    description: 'Office towers, all-in-ones, mini PCs, and workstations.',
-    meta: 'Office, AIO, Mini PC',
+    description: 'All-in-ones, office PCs, mini PCs, and workstations.',
+    meta: '41 products',
     icon: 'desktop'
   },
   {
     label: 'Printers',
     href: '/category/printers',
-    description: 'Ink tank, laser, refill, toner, and office printers.',
-    meta: 'HP, Epson, Laser, Ink tank',
+    description: 'HP, Epson, and Kyocera printer listings.',
+    meta: '6 products',
     icon: 'printer'
+  },
+  {
+    label: 'Monitors',
+    href: '/category/monitors',
+    description: 'HP and Dell displays for desk and office setups.',
+    meta: '7 products',
+    icon: 'monitor'
   },
   {
     label: 'Storage',
     href: '/category/storage',
-    description: 'SSDs, hard drives, flash drives, RAM, and memory cards.',
-    meta: 'SSD, HDD, RAM, Flash',
+    description: 'External hard drive and storage listings.',
+    meta: '2 products',
     icon: 'storage'
+  },
+  {
+    label: 'Smartphones',
+    href: '/category/smartphones',
+    description: 'Samsung and Apple phone listings from the sheet.',
+    meta: '2 products',
+    icon: 'phone'
+  },
+  {
+    label: 'Projectors',
+    href: '/category/projectors',
+    description: 'Presentation display hardware for rooms and events.',
+    meta: '1 product',
+    icon: 'projector'
+  },
+  {
+    label: 'Internet',
+    href: '/category/internet',
+    description: 'Connectivity hardware including Starlink listings.',
+    meta: '1 product',
+    icon: 'internet'
   }
 ];
 
-export const featuredProducts: ProductSummary[] = [
-  {
-    id: 'preview-hp-elitebook',
-    slug: 'hp-elitebook-business-laptop-preview',
-    name: 'HP EliteBook Business Laptop',
-    brand: 'HP',
-    category: 'laptops',
-    price: { amount: 68000, currency: 'KES' },
-    images: [],
-    inStock: true,
-    featured: true
-  },
-  {
-    id: 'preview-galaxy-smartphone',
-    slug: 'samsung-galaxy-smartphone-preview',
-    name: 'Samsung Galaxy Smartphone',
-    brand: 'Samsung',
-    category: 'smartphones',
-    price: { amount: 32500, currency: 'KES' },
-    images: [],
-    inStock: true,
-    featured: true
-  },
-  {
-    id: 'preview-epson-ecotank',
-    slug: 'epson-ecotank-printer-preview',
-    name: 'Epson EcoTank Printer',
-    brand: 'Epson',
-    category: 'printers',
-    price: { amount: 29500, currency: 'KES' },
-    images: [],
-    inStock: true,
-    featured: true
-  },
-  {
-    id: 'preview-lenovo-thinkcentre',
-    slug: 'lenovo-thinkcentre-desktop-preview',
-    name: 'Lenovo ThinkCentre Desktop',
-    brand: 'Lenovo',
-    category: 'desktops',
-    price: { amount: 42000, currency: 'KES' },
-    images: [],
-    inStock: true,
-    featured: true
-  }
-];
+export const featuredProducts: ProductSummary[] = featuredCatalogProducts;
 
 export const promoBanners: PromoBanner[] = [
   {
@@ -233,23 +238,23 @@ export const promoBanners: PromoBanner[] = [
     tone: 'dark'
   },
   {
-    eyebrow: 'Power and accessories',
-    title: 'The small parts that keep devices useful.',
+    eyebrow: 'Displays and connectivity',
+    title: 'The supporting hardware that keeps work moving.',
     description:
-      'Chargers, storage, cases, and office essentials arranged around everyday reliability instead of clutter.',
-    href: '/category/storage',
-    ctaLabel: 'Browse essentials',
+      'Monitors, storage, projectors, and internet hardware arranged around everyday reliability instead of clutter.',
+    href: '/category/monitors',
+    ctaLabel: 'Browse monitors',
     visual: 'phone',
     tone: 'light'
   }
 ];
 
 export const featuredBrands: BrandItem[] = [
-  { name: 'HP', href: '/brands/hp', note: 'Business laptops and printers' },
-  { name: 'Dell', href: '/brands/dell', note: 'Workstations and office PCs' },
-  { name: 'Lenovo', href: '/brands/lenovo', note: 'ThinkPad and ThinkCentre' },
-  { name: 'Apple', href: '/brands/apple', note: 'MacBook and iPhone' },
-  { name: 'ASUS', href: '/brands/asus', note: 'Creator and performance tech' }
+  { name: 'HP', href: '/brands/hp', note: 'Laptops, desktops, printers, and monitors' },
+  { name: 'Lenovo', href: '/brands/lenovo', note: 'ThinkPad, IdeaPad, and ThinkCentre listings' },
+  { name: 'Dell', href: '/brands/dell', note: 'Latitude, OptiPlex, Precision, and monitors' },
+  { name: 'Epson', href: '/brands/epson', note: 'Printers and projector listings' },
+  { name: 'Starlink', href: '/brands/starlink', note: 'Internet hardware' }
 ];
 
 export const whyChooseItems: WhyChooseItem[] = [
@@ -266,7 +271,7 @@ export const whyChooseItems: WhyChooseItem[] = [
   {
     label: 'Business ready',
     title: 'Useful for teams and individuals',
-    description: 'From one laptop to office printers and desktops, the catalog structure supports repeat buying.'
+    description: 'From one laptop to office printers, desktops, monitors, projectors, and internet hardware, the catalog structure supports repeat buying.'
   }
 ];
 
@@ -282,7 +287,7 @@ export const testimonials: TestimonialItem[] = [
     detail: 'SME office buyer'
   },
   {
-    quote: 'The phone buying advice was clear on storage, battery, accessories, and delivery options.',
+    quote: 'The catalog made it easier to compare the actual listed price, condition, and specs before asking about availability.',
     name: 'Returning customer',
     detail: 'Personal tech upgrade'
   }

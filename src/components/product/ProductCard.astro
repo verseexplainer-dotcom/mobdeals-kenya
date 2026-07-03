@@ -15,20 +15,31 @@ interface Props {
 const { product, href, class: className, ctaLabel = 'View product', priority = false } = Astro.props;
 const image = product.images[0];
 const productHref = href ?? `/products/${product.slug}`;
+const productSummary = {
+  id: product.id,
+  slug: product.slug,
+  name: product.name,
+  brand: product.brand,
+  category: product.category,
+  price: product.price,
+  image: image?.src
+};
+const visibleSpecs = (product.specs ?? [])
+  .filter((spec) => ['Processor', 'Memory', 'Storage', 'Display'].includes(spec.label))
+  .slice(0, 3);
 const categoryLabel = product.category
   .replace(/-/g, ' ')
   .replace(/\b\w/g, (character) => character.toUpperCase());
 const categoryKey = product.category.toLowerCase();
 
-const fallbackTone = categoryKey.includes('smartphone')
-  ? 'bg-secondary text-on-secondary'
-  : categoryKey.includes('printer')
-    ? 'bg-tertiary text-on-tertiary'
-    : categoryKey.includes('desktop')
-      ? 'bg-primary text-on-primary'
-      : categoryKey.includes('storage')
-        ? 'bg-surface-container-high text-on-surface'
-        : 'bg-primary text-on-primary';
+let fallbackTone = 'bg-primary text-on-primary';
+if (categoryKey.includes('smartphone') || categoryKey.includes('internet')) {
+  fallbackTone = 'bg-secondary text-on-secondary';
+} else if (categoryKey.includes('printer') || categoryKey.includes('projector')) {
+  fallbackTone = 'bg-tertiary text-on-tertiary';
+} else if (categoryKey.includes('storage')) {
+  fallbackTone = 'bg-surface-container-high text-on-surface';
+}
 ---
 
 <article class={classNames('premium-card flex h-full flex-col overflow-hidden', className)}>
@@ -70,7 +81,27 @@ const fallbackTone = categoryKey.includes('smartphone')
               <div class="mt-8 h-20 w-16 rounded-md bg-current/20"></div>
             </div>
           )}
-          {!categoryKey.includes('smartphone') && !categoryKey.includes('printer') && !categoryKey.includes('desktop') && !categoryKey.includes('storage') && (
+          {categoryKey.includes('monitor') && (
+            <div class="w-[72%]">
+              <div class="aspect-[16/10] rounded-md border-[7px] border-current bg-white/10"></div>
+              <div class="mx-auto h-4 w-12 bg-current/25"></div>
+              <div class="mx-auto h-3 w-24 rounded-pill bg-current/25"></div>
+            </div>
+          )}
+          {categoryKey.includes('projector') && (
+            <div class="w-[68%]">
+              <div class="h-20 rounded-lg border-[7px] border-current bg-white/10"></div>
+              <div class="mx-auto mt-3 h-3 w-24 rounded-pill bg-current/25"></div>
+            </div>
+          )}
+          {categoryKey.includes('internet') && (
+            <div class="relative">
+              <div class="size-24 rounded-full border-[7px] border-current bg-white/10"></div>
+              <div class="absolute -right-8 top-2 size-16 rounded-full border-[4px] border-current opacity-30"></div>
+              <div class="absolute -right-14 top-0 size-24 rounded-full border-[4px] border-current opacity-20"></div>
+            </div>
+          )}
+          {!categoryKey.includes('smartphone') && !categoryKey.includes('printer') && !categoryKey.includes('desktop') && !categoryKey.includes('storage') && !categoryKey.includes('monitor') && !categoryKey.includes('projector') && !categoryKey.includes('internet') && (
             <div class="w-[76%]">
               <div class="aspect-[16/10] rounded-md border-[7px] border-current bg-white/10"></div>
               <div class="mx-auto h-4 w-[86%] rounded-b-md bg-current/25"></div>
@@ -85,6 +116,7 @@ const fallbackTone = categoryKey.includes('smartphone')
     <div class="flex flex-wrap items-center gap-2">
       <Badge variant={product.inStock ? 'success' : 'neutral'}>{product.inStock ? 'In stock' : 'Check availability'}</Badge>
       {product.featured && <Badge variant="primary">Featured</Badge>}
+      {product.condition && <Badge variant="neutral">{product.condition === 'Refurbished' ? 'Ex-UK' : product.condition}</Badge>}
     </div>
 
     <p class="mt-4 text-label-xs uppercase text-on-surface-variant">{categoryLabel}</p>
@@ -92,6 +124,16 @@ const fallbackTone = categoryKey.includes('smartphone')
       <a href={productHref} class="hover:text-ses-accent">{product.name}</a>
     </h3>
     {product.brand && <p class="mt-1 text-body-sm text-on-surface-variant">{product.brand}</p>}
+    {visibleSpecs.length > 0 && (
+      <dl class="mt-4 grid gap-2 border-t border-ses-line pt-4">
+        {visibleSpecs.map((spec) => (
+          <div class="flex items-start justify-between gap-3 text-body-sm">
+            <dt class="shrink-0 text-on-surface-variant">{spec.label}</dt>
+            <dd class="text-right text-on-surface">{spec.value}</dd>
+          </div>
+        ))}
+      </dl>
+    )}
 
     <div class="mt-auto pt-5">
       <div>
@@ -104,8 +146,65 @@ const fallbackTone = categoryKey.includes('smartphone')
       </div>
     </div>
 
-    <Button href={productHref} variant="secondary" size="sm" class="mt-5 w-full" ariaLabel={`View ${product.name}`}>
-      {ctaLabel}
-    </Button>
+    <div class="mt-5 grid gap-2">
+      <button
+        type="button"
+        class="inline-flex min-h-9 items-center justify-center rounded-control bg-primary px-3 text-label-md font-semibold text-on-primary shadow-xs transition hover:-translate-y-0.5 hover:bg-primary-container"
+        data-cart-add
+        data-cart-product={JSON.stringify(productSummary)}
+        aria-label={`Add ${product.name} to cart`}
+      >
+        Add to cart
+      </button>
+      <Button href={productHref} variant="secondary" size="sm" class="w-full" ariaLabel={`View ${product.name}`}>
+        {ctaLabel}
+      </Button>
+    </div>
   </div>
 </article>
+
+<script>
+  const CART_KEY = 'mobdeals_cart_v1';
+
+  const readCart = () => {
+    try {
+      return JSON.parse(localStorage.getItem(CART_KEY) || '[]');
+    } catch {
+      return [];
+    }
+  };
+
+  const writeCart = (items) => {
+    localStorage.setItem(CART_KEY, JSON.stringify(items));
+    const count = items.reduce((total, item) => total + item.quantity, 0);
+    document.querySelectorAll('[data-cart-count]').forEach((target) => {
+      target.textContent = String(count);
+      target.toggleAttribute('hidden', count === 0);
+    });
+  };
+
+  const addCartItem = (product) => {
+    const items = readCart();
+    const existing = items.find((item) => item.slug === product.slug);
+    if (existing) {
+      existing.quantity += 1;
+    } else {
+      items.push({ ...product, quantity: 1 });
+    }
+    writeCart(items);
+  };
+
+  writeCart(readCart());
+
+  document.addEventListener('click', (event) => {
+    const button = event.target?.closest?.('[data-cart-add]');
+    if (!button) return;
+    const product = JSON.parse(button.dataset.cartProduct || '{}');
+    if (!product.slug) return;
+    addCartItem(product);
+    button.textContent = 'Added';
+    window.setTimeout(() => {
+      button.textContent = 'Add to cart';
+    }, 1200);
+  });
+</script>

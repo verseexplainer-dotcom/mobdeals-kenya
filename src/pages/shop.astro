@@ -18,7 +18,7 @@ const itemListSchema = stringifyJsonLd(createItemListSchema(products, '/shop'));
   seo={{
     title: 'Shop Electronics in Nairobi',
     description:
-      'Browse laptops, smartphones, desktops, printers, storage, and tech accessories from MobDeals Kenya in Nairobi with clear specs and availability notes.',
+      'Browse 340 current MobDeals Kenya listings across laptops, desktops, printers, monitors, storage, smartphones, projectors, and internet hardware.',
     pathname: '/shop'
   }}
 >
@@ -30,10 +30,10 @@ const itemListSchema = stringifyJsonLd(createItemListSchema(products, '/shop'));
       <div>
         <Badge variant="accent" size="md">MobDeals Kenya catalog</Badge>
         <h1 class="mt-5 max-w-3xl font-display text-display-lg-mobile text-on-surface sm:text-headline-xl lg:text-display-lg">
-          Shop electronics with clear specs before you spend.
+          Shop the current MobDeals product sheet.
         </h1>
         <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">
-          Compare laptops, phones, printers, desktops, and storage around condition, warranty, availability, and practical Kenya buying needs.
+          Compare listed products by price, category, condition, processor, memory, storage, warranty notes, and practical Kenya delivery needs.
         </p>
       </div>
       <div class="rounded-card border border-ses-line bg-surface-container-lowest/70 p-5">
@@ -56,8 +56,8 @@ const itemListSchema = stringifyJsonLd(createItemListSchema(products, '/shop'));
     <SectionHeading
       id="shop-categories-title"
       eyebrow="Shop by category"
-      title="Start with the buying path"
-      description="Each category page narrows the catalog and gives the product context needed before content updates scale."
+      title="Start with the device family"
+      description="Each category page reflects the normalized catalog generated from the MobDeals workbook."
     />
     <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
       {productCategories.map((category) => (
@@ -74,8 +74,8 @@ const itemListSchema = stringifyJsonLd(createItemListSchema(products, '/shop'));
     <SectionHeading
       id="all-products-title"
       eyebrow="All products"
-      title="Current product structure"
-      description="Static seed products are ready for page design, SEO, JSON-LD, and later Supabase media updates."
+      title="Current listed products"
+      description="These products come from the MobDeals SEO workbook. Supabase media can be attached later without changing the catalog structure."
     />
     {products.length > 0 ? (
       <Grid columns="products" gap="md" class="mt-8">

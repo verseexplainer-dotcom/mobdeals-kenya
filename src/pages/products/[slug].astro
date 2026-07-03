@@ -9,6 +9,7 @@ import Section from '@components/ui/Section.astro';
 import SectionHeading from '@components/ui/SectionHeading.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { getAllProducts, getCategoryBySlug, getRelatedProducts } from '@data/products';
+import { siteConfig } from '@config/site';
 import { formatProductPrice } from '@lib/products';
 import { absoluteUrl, createBreadcrumbSchema, createProductSchema, createProductSeo, stringifyJsonLd } from '@lib/seo';
 
@@ -26,7 +27,16 @@ const productUrl = absoluteUrl(`/products/${product.slug}`) ?? `/products/${prod
 const whatsappMessage = encodeURIComponent(
   `Hi MobDeals Kenya, I am interested in ${product.name} (${formatProductPrice(product.price)}). Product link: ${productUrl}`
 );
-const whatsappHref = `https://wa.me/?text=${whatsappMessage}`;
+const whatsappHref = `https://wa.me/${siteConfig.whatsappNumber}?text=${whatsappMessage}`;
+const cartProduct = {
+  id: product.id,
+  slug: product.slug,
+  name: product.name,
+  brand: product.brand,
+  category: product.category,
+  price: product.price,
+  image: product.images[0]?.src
+};
 const productSchema = stringifyJsonLd(createProductSchema(product));
 const breadcrumbSchema = stringifyJsonLd(
   createBreadcrumbSchema([
@@ -73,8 +83,20 @@ const breadcrumbSchema = stringifyJsonLd(
             <p class="mt-4 block w-full text-body-sm text-on-surface-variant">{product.availabilityNote}</p>
           </div>
           <div class="mt-5 grid gap-3 sm:grid-cols-2">
+            <button
+              type="button"
+              class="inline-flex min-h-12 w-full items-center justify-center rounded-control bg-primary px-6 text-body-md font-semibold text-on-primary transition hover:-translate-y-0.5 hover:bg-primary-container"
+              data-cart-add
+              data-cart-product={JSON.stringify(cartProduct)}
+              aria-label={`Add ${product.name} to cart`}
+            >
+              Add to cart
+            </button>
             <Button href={whatsappHref} variant="whatsapp" size="lg" target="_blank" rel="noreferrer" class="w-full">
               Ask on WhatsApp
+            </Button>
+            <Button href="/cart" variant="secondary" size="lg" class="w-full">
+              View cart
             </Button>
             <Button href="/contact" variant="secondary" size="lg" class="w-full">
               Talk to support
@@ -105,7 +127,7 @@ const breadcrumbSchema = stringifyJsonLd(
           id="product-details-title"
           eyebrow="Buying details"
           title="What to confirm before purchase"
-          description="The page structure keeps core content ready before the catalog moves to richer media and live inventory workflows."
+          description="These details are generated from the MobDeals product workbook and should be confirmed against live stock before payment."
         />
         <ul class="mt-8 space-y-3">
           {product.highlights.map((highlight) => (
@@ -125,3 +147,45 @@ const breadcrumbSchema = stringifyJsonLd(
 
   <RelatedProducts products={relatedProducts} />
 </BaseLayout>
+
+<script>
+  const CART_KEY = 'mobdeals_cart_v1';
+
+  const readCart = () => {
+    try {
+      return JSON.parse(localStorage.getItem(CART_KEY) || '[]');
+    } catch {
+      return [];
+    }
+  };
+
+  const writeCart = (items) => {
+    localStorage.setItem(CART_KEY, JSON.stringify(items));
+    const count = items.reduce((total, item) => total + item.quantity, 0);
+    document.querySelectorAll('[data-cart-count]').forEach((target) => {
+      target.textContent = String(count);
+      target.toggleAttribute('hidden', count === 0);
+    });
+  };
+
+  writeCart(readCart());
+
+  document.addEventListener('click', (event) => {
+    const button = event.target?.closest?.('[data-cart-add]');
+    if (!button) return;
+    const product = JSON.parse(button.dataset.cartProduct || '{}');
+    if (!product.slug) return;
+    const items = readCart();
+    const existing = items.find((item) => item.slug === product.slug);
+    if (existing) {
+      existing.quantity += 1;
+    } else {
+      items.push({ ...product, quantity: 1 });
+    }
+    writeCart(items);
+    button.textContent = 'Added to cart';
+    window.setTimeout(() => {
+      button.textContent = 'Add to cart';
+    }, 1200);
+  });
+</script>

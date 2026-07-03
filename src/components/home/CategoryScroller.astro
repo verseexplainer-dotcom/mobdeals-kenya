@@ -19,11 +19,11 @@ const { categories } = Astro.props;
       description="Mobile-first paths for Kenya shoppers comparing price, condition, warranty, and practical specs."
     />
     <p class="max-w-[36rem] text-body-md text-on-surface-variant lg:justify-self-end">
-      The catalog is organized for fast decisions across laptops, smartphones, desktops, printers, and storage.
+      The catalog is organized for fast decisions across laptops, desktops, printers, monitors, storage, phones, projectors, and internet hardware.
     </p>
   </div>
 
-  <div class="-mx-[var(--spacing-page)] mt-10 flex snap-x gap-4 overflow-x-auto px-[var(--spacing-page)] pb-4 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-5 md:overflow-visible md:px-0 [&::-webkit-scrollbar]:hidden">
+  <div class="-mx-[var(--spacing-page)] mt-10 flex snap-x gap-4 overflow-x-auto px-[var(--spacing-page)] pb-4 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-4 md:overflow-visible md:px-0 [&::-webkit-scrollbar]:hidden">
     {categories.map((category) => (
       <a href={category.href} class="group flex min-w-[16rem] snap-start flex-col overflow-hidden rounded-card border border-ses-line bg-surface-container-lowest shadow-sm transition-[border-color,box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:border-primary-fixed-dim hover:shadow-soft md:min-w-0">
         <div class="flex h-40 items-center justify-center bg-surface-container-low p-5 text-on-surface">
@@ -53,6 +53,29 @@ const { categories } = Astro.props;
             <div class="grid grid-cols-2 gap-3 text-primary">
               <div class="h-24 w-14 rounded-md border-[5px] border-current bg-white"></div>
               <div class="mt-7 h-20 w-14 rounded-md bg-ses-accent/20"></div>
+            </div>
+          )}
+          {category.icon === 'monitor' && (
+            <div class="text-primary">
+              <div class="h-24 w-36 rounded-md border-[6px] border-current bg-white"></div>
+              <div class="mx-auto h-4 w-14 bg-current opacity-25"></div>
+              <div class="mx-auto h-3 w-24 rounded-pill bg-current opacity-25"></div>
+            </div>
+          )}
+          {category.icon === 'projector' && (
+            <div class="text-tertiary">
+              <div class="h-20 w-36 rounded-lg border-[6px] border-current bg-white"></div>
+              <div class="mx-auto mt-3 grid w-28 grid-cols-2 gap-3">
+                <div class="h-3 rounded-pill bg-current opacity-25"></div>
+                <div class="h-3 rounded-pill bg-current opacity-25"></div>
+              </div>
+            </div>
+          )}
+          {category.icon === 'internet' && (
+            <div class="relative text-primary">
+              <div class="h-24 w-24 rounded-full border-[6px] border-current bg-white"></div>
+              <div class="absolute -right-8 top-3 h-16 w-16 rounded-full border-[4px] border-current opacity-30"></div>
+              <div class="absolute -right-14 top-0 h-24 w-24 rounded-full border-[4px] border-current opacity-20"></div>
             </div>
           )}
         </div>

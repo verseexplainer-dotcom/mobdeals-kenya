@@ -24,9 +24,16 @@ import SearchBar from './SearchBar.astro';
   <Container size="xl" class="flex min-h-16 items-center gap-3 lg:gap-5">
     <MobileMenu />
 
-    <a href="/" class="flex shrink-0 items-center gap-2 rounded-pill focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ses-accent" aria-label={`${siteConfig.name} home`}>
-      <span class="flex size-9 items-center justify-center rounded-pill bg-primary text-label-md text-on-primary">{siteConfig.shortName}</span>
-      <span class="hidden text-label-md text-on-surface sm:inline">{siteConfig.name}</span>
+    <a href="/" class="flex shrink-0 items-center rounded-control focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ses-accent" aria-label={`${siteConfig.name} home`}>
+      <img
+        src={siteConfig.logo}
+        alt={siteConfig.name}
+        width="1200"
+        height="292"
+        class="h-10 w-auto max-w-[8.75rem] object-contain sm:max-w-[12rem]"
+        loading="eager"
+        decoding="async"
+      />
     </a>
 
     <nav aria-label="Primary navigation" class="hidden items-center gap-1 xl:flex">
@@ -42,8 +49,11 @@ import SearchBar from './SearchBar.astro';
 
     <div class="ml-auto flex items-center gap-2 md:ml-0">
       {accountNavigation.map((item) => (
-        <a href={item.href} class="hidden size-10 items-center justify-center rounded-control border border-ses-line bg-white/8 text-label-md text-on-surface shadow-xs hover:border-tertiary hover:text-tertiary md:inline-flex" aria-label={item.description ?? item.label}>
+        <a href={item.href} class="relative hidden size-10 items-center justify-center rounded-control border border-ses-line bg-white/8 text-label-md text-on-surface shadow-xs hover:border-tertiary hover:text-tertiary md:inline-flex" aria-label={item.description ?? item.label}>
           {item.label === 'Cart' ? 'Bag' : 'User'}
+          {item.label === 'Cart' && (
+            <span data-cart-count hidden class="absolute -right-2 -top-2 flex size-5 items-center justify-center rounded-pill bg-secondary text-[0.7rem] font-semibold leading-none text-on-secondary">0</span>
+          )}
         </a>
       ))}
       <a href="/shop" class="rounded-control bg-primary px-4 py-2 text-label-md text-on-primary shadow-xs hover:bg-primary-container hover:shadow-soft">

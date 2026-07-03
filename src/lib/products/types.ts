@@ -16,6 +16,8 @@ export interface ProductSpec {
   value: string;
 }
 
+export type ProductCondition = 'New' | 'Refurbished' | 'Pre-owned' | 'Open box';
+
 export interface ProductSummary {
   id: string;
   slug: string;
@@ -26,9 +28,10 @@ export interface ProductSummary {
   images: ProductImage[];
   inStock: boolean;
   featured?: boolean;
+  condition?: ProductCondition;
+  description?: string;
+  specs?: ProductSpec[];
 }
-
-export type ProductCondition = 'New' | 'Refurbished' | 'Pre-owned' | 'Open box';
 
 export interface Product extends ProductSummary {
   description: string;

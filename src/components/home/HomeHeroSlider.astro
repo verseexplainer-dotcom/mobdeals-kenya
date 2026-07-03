@@ -25,12 +25,6 @@ const eyebrowClasses = {
   blue: 'text-cyan-100',
   light: 'text-ses-accent'
 };
-
-const panelClasses = {
-  ink: 'border-ses-line bg-white/8 text-on-surface backdrop-blur',
-  blue: 'border-white/15 bg-white/10 text-white',
-  light: 'border-ses-line bg-white/8 text-on-surface backdrop-blur'
-};
 ---
 
 <section
@@ -48,14 +42,28 @@ const panelClasses = {
         aria-hidden={index === 0 ? 'false' : 'true'}
         inert={index === 0 ? undefined : true}
       >
-        <div class="absolute inset-0 opacity-80" aria-hidden="true">
+        <picture class="absolute inset-0 z-0 block" aria-hidden="true">
+          <source media="(max-width: 767px)" srcset={slide.image.mobileSrc} />
+          <img
+            src={slide.image.desktopSrc}
+            alt=""
+            width="2880"
+            height="1600"
+            loading={index === 0 ? 'eager' : 'lazy'}
+            fetchpriority={index === 0 ? 'high' : 'auto'}
+            decoding="async"
+            class="size-full object-cover object-center"
+          />
+        </picture>
+
+        <div class="absolute inset-0 z-0" aria-hidden="true">
           <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-tertiary/40 to-transparent"></div>
-          <div class="absolute inset-0 bg-[linear-gradient(135deg,rgba(37,99,235,0.24),transparent_42%,rgba(56,189,248,0.14))]"></div>
-          <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(2,6,23,0.36)_70%)]"></div>
+          <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.98)_0%,rgba(2,6,23,0.88)_42%,rgba(2,6,23,0.26)_72%,rgba(2,6,23,0.7)_100%)] md:bg-[linear-gradient(90deg,rgba(2,6,23,0.98)_0%,rgba(2,6,23,0.9)_34%,rgba(2,6,23,0.4)_62%,rgba(2,6,23,0.08)_100%)]"></div>
+          <div class="absolute inset-0 bg-[linear-gradient(135deg,rgba(37,99,235,0.18),transparent_42%,rgba(56,189,248,0.08))]"></div>
         </div>
 
-        <div class="container-xl relative grid gap-10 py-12 sm:py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:py-20">
-          <div class="max-w-[42rem]">
+        <div class="container-xl relative z-10 grid min-h-[48rem] items-start py-12 sm:min-h-[44rem] sm:py-16 lg:min-h-[42rem] lg:items-center lg:py-20">
+          <div class="max-w-[42rem] pt-4 sm:pt-0">
             <p class={`text-label-xs uppercase ${eyebrowClasses[slide.backdrop]}`}>{slide.eyebrow}</p>
             {index === 0 ? (
               <h1 id="home-hero-title" class="mt-4 text-display-lg-mobile font-display text-balance sm:text-display-lg">
@@ -87,57 +95,6 @@ const panelClasses = {
                 </div>
               ))}
             </dl>
-          </div>
-
-          <div class="relative min-h-[24rem] sm:min-h-[28rem] lg:min-h-[34rem]" aria-label={`${slide.productKicker}: ${slide.productName}`}>
-            <div class="absolute inset-x-6 bottom-0 h-44 rounded-t-card bg-current/10"></div>
-
-            {slide.visual === 'laptop' && (
-              <div class="absolute inset-x-0 top-8 mx-auto w-[min(39rem,94%)]">
-                <div class={`rounded-card border p-3 shadow-ambient ${panelClasses[slide.backdrop]}`}>
-                  <div class="aspect-[16/10] rounded-md border border-current/15 bg-current/10 p-5">
-                    <div class="flex h-full flex-col justify-between">
-                      <div class="flex items-center gap-2">
-                        <span class="size-2 rounded-full bg-current/40"></span>
-                        <span class="size-2 rounded-full bg-current/30"></span>
-                        <span class="size-2 rounded-full bg-current/20"></span>
-                      </div>
-                      <div>
-                        <div class="h-3 w-2/3 rounded-pill bg-current/35"></div>
-                        <div class="mt-3 h-3 w-1/2 rounded-pill bg-current/20"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mx-auto h-4 w-[82%] rounded-b-md bg-current/20"></div>
-                </div>
-              </div>
-            )}
-
-            {slide.visual === 'phone' && (
-              <div class="absolute inset-x-0 top-4 mx-auto flex w-[min(30rem,92%)] items-end justify-center gap-4">
-                <div class={`h-72 w-32 rounded-[1.75rem] border-[8px] border-current/80 bg-current/10 shadow-ambient sm:h-88 sm:w-40 ${panelClasses[slide.backdrop]}`}></div>
-                <div class={`mb-8 h-60 w-28 rounded-[1.55rem] border-[7px] border-current/70 bg-current/10 shadow-soft sm:h-76 sm:w-36 ${panelClasses[slide.backdrop]}`}></div>
-              </div>
-            )}
-
-            {slide.visual === 'printer' && (
-              <div class="absolute inset-x-0 top-12 mx-auto w-[min(34rem,92%)]">
-                <div class={`rounded-card border p-5 shadow-ambient ${panelClasses[slide.backdrop]}`}>
-                  <div class="mx-auto h-12 w-4/5 rounded-md bg-current/15"></div>
-                  <div class="mt-4 rounded-card border border-current/15 bg-current/10 p-5">
-                    <div class="h-4 w-24 rounded-pill bg-current/30"></div>
-                    <div class="mt-10 h-32 rounded-md bg-current/10"></div>
-                  </div>
-                  <div class="mx-auto mt-4 h-20 w-3/4 rounded-b-md border border-current/15 bg-current/10"></div>
-                </div>
-              </div>
-            )}
-
-            <div class={`absolute bottom-8 left-4 w-[min(22rem,82%)] rounded-card border p-4 shadow-soft sm:left-10 ${panelClasses[slide.backdrop]}`}>
-              <p class={`text-label-xs uppercase ${mutedTextClasses[slide.backdrop]}`}>{slide.productKicker}</p>
-              <p class="mt-2 text-title-md">{slide.productName}</p>
-              <p class={`mt-2 text-body-sm ${mutedTextClasses[slide.backdrop]}`}>{slide.productSpec}</p>
-            </div>
           </div>
         </div>
       </article>

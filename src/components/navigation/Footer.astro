@@ -9,12 +9,19 @@ import Divider from '@components/ui/Divider.astro';
   <Container size="xl" class="py-12 sm:py-16">
     <div class="grid gap-10 lg:grid-cols-[1fr_1.8fr]">
       <div>
-        <a href="/" class="inline-flex items-center gap-2" aria-label={`${siteConfig.name} home`}>
-          <span class="flex size-10 items-center justify-center rounded-pill bg-primary text-label-md text-on-primary">{siteConfig.shortName}</span>
-          <span class="text-headline-sm text-on-surface">{siteConfig.name}</span>
+        <a href="/" class="inline-flex items-center" aria-label={`${siteConfig.name} home`}>
+          <img
+            src={siteConfig.logo}
+            alt={siteConfig.name}
+            width="1200"
+            height="292"
+            class="h-14 w-auto max-w-[16rem] object-contain"
+            loading="lazy"
+            decoding="async"
+          />
         </a>
         <p class="mt-4 max-w-[28rem] text-body-sm text-on-surface-variant">
-          Premium electronics for Kenya: laptops, smartphones, desktops, printers, storage, and business supply support from Nairobi.
+          Premium electronics for Kenya: laptops, desktops, printers, monitors, storage, phones, projectors, internet hardware, and business supply support from Nairobi.
         </p>
 
         <a href="/contact" class="mt-5 inline-flex rounded-control bg-primary px-4 py-2 text-label-md text-on-primary hover:bg-primary-container">

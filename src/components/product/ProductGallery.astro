@@ -8,15 +8,14 @@ interface Props {
 const { product } = Astro.props;
 const images = product.images;
 const categoryKey = product.category.toLowerCase();
-const fallbackTone = categoryKey.includes('smartphone')
-  ? 'from-secondary-container to-surface'
-  : categoryKey.includes('printer')
-    ? 'from-tertiary-container to-surface'
-    : categoryKey.includes('desktop')
-      ? 'from-primary-container to-surface'
-      : categoryKey.includes('storage')
-        ? 'from-surface-container-high to-surface'
-        : 'from-primary-container to-surface';
+let fallbackTone = 'from-primary-container to-surface';
+if (categoryKey.includes('smartphone') || categoryKey.includes('internet')) {
+  fallbackTone = 'from-secondary-container to-surface';
+} else if (categoryKey.includes('printer') || categoryKey.includes('projector')) {
+  fallbackTone = 'from-tertiary-container to-surface';
+} else if (categoryKey.includes('storage')) {
+  fallbackTone = 'from-surface-container-high to-surface';
+}
 ---
 
 <div class="space-y-4">
@@ -52,6 +51,23 @@ const fallbackTone = categoryKey.includes('smartphone')
           <div class="grid grid-cols-2 gap-5">
             <div class="h-36 w-20 rounded-lg border-[8px] border-current bg-white/20"></div>
             <div class="mt-10 h-28 w-20 rounded-lg bg-current/20"></div>
+          </div>
+        ) : categoryKey.includes('monitor') ? (
+          <div class="w-[74%]">
+            <div class="aspect-[16/10] rounded-lg border-[10px] border-current bg-white/10"></div>
+            <div class="mx-auto h-6 w-16 bg-current/25"></div>
+            <div class="mx-auto h-4 w-32 rounded-pill bg-current/25"></div>
+          </div>
+        ) : categoryKey.includes('projector') ? (
+          <div class="w-[70%]">
+            <div class="h-28 rounded-xl border-[10px] border-current bg-white/10"></div>
+            <div class="mx-auto mt-5 h-4 w-36 rounded-pill bg-current/25"></div>
+          </div>
+        ) : categoryKey.includes('internet') ? (
+          <div class="relative">
+            <div class="size-36 rounded-full border-[10px] border-current bg-white/10"></div>
+            <div class="absolute -right-12 top-4 size-24 rounded-full border-[6px] border-current opacity-30"></div>
+            <div class="absolute -right-20 top-0 size-36 rounded-full border-[6px] border-current opacity-20"></div>
           </div>
         ) : (
           <div class="w-[74%]">

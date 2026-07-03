@@ -9,13 +9,13 @@ import SectionHeading from '@components/ui/SectionHeading.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { getAllProducts } from '@data/products';
 
-const businessProducts = getAllProducts().filter((product) => ['laptops', 'desktops', 'printers', 'storage'].includes(product.category)).slice(0, 4);
+const businessProducts = getAllProducts().filter((product) => ['laptops', 'desktops', 'printers', 'monitors'].includes(product.category)).slice(0, 4);
 ---
 
 <BaseLayout
   seo={{
     title: 'Business Electronics Supply in Kenya',
-    description: 'Request laptops, desktops, printers, storage, and office technology supply support for teams, schools, and businesses in Kenya.',
+    description: 'Request laptops, desktops, printers, monitors, projectors, storage, and office technology supply support for teams, schools, and businesses in Kenya.',
     pathname: '/business'
   }}
 >
@@ -28,7 +28,7 @@ const businessProducts = getAllProducts().filter((product) => ['laptops', 'deskt
           Build a practical technology list for your team.
         </h1>
         <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">
-          Request quotes for laptops, desktops, printers, upgrades, and accessories with quantity, condition, warranty, and delivery guidance.
+          Request quotes for laptops, desktops, printers, monitors, projectors, storage, and connectivity hardware with quantity, condition, warranty, and delivery guidance.
         </p>
         <Button href="/contact" variant="secondary" class="mt-7">Request a quote</Button>
       </div>

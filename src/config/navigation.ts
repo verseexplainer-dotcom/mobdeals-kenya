@@ -12,9 +12,9 @@ export interface NavigationCategory extends NavigationLink {
 
 export const primaryNavigation: NavigationLink[] = [
   { label: 'Laptops', href: '/category/laptops' },
-  { label: 'Smartphones', href: '/category/smartphones' },
   { label: 'Desktops', href: '/category/desktops' },
   { label: 'Printers', href: '/category/printers' },
+  { label: 'Monitors', href: '/category/monitors' },
   { label: 'Storage', href: '/category/storage' }
 ];
 
@@ -23,32 +23,20 @@ export const categoryNavigation: NavigationCategory[] = [
     label: 'Laptops',
     href: '/category/laptops',
     eyebrow: 'Work and study',
-    description: 'Business, student, gaming, and creator laptops for Kenya.',
+    description: 'HP, Dell, Lenovo, Microsoft, and Apple laptops from the current catalog.',
     featured: true,
     links: [
       { label: 'HP Laptops', href: '/category/laptops/hp' },
       { label: 'Dell Laptops', href: '/category/laptops/dell' },
       { label: 'Lenovo Laptops', href: '/category/laptops/lenovo' },
-      { label: 'MacBooks', href: '/category/laptops/macbook' }
-    ]
-  },
-  {
-    label: 'Smartphones',
-    href: '/category/smartphones',
-    eyebrow: 'New and refurbished',
-    description: 'Android phones, iPhones, chargers, cases, and accessories.',
-    links: [
-      { label: 'Samsung', href: '/category/smartphones/samsung' },
-      { label: 'iPhone', href: '/category/smartphones/iphone' },
-      { label: 'Tecno', href: '/category/smartphones/tecno' },
-      { label: 'Xiaomi', href: '/category/smartphones/xiaomi' }
+      { label: 'Microsoft Surface', href: '/category/laptops/microsoft' }
     ]
   },
   {
     label: 'Desktops',
     href: '/category/desktops',
     eyebrow: 'Office setups',
-    description: 'Office towers, all-in-ones, mini PCs, and workstations.',
+    description: 'All-in-ones, ProDesk, EliteDesk, OptiPlex, ThinkCentre, and workstations.',
     links: [
       { label: 'Office Desktops', href: '/category/desktops/office' },
       { label: 'All-in-One PCs', href: '/category/desktops/all-in-one' },
@@ -59,22 +47,62 @@ export const categoryNavigation: NavigationCategory[] = [
     label: 'Printers',
     href: '/category/printers',
     eyebrow: 'Home and business',
-    description: 'Inkjet, laser, refill, and office printers with supplies.',
+    description: 'HP, Epson, and Kyocera printer listings from the current sheet.',
     links: [
       { label: 'HP Printers', href: '/category/printers/hp' },
       { label: 'Epson Printers', href: '/category/printers/epson' },
-      { label: 'Laser Printers', href: '/category/printers/laser' }
+      { label: 'Kyocera Printers', href: '/category/printers/kyocera' }
+    ]
+  },
+  {
+    label: 'Monitors',
+    href: '/category/monitors',
+    eyebrow: 'Display upgrades',
+    description: 'HP and Dell monitors for desk setups and office workstations.',
+    links: [
+      { label: 'HP Monitors', href: '/category/monitors/hp' },
+      { label: 'Dell Monitors', href: '/category/monitors/dell' },
+      { label: '24 inch monitors', href: '/category/monitors/24-inch' }
     ]
   },
   {
     label: 'Storage',
     href: '/category/storage',
     eyebrow: 'Upgrade essentials',
-    description: 'SSDs, hard drives, flash drives, memory cards, and RAM.',
+    description: 'External hard drives and storage options from the current catalog.',
     links: [
-      { label: 'SSDs', href: '/category/storage/ssd' },
-      { label: 'Hard Drives', href: '/category/storage/hard-drives' },
-      { label: 'Flash Drives', href: '/category/storage/flash-drives' }
+      { label: 'External drives', href: '/category/storage/external' },
+      { label: '1TB storage', href: '/category/storage/1tb' },
+      { label: '2TB storage', href: '/category/storage/2tb' }
+    ]
+  },
+  {
+    label: 'Smartphones',
+    href: '/category/smartphones',
+    eyebrow: 'Mobile devices',
+    description: 'Samsung and Apple phone listings with source-sheet pricing.',
+    links: [
+      { label: 'Samsung phones', href: '/category/smartphones/samsung' },
+      { label: 'Apple phones', href: '/category/smartphones/apple' }
+    ]
+  },
+  {
+    label: 'Projectors',
+    href: '/category/projectors',
+    eyebrow: 'Presentation displays',
+    description: 'Projector listings for office, classroom, and event setups.',
+    links: [
+      { label: 'Epson Projectors', href: '/category/projectors/epson' },
+      { label: 'Presentation setups', href: '/category/projectors/presentation' }
+    ]
+  },
+  {
+    label: 'Internet',
+    href: '/category/internet',
+    eyebrow: 'Connectivity hardware',
+    description: 'Starlink and internet hardware listings for connectivity planning.',
+    links: [
+      { label: 'Starlink', href: '/category/internet/starlink' }
     ]
   }
 ];

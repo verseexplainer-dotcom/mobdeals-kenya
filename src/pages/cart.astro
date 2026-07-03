@@ -1,19 +1,244 @@
 ---
 import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
-import Button from '@components/ui/Button.astro';
 import Section from '@components/ui/Section.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
+import { siteConfig } from '@config/site';
 ---
 
-<BaseLayout seo={{ title: 'Cart', description: 'Cart workflow placeholder for MobDeals Kenya.', pathname: '/cart', noIndex: true }}>
-  <Section class="bg-surface-container-low/40" containerSize="lg" spacing="sm">
+<BaseLayout
+  seo={{
+    title: 'Cart',
+    description: 'Review MobDeals Kenya cart items and send checkout details on WhatsApp.',
+    pathname: '/cart',
+    noIndex: true
+  }}
+>
+  <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
     <Breadcrumbs items={[{ label: 'Cart' }]} />
-    <div class="mt-10 rounded-card-lg border border-ses-line bg-surface-container-lowest p-8">
-      <h1 class="font-display text-headline-xl text-on-surface">Cart workflow is next.</h1>
-      <p class="mt-4 max-w-2xl text-body-lg text-on-surface-variant">
-        The current buying path uses product pages, WhatsApp, and contact requests while the full cart and checkout flow is planned.
-      </p>
-      <Button href="/shop" variant="secondary" class="mt-6">Return to shop</Button>
+    <div class="mt-10 grid gap-8 lg:grid-cols-[1fr_0.42fr] lg:items-start">
+      <div>
+        <h1 class="font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">Cart</h1>
+        <p class="mt-4 max-w-2xl text-body-lg text-on-surface-variant">
+          Review selected products, adjust quantity, then send the order request to MobDeals Kenya on WhatsApp.
+        </p>
+
+        <div class="mt-8 grid gap-4" data-cart-items></div>
+
+        <div class="mt-8 hidden rounded-card border border-ses-line bg-surface-container-lowest p-8" data-cart-empty>
+          <h2 class="text-title-md text-on-surface">Your cart is empty</h2>
+          <p class="mt-2 text-body-md text-on-surface-variant">Add products from shop or category pages before checkout.</p>
+          <a href="/shop" class="mt-5 inline-flex rounded-control border border-ses-line px-4 py-2 text-label-md text-on-surface hover:border-tertiary hover:text-tertiary">
+            Return to shop
+          </a>
+        </div>
+      </div>
+
+      <aside class="rounded-card border border-ses-line bg-surface-container-lowest p-5 shadow-xs lg:sticky lg:top-28">
+        <p class="text-label-xs uppercase text-ses-accent">Checkout summary</p>
+        <dl class="mt-5 grid gap-3">
+          <div class="flex items-center justify-between gap-4">
+            <dt class="text-body-sm text-on-surface-variant">Items</dt>
+            <dd class="text-title-sm text-on-surface" data-cart-total-items>0</dd>
+          </div>
+          <div class="flex items-center justify-between gap-4 border-t border-ses-line pt-3">
+            <dt class="text-body-sm text-on-surface-variant">Estimated total</dt>
+            <dd class="text-title-md text-on-surface" data-cart-total>KES 0</dd>
+          </div>
+        </dl>
+
+        <a
+          href={`https://wa.me/${siteConfig.whatsappNumber}`}
+          target="_blank"
+          rel="noreferrer"
+          class="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-control bg-primary px-6 text-body-md font-semibold text-on-primary transition hover:-translate-y-0.5 hover:bg-primary-container"
+          data-cart-whatsapp
+        >
+          Checkout on WhatsApp
+        </a>
+        <button
+          type="button"
+          class="mt-3 inline-flex min-h-11 w-full items-center justify-center rounded-control border border-ses-line px-5 text-label-md text-on-surface hover:border-tertiary hover:text-tertiary"
+          data-cart-clear
+        >
+          Clear cart
+        </button>
+        <p class="mt-4 text-body-sm text-on-surface-variant">
+          Final stock, condition, warranty, and delivery cost are confirmed by support before payment.
+        </p>
+      </aside>
     </div>
   </Section>
 </BaseLayout>
+
+<script define:vars={{ whatsappNumber: siteConfig.whatsappNumber }}>
+  const CART_KEY = 'mobdeals_cart_v1';
+  const currency = new Intl.NumberFormat('en-KE', {
+    style: 'currency',
+    currency: 'KES',
+    maximumFractionDigits: 0
+  });
+
+  const itemsRoot = document.querySelector('[data-cart-items]');
+  const emptyState = document.querySelector('[data-cart-empty]');
+  const totalItems = document.querySelector('[data-cart-total-items]');
+  const totalPrice = document.querySelector('[data-cart-total]');
+  const checkout = document.querySelector('[data-cart-whatsapp]');
+  const clearButton = document.querySelector('[data-cart-clear]');
+
+  const readCart = () => {
+    try {
+      return JSON.parse(localStorage.getItem(CART_KEY) || '[]');
+    } catch {
+      return [];
+    }
+  };
+
+  const writeCart = (items) => {
+    localStorage.setItem(CART_KEY, JSON.stringify(items));
+    const count = items.reduce((total, item) => total + item.quantity, 0);
+    document.querySelectorAll('[data-cart-count]').forEach((target) => {
+      target.textContent = String(count);
+      target.toggleAttribute('hidden', count === 0);
+    });
+  };
+
+  const checkoutHref = (items) => {
+    const lines = items.map((item, index) => {
+      const amount = item.price?.amount ?? 0;
+      return `${index + 1}. ${item.name} x${item.quantity} - ${currency.format(amount * item.quantity)} (${location.origin}/products/${item.slug})`;
+    });
+    const total = items.reduce((sum, item) => sum + (item.price?.amount ?? 0) * item.quantity, 0);
+    const message = [
+      'Hi MobDeals Kenya, I would like to checkout these products:',
+      '',
+      ...lines,
+      '',
+      `Estimated total: ${currency.format(total)}`,
+      '',
+      'Please confirm availability, condition, warranty, and delivery.'
+    ].join('\n');
+    return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  };
+
+  const productPath = (slug) => `/products/${String(slug || '').replace(/[^a-z0-9-]/gi, '')}`;
+
+  const createCartItem = (item) => {
+    const article = document.createElement('article');
+    article.className = 'grid gap-4 rounded-card border border-ses-line bg-surface-container-lowest p-4 sm:grid-cols-[7rem_1fr_auto] sm:items-center';
+
+    const imageLink = document.createElement('a');
+    imageLink.href = productPath(item.slug);
+    imageLink.className = 'block aspect-square overflow-hidden rounded-card bg-surface-container-low';
+    if (item.image) {
+      const image = document.createElement('img');
+      image.src = String(item.image);
+      image.alt = String(item.name || 'MobDeals product');
+      image.className = 'size-full object-contain p-3';
+      image.loading = 'lazy';
+      image.decoding = 'async';
+      imageLink.append(image);
+    }
+
+    const details = document.createElement('div');
+    const brand = document.createElement('p');
+    brand.className = 'text-label-xs uppercase text-ses-accent';
+    brand.textContent = item.brand || item.category || 'MobDeals';
+
+    const title = document.createElement('h2');
+    title.className = 'mt-2 text-title-md text-on-surface';
+    const titleLink = document.createElement('a');
+    titleLink.href = productPath(item.slug);
+    titleLink.className = 'hover:text-ses-accent';
+    titleLink.textContent = item.name || 'MobDeals product';
+    title.append(titleLink);
+
+    const unitPrice = document.createElement('p');
+    unitPrice.className = 'mt-2 text-body-sm text-on-surface-variant';
+    unitPrice.textContent = `${currency.format(item.price?.amount ?? 0)} each`;
+    details.append(brand, title, unitPrice);
+
+    const controls = document.createElement('div');
+    controls.className = 'flex items-center gap-2 sm:justify-end';
+
+    const decrease = document.createElement('button');
+    decrease.type = 'button';
+    decrease.className = 'size-9 rounded-control border border-ses-line text-on-surface hover:border-tertiary';
+    decrease.dataset.cartDec = String(item.slug || '');
+    decrease.setAttribute('aria-label', 'Decrease quantity');
+    decrease.textContent = '-';
+
+    const quantity = document.createElement('span');
+    quantity.className = 'min-w-8 text-center text-title-sm text-on-surface';
+    quantity.textContent = String(item.quantity);
+
+    const increase = document.createElement('button');
+    increase.type = 'button';
+    increase.className = 'size-9 rounded-control border border-ses-line text-on-surface hover:border-tertiary';
+    increase.dataset.cartInc = String(item.slug || '');
+    increase.setAttribute('aria-label', 'Increase quantity');
+    increase.textContent = '+';
+
+    const remove = document.createElement('button');
+    remove.type = 'button';
+    remove.className = 'ml-2 rounded-control px-3 py-2 text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-ses-accent';
+    remove.dataset.cartRemove = String(item.slug || '');
+    remove.textContent = 'Remove';
+
+    controls.append(decrease, quantity, increase, remove);
+    article.append(imageLink, details, controls);
+    return article;
+  };
+
+  const renderCart = () => {
+    const items = readCart();
+    writeCart(items);
+    const count = items.reduce((total, item) => total + item.quantity, 0);
+    const total = items.reduce((sum, item) => sum + (item.price?.amount ?? 0) * item.quantity, 0);
+
+    if (totalItems) totalItems.textContent = String(count);
+    if (totalPrice) totalPrice.textContent = currency.format(total);
+    if (checkout) {
+      checkout.href = items.length > 0 ? checkoutHref(items) : `https://wa.me/${whatsappNumber}`;
+      checkout.toggleAttribute('aria-disabled', items.length === 0);
+    }
+    if (emptyState) emptyState.classList.toggle('hidden', items.length !== 0);
+    if (!itemsRoot) return;
+
+    itemsRoot.replaceChildren(...items.map(createCartItem));
+  };
+
+  document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!(target instanceof HTMLElement)) return;
+    const items = readCart();
+    const inc = target.closest('[data-cart-inc]');
+    const dec = target.closest('[data-cart-dec]');
+    const remove = target.closest('[data-cart-remove]');
+
+    if (inc) {
+      const item = items.find((entry) => entry.slug === inc.dataset.cartInc);
+      if (item) item.quantity += 1;
+      writeCart(items);
+      renderCart();
+    }
+
+    if (dec) {
+      const item = items.find((entry) => entry.slug === dec.dataset.cartDec);
+      if (item) item.quantity -= 1;
+      writeCart(items.filter((entry) => entry.quantity > 0));
+      renderCart();
+    }
+
+    if (remove) {
+      writeCart(items.filter((entry) => entry.slug !== remove.dataset.cartRemove));
+      renderCart();
+    }
+  });
+
+  clearButton?.addEventListener('click', () => {
+    writeCart([]);
+    renderCart();
+  });
+
+  renderCart();
+</script>

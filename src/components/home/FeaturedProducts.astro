@@ -11,14 +11,6 @@ interface Props {
 }
 
 const { products } = Astro.props;
-
-const categoryHrefs: Record<string, string> = {
-  laptops: '/category/laptops',
-  smartphones: '/category/smartphones',
-  printers: '/category/printers',
-  desktops: '/category/desktops',
-  storage: '/category/storage'
-};
 ---
 
 <Section class="bg-surface-container-low" containerSize="xl" ariaLabelledby="featured-products-title">
@@ -26,8 +18,8 @@ const categoryHrefs: Record<string, string> = {
     <SectionHeading
       id="featured-products-title"
       eyebrow="Featured products"
-      title="Representative picks for common orders."
-      description="Common buying paths for business laptops, everyday phones, office printers, and desktop setups."
+      title="Current picks from the catalog."
+      description="Common buying paths for laptops, desktops, printers, and monitors from the imported product sheet."
     />
     <Badge variant="primary" size="md">Popular paths</Badge>
   </div>
@@ -36,8 +28,7 @@ const categoryHrefs: Record<string, string> = {
     {products.map((product, index) => (
       <ProductCard
         product={product}
-        href={categoryHrefs[product.category] ?? '/shop'}
-        ctaLabel="View options"
+        ctaLabel="View product"
         priority={index < 2}
       />
     ))}

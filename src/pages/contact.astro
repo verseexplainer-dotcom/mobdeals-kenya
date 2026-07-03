@@ -4,6 +4,9 @@ import Badge from '@components/ui/Badge.astro';
 import Button from '@components/ui/Button.astro';
 import Section from '@components/ui/Section.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
+import { siteConfig } from '@config/site';
+
+const whatsappMessage = encodeURIComponent('Hello MobDeals Kenya, I need product support');
 ---
 
 <BaseLayout
@@ -25,7 +28,7 @@ import BaseLayout from '@layouts/BaseLayout.astro';
           Share the product, budget, location, and preferred condition. The team can confirm availability, alternatives, warranty terms, and delivery options.
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <Button href="https://wa.me/254700000000?text=Hello%20MobDeals%20Kenya%2C%20I%20need%20product%20support" target="_blank" variant="whatsapp">
+          <Button href={`https://wa.me/${siteConfig.whatsappNumber}?text=${whatsappMessage}`} target="_blank" variant="whatsapp">
             WhatsApp support
           </Button>
           <Button href="/shop" variant="secondary">Browse products</Button>

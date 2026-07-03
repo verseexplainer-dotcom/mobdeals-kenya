@@ -66,7 +66,7 @@ export function createOrganizationSchema() {
     '@type': 'Organization',
     name: siteConfig.name,
     url: siteConfig.siteUrl || undefined,
-    logo: absoluteUrl('/images/logo.png')
+    logo: absoluteUrl(siteConfig.logo)
   };
 }
 

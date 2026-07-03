@@ -57,7 +57,7 @@ const products = filteredProducts.length > 0 ? filteredProducts : categoryProduc
       <Badge variant="accent" size="md">{category.label}</Badge>
       <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">{label}</h1>
       <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">
-        A focused path for {label.toLowerCase()}. If the exact subcategory is not listed yet, use the broader {category.label.toLowerCase()} products below and ask support for current supplier stock.
+        A focused path for {label.toLowerCase()} using the current MobDeals catalog. If the exact match is narrow, use the broader {category.label.toLowerCase()} products below and ask support to confirm live stock.
       </p>
     </div>
   </Section>
@@ -66,7 +66,7 @@ const products = filteredProducts.length > 0 ? filteredProducts : categoryProduc
     <SectionHeading
       eyebrow={filteredProducts.length > 0 ? 'Matched products' : 'Broader category'}
       title={filteredProducts.length > 0 ? `${label} products` : `${category.label} options`}
-      description="These pages are ready for deeper product content as inventory expands."
+      description="Results are filtered from the imported workbook catalog by visible product names, brands, descriptions, and specs."
     />
     <Grid columns="products" gap="md" class="mt-8">
       {products.map((product) => <ProductCard product={product} />)}

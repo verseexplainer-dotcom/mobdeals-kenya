@@ -1,3 +1,5 @@
+import { getAllProducts, productCategories } from '@data/products';
+
 export interface BrandProfile {
   slug: string;
   name: string;
@@ -13,62 +15,35 @@ export interface ServicePage {
   points: string[];
 }
 
-export const brandProfiles: BrandProfile[] = [
-  {
-    slug: 'hp',
-    name: 'HP',
-    summary: 'Business laptops, EliteBook options, LaserJet printers, and dependable office hardware.',
-    categories: ['Laptops', 'Printers', 'Office setups']
-  },
-  {
-    slug: 'dell',
-    name: 'Dell',
-    summary: 'Latitude laptops and practical business machines for offices, students, and mobile teams.',
-    categories: ['Laptops', 'Desktops', 'Business supply']
-  },
-  {
-    slug: 'lenovo',
-    name: 'Lenovo',
-    summary: 'ThinkPad and ThinkCentre systems for reception desks, admin work, and school labs.',
-    categories: ['Laptops', 'Desktops', 'Office bundles']
-  },
-  {
-    slug: 'apple',
-    name: 'Apple',
-    summary: 'iPhone and MacBook buying support with attention to storage, battery, and condition.',
-    categories: ['Smartphones', 'Laptops', 'Accessories']
-  },
-  {
-    slug: 'samsung',
-    name: 'Samsung',
-    summary: 'Galaxy phones and everyday mobile accessories selected for practical Kenya use.',
-    categories: ['Smartphones', 'Accessories']
-  },
-  {
-    slug: 'epson',
-    name: 'Epson',
-    summary: 'EcoTank printers and refill-focused office printing options for lower running costs.',
-    categories: ['Printers', 'Ink supply']
-  },
-  {
-    slug: 'kingston',
-    name: 'Kingston',
-    summary: 'SSD and memory upgrades for faster laptops, desktops, and storage-heavy workflows.',
-    categories: ['Storage', 'Upgrades']
-  },
-  {
-    slug: 'sandisk',
-    name: 'SanDisk',
-    summary: 'Flash storage and portable file-transfer accessories for phones, laptops, and offices.',
-    categories: ['Storage', 'Accessories']
-  },
-  {
-    slug: 'asus',
-    name: 'ASUS',
-    summary: 'Creator, student, and performance laptop options can be quoted when supplier stock is available.',
-    categories: ['Laptops', 'Creator tech', 'Accessories']
+const categoryLabelBySlug = new Map(productCategories.map((category) => [category.slug, category.label]));
+const productsByBrand = getAllProducts().reduce((brands, product) => {
+  if (!product.brand) {
+    return brands;
   }
-];
+
+  const current = brands.get(product.brand) ?? [];
+  current.push(product);
+  brands.set(product.brand, current);
+  return brands;
+}, new Map<string, ReturnType<typeof getAllProducts>>());
+
+export const brandProfiles: BrandProfile[] = Array.from(productsByBrand.entries())
+  .map(([name, products]) => {
+    const categories = Array.from(new Set(products.map((product) => categoryLabelBySlug.get(product.category) ?? product.category))).sort();
+    const categorySummary = categories.slice(0, 3).join(', ');
+
+    return {
+      slug: name.toLowerCase(),
+      name,
+      summary: `${name} currently has ${products.length} product${products.length === 1 ? '' : 's'} listed across ${categorySummary}. Compare source-sheet prices, condition, specs, and availability before purchase.`,
+      categories
+    };
+  })
+  .sort((first, second) => {
+    const firstCount = productsByBrand.get(first.name)?.length ?? 0;
+    const secondCount = productsByBrand.get(second.name)?.length ?? 0;
+    return secondCount - firstCount || first.name.localeCompare(second.name);
+  });
 
 export const servicePages: ServicePage[] = [
   {
