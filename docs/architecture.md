@@ -1,15 +1,28 @@
 # MobDeals Kenya Architecture
 
-MobDeals Kenya is structured as a static-first Astro ecommerce frontend optimized for Cloudflare Pages on the Cloudflare free tier.
+MobDeals Kenya is a static-first Astro ecommerce frontend optimized for Cloudflare Pages on the Cloudflare free tier.
 
-- Product media should come from Supabase Storage public buckets on the Supabase free tier.
-- Browser-side Supabase access must use public anon credentials only.
-- Cloudflare Pages should build with `npm run build` and serve the generated `dist` directory from the `main` branch.
-- Cloudflare Workers, Pages Functions, KV, D1, R2, and other paid or runtime features are not part of the core storefront unless a future feature explicitly justifies them.
-- Product rendering should stay data-driven and component-based.
-- Global SSR is intentionally not enabled.
+## Runtime Model
+
+- Astro builds the storefront as static HTML in `dist`; global SSR is intentionally not enabled.
+- Cloudflare Pages should build from `main` with `npm run build` and serve `dist`.
+- Cloudflare Workers, Pages Functions, KV, D1, R2, and other paid or runtime services are outside the core storefront unless a future feature explicitly justifies them.
+- The current cart is a client-side `localStorage` cart that prepares WhatsApp checkout messages. It is not an order, payment, auth, or inventory backend.
+
+## Data And Media
+
+- Product data is generated into `src/data/products.ts` from the MobDeals SEO workbook by `scripts/import_mobdeals_products.py`.
+- The current generated catalog contains 340 listings across laptops, desktops, printers, monitors, storage, smartphones, projectors, and internet hardware.
+- Committed product media lives as optimized WebP assets under `public/images`.
+- Raw source-image drops such as `product drop/` stay local and ignored.
+- Supabase Storage public buckets remain supported for product media, using the free-tier `products` bucket.
+- Browser-side Supabase access must use public anon credentials only. Service role keys and privileged credentials must not reach frontend code or public Cloudflare Pages variables.
+
+## Application Shape
+
+- Product rendering is data-driven and component-based across `/shop`, `/category/[slug]`, `/category/[slug]/[filter]`, `/products/[slug]`, brands, search, and homepage sections.
 - Tailwind v4 tokens live in `src/styles/global.css`.
 - Shared UI primitives live in `src/components/ui`.
-- Foundation utilities live in `src/lib/utils`.
-- SEO metadata helpers live in `src/lib/seo`.
+- Navigation, home, and product components live under `src/components`.
+- Foundation utilities live in `src/lib/utils`, product helpers in `src/lib/products`, Supabase helpers in `src/lib/supabase`, and SEO helpers in `src/lib/seo`.
 - AI project context and task instructions live in `ai/`.

@@ -1,8 +1,8 @@
-# FOUNDATION TASK
+# Foundation Status
 
-Build the MobDeals Kenya project foundation.
+The MobDeals Kenya project foundation is implemented.
 
-Requirements:
+Implemented:
 
 1. Configure:
 - global styles
@@ -42,7 +42,7 @@ Requirements:
 - mobile-first spacing
 - reusable section padding system
 
-IMPORTANT:
+Current constraints:
 - Keep static-first architecture
 - Optimize for Cloudflare Pages free tier
 - Avoid hydration
@@ -52,8 +52,6 @@ IMPORTANT:
 - Semantic HTML
 - Production ready
 
-DO NOT:
-- build homepage
-- build product pages
-- implement backend
-- implement checkout
+Remaining:
+- Add formal test tooling.
+- Keep backend checkout and auth out of scope until a dedicated feature decision.

@@ -1,10 +1,10 @@
-# DESIGN SYSTEM TASK
+# Design System Status
 
-Build premium reusable ecommerce design system.
+Initial premium ecommerce design system is implemented.
 
 Requirements:
 
-Create:
+Created:
 - Button
 - Card
 - Badge
@@ -14,8 +14,12 @@ Create:
 - Input
 - Modal
 - Divider
+- Grid
+- Heading
+- Section
+- TrustBadge
 
-Create:
+Created:
 - spacing scale
 - typography scale
 - responsive layout system
@@ -36,13 +40,13 @@ Design direction:
 - subtle shadows
 - minimal luxury aesthetic
 
-Requirements:
+Current constraints:
 - mobile-first
 - Tailwind only
 - semantic HTML
 - reusable architecture
 - no inline styles
-- no unnecessary JavaScript
+- minimal JavaScript
 - Cloudflare optimized
 
 Optimize for:
@@ -51,8 +55,6 @@ Optimize for:
 - desktops
 - printers
 
-DO NOT:
-- build homepage
-- build backend
-- add React
-- add animations yet
+Remaining:
+- Add formal visual regression checks.
+- Continue refining components against `docs/design-references/DESIGN.md` as the storefront matures.

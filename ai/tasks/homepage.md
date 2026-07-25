@@ -1,10 +1,10 @@
-# HOMEPAGE TASK
+# Homepage Status
 
-Build premium ecommerce homepage for MobDeals Kenya.
+Premium ecommerce homepage is implemented for MobDeals Kenya.
 
 Requirements:
 
-SECTIONS:
+Implemented sections:
 
 1. Hero Slider
 - large premium hero
@@ -31,7 +31,7 @@ Categories:
 Requirements:
 - horizontal mobile scroll
 - premium cards
-- clean icons/placeholders
+- clean category cards
 
 4. Featured Products Section
 - reusable product cards
@@ -57,7 +57,7 @@ Brands:
 
 9. Newsletter CTA
 
-Requirements:
+Current constraints:
 - premium ecommerce styling
 - Tailwind only
 - mobile-first
@@ -72,9 +72,6 @@ Design inspiration:
 - Anker
 - Framework
 
-DO NOT:
-- implement backend
-- implement checkout
-- implement auth
-- add heavy animations
-- use real product data yet
+Remaining:
+- Keep backend checkout and auth out of scope.
+- Add browser screenshots for desktop and mobile homepage QA.

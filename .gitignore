@@ -17,6 +17,8 @@ pnpm-debug.log*
 .playwright-cli/
 output/
 
+# local source asset drops
+product drop/
 
 # environment variables
 .env

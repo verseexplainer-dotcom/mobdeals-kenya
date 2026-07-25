@@ -1,8 +1,14 @@
 # Architecture Context
 
-Keep the project static-first. Pages should be data-driven, component-based, and optimized for Cloudflare Pages free-tier static hosting.
+Keep the project static-first. Pages are data-driven, component-based, and optimized for Cloudflare Pages free-tier static hosting.
 
-Supabase free tier is the data and media backing service. Public browser code may read via the anon key, while service role keys and other privileged credentials must remain outside the frontend.
+Current implementation:
+
+- Astro generates static routes for home, shop, categories, filtered categories, products, brands, search, cart, support, and content pages.
+- `src/data/products.ts` is generated from the MobDeals SEO workbook and currently holds 340 product listings.
+- Product media is committed as optimized WebP assets in `public/images`; raw source drops such as `product drop/` stay local and ignored.
+- Supabase free tier remains available for public media and browser-readable data. Public browser code may read via the anon key only.
+- The cart is client-side `localStorage` with WhatsApp checkout handoff. It is not a backend order system.
 
 Primary source areas:
 
@@ -10,7 +16,7 @@ Primary source areas:
 - `src/layouts`: Astro layouts
 - `src/lib`: Supabase, SEO, product, analytics, and utility code
 - `src/config`: typed site and design configuration
-- `src/data`: static product/content seed data
+- `src/data`: generated catalog data and curated storefront content
 - `src/content`: Astro content collections
-- `public`: static assets
+- `public`: committed static assets
 - `ai`: prompts, tasks, skills, and project context
