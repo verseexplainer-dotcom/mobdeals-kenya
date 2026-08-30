@@ -16,9 +16,9 @@ const { products } = Astro.props;
     <div class="container-xl">
       <SectionHeading
         id="related-products-title"
-        eyebrow="Related products"
-        title="Useful options to compare"
-        description="Nearby choices from the same buying path or practical companion categories."
+        eyebrow="More Options"
+        title="Related Products"
+        description="Compare similar products available from MobDeals."
       />
       <Grid columns="products" gap="md" class="mt-8">
         {products.map((product) => <ProductCard product={product} />)}

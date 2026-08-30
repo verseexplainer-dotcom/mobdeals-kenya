@@ -18,7 +18,7 @@ if (categoryKey.includes('smartphone') || categoryKey.includes('internet')) {
 }
 ---
 
-<div class="space-y-4">
+<div class="space-y-4" data-product-gallery>
   <div class={`relative aspect-square overflow-hidden rounded-card-lg border border-ses-line bg-gradient-to-br ${fallbackTone} shadow-premium`}>
     {images[0] ? (
       <img
@@ -28,6 +28,7 @@ if (categoryKey.includes('smartphone') || categoryKey.includes('internet')) {
         height={images[0].height}
         loading="eager"
         decoding="async"
+        data-gallery-main
         class="size-full object-contain p-6 sm:p-10"
       />
     ) : (
@@ -80,12 +81,27 @@ if (categoryKey.includes('smartphone') || categoryKey.includes('internet')) {
   </div>
 
   {images.length > 1 && (
-    <div class="grid grid-cols-4 gap-3">
-      {images.slice(0, 4).map((image) => (
-        <div class="aspect-square overflow-hidden rounded-lg border border-ses-line bg-surface-container-lowest">
-          <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" decoding="async" class="size-full object-contain p-3" />
-        </div>
+    <div class="flex snap-x gap-3 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" aria-label="Product images">
+      {images.map((image, index) => (
+        <button type="button" class="aspect-square w-20 shrink-0 snap-start overflow-hidden rounded-lg border border-ses-line bg-surface-container-lowest aria-[current=true]:border-secondary" aria-label={`Show image ${index + 1} of ${images.length}`} aria-current={index === 0 ? 'true' : 'false'} data-gallery-thumbnail data-image-src={image.src} data-image-alt={image.alt}>
+          <img src={image.src} alt="" width={image.width} height={image.height} loading="lazy" decoding="async" class="size-full object-contain p-3" />
+        </button>
       ))}
     </div>
   )}
 </div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-product-gallery]').forEach((gallery) => {
+    const mainImage = gallery.querySelector<HTMLImageElement>('[data-gallery-main]');
+    const thumbnails = Array.from(gallery.querySelectorAll<HTMLButtonElement>('[data-gallery-thumbnail]'));
+    thumbnails.forEach((thumbnail) => {
+      thumbnail.addEventListener('click', () => {
+        if (!mainImage || !thumbnail.dataset.imageSrc) return;
+        mainImage.src = thumbnail.dataset.imageSrc;
+        mainImage.alt = thumbnail.dataset.imageAlt ?? '';
+        thumbnails.forEach((item) => item.setAttribute('aria-current', String(item === thumbnail)));
+      });
+    });
+  });
+</script>

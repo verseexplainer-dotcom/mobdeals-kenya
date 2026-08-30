@@ -120,7 +120,7 @@ if (categoryKey.includes('smartphone') || categoryKey.includes('internet')) {
     </div>
 
     <p class="mt-4 text-label-xs uppercase text-on-surface-variant">{categoryLabel}</p>
-    <h3 class="mt-2 text-title-md text-on-surface">
+    <h3 class="mt-2 line-clamp-3 text-title-md text-on-surface">
       <a href={productHref} class="hover:text-ses-accent">{product.name}</a>
     </h3>
     {product.brand && <p class="mt-1 text-body-sm text-on-surface-variant">{product.brand}</p>}
@@ -149,12 +149,12 @@ if (categoryKey.includes('smartphone') || categoryKey.includes('internet')) {
     <div class="mt-5 grid gap-2">
       <button
         type="button"
-        class="inline-flex min-h-9 items-center justify-center rounded-control bg-primary px-3 text-label-md font-semibold text-on-primary shadow-xs transition hover:-translate-y-0.5 hover:bg-primary-container"
+        class="inline-flex min-h-11 items-center justify-center rounded-control bg-primary px-3 text-label-md font-semibold text-on-primary shadow-xs transition hover:-translate-y-0.5 hover:bg-primary-container"
         data-cart-add
         data-cart-product={JSON.stringify(productSummary)}
         aria-label={`Add ${product.name} to cart`}
       >
-        Add to cart
+        ADD TO CART
       </button>
       <Button href={productHref} variant="secondary" size="sm" class="w-full" ariaLabel={`View ${product.name}`}>
         {ctaLabel}
@@ -162,49 +162,3 @@ if (categoryKey.includes('smartphone') || categoryKey.includes('internet')) {
     </div>
   </div>
 </article>
-
-<script>
-  const CART_KEY = 'mobdeals_cart_v1';
-
-  const readCart = () => {
-    try {
-      return JSON.parse(localStorage.getItem(CART_KEY) || '[]');
-    } catch {
-      return [];
-    }
-  };
-
-  const writeCart = (items) => {
-    localStorage.setItem(CART_KEY, JSON.stringify(items));
-    const count = items.reduce((total, item) => total + item.quantity, 0);
-    document.querySelectorAll('[data-cart-count]').forEach((target) => {
-      target.textContent = String(count);
-      target.toggleAttribute('hidden', count === 0);
-    });
-  };
-
-  const addCartItem = (product) => {
-    const items = readCart();
-    const existing = items.find((item) => item.slug === product.slug);
-    if (existing) {
-      existing.quantity += 1;
-    } else {
-      items.push({ ...product, quantity: 1 });
-    }
-    writeCart(items);
-  };
-
-  writeCart(readCart());
-
-  document.addEventListener('click', (event) => {
-    const button = event.target?.closest?.('[data-cart-add]');
-    if (!button) return;
-    const product = JSON.parse(button.dataset.cartProduct || '{}');
-    if (!product.slug) return;
-    addCartItem(product);
-    button.textContent = 'Added';
-    window.setTimeout(() => {
-      button.textContent = 'Add to cart';
-    }, 1200);
-  });
-</script>

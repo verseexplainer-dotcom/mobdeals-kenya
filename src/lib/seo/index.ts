@@ -1,5 +1,5 @@
 import { siteConfig } from '@config/site';
-import { formatProductPrice, type Product, type ProductCategory } from '@lib/products';
+import { formatProductPrice, getProductDisplaySummary, type Product, type ProductCategory } from '@lib/products';
 
 export interface SeoInput {
   title?: string;
@@ -66,7 +66,22 @@ export function createOrganizationSchema() {
     '@type': 'Organization',
     name: siteConfig.name,
     url: siteConfig.siteUrl || undefined,
-    logo: absoluteUrl(siteConfig.logo)
+    logo: absoluteUrl(siteConfig.logo),
+    telephone: siteConfig.phone,
+    email: siteConfig.email,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Moi Avenue',
+      addressLocality: 'Nairobi',
+      addressCountry: 'KE'
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: siteConfig.phone,
+      email: siteConfig.email,
+      contactType: 'customer support',
+      availableLanguage: 'English'
+    }
   };
 }
 
@@ -84,9 +99,7 @@ export function createCategorySeo(category: ProductCategory, productCount: numbe
 export function createProductSeo(product: Product): SeoInput {
   return {
     title: product.seoTitle ?? product.name,
-    description:
-      product.seoDescription ??
-      `${product.name} from ${siteConfig.name}. ${product.description} Price: ${formatProductPrice(product.price)}. ${product.availabilityNote}`,
+    description: `${product.name}. ${getProductDisplaySummary(product)} Price: ${formatProductPrice(product.price)}.`,
     image: product.images[0]?.src,
     pathname: `/products/${product.slug}`,
     type: 'product'
@@ -115,7 +128,7 @@ export function createProductSchema(product: Product) {
     '@type': 'Product',
     name: product.name,
     image: imageUrls.length > 0 ? imageUrls : undefined,
-    description: product.description,
+    description: getProductDisplaySummary(product),
     sku: product.id,
     brand: product.brand
       ? {

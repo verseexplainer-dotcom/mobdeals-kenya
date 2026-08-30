@@ -8,3 +8,4 @@ export type {
   ProductSummary
 } from './types';
 export { formatProductPrice } from './format';
+export { getProductDisplaySpecs, getProductDisplaySummary } from './presentation';
