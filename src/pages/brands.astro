@@ -15,26 +15,26 @@ const featuredProducts = products.filter((product) => product.featured).slice(0,
 
 <BaseLayout
   seo={{
-    title: 'Electronics Brands in Nairobi',
-    description: 'Browse current MobDeals Kenya brand listings from the active catalog, including HP, Lenovo, Dell, Epson, Kyocera, Apple, Kaspersky, Starlink, and more.',
+    title: 'Shop by Brand',
+    description: 'Browse products by brand at MobDeals Kenya, including HP, Lenovo, Dell, Epson, Kyocera, Apple and more.',
     pathname: '/brands'
   }}
 >
   <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
     <Breadcrumbs items={[{ label: 'Brands' }]} />
     <div class="mt-10 max-w-4xl">
-      <Badge variant="accent" size="md">Featured brands</Badge>
+      <Badge variant="accent" size="md">BRANDS</Badge>
       <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">
-        Compare brands by real buying use.
+        Shop by Brand
       </h1>
       <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">
-        Start with the brand, then narrow by category, condition, price, visible specs, and availability.
+        Browse available products by brand, then compare specifications, condition and price.
       </p>
     </div>
   </Section>
 
   <Section containerSize="xl" spacing="sm" ariaLabelledby="brands-title">
-    <SectionHeading id="brands-title" eyebrow="Brand index" title="Current buying paths" />
+    <SectionHeading id="brands-title" eyebrow="Browse" title="Brands" />
     <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {brandProfiles.map((brand) => (
         <a href={`/brands/${brand.slug}`} class="group rounded-card border border-ses-line bg-surface-container-lowest p-5 transition hover:-translate-y-0.5 hover:border-primary-fixed-dim">
@@ -47,7 +47,7 @@ const featuredProducts = products.filter((product) => product.featured).slice(0,
   </Section>
 
   <Section class="bg-surface-container-low/35" containerSize="xl" spacing="sm">
-    <SectionHeading eyebrow="Featured products" title="Available brand-led options" />
+    <SectionHeading eyebrow="Featured" title="Featured Products" />
     <Grid columns="products" gap="md" class="mt-8">
       {featuredProducts.map((product) => <ProductCard product={product} />)}
     </Grid>

@@ -1,52 +1,76 @@
 ---
-import ProductCard from '@components/product/ProductCard.astro';
 import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
 import Badge from '@components/ui/Badge.astro';
 import Button from '@components/ui/Button.astro';
-import Grid from '@components/ui/Grid.astro';
 import Section from '@components/ui/Section.astro';
-import SectionHeading from '@components/ui/SectionHeading.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
-import { getAllProducts } from '@data/products';
+import { siteConfig } from '@config/site';
 
-const businessProducts = getAllProducts().filter((product) => ['laptops', 'desktops', 'printers', 'monitors'].includes(product.category)).slice(0, 4);
+const businessMessage = encodeURIComponent('Hello MobDeals Kenya, I would like to request a business quotation.');
+const supplyCategories = [
+  ['Laptops', '/category/laptops'],
+  ['Printers', '/category/printers'],
+  ['Monitors', '/category/monitors'],
+  ['Projectors', '/category/projectors'],
+  ['UPS & Power', '/category/ups'],
+  ['Software', '/category/software'],
+  ['Tablets', '/category/tablets']
+];
 ---
 
-<BaseLayout
-  seo={{
-    title: 'Business Electronics Supply in Kenya',
-    description: 'Request laptops, desktops, printers, monitors, projectors, storage, and office technology supply support for teams, schools, and businesses in Kenya.',
-    pathname: '/business'
-  }}
->
+<BaseLayout seo={{ title: 'Business Technology Supply', description: 'Request quotations for laptops, printers, monitors, projectors and other technology for offices, schools and organisations.', pathname: '/business' }}>
   <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
     <Breadcrumbs items={[{ label: 'Business Supply' }]} />
-    <div class="mt-10 grid gap-10 lg:grid-cols-[1fr_0.8fr] lg:items-end">
-      <div>
-        <Badge variant="accent" size="md">Business supply</Badge>
-        <h1 class="mt-5 max-w-3xl font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">
-          Build a practical technology list for your team.
-        </h1>
-        <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">
-          Request quotes for laptops, desktops, printers, monitors, projectors, storage, and connectivity hardware with quantity, condition, warranty, and delivery guidance.
-        </p>
-        <Button href="/contact" variant="secondary" class="mt-7">Request a quote</Button>
-      </div>
-      <div class="rounded-card border border-ses-line bg-surface-container-lowest p-5">
-        <p class="text-label-xs uppercase text-ses-accent">Useful request details</p>
-        <ul class="mt-4 grid gap-3 text-body-md text-on-surface-variant">
-          <li>Quantity and preferred brands</li>
-          <li>Budget range per item</li>
-          <li>Delivery location and invoice needs</li>
-        </ul>
+    <div class="mt-8 max-w-4xl">
+      <Badge variant="accent" size="md">BUSINESS & ORGANISATION ORDERS</Badge>
+      <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">Technology Supply for Your Business</h1>
+      <p class="mt-5 max-w-3xl text-body-lg text-on-surface-variant">Request quotations for laptops, desktops, printers, monitors, projectors and other technology for offices, schools, organisations and institutions.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <Button href="#quote-request">REQUEST A QUOTE</Button>
+        <Button href={`https://wa.me/${siteConfig.whatsappNumber}?text=${businessMessage}`} target="_blank" variant="whatsapp">WHATSAPP BUSINESS SALES</Button>
       </div>
     </div>
   </Section>
 
-  <Section containerSize="xl" spacing="sm">
-    <SectionHeading eyebrow="Business-ready" title="Common office supply items" />
-    <Grid columns="products" gap="md" class="mt-8">
-      {businessProducts.map((product) => <ProductCard product={product} />)}
-    </Grid>
+  <Section containerSize="xl" spacing="sm" ariaLabelledby="supply-title">
+    <h2 id="supply-title" class="font-display text-headline-lg text-on-surface">What We Can Supply</h2>
+    <div class="mt-7 grid gap-px overflow-hidden rounded-card border border-ses-line bg-ses-line sm:grid-cols-2 lg:grid-cols-4">
+      {supplyCategories.map(([label, href]) => (
+        <a href={href} class="min-h-20 bg-surface-container-lowest p-5 text-title-md text-on-surface hover:bg-surface-container-low hover:text-ses-accent">{label}</a>
+      ))}
+    </div>
+  </Section>
+
+  <Section id="quote-request" class="bg-surface-container-low/35" containerSize="lg" spacing="sm" ariaLabelledby="quote-title">
+    <form class="rounded-card border border-ses-line bg-surface-container-lowest p-5 shadow-xs sm:p-8" action="/business" method="get" data-business-form>
+      <h2 id="quote-title" class="font-display text-headline-lg text-on-surface">Request a Quote</h2>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2">
+        <label class="grid gap-2 text-body-sm text-on-surface-variant sm:col-span-2">Products required<textarea name="products" required rows="4" class="rounded-control border border-ses-line bg-background px-4 py-3 text-on-surface"></textarea></label>
+        <label class="grid gap-2 text-body-sm text-on-surface-variant">Quantity<input name="quantity" required class="min-h-11 rounded-control border border-ses-line bg-background px-4 text-on-surface" /></label>
+        <label class="grid gap-2 text-body-sm text-on-surface-variant">Budget if available<input name="budget" class="min-h-11 rounded-control border border-ses-line bg-background px-4 text-on-surface" /></label>
+        <label class="grid gap-2 text-body-sm text-on-surface-variant sm:col-span-2">Preferred specifications<textarea name="specifications" rows="3" class="rounded-control border border-ses-line bg-background px-4 py-3 text-on-surface"></textarea></label>
+        <label class="grid gap-2 text-body-sm text-on-surface-variant">Delivery location<input name="location" required class="min-h-11 rounded-control border border-ses-line bg-background px-4 text-on-surface" /></label>
+        <label class="grid gap-2 text-body-sm text-on-surface-variant">Invoice requirements<input name="invoice" class="min-h-11 rounded-control border border-ses-line bg-background px-4 text-on-surface" /></label>
+        <button type="submit" class="min-h-12 rounded-control bg-primary px-5 font-display text-label-md text-on-primary hover:bg-primary-container sm:col-span-2">SEND REQUEST</button>
+      </div>
+    </form>
   </Section>
 </BaseLayout>
+
+<script define:vars={{ whatsappNumber: siteConfig.whatsappNumber }}>
+  const businessForm = document.querySelector('[data-business-form]');
+  businessForm?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const formData = new FormData(businessForm);
+    const message = [
+      'Hello MobDeals Kenya, I would like a business quotation.',
+      `Products: ${formData.get('products') || ''}`,
+      `Quantity: ${formData.get('quantity') || ''}`,
+      `Preferred specifications: ${formData.get('specifications') || ''}`,
+      `Budget: ${formData.get('budget') || ''}`,
+      `Delivery location: ${formData.get('location') || ''}`,
+      `Invoice requirements: ${formData.get('invoice') || ''}`
+    ].join('\n');
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+  });
+</script>

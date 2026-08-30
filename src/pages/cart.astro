@@ -8,7 +8,7 @@ import { siteConfig } from '@config/site';
 <BaseLayout
   seo={{
     title: 'Cart',
-    description: 'Review MobDeals Kenya cart items and send checkout details on WhatsApp.',
+    description: 'Review your MobDeals items and send the order to our team for confirmation.',
     pathname: '/cart',
     noIndex: true
   }}
@@ -19,14 +19,14 @@ import { siteConfig } from '@config/site';
       <div>
         <h1 class="font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">Cart</h1>
         <p class="mt-4 max-w-2xl text-body-lg text-on-surface-variant">
-          Review selected products, adjust quantity, then send the order request to MobDeals Kenya on WhatsApp.
+          Review your items, then send your order to our team for stock and delivery confirmation.
         </p>
 
         <div class="mt-8 grid gap-4" data-cart-items></div>
 
         <div class="mt-8 hidden rounded-card border border-ses-line bg-surface-container-lowest p-8" data-cart-empty>
           <h2 class="text-title-md text-on-surface">Your cart is empty</h2>
-          <p class="mt-2 text-body-md text-on-surface-variant">Add products from shop or category pages before checkout.</p>
+          <p class="mt-2 text-body-md text-on-surface-variant">Add products from the shop before sending an order.</p>
           <a href="/shop" class="mt-5 inline-flex rounded-control border border-ses-line px-4 py-2 text-label-md text-on-surface hover:border-tertiary hover:text-tertiary">
             Return to shop
           </a>
@@ -34,7 +34,7 @@ import { siteConfig } from '@config/site';
       </div>
 
       <aside class="rounded-card border border-ses-line bg-surface-container-lowest p-5 shadow-xs lg:sticky lg:top-28">
-        <p class="text-label-xs uppercase text-ses-accent">Checkout summary</p>
+        <p class="text-label-xs uppercase text-ses-accent">Order Summary</p>
         <dl class="mt-5 grid gap-3">
           <div class="flex items-center justify-between gap-4">
             <dt class="text-body-sm text-on-surface-variant">Items</dt>
@@ -46,6 +46,10 @@ import { siteConfig } from '@config/site';
           </div>
         </dl>
 
+        <p class="mt-5 border-t border-ses-line pt-4 text-body-sm text-on-surface-variant">
+          Our team will confirm stock, warranty, delivery options and the final amount before payment.
+        </p>
+
         <a
           href={`https://wa.me/${siteConfig.whatsappNumber}`}
           target="_blank"
@@ -53,7 +57,7 @@ import { siteConfig } from '@config/site';
           class="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-control bg-primary px-6 text-body-md font-semibold text-on-primary transition hover:-translate-y-0.5 hover:bg-primary-container"
           data-cart-whatsapp
         >
-          Checkout on WhatsApp
+          CONFIRM ORDER ON WHATSAPP
         </a>
         <button
           type="button"
@@ -62,9 +66,6 @@ import { siteConfig } from '@config/site';
         >
           Clear cart
         </button>
-        <p class="mt-4 text-body-sm text-on-surface-variant">
-          Final stock, condition, warranty, and delivery cost are confirmed by support before payment.
-        </p>
       </aside>
     </div>
   </Section>
@@ -109,7 +110,7 @@ import { siteConfig } from '@config/site';
     });
     const total = items.reduce((sum, item) => sum + (item.price?.amount ?? 0) * item.quantity, 0);
     const message = [
-      'Hi MobDeals Kenya, I would like to checkout these products:',
+      'Hi MobDeals Kenya, I would like to confirm this order:',
       '',
       ...lines,
       '',
@@ -200,6 +201,9 @@ import { siteConfig } from '@config/site';
     if (checkout) {
       checkout.href = items.length > 0 ? checkoutHref(items) : `https://wa.me/${whatsappNumber}`;
       checkout.toggleAttribute('aria-disabled', items.length === 0);
+      checkout.classList.toggle('pointer-events-none', items.length === 0);
+      checkout.classList.toggle('opacity-50', items.length === 0);
+      checkout.tabIndex = items.length === 0 ? -1 : 0;
     }
     if (emptyState) emptyState.classList.toggle('hidden', items.length !== 0);
     if (!itemsRoot) return;

@@ -5,9 +5,9 @@ import {
   CategoryScroller,
   FeaturedProducts,
   HomeHeroSlider,
+  NeedHelpChoosing,
   NewsletterCTA,
   SplitBanners,
-  Testimonials,
   TrustBar,
   WhyChooseUs
 } from '@components/home';
@@ -17,7 +17,6 @@ import {
   heroSlides,
   homeCategories,
   promoBanners,
-  testimonials,
   trustItems,
   whyChooseItems
 } from '@data/homepage';
@@ -26,9 +25,8 @@ import {
 <BaseLayout
   mainClass="overflow-hidden"
   seo={{
-    title: 'Premium Electronics in Nairobi',
-    description:
-      'MobDeals Kenya lists laptops, desktops, printers, monitors, storage, smartphones, projectors, and internet hardware in Nairobi and across Kenya.'
+    title: 'Electronics in Nairobi',
+    description: 'Shop laptops, printers, monitors, tablets and electronics from MobDeals Kenya. Nairobi store, warranty support and countrywide delivery.'
   }}
 >
   <HomeHeroSlider slides={heroSlides} />
@@ -38,6 +36,6 @@ import {
   <SplitBanners banners={promoBanners} />
   <BrandCarousel brands={featuredBrands} />
   <WhyChooseUs items={whyChooseItems} />
-  <Testimonials testimonials={testimonials} />
+  <NeedHelpChoosing />
   <NewsletterCTA />
 </BaseLayout>

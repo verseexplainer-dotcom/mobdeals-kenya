@@ -26,8 +26,8 @@ const brandProducts = getAllProducts().filter((product) => product.brand?.toLowe
 
 <BaseLayout
   seo={{
-    title: `${brand.name} Products in Nairobi`,
-    description: `${brand.summary} Browse current ${brand.name} products and request availability support from MobDeals Kenya.`,
+    title: `${brand.name} Products`,
+    description: `Browse ${brand.name} products from MobDeals Kenya and compare prices, condition and key specifications.`,
     pathname: `/brands/${brand.slug}`
   }}
 >
@@ -36,7 +36,7 @@ const brandProducts = getAllProducts().filter((product) => product.brand?.toLowe
     <div class="mt-10 max-w-4xl">
       <Badge variant="accent" size="md">{brand.categories.join(' / ')}</Badge>
       <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">
-        {brand.name} products and buying support.
+        {brand.name} Products
       </h1>
       <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">{brand.summary}</p>
       <Button href="/contact" variant="secondary" class="mt-7">Ask about {brand.name}</Button>
@@ -44,7 +44,7 @@ const brandProducts = getAllProducts().filter((product) => product.brand?.toLowe
   </Section>
 
   <Section containerSize="xl" spacing="sm">
-    <SectionHeading eyebrow="Catalog" title={`${brand.name} products`} description="Listed products update as real inventory and media are added." />
+    <SectionHeading eyebrow="Products" title={`${brand.name} Products`} description={`${brandProducts.length} product${brandProducts.length === 1 ? '' : 's'} available.`} />
     {brandProducts.length > 0 ? (
       <Grid columns="products" gap="md" class="mt-8">
         {brandProducts.map((product) => <ProductCard product={product} />)}

@@ -4,129 +4,198 @@ import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
 import Badge from '@components/ui/Badge.astro';
 import Grid from '@components/ui/Grid.astro';
 import Section from '@components/ui/Section.astro';
-import SectionHeading from '@components/ui/SectionHeading.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { getAllProducts, productCategories } from '@data/products';
+import { siteConfig } from '@config/site';
 
 const products = getAllProducts();
-const searchableProducts = products.map((product) => ({
+const pageSize = 24;
+const uniqueValues = (values: Array<string | undefined>) => Array.from(new Set(values.filter((value): value is string => Boolean(value)))).sort();
+const specValue = (product: (typeof products)[number], label: string) => product.specs.find((spec) => spec.label === label)?.value ?? '';
+const categoryLabels = new Map(productCategories.map((category) => [category.slug, category.label]));
+const brands = uniqueValues(products.map((product) => product.brand));
+const conditions = uniqueValues(products.map((product) => product.condition));
+const processors = uniqueValues(products.map((product) => specValue(product, 'Processor')));
+const memoryOptions = uniqueValues(products.map((product) => specValue(product, 'Memory')));
+const storageOptions = uniqueValues(products.map((product) => specValue(product, 'Storage')));
+const searchableProducts = products.map((product, index) => ({
   slug: product.slug,
   name: product.name,
   brand: product.brand ?? '',
   category: product.category,
-  description: product.description,
-  specs: product.specs.map((spec) => `${spec.label} ${spec.value}`).join(' ')
+  categoryLabel: categoryLabels.get(product.category) ?? product.category,
+  condition: product.condition,
+  price: product.price.amount,
+  processor: specValue(product, 'Processor'),
+  memory: specValue(product, 'Memory'),
+  storage: specValue(product, 'Storage'),
+  specs: product.specs.map((spec) => `${spec.label} ${spec.value}`).join(' '),
+  featured: Boolean(product.featured),
+  index
 }));
+const helpMessage = encodeURIComponent('Hello MobDeals Kenya, I could not find the product I need. Please help me find an alternative.');
 ---
 
-<BaseLayout
-  seo={{
-    title: 'Search Products',
-    description: 'Search current MobDeals Kenya products across laptops, desktops, printers, monitors, storage, smartphones, projectors, and internet hardware.',
-    pathname: '/search'
-  }}
->
+<BaseLayout seo={{ title: 'Search Products', description: 'Search MobDeals laptops, printers, monitors, tablets, projectors, software and UPS systems.', pathname: '/search' }}>
   <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
     <Breadcrumbs items={[{ label: 'Search' }]} />
-    <div class="mt-10 max-w-4xl">
-      <Badge variant="accent" size="md">Product search</Badge>
-      <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">
-        Search the current catalog.
-      </h1>
-      <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">
-        Filter by product name, brand, category, price context, condition, processor, memory, storage, display size, or source-sheet category.
-      </p>
-      <form action="/search" method="get" class="mt-8 grid gap-3 sm:grid-cols-[1fr_auto]" role="search">
+    <div class="mt-8 max-w-4xl">
+      <Badge variant="accent" size="md">PRODUCT SEARCH</Badge>
+      <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">Search Products</h1>
+      <form action="/search" method="get" class="mt-7 grid gap-3 sm:grid-cols-[1fr_auto]" role="search" data-search-form>
         <label for="catalog-search" class="sr-only">Search products</label>
-        <input
-          id="catalog-search"
-          name="q"
-          type="search"
-          autocomplete="off"
-          placeholder="Search laptops, desktops, monitors, printer..."
-          class="h-12 rounded-control border border-ses-line bg-surface-container-lowest px-4 text-body-md text-on-surface outline-none transition focus:border-primary"
-          data-search-input
-        />
-        <button class="rounded-control bg-primary px-6 font-display text-label-md text-on-primary hover:bg-primary-container" type="submit">Search</button>
+        <input id="catalog-search" name="q" type="search" autocomplete="off" placeholder="Search laptops, printers, monitors and more" class="min-h-12 rounded-control border border-ses-line bg-surface-container-lowest px-4 text-body-md text-on-surface outline-none transition focus:border-primary" data-search-input />
+        <button class="min-h-12 rounded-control bg-primary px-6 font-display text-label-md text-on-primary hover:bg-primary-container" type="submit">SEARCH</button>
       </form>
     </div>
   </Section>
 
   <Section containerSize="xl" spacing="sm" ariaLabelledby="search-results-title">
-    <div class="flex flex-wrap items-end justify-between gap-4">
-      <SectionHeading
-        id="search-results-title"
-        eyebrow="Results"
-        title="Matching products"
-        description="Results update in your browser from the current static catalog."
-      />
-      <p class="text-body-sm text-on-surface-variant" data-search-count>{products.length} products</p>
+    <div class="grid gap-3 rounded-card border border-ses-line bg-surface-container-lowest p-4 sm:grid-cols-2 lg:grid-cols-4" aria-label="Product filters">
+      <label class="grid gap-2 text-label-xs uppercase text-on-surface-variant">Category<select name="category" class="min-h-11 rounded-control border border-ses-line bg-background px-3 text-body-sm normal-case text-on-surface" data-filter><option value="">All categories</option>{productCategories.map((category) => <option value={category.slug}>{category.label}</option>)}</select></label>
+      <label class="grid gap-2 text-label-xs uppercase text-on-surface-variant">Brand<select name="brand" class="min-h-11 rounded-control border border-ses-line bg-background px-3 text-body-sm normal-case text-on-surface" data-filter><option value="">All brands</option>{brands.map((brand) => <option value={brand}>{brand}</option>)}</select></label>
+      <label class="grid gap-2 text-label-xs uppercase text-on-surface-variant">Condition<select name="condition" class="min-h-11 rounded-control border border-ses-line bg-background px-3 text-body-sm normal-case text-on-surface" data-filter><option value="">All conditions</option>{conditions.map((condition) => <option value={condition}>{condition}</option>)}</select></label>
+      <label class="grid gap-2 text-label-xs uppercase text-on-surface-variant">Price<select name="price" class="min-h-11 rounded-control border border-ses-line bg-background px-3 text-body-sm normal-case text-on-surface" data-filter><option value="">Any price</option><option value="under-25000">Under KES 25,000</option><option value="25000-50000">KES 25,000–50,000</option><option value="50000-100000">KES 50,000–100,000</option><option value="over-100000">Over KES 100,000</option></select></label>
+      <label class="grid gap-2 text-label-xs uppercase text-on-surface-variant">Processor<select name="processor" class="min-h-11 rounded-control border border-ses-line bg-background px-3 text-body-sm normal-case text-on-surface" data-filter><option value="">Any processor</option>{processors.map((processor) => <option value={processor}>{processor}</option>)}</select></label>
+      <label class="grid gap-2 text-label-xs uppercase text-on-surface-variant">RAM<select name="ram" class="min-h-11 rounded-control border border-ses-line bg-background px-3 text-body-sm normal-case text-on-surface" data-filter><option value="">Any RAM</option>{memoryOptions.map((memory) => <option value={memory}>{memory}</option>)}</select></label>
+      <label class="grid gap-2 text-label-xs uppercase text-on-surface-variant">Storage<select name="storage" class="min-h-11 rounded-control border border-ses-line bg-background px-3 text-body-sm normal-case text-on-surface" data-filter><option value="">Any storage</option>{storageOptions.map((storage) => <option value={storage}>{storage}</option>)}</select></label>
+      <label class="grid gap-2 text-label-xs uppercase text-on-surface-variant">Sort<select name="sort" class="min-h-11 rounded-control border border-ses-line bg-background px-3 text-body-sm normal-case text-on-surface" data-filter><option value="recommended">Recommended</option><option value="newest">Newest</option><option value="price-low">Price: Low to High</option><option value="price-high">Price: High to Low</option></select></label>
     </div>
 
-    <div class="mt-6 flex flex-wrap gap-2" aria-label="Suggested searches">
-      {productCategories.map((category) => (
-        <button type="button" class="rounded-pill border border-ses-line px-4 py-2 text-body-sm text-on-surface-variant hover:border-primary-fixed-dim hover:text-ses-accent" data-search-chip={category.label}>
-          {category.label}
-        </button>
-      ))}
+    <div class="mt-8 flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <p class="text-label-xs uppercase text-ses-accent">Results</p>
+        <h2 id="search-results-title" class="mt-3 font-display text-headline-lg text-on-surface">Products</h2>
+      </div>
+      <p class="text-body-sm text-on-surface-variant" data-search-count aria-live="polite">{products.length} products</p>
     </div>
 
     <Grid columns="products" gap="md" class="mt-8" data-search-grid>
-      {products.map((product) => (
-        <div data-product-card data-product-slug={product.slug}>
-          <ProductCard product={product} />
-        </div>
-      ))}
+      {products.slice(0, pageSize).map((product) => <ProductCard product={product} />)}
     </Grid>
 
-    <div class="mt-8 hidden rounded-card border border-ses-line bg-surface-container-lowest p-8" data-empty-state>
-      <h2 class="text-title-md text-on-surface">No matching products yet</h2>
-      <p class="mt-2 text-body-md text-on-surface-variant">Try a broader term or contact support for a product that is not listed.</p>
+    <div hidden aria-hidden="true">
+      {products.map((product) => (
+        <template data-search-product-template={product.slug}>
+          <ProductCard product={product} />
+        </template>
+      ))}
+    </div>
+
+    <div class="mt-10 flex justify-center">
+      <button type="button" class="min-h-12 rounded-control border border-ses-line bg-surface-container-lowest px-6 text-label-md text-on-surface hover:border-tertiary hover:text-tertiary" data-search-load-more>LOAD MORE</button>
+    </div>
+
+    <div class="mt-8 hidden rounded-card border border-ses-line bg-surface-container-lowest p-8" data-empty-state aria-live="polite">
+      <h2 class="text-title-md text-on-surface">No products found</h2>
+      <p class="mt-2 text-body-md text-on-surface-variant">Try another search or contact us and we’ll help you find an alternative.</p>
+      <a href={`https://wa.me/${siteConfig.whatsappNumber}?text=${helpMessage}`} target="_blank" rel="noreferrer" class="mt-5 inline-flex min-h-11 items-center rounded-control bg-whatsapp px-5 text-label-md text-white hover:bg-whatsapp-dark">WHATSAPP US</a>
     </div>
   </Section>
+</BaseLayout>
 
-  <script define:vars={{ searchableProducts }}>
-    const params = new URLSearchParams(window.location.search);
-    const input = document.querySelector('[data-search-input]');
-    const cards = Array.from(document.querySelectorAll('[data-product-card]'));
-    const count = document.querySelector('[data-search-count]');
-    const emptyState = document.querySelector('[data-empty-state]');
-    const productsBySlug = new Map(searchableProducts.map((product) => [product.slug, product]));
+<script define:vars={{ searchableProducts, pageSize }}>
+  const searchForm = document.querySelector('[data-search-form]');
+  const input = document.querySelector('[data-search-input]');
+  const controls = Array.from(document.querySelectorAll('[data-filter]'));
+  const grid = document.querySelector('[data-search-grid]');
+  const count = document.querySelector('[data-search-count]');
+  const emptyState = document.querySelector('[data-empty-state]');
+  const loadMoreButton = document.querySelector('[data-search-load-more]');
+  const templatesBySlug = new Map(Array.from(document.querySelectorAll('template[data-search-product-template]')).map((template) => [template.dataset.searchProductTemplate, template]));
+  let displayLimit = pageSize;
+  let matchedProducts = searchableProducts;
 
-    const normalize = (value) => value.toLowerCase().trim();
-    const matchesQuery = (product, query) =>
-      !query ||
-      normalize(`${product.name} ${product.brand} ${product.category} ${product.description} ${product.specs}`).includes(query);
+  const normalize = (value) => String(value || '').toLowerCase().trim();
+  const controlValue = (name) => document.querySelector(`[name="${name}"]`)?.value ?? '';
+  const matchesPrice = (price, range) => {
+    if (!range) return true;
+    if (range === 'under-25000') return price < 25000;
+    if (range === '25000-50000') return price >= 25000 && price <= 50000;
+    if (range === '50000-100000') return price > 50000 && price <= 100000;
+    return range === 'over-100000' ? price > 100000 : true;
+  };
 
-    const runSearch = () => {
-      const query = normalize(input?.value ?? '');
-      let visible = 0;
-
-      cards.forEach((card) => {
-        const product = productsBySlug.get(card.dataset.productSlug);
-        const isVisible = product ? matchesQuery(product, query) : false;
-        card.hidden = !isVisible;
-        if (isVisible) visible += 1;
-      });
-
-      if (count) count.textContent = `${visible} product${visible === 1 ? '' : 's'}`;
-      if (emptyState) emptyState.classList.toggle('hidden', visible !== 0);
+  const syncUrl = () => {
+    const params = new URLSearchParams();
+    const values = {
+      q: input?.value ?? '',
+      category: controlValue('category'),
+      brand: controlValue('brand'),
+      condition: controlValue('condition'),
+      price: controlValue('price'),
+      processor: controlValue('processor'),
+      ram: controlValue('ram'),
+      storage: controlValue('storage'),
+      sort: controlValue('sort')
     };
+    Object.entries(values).forEach(([key, value]) => {
+      if (value && !(key === 'sort' && value === 'recommended')) params.set(key, value);
+    });
+    history.replaceState(null, '', `${location.pathname}${params.size ? `?${params}` : ''}`);
+  };
 
-    if (input) {
-      input.value = params.get('q') ?? '';
-      input.addEventListener('input', runSearch);
-    }
+  const render = () => {
+    const visibleProducts = matchedProducts.slice(0, displayLimit);
+    grid?.replaceChildren(...visibleProducts.flatMap((product) => {
+      const template = templatesBySlug.get(product.slug);
+      return template ? [template.content.cloneNode(true)] : [];
+    }));
+    if (count) count.textContent = `${matchedProducts.length} product${matchedProducts.length === 1 ? '' : 's'}`;
+    emptyState?.classList.toggle('hidden', matchedProducts.length !== 0);
+    loadMoreButton?.toggleAttribute('hidden', matchedProducts.length <= displayLimit);
+  };
 
-    document.querySelectorAll('[data-search-chip]').forEach((chip) => {
-      chip.addEventListener('click', () => {
-        if (!input) return;
-        input.value = chip.dataset.searchChip ?? '';
-        runSearch();
-        input.focus();
-      });
+  const runSearch = (resetLimit = true) => {
+    const query = normalize(input?.value);
+    const category = controlValue('category');
+    const brand = controlValue('brand');
+    const condition = controlValue('condition');
+    const price = controlValue('price');
+    const processor = controlValue('processor');
+    const ram = controlValue('ram');
+    const storage = controlValue('storage');
+    const sort = controlValue('sort');
+
+    matchedProducts = searchableProducts.filter((product) => {
+      const haystack = normalize(`${product.name} ${product.brand} ${product.categoryLabel} ${product.specs}`);
+      return (!query || haystack.includes(query))
+        && (!category || product.category === category)
+        && (!brand || product.brand === brand)
+        && (!condition || product.condition === condition)
+        && matchesPrice(product.price, price)
+        && (!processor || product.processor === processor)
+        && (!ram || product.memory === ram)
+        && (!storage || product.storage === storage);
     });
 
+    matchedProducts.sort((first, second) => {
+      if (sort === 'price-low') return first.price - second.price;
+      if (sort === 'price-high') return second.price - first.price;
+      if (sort === 'newest') return first.index - second.index;
+      return Number(second.featured) - Number(first.featured) || first.index - second.index;
+    });
+
+    if (resetLimit) displayLimit = pageSize;
+    syncUrl();
+    render();
+  };
+
+  const params = new URLSearchParams(location.search);
+  if (input) input.value = params.get('q') ?? '';
+  controls.forEach((control) => {
+    const value = params.get(control.name);
+    if (value && Array.from(control.options).some((option) => option.value === value)) control.value = value;
+    control.addEventListener('change', () => runSearch());
+  });
+  input?.addEventListener('input', () => runSearch());
+  searchForm?.addEventListener('submit', (event) => {
+    event.preventDefault();
     runSearch();
-  </script>
-</BaseLayout>
+  });
+  loadMoreButton?.addEventListener('click', () => {
+    displayLimit += pageSize;
+    render();
+  });
+  runSearch();
+</script>

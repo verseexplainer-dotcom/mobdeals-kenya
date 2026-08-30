@@ -6,11 +6,10 @@ import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
 import Badge from '@components/ui/Badge.astro';
 import Button from '@components/ui/Button.astro';
 import Section from '@components/ui/Section.astro';
-import SectionHeading from '@components/ui/SectionHeading.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { getAllProducts, getCategoryBySlug, getRelatedProducts } from '@data/products';
 import { siteConfig } from '@config/site';
-import { formatProductPrice } from '@lib/products';
+import { formatProductPrice, getProductDisplaySpecs, getProductDisplaySummary } from '@lib/products';
 import { absoluteUrl, createBreadcrumbSchema, createProductSchema, createProductSeo, stringifyJsonLd } from '@lib/seo';
 
 export function getStaticPaths() {
@@ -23,10 +22,10 @@ export function getStaticPaths() {
 const { product } = Astro.props;
 const category = getCategoryBySlug(product.category);
 const relatedProducts = getRelatedProducts(product);
+const displaySpecs = getProductDisplaySpecs(product);
+const productSummary = getProductDisplaySummary(product);
 const productUrl = absoluteUrl(`/products/${product.slug}`) ?? `/products/${product.slug}`;
-const whatsappMessage = encodeURIComponent(
-  `Hi MobDeals Kenya, I am interested in ${product.name} (${formatProductPrice(product.price)}). Product link: ${productUrl}`
-);
+const whatsappMessage = encodeURIComponent(`Hi MobDeals Kenya, I would like to order ${product.name} (${formatProductPrice(product.price)}). Product link: ${productUrl}`);
 const whatsappHref = `https://wa.me/${siteConfig.whatsappNumber}?text=${whatsappMessage}`;
 const cartProduct = {
   id: product.id,
@@ -38,14 +37,12 @@ const cartProduct = {
   image: product.images[0]?.src
 };
 const productSchema = stringifyJsonLd(createProductSchema(product));
-const breadcrumbSchema = stringifyJsonLd(
-  createBreadcrumbSchema([
-    { label: 'Home', href: '/' },
-    { label: 'Shop', href: '/shop' },
-    { label: category?.label ?? product.category, href: `/category/${product.category}` },
-    { label: product.name, href: `/products/${product.slug}` }
-  ])
-);
+const breadcrumbSchema = stringifyJsonLd(createBreadcrumbSchema([
+  { label: 'Home', href: '/' },
+  { label: 'Shop', href: '/shop' },
+  { label: category?.label ?? product.category, href: `/category/${product.category}` },
+  { label: product.name, href: `/products/${product.slug}` }
+]));
 ---
 
 <BaseLayout seo={createProductSeo(product)}>
@@ -54,154 +51,75 @@ const breadcrumbSchema = stringifyJsonLd(
 
   <Section class="bg-surface-container-low/35" containerSize="xl" spacing="sm">
     <Breadcrumbs items={[{ label: 'Shop', href: '/shop' }, { label: category?.label ?? product.category, href: `/category/${product.category}` }, { label: product.name }]} />
-    <div class="mt-10 grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+    <div class="mt-8 grid gap-9 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
       <ProductGallery product={product} />
 
       <div class="lg:sticky lg:top-28">
         <div class="flex flex-wrap items-center gap-2">
-          <Badge variant={product.inStock ? 'success' : 'neutral'} size="md">{product.inStock ? 'In stock' : 'Check availability'}</Badge>
-          <Badge variant="primary" size="md">{product.condition}</Badge>
           {product.brand && <Badge variant="neutral" size="md">{product.brand}</Badge>}
+          <Badge variant="primary" size="md">{product.condition}</Badge>
+          <Badge variant={product.inStock ? 'success' : 'neutral'} size="md">{product.inStock ? 'In stock' : 'Check availability'}</Badge>
         </div>
 
-        <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl lg:text-[3.25rem] lg:leading-[1.08]">
-          {product.name}
-        </h1>
-        <p class="mt-5 text-body-lg text-on-surface-variant">{product.description}</p>
+        <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl lg:text-[2.75rem] lg:leading-[1.1]">{product.name}</h1>
 
-        <div class="mt-8 rounded-card border border-ses-line bg-surface-container-lowest/75 p-5">
-          <div>
-            <div>
-              <p class="text-label-xs uppercase text-ses-accent">Price</p>
-              <p class="mt-2 font-display text-headline-xl text-on-surface">{formatProductPrice(product.price)}</p>
-              {product.price.compareAtAmount && (
-                <p class="text-body-sm text-on-surface-variant line-through">
-                  {formatProductPrice({ amount: product.price.compareAtAmount, currency: product.price.currency })}
-                </p>
-              )}
-            </div>
-            <p class="mt-4 block w-full text-body-sm text-on-surface-variant">{product.availabilityNote}</p>
-          </div>
-          <div class="mt-5 grid gap-3 sm:grid-cols-2">
-            <button
-              type="button"
-              class="inline-flex min-h-12 w-full items-center justify-center rounded-control bg-primary px-6 text-body-md font-semibold text-on-primary transition hover:-translate-y-0.5 hover:bg-primary-container"
-              data-cart-add
-              data-cart-product={JSON.stringify(cartProduct)}
-              aria-label={`Add ${product.name} to cart`}
-            >
-              Add to cart
-            </button>
-            <Button href={whatsappHref} variant="whatsapp" size="lg" target="_blank" rel="noreferrer" class="w-full">
-              Ask on WhatsApp
-            </Button>
-            <Button href="/cart" variant="secondary" size="lg" class="w-full">
-              View cart
-            </Button>
-            <Button href="/contact" variant="secondary" size="lg" class="w-full">
-              Talk to support
-            </Button>
-          </div>
+        <div class="mt-7 border-y border-ses-line py-5">
+          <p class="text-label-xs uppercase text-ses-accent">Price</p>
+          <p class="mt-2 font-display text-headline-xl text-on-surface">{formatProductPrice(product.price)}</p>
+          {product.price.compareAtAmount && (
+            <p class="text-body-sm text-on-surface-variant line-through">{formatProductPrice({ amount: product.price.compareAtAmount, currency: product.price.currency })}</p>
+          )}
+          <p class="mt-3 text-body-sm text-on-surface-variant">{product.availabilityNote}</p>
         </div>
 
-        <div class="mt-8 grid gap-3 sm:grid-cols-2">
-          <div class="rounded-card border border-ses-line bg-surface-container-lowest/60 p-4">
-            <p class="text-label-xs uppercase text-ses-accent">Warranty</p>
-            <p class="mt-2 text-title-sm text-on-surface">{product.warranty}</p>
-          </div>
-          <div class="rounded-card border border-ses-line bg-surface-container-lowest/60 p-4">
-            <p class="text-label-xs uppercase text-ses-accent">Category</p>
-            <a href={`/category/${product.category}`} class="mt-2 block text-title-sm text-on-surface hover:text-ses-accent">
-              {category?.label ?? product.category}
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </Section>
-
-  <Section containerSize="xl" spacing="sm" ariaLabelledby="product-details-title">
-    <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-      <div>
-        <SectionHeading
-          id="product-details-title"
-          eyebrow="Buying details"
-          title="What to confirm before purchase"
-          description="These details come from the current MobDeals product catalog and should be confirmed against live stock before payment."
-        />
-        <ul class="mt-8 space-y-3">
-          {product.highlights.map((highlight) => (
-            <li class="flex gap-3 rounded-card border border-ses-line bg-surface-container-lowest/60 p-4 text-body-md text-on-surface">
-              <span class="mt-2 size-2 shrink-0 rounded-full bg-secondary" aria-hidden="true"></span>
-              <span>{highlight}</span>
+        <ul class="mt-6 grid gap-px overflow-hidden rounded-card border border-ses-line bg-ses-line sm:grid-cols-2" aria-label="Purchase support">
+          {['Warranty information available', 'Nairobi pickup available', 'Countrywide delivery', 'WhatsApp support'].map((item) => (
+            <li class="flex min-h-12 items-center gap-2 bg-surface-container-lowest px-3 text-body-sm text-on-surface">
+              <span class="size-2 shrink-0 rounded-full bg-secondary" aria-hidden="true"></span>{item}
             </li>
           ))}
         </ul>
-      </div>
-      <div>
-        <h2 class="mb-4 text-title-md text-on-surface">Specifications</h2>
-        <ProductSpecsTable specs={product.specs} />
+
+        <div class="mt-6 grid gap-3 sm:grid-cols-2">
+          <button type="button" class="inline-flex min-h-12 w-full items-center justify-center rounded-control bg-primary px-6 text-body-md font-semibold text-on-primary transition hover:-translate-y-0.5 hover:bg-primary-container" data-cart-add data-cart-product={JSON.stringify(cartProduct)} aria-label={`Add ${product.name} to cart`}>
+            ADD TO CART
+          </button>
+          <Button href={whatsappHref} variant="whatsapp" size="lg" target="_blank" class="w-full">ORDER ON WHATSAPP</Button>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-body-sm text-on-surface-variant">
+          <a href="/cart" class="hover:text-ses-accent">View cart</a>
+          <a href="/contact" class="hover:text-ses-accent">Talk to support</a>
+        </div>
       </div>
     </div>
   </Section>
 
-  {(product.descriptionHtml || product.longDescription) && (
-    <Section class="bg-surface-container-low/35" containerSize="xl" spacing="sm" ariaLabelledby="product-overview-title">
-      <div class="max-w-4xl">
-        <h2 id="product-overview-title" class="font-display text-headline-lg text-on-surface">Product overview</h2>
-        {product.descriptionHtml ? (
-          <div
-            class="mt-6 space-y-5 text-body-md leading-7 text-on-surface-variant [&_a]:font-semibold [&_a]:text-primary [&_a]:underline-offset-4 hover:[&_a]:underline [&_h3]:pt-3 [&_h3]:font-display [&_h3]:text-title-lg [&_h3]:text-on-surface [&_li]:ml-5 [&_li]:list-disc [&_p]:max-w-3xl [&_ul]:space-y-2"
-            set:html={product.descriptionHtml}
-          />
-        ) : (
-          <div class="mt-6 whitespace-pre-line text-body-md leading-7 text-on-surface-variant">{product.longDescription}</div>
-        )}
+  <Section containerSize="xl" spacing="sm" ariaLabelledby="key-specifications-title">
+    <div class="grid gap-8 lg:grid-cols-[0.7fr_1fr]">
+      <div>
+        <p class="text-label-xs uppercase text-ses-accent">Product Information</p>
+        <h2 id="key-specifications-title" class="mt-3 font-display text-headline-lg text-on-surface">Key Specifications</h2>
       </div>
-    </Section>
-  )}
+      <ProductSpecsTable specs={displaySpecs} />
+    </div>
+  </Section>
+
+  <Section class="bg-surface-container-low/35" containerSize="xl" spacing="sm" ariaLabel="Product information">
+    <div class="divide-y divide-ses-line border-y border-ses-line">
+      <article class="grid gap-3 py-6 md:grid-cols-[0.55fr_1fr] md:gap-8">
+        <h2 class="text-title-md text-on-surface">Product Details</h2>
+        <p class="text-body-md text-on-surface-variant">{productSummary}</p>
+      </article>
+      <article class="grid gap-3 py-6 md:grid-cols-[0.55fr_1fr] md:gap-8">
+        <h2 class="text-title-md text-on-surface">Condition & Warranty</h2>
+        <p class="text-body-md text-on-surface-variant">Condition: {product.condition}. Warranty: {product.warranty}. Confirm the applicable terms before payment.</p>
+      </article>
+      <article class="grid gap-3 py-6 md:grid-cols-[0.55fr_1fr] md:gap-8">
+        <h2 class="text-title-md text-on-surface">Delivery & Pickup</h2>
+        <p class="text-body-md text-on-surface-variant">Nairobi store pickup, local delivery and countrywide delivery can be arranged after the order and destination are confirmed.</p>
+      </article>
+    </div>
+  </Section>
 
   <RelatedProducts products={relatedProducts} />
 </BaseLayout>
-
-<script>
-  const CART_KEY = 'mobdeals_cart_v1';
-
-  const readCart = () => {
-    try {
-      return JSON.parse(localStorage.getItem(CART_KEY) || '[]');
-    } catch {
-      return [];
-    }
-  };
-
-  const writeCart = (items) => {
-    localStorage.setItem(CART_KEY, JSON.stringify(items));
-    const count = items.reduce((total, item) => total + item.quantity, 0);
-    document.querySelectorAll('[data-cart-count]').forEach((target) => {
-      target.textContent = String(count);
-      target.toggleAttribute('hidden', count === 0);
-    });
-  };
-
-  writeCart(readCart());
-
-  document.addEventListener('click', (event) => {
-    const button = event.target?.closest?.('[data-cart-add]');
-    if (!button) return;
-    const product = JSON.parse(button.dataset.cartProduct || '{}');
-    if (!product.slug) return;
-    const items = readCart();
-    const existing = items.find((item) => item.slug === product.slug);
-    if (existing) {
-      existing.quantity += 1;
-    } else {
-      items.push({ ...product, quantity: 1 });
-    }
-    writeCart(items);
-    button.textContent = 'Added to cart';
-    window.setTimeout(() => {
-      button.textContent = 'Add to cart';
-    }, 1200);
-  });
-</script>

@@ -8,17 +8,21 @@ import Section from '@components/ui/Section.astro';
 import SectionHeading from '@components/ui/SectionHeading.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { getAllProducts, productCategories } from '@data/products';
+import { getCategoryPresentation } from '@config/catalog';
+import { siteConfig } from '@config/site';
 import { createItemListSchema, stringifyJsonLd } from '@lib/seo';
 
 const products = getAllProducts();
+const initialProductCount = 24;
+const categoryCounts = new Map(productCategories.map((category) => [category.slug, products.filter((product) => product.category === category.slug).length]));
 const itemListSchema = stringifyJsonLd(createItemListSchema(products, '/shop'));
+const helpMessage = encodeURIComponent('Hello MobDeals Kenya, I need help choosing a product. My budget and requirements are:');
 ---
 
 <BaseLayout
   seo={{
-    title: 'Shop Electronics in Nairobi',
-    description:
-      `Browse ${products.length} current MobDeals Kenya listings across laptops, tablets, printers, monitors, projectors, software, and backup power.`,
+    title: 'Shop Electronics',
+    description: 'Browse laptops, printers, monitors, tablets, projectors, software, UPS systems and other electronics available from MobDeals.',
     pathname: '/shop'
   }}
 >
@@ -26,77 +30,88 @@ const itemListSchema = stringifyJsonLd(createItemListSchema(products, '/shop'));
 
   <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
     <Breadcrumbs items={[{ label: 'Shop' }]} />
-    <div class="mt-10 grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
-      <div>
-        <Badge variant="accent" size="md">MobDeals Kenya catalog</Badge>
-        <h1 class="mt-5 max-w-3xl font-display text-display-lg-mobile text-on-surface sm:text-headline-xl lg:text-display-lg">
-          Shop the current MobDeals product sheet.
-        </h1>
-        <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">
-          Compare listed products by price, category, condition, processor, memory, storage, warranty notes, and practical Kenya delivery needs.
-        </p>
-      </div>
-      <div class="rounded-card border border-ses-line bg-surface-container-lowest/70 p-5">
-        <p class="text-label-xs uppercase text-ses-accent">Catalog status</p>
-        <dl class="mt-4 grid grid-cols-2 gap-4">
-          <div>
-            <dt class="text-body-sm text-on-surface-variant">Products</dt>
-            <dd class="font-display text-headline-lg text-on-surface">{products.length}</dd>
-          </div>
-          <div>
-            <dt class="text-body-sm text-on-surface-variant">Categories</dt>
-            <dd class="font-display text-headline-lg text-on-surface">{productCategories.length}</dd>
-          </div>
-        </dl>
-      </div>
+    <div class="mt-8 max-w-4xl">
+      <Badge variant="accent" size="md">MobDeals Kenya</Badge>
+      <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">Shop Electronics</h1>
+      <p class="mt-5 max-w-3xl text-body-lg text-on-surface-variant">
+        Browse laptops, printers, monitors, tablets, projectors, software, UPS systems and other electronics available from MobDeals.
+      </p>
     </div>
   </Section>
 
   <Section containerSize="xl" spacing="sm" ariaLabelledby="shop-categories-title">
-    <SectionHeading
-      id="shop-categories-title"
-      eyebrow="Shop by category"
-      title="Start with the device family"
-      description="Each category reflects the current catalog sheet and its mapped product-drop media."
-    />
-    <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-      {productCategories.map((category) => (
-        <a href={`/category/${category.slug}`} class="group rounded-card border border-ses-line bg-surface-container-lowest/72 p-4 transition-[border-color,transform] duration-200 hover:-translate-y-0.5 hover:border-primary-fixed-dim">
-          <p class="text-label-xs uppercase text-ses-accent">{category.eyebrow}</p>
-          <h2 class="mt-3 text-title-md text-on-surface">{category.label}</h2>
-          <p class="mt-2 text-body-sm text-on-surface-variant">{getAllProducts().filter((product) => product.category === category.slug).length} products</p>
-        </a>
-      ))}
+    <SectionHeading id="shop-categories-title" eyebrow="Browse" title="Shop by Category" />
+    <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-7">
+      {productCategories.map((category) => {
+        const presentation = getCategoryPresentation(category.slug);
+        return (
+          <a href={`/category/${category.slug}`} class="group rounded-card border border-ses-line bg-surface-container-lowest/72 p-4 transition-[border-color,transform] duration-200 hover:-translate-y-0.5 hover:border-primary-fixed-dim">
+            <p class="text-label-xs uppercase text-ses-accent">{presentation.eyebrow}</p>
+            <h2 class="mt-3 text-title-md text-on-surface">{category.label}</h2>
+            <p class="mt-2 text-body-sm text-on-surface-variant">{categoryCounts.get(category.slug)} products</p>
+          </a>
+        );
+      })}
     </div>
   </Section>
 
   <Section class="bg-surface-container-low/35" containerSize="xl" spacing="sm" ariaLabelledby="all-products-title">
-    <SectionHeading
-      id="all-products-title"
-      eyebrow="All products"
-      title="Current listed products"
-      description="These products come from the current MobDeals catalog sheet, with mapped gallery media served from Supabase Storage."
-    />
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <SectionHeading id="all-products-title" eyebrow="Shop" title="All Products" />
+      <p class="text-body-sm text-on-surface-variant" data-shop-progress>Showing {Math.min(initialProductCount, products.length)} of {products.length}</p>
+    </div>
+
     {products.length > 0 ? (
-      <Grid columns="products" gap="md" class="mt-8">
-        {products.map((product) => <ProductCard product={product} />)}
-      </Grid>
+      <>
+        <Grid columns="products" gap="md" class="mt-8" data-shop-grid>
+          {products.slice(0, initialProductCount).map((product) => <ProductCard product={product} />)}
+        </Grid>
+        <div hidden aria-hidden="true">
+          {products.slice(initialProductCount).map((product) => (
+            <template data-shop-product-template>
+              <ProductCard product={product} />
+            </template>
+          ))}
+        </div>
+        {products.length > initialProductCount && (
+          <div class="mt-10 flex justify-center">
+            <button type="button" class="min-h-12 rounded-control border border-ses-line bg-surface-container-lowest px-6 text-label-md text-on-surface hover:border-tertiary hover:text-tertiary" data-shop-load-more>
+              LOAD MORE
+            </button>
+          </div>
+        )}
+      </>
     ) : (
       <div class="mt-8 rounded-card border border-ses-line bg-surface-container-lowest/70 p-8">
-        <h2 class="text-title-md text-on-surface">No products available yet</h2>
-        <p class="mt-2 text-body-md text-on-surface-variant">Add products to the catalog data source before publishing this listing.</p>
+        <h2 class="text-title-md text-on-surface">No products available</h2>
+        <p class="mt-2 text-body-md text-on-surface-variant">Contact our team for help finding an alternative.</p>
       </div>
     )}
   </Section>
 
   <Section containerSize="lg" spacing="sm">
     <div class="rounded-card-lg border border-ses-line bg-primary p-8 text-on-primary sm:p-10">
-      <p class="text-label-xs uppercase">Need help choosing?</p>
-      <h2 class="mt-3 max-w-2xl font-display text-headline-xl">Tell us the work, budget, and preferred brand.</h2>
-      <p class="mt-4 max-w-2xl text-body-md text-on-primary-container">
-        MobDeals Kenya can help compare condition, specs, warranty, and delivery options before you commit.
-      </p>
-      <Button href="/contact" variant="secondary" class="mt-6">Talk to support</Button>
+      <p class="text-label-xs uppercase">Product Support</p>
+      <h2 class="mt-3 max-w-2xl font-display text-headline-xl">Need Help Choosing?</h2>
+      <p class="mt-4 max-w-2xl text-body-md text-on-primary-container">Tell us what you need, your budget and how you plan to use it.</p>
+      <Button href={`https://wa.me/${siteConfig.whatsappNumber}?text=${helpMessage}`} target="_blank" variant="whatsapp" class="mt-6">WHATSAPP US</Button>
     </div>
   </Section>
 </BaseLayout>
+
+<script define:vars={{ initialProductCount }}>
+  const shopGrid = document.querySelector('[data-shop-grid]');
+  const shopTemplates = Array.from(document.querySelectorAll('template[data-shop-product-template]'));
+  const loadMoreButton = document.querySelector('[data-shop-load-more]');
+  const progress = document.querySelector('[data-shop-progress]');
+  let loadedTemplates = 0;
+
+  loadMoreButton?.addEventListener('click', () => {
+    const nextTemplates = shopTemplates.slice(loadedTemplates, loadedTemplates + initialProductCount);
+    nextTemplates.forEach((template) => shopGrid?.append(template.content.cloneNode(true)));
+    loadedTemplates += nextTemplates.length;
+    const visible = initialProductCount + loadedTemplates;
+    if (progress) progress.textContent = `Showing ${visible} of ${initialProductCount + shopTemplates.length}`;
+    if (loadedTemplates >= shopTemplates.length) loadMoreButton.setAttribute('hidden', '');
+  });
+</script>

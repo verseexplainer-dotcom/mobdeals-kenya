@@ -4,36 +4,44 @@ import Badge from '@components/ui/Badge.astro';
 import Button from '@components/ui/Button.astro';
 import Section from '@components/ui/Section.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
+import { siteConfig } from '@config/site';
+
+const visitMessage = encodeURIComponent('Hello MobDeals Kenya, I would like to confirm a product before visiting the store.');
 ---
 
-<BaseLayout
-  seo={{
-    title: 'Nairobi Electronics Store',
-    description: 'Plan a Nairobi store visit with MobDeals Kenya. Confirm product availability, pickup timing, warranty, and delivery options before visiting.',
-    pathname: '/store'
-  }}
->
+<BaseLayout seo={{ title: 'MobDeals Nairobi Store', description: 'Visit the MobDeals Nairobi CBD store to view available products, collect an order or speak with our team.', pathname: '/store' }}>
   <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
-    <Breadcrumbs items={[{ label: 'Store' }]} />
-    <div class="mt-10 grid gap-10 lg:grid-cols-[1fr_0.8fr] lg:items-end">
-      <div>
-        <Badge variant="accent" size="md">Nairobi store</Badge>
-        <h1 class="mt-5 max-w-3xl font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">
-          Confirm before you visit.
-        </h1>
-        <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">
-          Product availability, condition, accessories, and warranty terms can vary by unit, so confirm the exact item before pickup.
-        </p>
-        <Button href="/contact" variant="secondary" class="mt-7">Plan a visit</Button>
+    <Breadcrumbs items={[{ label: 'Nairobi Store' }]} />
+    <div class="mt-8 max-w-4xl">
+      <Badge variant="accent" size="md">VISIT MOBDEALS</Badge>
+      <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">MobDeals Nairobi Store</h1>
+      <p class="mt-5 max-w-3xl text-body-lg text-on-surface-variant">Visit our Nairobi CBD store to view available products, collect an order or speak directly with our team.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <Button href={siteConfig.directionsUrl} target="_blank" variant="primary">GET DIRECTIONS</Button>
+        <Button href={`https://wa.me/${siteConfig.whatsappNumber}?text=${visitMessage}`} target="_blank" variant="whatsapp">WHATSAPP US</Button>
+        <Button href={siteConfig.phoneHref} variant="secondary">CALL STORE</Button>
       </div>
-      <div class="rounded-card border border-ses-line bg-surface-container-lowest p-5">
-        <p class="text-label-xs uppercase text-ses-accent">Pickup checklist</p>
-        <ul class="mt-4 grid gap-3 text-body-md text-on-surface-variant">
-          <li>Product name and exact spec</li>
-          <li>Condition, battery health, or warranty term</li>
-          <li>Accessories included and final pickup price</li>
-        </ul>
-      </div>
+    </div>
+  </Section>
+
+  <Section containerSize="xl" spacing="sm" ariaLabel="Store details">
+    <div class="grid gap-px overflow-hidden rounded-card border border-ses-line bg-ses-line sm:grid-cols-2 lg:grid-cols-4">
+      {[
+        ['Address', siteConfig.address],
+        ['Opening Hours', siteConfig.openingHours],
+        ['Phone', siteConfig.phone],
+        ['WhatsApp', siteConfig.phone]
+      ].map(([label, value]) => (
+        <article class="bg-surface-container-lowest p-5">
+          <p class="text-label-xs uppercase text-ses-accent">{label}</p>
+          <h2 class="mt-3 text-title-md text-on-surface">{value}</h2>
+        </article>
+      ))}
+    </div>
+
+    <div class="mt-10 border-t border-ses-line pt-8">
+      <h2 class="font-display text-headline-lg text-on-surface">Before You Visit</h2>
+      <p class="mt-4 max-w-3xl text-body-md text-on-surface-variant">Stock can change during the day. If you are coming for a specific model, contact us first so we can confirm availability.</p>
     </div>
   </Section>
 </BaseLayout>

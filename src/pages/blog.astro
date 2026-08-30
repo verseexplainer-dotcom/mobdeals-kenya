@@ -13,26 +13,26 @@ const guides = (await getCollection('guides'))
 
 <BaseLayout
   seo={{
-    title: 'Electronics Buying Guides',
-    description: 'Practical MobDeals Kenya buying guides for laptops, phones, printers, storage, warranty, and electronics shopping in Kenya.',
+    title: 'Buying Guides',
+    description: 'MobDeals guides for comparing laptops, printers, warranty, specifications and running costs.',
     pathname: '/blog'
   }}
 >
   <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
     <Breadcrumbs items={[{ label: 'Blog' }]} />
     <div class="mt-10 max-w-4xl">
-      <Badge variant="accent" size="md">Buying guides</Badge>
+      <Badge variant="accent" size="md">BUYING GUIDES</Badge>
       <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">
-        Practical electronics advice before you buy.
+        Useful Information Before You Buy
       </h1>
       <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">
-        Short guides for comparing specs, condition, warranty, running cost, and real Kenya buying decisions.
+        Compare specifications, condition, warranty and running costs before choosing equipment.
       </p>
     </div>
   </Section>
 
   <Section containerSize="xl" spacing="sm">
-    <SectionHeading eyebrow="Latest guides" title="Use-case first advice" />
+    <SectionHeading eyebrow="Latest" title="Buying Guides" />
     <div class="mt-8 grid gap-4 md:grid-cols-3">
       {guides.map((guide) => (
         <article class="rounded-card border border-ses-line bg-surface-container-lowest p-5">

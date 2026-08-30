@@ -7,6 +7,7 @@ import Grid from '@components/ui/Grid.astro';
 import Section from '@components/ui/Section.astro';
 import SectionHeading from '@components/ui/SectionHeading.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
+import { getCategoryPresentation } from '@config/catalog';
 import { categoryNavigation } from '@config/navigation';
 import { getCategoryBySlug, getProductsByCategory } from '@data/products';
 
@@ -14,7 +15,7 @@ export function getStaticPaths() {
   return categoryNavigation.flatMap((category) => {
     const parentSlug = category.href.split('/').filter(Boolean).at(-1);
 
-    return (category.links ?? []).map((link) => ({
+    return (category.links ?? []).filter((link) => link.href.split('/').filter(Boolean).length > 2).map((link) => ({
       params: {
         slug: parentSlug,
         filter: link.href.split('/').filter(Boolean).at(-1)
@@ -36,18 +37,18 @@ if (!category) {
 }
 
 const normalizedFilter = (filter ?? '').replace(/-/g, ' ').toLowerCase();
+const presentation = getCategoryPresentation(category.slug);
 const categoryProducts = getProductsByCategory(category.slug);
 const filteredProducts = categoryProducts.filter((product) => {
   const haystack = `${product.name} ${product.brand ?? ''} ${product.description} ${product.specs.map((spec) => `${spec.label} ${spec.value}`).join(' ')}`.toLowerCase();
   return haystack.includes(normalizedFilter);
 });
-const products = filteredProducts.length > 0 ? filteredProducts : categoryProducts;
 ---
 
 <BaseLayout
   seo={{
-    title: `${label} in Nairobi`,
-    description: `Browse ${label.toLowerCase()} from MobDeals Kenya. Compare ${parentLabel.toLowerCase()} by price, condition, warranty, specs, and availability in Kenya.`,
+    title: label,
+    description: `Browse ${label.toLowerCase()} from MobDeals Kenya and compare prices, condition and key specifications.`,
     pathname: `/category/${slug}/${filter}`
   }}
 >
@@ -57,20 +58,30 @@ const products = filteredProducts.length > 0 ? filteredProducts : categoryProduc
       <Badge variant="accent" size="md">{category.label}</Badge>
       <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">{label}</h1>
       <p class="mt-5 max-w-2xl text-body-lg text-on-surface-variant">
-        A focused path for {label.toLowerCase()} using the current MobDeals catalog. If the exact match is narrow, use the broader {category.label.toLowerCase()} products below and ask support to confirm live stock.
+        {presentation.description}
       </p>
     </div>
   </Section>
 
   <Section containerSize="xl" spacing="sm">
     <SectionHeading
-      eyebrow={filteredProducts.length > 0 ? 'Matched products' : 'Broader category'}
-      title={filteredProducts.length > 0 ? `${label} products` : `${category.label} options`}
-      description="Results are filtered from the current catalog by visible product names, brands, descriptions, and specs."
+      eyebrow="Products"
+      title={`${label} products`}
+      description={`${filteredProducts.length} matching product${filteredProducts.length === 1 ? '' : 's'}.`}
     />
-    <Grid columns="products" gap="md" class="mt-8">
-      {products.map((product) => <ProductCard product={product} />)}
-    </Grid>
-    <Button href="/contact" variant="secondary" class="mt-8">Ask about {label}</Button>
+    {filteredProducts.length > 0 ? (
+      <Grid columns="products" gap="md" class="mt-8">
+        {filteredProducts.map((product) => <ProductCard product={product} />)}
+      </Grid>
+    ) : (
+      <div class="mt-8 rounded-card border border-ses-line bg-surface-container-lowest p-7">
+        <h2 class="text-title-md text-on-surface">No matching products found</h2>
+        <p class="mt-2 text-body-md text-on-surface-variant">Browse all {category.label.toLowerCase()} or contact us for help.</p>
+      </div>
+    )}
+    <div class="mt-8 flex flex-wrap gap-3">
+      <Button href={`/category/${category.slug}`} variant="secondary">Shop all {category.label}</Button>
+      <Button href="/contact" variant="secondary">Ask about {label}</Button>
+    </div>
   </Section>
 </BaseLayout>

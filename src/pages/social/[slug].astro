@@ -1,26 +1,8 @@
 ---
-import Breadcrumbs from '@components/navigation/Breadcrumbs.astro';
-import Button from '@components/ui/Button.astro';
-import Section from '@components/ui/Section.astro';
-import BaseLayout from '@layouts/BaseLayout.astro';
-
 export function getStaticPaths() {
   const socialLinks = ['instagram', 'facebook', 'tiktok'];
   return socialLinks.map((slug) => ({ params: { slug } }));
 }
 
-const label = (Astro.params.slug ?? 'social').replace(/-/g, ' ');
+return Astro.redirect('/contact', 302);
 ---
-
-<BaseLayout seo={{ title: `${label} Link`, description: 'Social channel placeholder for MobDeals Kenya.', pathname: `/social/${Astro.params.slug}`, noIndex: true }}>
-  <Section class="bg-surface-container-low/40" containerSize="lg" spacing="sm">
-    <Breadcrumbs items={[{ label }]} />
-    <div class="mt-10 rounded-card-lg border border-ses-line bg-surface-container-lowest p-8">
-      <h1 class="font-display text-headline-xl capitalize text-on-surface">{label}</h1>
-      <p class="mt-4 max-w-2xl text-body-lg text-on-surface-variant">
-        This social channel can be wired to the live MobDeals Kenya profile when the final account URLs are available.
-      </p>
-      <Button href="/contact" variant="secondary" class="mt-6">Contact support</Button>
-    </div>
-  </Section>
-</BaseLayout>
