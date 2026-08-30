@@ -2,22 +2,24 @@
 import { classNames } from '@lib/utils/classNames';
 
 interface Props {
+  id?: string;
   class?: string;
   placeholder?: string;
   compact?: boolean;
 }
 
 const {
+  id = 'site-search',
   class: className,
-  placeholder = 'Search laptops, desktops, monitors...',
+  placeholder = 'Search laptops, printers, monitors and more',
   compact = false
 } = Astro.props;
 ---
 
 <form action="/search" method="get" role="search" class={classNames('relative w-full', className)} aria-label="Product search">
-  <label for="site-search" class="sr-only">Search products</label>
+  <label for={id} class="sr-only">Search products</label>
   <input
-    id="site-search"
+    id={id}
     name="q"
     type="search"
     placeholder={placeholder}

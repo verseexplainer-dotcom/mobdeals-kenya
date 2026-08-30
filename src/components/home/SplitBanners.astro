@@ -53,9 +53,16 @@ const { banners } = Astro.props;
           <p class={`mt-5 max-w-[32rem] text-body-md text-pretty ${banner.tone === 'dark' ? 'text-on-surface-variant' : 'text-slate-600'}`}>
             {banner.description}
           </p>
-          <Button href={banner.href} variant={banner.tone === 'dark' ? 'secondary' : 'blue'} size="lg" class="mt-8 w-fit">
-            {banner.ctaLabel}
-          </Button>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <Button href={banner.href} variant={banner.tone === 'dark' ? 'secondary' : 'blue'} size="lg" class="w-fit">
+              {banner.ctaLabel}
+            </Button>
+            {banner.secondaryCta && (
+              <Button href={banner.secondaryCta.href} variant="secondary" size="lg" class="w-fit">
+                {banner.secondaryCta.label}
+              </Button>
+            )}
+          </div>
         </div>
       </article>
     ))}

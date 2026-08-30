@@ -1,5 +1,5 @@
 ---
-import { accountNavigation, primaryNavigation, supportNavigation } from '@config/navigation';
+import { primaryNavigation, supportNavigation } from '@config/navigation';
 import { siteConfig } from '@config/site';
 import Container from '@components/ui/Container.astro';
 import MegaMenu from './MegaMenu.astro';
@@ -8,10 +8,10 @@ import SearchBar from './SearchBar.astro';
 ---
 
 <header id="site-header" class="sticky top-0 z-40 border-b border-transparent bg-background/75 backdrop-blur-xl transition-[background-color,border-color,box-shadow] duration-200 data-[scrolled=true]:border-ses-line data-[scrolled=true]:bg-background/95 data-[scrolled=true]:shadow-xs">
-  <div class="hidden border-b border-ses-line bg-surface-container-lowest text-on-surface md:block">
-    <Container size="xl" class="flex min-h-9 items-center justify-between gap-4 text-label-xs">
-      <p>Fast delivery in Nairobi. Business supply available across Kenya.</p>
-      <nav aria-label="Support links" class="flex items-center gap-4">
+  <div class="border-b border-ses-line bg-surface-container-lowest text-on-surface">
+    <Container size="xl" class="flex min-h-11 items-center justify-center gap-4 py-2 text-center text-[0.68rem] font-semibold leading-4 sm:text-label-xs lg:justify-between lg:text-left">
+      <p>Fast Nairobi Delivery • Countrywide Delivery • Business Quotes Available</p>
+      <nav aria-label="Support links" class="hidden items-center gap-4 lg:flex">
         {supportNavigation.map((item) => (
           <a href={item.href} class="text-on-surface-variant hover:text-tertiary">
             {item.label}
@@ -36,28 +36,30 @@ import SearchBar from './SearchBar.astro';
       />
     </a>
 
-    <nav aria-label="Primary navigation" class="hidden items-center gap-1 xl:flex">
+    <nav aria-label="Primary navigation" class="hidden items-center gap-0.5 xl:flex">
       <MegaMenu />
       {primaryNavigation.map((item) => (
-        <a href={item.href} class="rounded-control px-3 py-2 text-label-md text-on-surface hover:bg-white/8 hover:text-tertiary">
+        <a href={item.href} class="rounded-control px-2.5 py-2 text-label-md text-on-surface hover:bg-white/8 hover:text-tertiary">
           {item.label}
         </a>
       ))}
     </nav>
 
-    <SearchBar class="ml-auto hidden max-w-[20rem] md:block lg:max-w-[24rem] 2xl:max-w-[28rem]" compact />
+    <SearchBar id="header-search" class="ml-auto hidden max-w-[20rem] md:block xl:hidden 2xl:block 2xl:max-w-[18rem]" compact />
 
     <div class="ml-auto flex items-center gap-2 md:ml-0">
-      {accountNavigation.map((item) => (
-        <a href={item.href} class="relative hidden size-10 items-center justify-center rounded-control border border-ses-line bg-white/8 text-label-md text-on-surface shadow-xs hover:border-tertiary hover:text-tertiary md:inline-flex" aria-label={item.description ?? item.label}>
-          {item.label === 'Cart' ? 'Bag' : 'User'}
-          {item.label === 'Cart' && (
-            <span data-cart-count hidden class="absolute -right-2 -top-2 flex size-5 items-center justify-center rounded-pill bg-secondary text-[0.7rem] font-semibold leading-none text-on-secondary">0</span>
-          )}
-        </a>
-      ))}
-      <a href="/shop" class="rounded-control bg-primary px-4 py-2 text-label-md text-on-primary shadow-xs hover:bg-primary-container hover:shadow-soft">
-        Shop
+      <a href="/search" class="hidden size-11 items-center justify-center rounded-control border border-ses-line bg-white/8 text-on-surface shadow-xs hover:border-tertiary hover:text-tertiary xl:inline-flex 2xl:hidden" aria-label="Search products">
+        <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m20 20-3.5-3.5"></path>
+        </svg>
+      </a>
+      <a href="/cart" class="relative inline-flex size-11 items-center justify-center rounded-control border border-ses-line bg-white/8 text-on-surface shadow-xs hover:border-tertiary hover:text-tertiary" aria-label="View cart">
+        <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M6 7h12l-1 13H7L6 7Z"></path>
+          <path d="M9 9V5a3 3 0 0 1 6 0v4"></path>
+        </svg>
+        <span data-cart-count hidden class="absolute -right-2 -top-2 flex size-5 items-center justify-center rounded-pill bg-secondary text-[0.7rem] font-semibold leading-none text-on-secondary">0</span>
       </a>
     </div>
   </Container>
@@ -74,4 +76,41 @@ import SearchBar from './SearchBar.astro';
     setHeaderState();
     window.addEventListener('scroll', setHeaderState, { passive: true });
   }
+
+  const CART_KEY = 'mobdeals_cart_v1';
+  const readCart = () => {
+    try {
+      const cart = JSON.parse(localStorage.getItem(CART_KEY) || '[]');
+      return Array.isArray(cart) ? cart : [];
+    } catch {
+      localStorage.removeItem(CART_KEY);
+      return [];
+    }
+  };
+  const writeCart = (items) => {
+    localStorage.setItem(CART_KEY, JSON.stringify(items));
+    const count = items.reduce((total, item) => total + (Number(item.quantity) || 0), 0);
+    document.querySelectorAll('[data-cart-count]').forEach((target) => {
+      target.textContent = String(count);
+      target.toggleAttribute('hidden', count === 0);
+    });
+  };
+
+  writeCart(readCart());
+  document.addEventListener('click', (event) => {
+    if (!(event.target instanceof Element)) return;
+    const button = event.target.closest('[data-cart-add]');
+    if (!(button instanceof HTMLButtonElement)) return;
+    const product = JSON.parse(button.dataset.cartProduct || '{}');
+    if (!product.slug) return;
+    const items = readCart();
+    const existing = items.find((item) => item.slug === product.slug);
+    if (existing) existing.quantity += 1;
+    else items.push({ ...product, quantity: 1 });
+    writeCart(items);
+    const originalLabel = button.dataset.cartLabel || button.textContent || 'ADD TO CART';
+    button.dataset.cartLabel = originalLabel;
+    button.textContent = 'ADDED TO CART';
+    window.setTimeout(() => { button.textContent = originalLabel; }, 1200);
+  });
 </script>

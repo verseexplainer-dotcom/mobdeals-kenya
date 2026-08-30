@@ -1,16 +1,17 @@
 ---
-import { accountNavigation, categoryNavigation, quickNavigation, supportNavigation } from '@config/navigation';
+import { categoryNavigation, quickNavigation, supportNavigation } from '@config/navigation';
+import { siteConfig } from '@config/site';
 import SearchBar from './SearchBar.astro';
 ---
 
-<details class="group lg:hidden">
-  <summary class="flex size-10 cursor-pointer list-none items-center justify-center rounded-pill border border-ses-line bg-surface-container-lowest text-on-surface shadow-xs hover:bg-surface-container-low focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ses-accent" aria-label="Open menu">
+<details class="group xl:hidden" data-mobile-menu>
+  <summary class="flex size-11 cursor-pointer list-none items-center justify-center rounded-control border border-ses-line bg-surface-container-lowest text-on-surface shadow-xs hover:bg-surface-container-low focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ses-accent" aria-label="Open menu" aria-expanded="false" data-mobile-menu-toggle>
     <span class="text-headline-sm group-open:hidden" aria-hidden="true">☰</span>
     <span class="hidden text-headline-sm group-open:inline" aria-hidden="true">×</span>
   </summary>
 
-  <div class="fixed inset-x-0 top-16 z-50 max-h-[calc(100svh-4rem)] overflow-y-auto border-y border-ses-line bg-background/95 p-4 shadow-ambient backdrop-blur">
-    <SearchBar placeholder="Search products" />
+  <div class="fixed inset-x-0 top-[6.75rem] z-50 max-h-[calc(100svh-6.75rem)] overflow-y-auto border-y border-ses-line bg-background/98 p-4 shadow-ambient backdrop-blur sm:px-6">
+    <SearchBar id="mobile-search" placeholder="Search laptops, printers, monitors and more" />
 
     <nav aria-label="Mobile quick links" class="mt-4 grid grid-cols-2 gap-2">
       {quickNavigation.map((item) => (
@@ -21,40 +22,31 @@ import SearchBar from './SearchBar.astro';
     </nav>
 
     <nav aria-label="Mobile product categories" class="mt-5">
-      <p class="px-1 text-label-xs uppercase text-on-surface-variant">Shop categories</p>
+      <p class="px-1 text-label-xs uppercase text-on-surface-variant">Shop by category</p>
       <div class="mt-3 grid gap-2">
         {categoryNavigation.map((category) => (
           <details class="rounded-card border border-ses-line bg-surface-container-lowest p-3">
             <summary class="flex cursor-pointer list-none items-center justify-between gap-3 text-label-md text-on-surface">
-              <span>
-                {category.label}
-                {category.eyebrow && <span class="mt-1 block text-label-xs uppercase text-ses-accent">{category.eyebrow}</span>}
-              </span>
+              <span>{category.label}</span>
               <span class="text-body-sm" aria-hidden="true">⌄</span>
             </summary>
-            {category.description && <p class="mt-2 text-body-sm text-on-surface-variant">{category.description}</p>}
-            {category.links && (
-              <ul class="mt-3 grid gap-2 border-t border-ses-line pt-3">
-                {category.links.map((link) => (
-                  <li>
-                    <a href={link.href} class="block rounded-pill px-3 py-2 text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-ses-accent">
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            )}
+            <ul class="mt-3 grid gap-1 border-t border-ses-line pt-3">
+              <li>
+                <a href={category.href} class="block rounded-control px-3 py-2.5 text-body-sm font-semibold text-on-surface hover:bg-surface-container-low hover:text-ses-accent">
+                  Shop all {category.label}
+                </a>
+              </li>
+              {category.links?.map((link) => (
+                <li>
+                  <a href={link.href} class="block rounded-control px-3 py-2.5 text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-ses-accent">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </details>
         ))}
       </div>
-    </nav>
-
-    <nav aria-label="Mobile account placeholders" class="mt-6 grid grid-cols-2 gap-2">
-      {accountNavigation.map((item) => (
-        <a href={item.href} class="rounded-card border border-ses-line bg-surface-container-lowest px-3 py-3 text-body-sm text-on-surface hover:border-primary-fixed-dim hover:text-ses-accent">
-          {item.label}
-        </a>
-      ))}
     </nav>
 
     <nav aria-label="Mobile support" class="mt-6 border-t border-ses-line pt-5">
@@ -67,5 +59,34 @@ import SearchBar from './SearchBar.astro';
         ))}
       </div>
     </nav>
+
+    <a href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent('Hello MobDeals Kenya, I need help choosing a product.')}`} target="_blank" rel="noreferrer" class="mt-5 flex min-h-12 items-center justify-center rounded-control bg-whatsapp px-5 text-label-md text-white hover:bg-whatsapp-dark">
+      WhatsApp Us
+    </a>
   </div>
 </details>
+
+<script>
+  const mobileMenu = document.querySelector<HTMLDetailsElement>('[data-mobile-menu]');
+  const mobileMenuToggle = mobileMenu?.querySelector<HTMLElement>('[data-mobile-menu-toggle]');
+
+  const updateMobileMenuState = () => {
+    if (!mobileMenu || !mobileMenuToggle) return;
+    mobileMenuToggle.setAttribute('aria-expanded', String(mobileMenu.open));
+    mobileMenuToggle.setAttribute('aria-label', mobileMenu.open ? 'Close menu' : 'Open menu');
+  };
+
+  mobileMenu?.addEventListener('toggle', updateMobileMenuState);
+  mobileMenu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      mobileMenu.open = false;
+    });
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && mobileMenu?.open) {
+      mobileMenu.open = false;
+      mobileMenuToggle?.focus();
+    }
+  });
+  updateMobileMenuState();
+</script>

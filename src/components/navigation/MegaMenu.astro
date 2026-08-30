@@ -2,47 +2,60 @@
 import { categoryNavigation } from '@config/navigation';
 ---
 
-<details class="group relative hidden lg:block">
-  <summary class="flex cursor-pointer list-none items-center gap-1 rounded-pill px-3 py-2 text-label-md text-on-surface hover:bg-surface-container-low hover:text-ses-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ses-accent">
-    Products
+<details class="group relative hidden xl:block" data-mega-menu>
+  <summary class="flex cursor-pointer list-none items-center gap-1 rounded-control px-2.5 py-2 text-label-md text-on-surface hover:bg-surface-container-low hover:text-ses-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ses-accent" aria-expanded="false" data-mega-menu-toggle>
+    Shop
     <span class="text-body-sm group-open:rotate-180" aria-hidden="true">⌄</span>
   </summary>
 
-  <div class="absolute left-0 top-full z-50 mt-3 w-[min(76rem,calc(100vw-2rem))] rounded-card border border-ses-line bg-surface-container-lowest p-4 shadow-ambient sm:p-5">
-    <div class="grid gap-5 lg:grid-cols-[0.9fr_2fr]">
-      <aside class="rounded-card bg-primary p-5 text-on-primary">
-        <p class="text-label-xs uppercase text-white/70">Shop by need</p>
-        <h2 class="mt-4 text-headline-xl">Premium electronics for Nairobi and Kenya.</h2>
-        <p class="mt-3 text-body-sm text-white/75">
-          Compare laptops, desktops, printers, monitors, storage, phones, projectors, and internet hardware for work, school, home, and business supply.
-        </p>
-        <a href="/shop" class="mt-6 inline-flex rounded-control bg-white px-4 py-2 text-label-md text-primary hover:bg-primary-fixed">
-          Browse all products
-        </a>
-      </aside>
-
-      <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-        {categoryNavigation.map((category) => (
-          <section class="rounded-card border border-ses-line bg-surface-container-lowest p-4 hover:border-primary-fixed-dim hover:shadow-soft">
-            {category.eyebrow && <p class="text-label-xs uppercase text-ses-accent">{category.eyebrow}</p>}
-            <a href={category.href} class="mt-2 block text-title-md text-on-surface hover:text-ses-accent">
-              {category.label}
-            </a>
-            {category.description && <p class="mt-2 text-body-sm text-on-surface-variant">{category.description}</p>}
-            {category.links && (
-              <ul class="mt-4 grid gap-2 border-t border-ses-line pt-3">
-                {category.links.map((link) => (
-                  <li>
-                    <a href={link.href} class="text-body-sm text-on-surface-variant hover:text-ses-accent">
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </section>
-        ))}
+  <div class="absolute left-0 top-full z-50 mt-3 w-[min(64rem,calc(100vw-3rem))] rounded-card border border-ses-line bg-surface-container-lowest p-5 shadow-ambient">
+    <div class="flex items-center justify-between gap-4 border-b border-ses-line pb-4">
+      <div>
+        <p class="text-label-xs uppercase text-ses-accent">Product Categories</p>
+        <h2 class="mt-2 text-title-lg text-on-surface">Find what you need</h2>
       </div>
+      <a href="/shop" class="rounded-control bg-primary px-4 py-2.5 text-label-md text-on-primary hover:bg-primary-container">
+        Shop All
+      </a>
+    </div>
+
+    <div class="mt-5 grid gap-x-6 gap-y-7 sm:grid-cols-2 lg:grid-cols-4">
+      {categoryNavigation.map((category) => (
+        <section>
+          <a href={category.href} class="text-title-md text-on-surface hover:text-ses-accent">
+            {category.label}
+          </a>
+          <ul class="mt-3 grid gap-2.5">
+            {category.links?.map((link) => (
+              <li>
+                <a href={link.href} class="text-body-sm text-on-surface-variant hover:text-ses-accent">
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
     </div>
   </div>
 </details>
+
+<script>
+  const megaMenu = document.querySelector<HTMLDetailsElement>('[data-mega-menu]');
+  const megaMenuToggle = megaMenu?.querySelector<HTMLElement>('[data-mega-menu-toggle]');
+  const updateMegaMenuState = () => megaMenuToggle?.setAttribute('aria-expanded', String(Boolean(megaMenu?.open)));
+
+  megaMenu?.addEventListener('toggle', updateMegaMenuState);
+  document.addEventListener('click', (event) => {
+    if (megaMenu?.open && event.target instanceof Node && !megaMenu.contains(event.target)) {
+      megaMenu.open = false;
+    }
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && megaMenu?.open) {
+      megaMenu.open = false;
+      megaMenuToggle?.focus();
+    }
+  });
+  updateMegaMenuState();
+</script>

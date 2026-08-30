@@ -1,0 +1,22 @@
+---
+import Button from '@components/ui/Button.astro';
+import Section from '@components/ui/Section.astro';
+import { siteConfig } from '@config/site';
+
+const message = encodeURIComponent('Hello MobDeals Kenya, I need help choosing a product. My budget and requirements are:');
+---
+
+<Section class="bg-surface-container-low" containerSize="xl" ariaLabelledby="need-help-title">
+  <div class="grid gap-6 border-y border-ses-line py-10 lg:grid-cols-[1fr_auto] lg:items-center">
+    <div>
+      <p class="text-label-xs uppercase text-ses-accent">Product Support</p>
+      <h2 id="need-help-title" class="mt-3 font-display text-headline-xl text-on-surface">Need Help Choosing?</h2>
+      <p class="mt-4 max-w-3xl text-body-md text-on-surface-variant">
+        Tell us what you need, your budget and how you plan to use it. Our team can help you compare suitable options.
+      </p>
+    </div>
+    <Button href={`https://wa.me/${siteConfig.whatsappNumber}?text=${message}`} target="_blank" variant="whatsapp" size="lg">
+      TALK TO US ON WHATSAPP
+    </Button>
+  </div>
+</Section>

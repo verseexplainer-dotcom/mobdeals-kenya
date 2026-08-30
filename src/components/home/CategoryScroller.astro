@@ -11,17 +11,7 @@ const { categories } = Astro.props;
 ---
 
 <Section id="categories" containerSize="xl" ariaLabelledby="categories-title">
-  <div class="grid gap-6 lg:grid-cols-[0.72fr_1fr] lg:items-end">
-    <SectionHeading
-      id="categories-title"
-      eyebrow="Shop by category"
-      title="Start with the device family that solves the job."
-      description="Mobile-first paths for Kenya shoppers comparing price, condition, warranty, and practical specs."
-    />
-    <p class="max-w-[36rem] text-body-md text-on-surface-variant lg:justify-self-end">
-      The catalog is organized for fast decisions across laptops, desktops, printers, monitors, storage, phones, projectors, and internet hardware.
-    </p>
-  </div>
+  <SectionHeading id="categories-title" eyebrow="Browse" title="Shop by Category" description="Find the right equipment for work, school, business or home." />
 
   <div class="-mx-[var(--spacing-page)] mt-10 flex snap-x gap-4 overflow-x-auto px-[var(--spacing-page)] pb-4 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-4 md:overflow-visible md:px-0 [&::-webkit-scrollbar]:hidden">
     {categories.map((category) => (

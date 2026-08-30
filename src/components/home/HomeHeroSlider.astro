@@ -32,7 +32,7 @@ const eyebrowClasses = {
   aria-labelledby="home-hero-title"
   data-home-hero
 >
-  <div class="relative min-h-[48rem] overflow-hidden sm:min-h-[44rem] lg:min-h-[42rem]">
+  <div class="relative min-h-[34rem] overflow-hidden sm:min-h-[36rem] lg:min-h-[38rem]">
     {slides.map((slide, index) => (
       <article
         id={`home-hero-slide-${index}`}
@@ -62,8 +62,8 @@ const eyebrowClasses = {
           <div class="absolute inset-0 bg-[linear-gradient(135deg,rgba(37,99,235,0.18),transparent_42%,rgba(56,189,248,0.08))]"></div>
         </div>
 
-        <div class="container-xl relative z-10 grid min-h-[48rem] items-start py-12 sm:min-h-[44rem] sm:py-16 lg:min-h-[42rem] lg:items-center lg:py-20">
-          <div class="max-w-[42rem] pt-4 sm:pt-0">
+        <div class="container-xl relative z-10 grid min-h-[34rem] items-center py-12 sm:min-h-[36rem] sm:py-16 lg:min-h-[38rem] lg:py-20">
+          <div class="max-w-[43rem]">
             <p class={`text-label-xs uppercase ${eyebrowClasses[slide.backdrop]}`}>{slide.eyebrow}</p>
             {index === 0 ? (
               <h1 id="home-hero-title" class="mt-4 text-display-lg-mobile font-display text-balance sm:text-display-lg">
@@ -82,19 +82,10 @@ const eyebrowClasses = {
               <Button href={slide.primaryCta.href} variant="blue" size="lg">
                 {slide.primaryCta.label}
               </Button>
-              <Button href={slide.secondaryCta.href} variant="secondary" size="lg">
+              <Button href={slide.secondaryCta.href} variant="whatsapp" size="lg" target={slide.secondaryCta.href.startsWith('http') ? '_blank' : undefined}>
                 {slide.secondaryCta.label}
               </Button>
             </div>
-
-            <dl class="mt-10 grid max-w-[32rem] grid-cols-2 divide-x divide-current/20 border-y border-current/15 py-4">
-              {slide.metrics.map((metric) => (
-                <div class="px-4 first:pl-0">
-                  <dt class={`text-label-xs uppercase ${mutedTextClasses[slide.backdrop]}`}>{metric.label}</dt>
-                  <dd class="mt-2 text-title-md">{metric.value}</dd>
-                </div>
-              ))}
-            </dl>
           </div>
         </div>
       </article>
