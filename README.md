@@ -10,14 +10,14 @@ The production target is intentionally lean:
 
 - Frontend hosting: Cloudflare Pages on the Cloudflare free tier.
 - Data and media: Supabase free tier, using public anon client access only where browser code needs it.
-- Product media: committed optimized WebP assets in `public/images`, with Supabase Storage public bucket support named `products`.
+- Product media: Supabase Storage public bucket `product-images`; committed files in `public/images` are limited to storefront branding and homepage assets.
 - Runtime model: static Astro output in `dist`; no global SSR.
 - Container package: GitHub Container Registry image for portable static serving, separate from the primary Cloudflare Pages frontend.
 
 Current storefront status:
 
 - Home, shop, category, filtered category, brand, search, cart, product detail, support, blog, and policy-style pages are implemented as static Astro routes.
-- Product data is generated from the MobDeals SEO workbook into `src/data/products.ts`; the current catalog contains 340 listings.
+- Product data is generated from `product drop/products_for_supabase.csv` into `src/data/products.ts`; the current catalog contains 241 listings.
 - Product cards, galleries, specs tables, related products, navigation, footer, homepage sections, and shared UI primitives are implemented as reusable Astro components.
 - SEO helpers generate page metadata plus product, breadcrumb, and item-list JSON-LD where applicable.
 - Cart behavior is browser-local through `localStorage` and sends checkout inquiries to WhatsApp. There is no backend payment, account, or order system yet.
@@ -33,6 +33,12 @@ Install dependencies:
 
 ```sh
 npm install
+```
+
+Create the local environment file and provide the Supabase public values:
+
+```sh
+cp .env.example .env
 ```
 
 Start the local dev server:
@@ -53,19 +59,19 @@ Preview the production build:
 npm run preview
 ```
 
-The latest verified production build completed successfully and generated 399 static pages.
+The latest verified production build completed successfully and generated 298 static pages.
 
 ## Catalog And Assets
 
 Regenerate catalog data after workbook updates:
 
 ```sh
-python3 scripts/import_mobdeals_products.py path/to/mobdeals_seo_copy_340products.xlsx
+python3 scripts/import_mobdeals_products.py
 ```
 
-The generated product module is `src/data/products.ts`. Keep source workbook files and raw source-image drops local unless a separate import package is intentionally needed. The `product drop/` directory is ignored; committed storefront images are optimized WebP files under `public/images`.
+The generated product module is `src/data/products.ts`. Keep the source CSV and categorized image drop local unless a separate import package is intentionally needed. The `product drop/` directory is ignored; product media is synced to the public Supabase Storage bucket `product-images`.
 
-Supabase Storage remains available for public product media through `src/lib/supabase`, but browser code must only use public anon credentials.
+Committed files under `public/images` are for storefront branding and homepage visuals. Browser code must only use public Supabase anon credentials.
 
 ## Repository And Deployment
 
@@ -88,6 +94,8 @@ Required public environment variables:
 - `PUBLIC_SITE_URL`
 - `PUBLIC_SUPABASE_URL`
 - `PUBLIC_SUPABASE_ANON_KEY`
+
+Set `PUBLIC_SITE_URL` to the full production origin, including the scheme: `https://shop.mobdeals.co.ke`. Set the Cloudflare Pages build environment to Node.js `22.12.0` or newer.
 
 Keep secrets such as Supabase service role keys out of Cloudflare Pages public environment variables and out of frontend code.
 
