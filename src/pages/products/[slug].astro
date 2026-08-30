@@ -127,7 +127,7 @@ const breadcrumbSchema = stringifyJsonLd(
           id="product-details-title"
           eyebrow="Buying details"
           title="What to confirm before purchase"
-          description="These details are generated from the MobDeals product workbook and should be confirmed against live stock before payment."
+          description="These details come from the current MobDeals product catalog and should be confirmed against live stock before payment."
         />
         <ul class="mt-8 space-y-3">
           {product.highlights.map((highlight) => (
@@ -144,6 +144,22 @@ const breadcrumbSchema = stringifyJsonLd(
       </div>
     </div>
   </Section>
+
+  {(product.descriptionHtml || product.longDescription) && (
+    <Section class="bg-surface-container-low/35" containerSize="xl" spacing="sm" ariaLabelledby="product-overview-title">
+      <div class="max-w-4xl">
+        <h2 id="product-overview-title" class="font-display text-headline-lg text-on-surface">Product overview</h2>
+        {product.descriptionHtml ? (
+          <div
+            class="mt-6 space-y-5 text-body-md leading-7 text-on-surface-variant [&_a]:font-semibold [&_a]:text-primary [&_a]:underline-offset-4 hover:[&_a]:underline [&_h3]:pt-3 [&_h3]:font-display [&_h3]:text-title-lg [&_h3]:text-on-surface [&_li]:ml-5 [&_li]:list-disc [&_p]:max-w-3xl [&_ul]:space-y-2"
+            set:html={product.descriptionHtml}
+          />
+        ) : (
+          <div class="mt-6 whitespace-pre-line text-body-md leading-7 text-on-surface-variant">{product.longDescription}</div>
+        )}
+      </div>
+    </Section>
+  )}
 
   <RelatedProducts products={relatedProducts} />
 </BaseLayout>

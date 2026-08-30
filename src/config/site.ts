@@ -10,7 +10,7 @@ export const siteConfig = {
   themeColor: '#020617',
   twitterHandle: '',
   whatsappNumber: '254701499849',
-  storageBucket: 'products',
+  storageBucket: 'product-images',
   supabaseUrl: import.meta.env.PUBLIC_SUPABASE_URL,
   supabaseAnonKey: import.meta.env.PUBLIC_SUPABASE_ANON_KEY
 } as const;

@@ -1,134 +1,238 @@
 #!/usr/bin/env python3
-"""Generate the MobDeals static product catalog from the SEO workbook.
-
-The workbook was exported without shared strings and this repo does not depend on
-openpyxl, so the parser reads the small XLSX XML structure directly.
-"""
+"""Generate the storefront catalog from the product-drop CSV and images."""
 
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import re
-import xml.etree.ElementTree as ET
-from collections import Counter
+import sys
+from collections import Counter, defaultdict
+from dataclasses import dataclass
+from difflib import SequenceMatcher
 from pathlib import Path
-from zipfile import ZipFile
+from typing import Any
+
+from generate_product_catalog_template import CATEGORY_MAP, build_rows
 
 
-SHEET_NS = {"a": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
-IMAGE_EXTENSIONS = {".webp", ".jpg", ".jpeg", ".png"}
-TOKEN_STOPWORDS = {
-    "and",
-    "at",
-    "available",
+DEFAULT_SOURCE = Path("product drop/products_for_supabase.csv")
+DEFAULT_IMAGE_ROOT = Path("product drop")
+DEFAULT_OUTPUT = Path("src/data/products.ts")
+DEFAULT_REPORT = Path("output/logs/product-drop-import-report.json")
+DEFAULT_MAPPING = Path("output/logs/product-drop-image-mapping.csv")
+DEFAULT_MANIFEST = Path("output/logs/product-drop-upload-manifest.json")
+
+REQUIRED_COLUMNS = {
+    "title",
+    "slug",
+    "category",
     "brand",
-    "ci3",
-    "ci5",
-    "ci7",
-    "ci9",
-    "core",
-    "desktop",
-    "desktops",
-    "display",
-    "ex",
-    "gb",
-    "hdd",
-    "in",
-    "inch",
-    "inches",
-    "intel",
-    "ksh",
-    "laptop",
-    "laptops",
-    "monitor",
-    "monitors",
-    "new",
-    "pc",
-    "printer",
-    "printers",
-    "pro",
-    "projector",
-    "ram",
-    "refurbished",
-    "series",
-    "simple",
-    "ssd",
-    "the",
-    "touch",
-    "touchscreen",
-    "with",
+    "price_kes",
+    "compare_at_price",
+    "short_specs",
+    "short_description",
+    "description_html",
+    "meta_title",
+    "meta_description",
+    "condition",
+    "warranty",
+    "stock_status",
+    "sku",
+    "is_available",
+    "product_schema_json",
+}
+
+SOURCE_CATEGORY_FOLDERS = {
+    "desktop": "desktop",
+    "laptop": "laptop",
+    "monitor": "monitor",
+    "printer": "printer",
+    "projector": "projector",
+    "smartphone": "smartphone",
+    "software": "software_box",
+    "tablet": "tablet",
+    "ups": "ups",
 }
 
 CATEGORY_DEFINITIONS = {
     "laptops": {
         "label": "Laptops",
         "eyebrow": "Work, study, and creator machines",
-        "description": "HP, Dell, Lenovo, Microsoft, and Apple laptops listed with condition, price, processor, memory, and storage details from the current MobDeals sheet.",
+        "description": "Current HP, Dell, Lenovo, Microsoft, and Apple laptops with sheet-backed prices, specifications, condition, and warranty details.",
         "seoTitle": "Laptops in Nairobi",
-        "seoDescription": "Shop current MobDeals laptop listings in Nairobi with visible price, condition, processor, RAM, storage, and Kenya delivery support.",
+        "seoDescription": "Shop current MobDeals laptops in Nairobi with visible prices, specifications, condition, warranty, and delivery support across Kenya.",
     },
-    "desktops": {
-        "label": "Desktops",
-        "eyebrow": "Office PCs and workstations",
-        "description": "All-in-one PCs, ProDesk, EliteDesk, OptiPlex, ThinkCentre, and workstation options for office and business setups.",
-        "seoTitle": "Desktop Computers in Nairobi",
-        "seoDescription": "Compare MobDeals desktop computer listings in Nairobi, including office PCs, all-in-ones, mini PCs, and workstations.",
-    },
-    "printers": {
-        "label": "Printers",
-        "eyebrow": "Office and home printing",
-        "description": "HP, Epson, and Kyocera printer listings with source-sheet prices and availability-focused buying notes.",
-        "seoTitle": "Printers in Nairobi",
-        "seoDescription": "Shop current MobDeals printer listings in Nairobi with prices, condition notes, and delivery support across Kenya.",
+    "tablets": {
+        "label": "Tablets",
+        "eyebrow": "Portable touch devices",
+        "description": "Portable tablets and detachable devices for mobile work, study, browsing, and communication.",
+        "seoTitle": "Tablets in Nairobi",
+        "seoDescription": "Browse MobDeals tablets in Nairobi with current prices, specifications, warranty details, and Kenya delivery support.",
     },
     "monitors": {
         "label": "Monitors",
         "eyebrow": "Display upgrades",
-        "description": "HP and Dell monitor listings for office desks, home workstations, and display replacement needs.",
+        "description": "Current monitor options for office desks, home workstations, and display replacement needs.",
         "seoTitle": "Computer Monitors in Nairobi",
-        "seoDescription": "Browse MobDeals monitor listings in Nairobi with visible price, size cues, condition notes, and Kenya delivery support.",
+        "seoDescription": "Browse MobDeals computer monitors in Nairobi with current prices and delivery support across Kenya.",
     },
-    "storage": {
-        "label": "Storage",
-        "eyebrow": "External drives and upgrades",
-        "description": "External hard drive and storage listings for backups, transfers, and expanded workspace capacity.",
-        "seoTitle": "Computer Storage in Nairobi",
-        "seoDescription": "Shop MobDeals storage listings in Nairobi, including external hard drives and storage upgrade options.",
-    },
-    "smartphones": {
-        "label": "Smartphones",
-        "eyebrow": "Mobile devices",
-        "description": "Samsung and Apple phone listings with source-sheet condition, price, and availability details.",
-        "seoTitle": "Smartphones in Nairobi",
-        "seoDescription": "Browse current MobDeals smartphone listings in Nairobi with price, condition, and delivery support.",
+    "printers": {
+        "label": "Printers",
+        "eyebrow": "Office and home printing",
+        "description": "Current Epson, HP, and Kyocera printers for home, school, office, and production workflows.",
+        "seoTitle": "Printers in Nairobi",
+        "seoDescription": "Shop current MobDeals printers in Nairobi with prices, specifications, warranty details, and Kenya delivery support.",
     },
     "projectors": {
         "label": "Projectors",
         "eyebrow": "Presentation displays",
-        "description": "Projector listings for classrooms, offices, events, and presentation setups.",
+        "description": "Projectors for classrooms, offices, events, and presentation setups with source-sheet specifications.",
         "seoTitle": "Projectors in Nairobi",
-        "seoDescription": "Shop MobDeals projector listings in Nairobi with price, condition, and Kenya delivery support.",
+        "seoDescription": "Shop MobDeals projectors in Nairobi with current prices, verified specifications, and delivery support across Kenya.",
     },
-    "internet": {
-        "label": "Internet",
-        "eyebrow": "Connectivity hardware",
-        "description": "Internet hardware listings such as Starlink kits for buyers comparing connectivity options.",
-        "seoTitle": "Internet Hardware in Nairobi",
-        "seoDescription": "Browse MobDeals internet hardware listings in Nairobi with price, condition, and availability notes.",
+    "software": {
+        "label": "Software",
+        "eyebrow": "Security and productivity",
+        "description": "Current software licences and security products with device coverage and warranty details.",
+        "seoTitle": "Software Licences in Nairobi",
+        "seoDescription": "Shop software licences from MobDeals in Nairobi with current prices and support across Kenya.",
+    },
+    "ups": {
+        "label": "UPS & Power",
+        "eyebrow": "Backup power and connectivity",
+        "description": "UPS, backup power, and related connectivity products from the current MobDeals catalog.",
+        "seoTitle": "UPS and Backup Power in Nairobi",
+        "seoDescription": "Shop UPS and backup power products from MobDeals in Nairobi with current prices and Kenya delivery support.",
     },
 }
 
-CATEGORY_ORDER = [
-    "laptops",
+CATEGORY_ORDER = ["laptops", "tablets", "monitors", "printers", "projectors", "software", "ups"]
+
+IMAGE_GROUP_OVERRIDES = {
+    "lenovo-t470s-6th-gen": "laptop/lenovo_t470_laptop.webp",
+}
+
+MATCH_STOPWORDS = {
+    "available",
+    "box",
+    "brand",
+    "camera",
+    "charger",
+    "complete",
+    "computer",
+    "condition",
+    "core",
+    "desktop",
     "desktops",
-    "printers",
+    "display",
+    "ex",
+    "gen",
+    "generation",
+    "graphics",
+    "hdd",
+    "home",
+    "inch",
+    "inches",
+    "installed",
+    "laptop",
+    "laptops",
+    "monitor",
     "monitors",
-    "storage",
-    "smartphones",
+    "mouse",
+    "new",
+    "notebook",
+    "nvme",
+    "office",
+    "phone",
+    "phones",
+    "plus",
+    "printer",
+    "printers",
+    "professional",
+    "projector",
     "projectors",
-    "internet",
-]
+    "ram",
+    "refurbished",
+    "screen",
+    "smartphone",
+    "smartphones",
+    "software",
+    "ssd",
+    "storage",
+    "tablet",
+    "tablets",
+    "touch",
+    "touchscreen",
+    "type",
+    "uk",
+    "ultra",
+    "ups",
+    "usb",
+    "used",
+    "wi",
+    "wifi",
+    "windows",
+    "win",
+}
+
+BRAND_TOKENS = {
+    "acer",
+    "apple",
+    "asus",
+    "canon",
+    "cursor",
+    "dell",
+    "epson",
+    "hp",
+    "huawei",
+    "infinix",
+    "kaspersky",
+    "kyocera",
+    "lenovo",
+    "lightwave",
+    "mecer",
+    "mercury",
+    "microsoft",
+    "msi",
+    "onn",
+    "phomemo",
+    "samsung",
+    "starlink",
+    "tecno",
+    "unomat",
+}
+
+
+@dataclass(frozen=True)
+class ImageGroup:
+    folder: str
+    category: str
+    slug: str
+    name: str
+    source_paths: tuple[str, ...]
+    storage_keys: tuple[str, ...]
+
+    @property
+    def primary_source_path(self) -> str:
+        return self.source_paths[0]
+
+
+@dataclass(frozen=True)
+class MatchProfile:
+    tokens: frozenset[str]
+    compact: str
+
+
+@dataclass(frozen=True)
+class ProductImageMatch:
+    product_slug: str
+    source_category: str
+    group: ImageGroup
+    score: float
+    gap: float
+    status: str
 
 
 def ascii_text(value: object) -> str:
@@ -147,496 +251,305 @@ def ascii_text(value: object) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def column_index(cell_ref: str) -> int:
-    match = re.match(r"([A-Z]+)", cell_ref or "")
-    if not match:
-        return 0
-
-    index = 0
-    for character in match.group(1):
-        index = index * 26 + ord(character) - 64
-    return index - 1
-
-
-def cell_value(cell: ET.Element) -> str:
-    if cell.attrib.get("t") == "inlineStr":
-        return ascii_text("".join(node.text or "" for node in cell.findall(".//a:t", SHEET_NS)))
-
-    value = cell.find("a:v", SHEET_NS)
-    return ascii_text(value.text if value is not None else "")
+def parse_integer(value: object, field: str, row_number: int) -> int:
+    normalized = re.sub(r"[^\d]", "", ascii_text(value))
+    if not normalized:
+        raise ValueError(f"Row {row_number}: {field} must be a positive integer")
+    parsed = int(normalized)
+    if parsed <= 0:
+        raise ValueError(f"Row {row_number}: {field} must be greater than zero")
+    return parsed
 
 
-def read_product_rows(workbook_path: Path) -> list[dict[str, str]]:
-    with ZipFile(workbook_path) as archive:
-        root = ET.fromstring(archive.read("xl/worksheets/sheet1.xml"))
-
-    rows: list[list[str]] = []
-    for row in root.findall(".//a:sheetData/a:row", SHEET_NS):
-        values: list[str] = []
-        for cell in row.findall("a:c", SHEET_NS):
-            index = column_index(cell.attrib.get("r", ""))
-            while len(values) <= index:
-                values.append("")
-            values[index] = cell_value(cell)
-        rows.append(values)
-
-    headers = rows[0]
-    records: list[dict[str, str]] = []
-    for row in rows[1:]:
-        padded = row + [""] * (len(headers) - len(row))
-        records.append(dict(zip(headers, padded)))
-    return records
+def parse_boolean(value: object) -> bool:
+    return ascii_text(value).casefold() in {"1", "true", "yes", "in_stock", "in stock"}
 
 
-def slugify(value: str) -> str:
-    value = value.lower().replace("&", " and ")
-    value = re.sub(r"[^a-z0-9]+", "-", value)
-    return re.sub(r"-+", "-", value).strip("-")
-
-
-def image_tokens(value: str) -> set[str]:
-    cleaned = value.lower().replace("ex-uk", "ex uk").replace("_", " ").replace("-", " ")
-    tokens = set(re.findall(r"[a-z]+\d*[a-z]*|\d+[a-z]*", cleaned))
-    filtered: set[str] = set()
-    for token in tokens:
-        if len(token) <= 1 or token in TOKEN_STOPWORDS:
-            continue
-        if re.fullmatch(r"i[3579]", token):
-            continue
-        if re.fullmatch(r"\d+(?:gb|tb|gbhdd|tbhdd|tbssd)", token):
-            continue
-        if re.fullmatch(r"\d+(?:st|nd|rd|th)?gen", token):
-            continue
-        if re.fullmatch(r"\d+", token) and int(token) in {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 20, 23, 24, 27, 32, 64, 128, 256, 320, 400, 500, 512}:
-            continue
-        filtered.add(token)
-    return filtered
-
-
-def build_image_index(images_dir: Path) -> tuple[list[dict[str, object]], dict[str, str]]:
-    images: list[dict[str, object]] = []
-    fallback_by_category = {
-        "laptops": "hp_elitebook_840_g11_laptop.webp",
-        "desktops": "hp-prodesk-i5-8500-8th-gen-desktop-computer-3.2-8gb-ddr4-ram-500gb-hdd-solid-state-windows-11-professional-home-or-office-pc.webp",
-        "printers": "epson_l3210_printer.webp",
-        "monitors": "hp_monitor_m27fw_monitor.webp",
-        "storage": "starlink_mini_available_ups.webp",
-        "smartphones": "samsung-galaxy-note-20-5g-8gb-256gb-5g-and-dual-sim-refurbished.webp",
-        "projectors": "epson_co_w01_portable_wxga_projector_projector.webp",
-        "internet": "starlink_mini_available_ups.webp",
-    }
-
-    for path in sorted(images_dir.iterdir() if images_dir.exists() else []):
-        if not path.is_file() or path.suffix.lower() not in IMAGE_EXTENSIONS:
-            continue
-        images.append(
-            {
-                "name": path.name,
-                "tokens": image_tokens(path.stem),
-            }
-        )
-
-    existing = {image["name"] for image in images}
-    fallback_by_category = {category: name for category, name in fallback_by_category.items() if name in existing}
-    return images, fallback_by_category
-
-
-def image_score(product_tokens: set[str], image: dict[str, object]) -> tuple[float, int, int]:
-    image_token_set = image["tokens"]
-    if not isinstance(image_token_set, set) or not product_tokens or not image_token_set:
-        return (0.0, 0, 0)
-
-    overlap = len(product_tokens & image_token_set)
-    precision = overlap / len(product_tokens)
-    recall = overlap / len(image_token_set)
-    score = precision * 0.72 + recall * 0.28
-    return (score, overlap, -len(image_token_set))
-
-
-def best_local_image(name: str, brand: str, category: str, images: list[dict[str, object]], fallback_by_category: dict[str, str]) -> str:
-    tokens = image_tokens(f"{brand} {name}")
-    best = max(images, key=lambda image: image_score(tokens, image), default=None)
-    if best:
-        score, overlap, _ = image_score(tokens, best)
-        if overlap >= 2 and score >= 0.58:
-            return str(best["name"])
-
-    brand_lower = brand.lower()
-    category_terms = {
-        "laptops": "laptop",
-        "desktops": "desktop",
-        "printers": "printer",
-        "monitors": "monitor",
-        "projectors": "projector",
-        "smartphones": "samsung" if brand_lower == "samsung" else "phone",
-        "internet": "starlink",
-        "storage": "ups",
-    }
-    term = category_terms.get(category, "")
-    brand_candidates = [
-        image
-        for image in images
-        if brand_lower and brand_lower in str(image["name"]).lower() and (not term or term in str(image["name"]).lower())
-    ]
-    if brand_candidates:
-        return str(brand_candidates[0]["name"])
-
-    return fallback_by_category.get(category, fallback_by_category.get("laptops", ""))
-
-
-def display_name(raw_name: str) -> str:
-    name = ascii_text(raw_name)
-    name = re.sub(r"\s+available\s*@?\s*(?:ksh?)?\s*[\d,]+", "", name, flags=re.I)
-    name = re.sub(r"\s+@\s*(?:ksh?)?\s*[\d,]+", "", name, flags=re.I)
-    name = re.sub(r"\s+at\s+[\d,]+$", "", name, flags=re.I)
-    return name.strip(" ,.-")
-
-
-def parse_price(record: dict[str, str], raw_name: str) -> int:
-    price = re.sub(r"[^\d]", "", record.get("Price (KES)", ""))
-    if price:
-        return int(price)
-
-    name_match = re.search(r"(?:@|at)\s*(?:ksh?)?\s*([\d,]+)", raw_name, flags=re.I)
-    if name_match:
-        return int(name_match.group(1).replace(",", ""))
-
-    return 0
-
-
-def infer_category(record: dict[str, str], name: str) -> str:
-    source = record.get("Category", "").lower().strip()
-    lowered = name.lower()
-
-    if "starlink" in lowered or source == "internet":
-        return "internet"
-    if source in {"smartphone", "smartphones"} or any(term in lowered for term in ["iphone", "samsung note", "galaxy"]):
-        return "smartphones"
-    if source in {"storage disk", "storage"} or "external hard drive" in lowered or "external hdd" in lowered:
-        return "storage"
-    if "projector" in lowered:
-        return "projectors"
-    if (
-        source == "monitor"
-        or " monitor" in lowered
-        or "inches monitor" in lowered
-        or "inch simple" in lowered
-        or "z23i" in lowered
-        or "z24 g3" in lowered
-        or "p2425h" in lowered
-    ):
-        return "monitors"
-    if source == "printer" or any(term in lowered for term in ["printer", "laserjet", "officejet", "ecosys"]):
-        return "printers"
-    if source == "desktop" or any(
-        term in lowered
-        for term in [
-            "prodesk",
-            "elitedesk",
-            "eliteone",
-            "optiplex",
-            "thinkcentre",
-            "all-in-one",
-            "all in one",
-            "mini pc",
-            "workstation",
-            "desktop",
-            "compaq 6200",
-        ]
-    ):
-        return "desktops"
-
-    return "laptops"
-
-
-def normalize_condition(value: str) -> str:
-    lowered = value.lower()
-    if "brand" in lowered and "new" in lowered:
+def normalize_condition(value: object) -> str:
+    normalized = ascii_text(value).casefold()
+    if normalized == "brand new":
         return "New"
-    if "open" in lowered:
-        return "Open box"
-    if "ex" in lowered or "uk" in lowered:
+    if normalized in {"used / refurbished", "used", "refurbished", "ex-uk", "ex uk"}:
         return "Refurbished"
-    return "Pre-owned"
+    if normalized in {"pre-owned", "pre owned"}:
+        return "Pre-owned"
+    if normalized in {"open box", "open-box"}:
+        return "Open box"
+    raise ValueError(f"Unsupported product condition: {value}")
 
 
-def title_condition(value: str) -> str:
-    return "Ex-UK" if value == "Refurbished" else value
-
-
-def extract_storage(name: str) -> str:
-    patterns = [
-        r"(\d+(?:\.\d+)?)\s*(TB|GB)\s*(SSD|HDD|NVME|HARD DRIVE)",
-        r"(\d+(?:\.\d+)?)(TB|GB)(SSD|HDD)",
+def validate_description_html(value: str, row_number: int) -> None:
+    unsafe_patterns = [
+        r"<\s*(?:script|iframe|object|embed)\b",
+        r"\son[a-z]+\s*=",
+        r"javascript\s*:",
     ]
-    for pattern in patterns:
-        match = re.search(pattern, name, flags=re.I)
-        if match:
-            amount, unit, kind = match.group(1), match.group(2).upper(), match.group(3).upper()
-            kind = "Hard Drive" if kind == "HARD DRIVE" else kind
-            return f"{amount}{unit} {kind}"
-    external_match = re.search(r"(\d+(?:\.\d+)?)\s*(TB|GB)\s*external\s*(?:hard drive|hdd)", name, flags=re.I)
-    if external_match:
-        return f"{external_match.group(1)}{external_match.group(2).upper()} External HDD"
-    return ""
+    if any(re.search(pattern, value, flags=re.I) for pattern in unsafe_patterns):
+        raise ValueError(f"Row {row_number}: description_html contains unsafe markup")
 
 
-def extract_ram(name: str) -> str:
-    for match in re.finditer(r"(\d+)\s*GB(?!\s*(?:SSD|HDD|NVME|HARD|external))", name, flags=re.I):
-        value = int(match.group(1))
-        if 2 <= value <= 128:
-            return f"{value}GB"
-    return ""
+def read_catalog_rows(source: Path, expected_count: int | None = None) -> list[dict[str, str]]:
+    with source.open(encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        headers = set(reader.fieldnames or [])
+        missing_columns = sorted(REQUIRED_COLUMNS - headers)
+        if missing_columns:
+            raise ValueError(f"CSV is missing required columns: {', '.join(missing_columns)}")
+        rows = list(reader)
+
+    if expected_count is not None and len(rows) != expected_count:
+        raise ValueError(f"Expected {expected_count} product rows, found {len(rows)}")
+
+    errors: list[str] = []
+    slugs: list[str] = []
+    skus: list[str] = []
+    for row_number, row in enumerate(rows, start=2):
+        slug = ascii_text(row.get("slug"))
+        sku = ascii_text(row.get("sku"))
+        title = ascii_text(row.get("title"))
+        source_category = ascii_text(row.get("category")).casefold()
+        if not slug or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug):
+            errors.append(f"Row {row_number}: invalid slug '{slug}'")
+        if not sku:
+            errors.append(f"Row {row_number}: sku is required")
+        if not title:
+            errors.append(f"Row {row_number}: title is required")
+        if source_category not in SOURCE_CATEGORY_FOLDERS:
+            errors.append(f"Row {row_number}: unsupported category '{source_category}'")
+        try:
+            parse_integer(row.get("price_kes"), "price_kes", row_number)
+            json.loads(row.get("product_schema_json", ""))
+            validate_description_html(row.get("description_html", ""), row_number)
+            normalize_condition(row.get("condition"))
+        except (json.JSONDecodeError, ValueError) as error:
+            errors.append(f"Row {row_number}: {error}")
+        slugs.append(slug)
+        skus.append(sku)
+
+    duplicate_slugs = sorted(slug for slug, count in Counter(slugs).items() if count > 1)
+    duplicate_skus = sorted(sku for sku, count in Counter(skus).items() if count > 1)
+    if duplicate_slugs:
+        errors.append(f"Duplicate slugs: {', '.join(duplicate_slugs)}")
+    if duplicate_skus:
+        errors.append(f"Duplicate SKUs: {', '.join(duplicate_skus)}")
+    if errors:
+        raise ValueError("Product CSV validation failed:\n- " + "\n- ".join(errors))
+    return rows
 
 
-def extract_processor(name: str) -> str:
-    lowered = name.lower()
-    if re.search(r"\b(?:core\s*)?i9\b|\bci9\b", lowered):
-        return "Intel Core i9"
-    if re.search(r"\b(?:core\s*)?i7\b|\bci7\b", lowered):
-        return "Intel Core i7"
-    if re.search(r"\b(?:core\s*)?i5\b|\bci5\b", lowered):
-        return "Intel Core i5"
-    if re.search(r"\b(?:core\s*)?i3\b|\bci3\b", lowered):
-        return "Intel Core i3"
-    ryzen = re.search(r"\bryzen\s*([3579])\b", lowered)
-    if ryzen:
-        return f"AMD Ryzen {ryzen.group(1)}"
-    core = re.search(r"\bcore\s+([3579])\b", lowered)
-    if core:
-        return f"Intel Core {core.group(1)}"
-    if "core m5" in lowered or re.search(r"\bm5\b", lowered):
-        return "Intel Core m5"
-    return ""
+def load_image_groups(image_root: Path) -> list[ImageGroup]:
+    rows, _ = build_rows(image_root)
+    groups: list[ImageGroup] = []
+    for row in rows:
+        source_paths = [row["primary_source_image"]]
+        source_paths.extend(path for path in row["source_gallery_images"].split(" | ") if path)
+        storage_keys = [path for path in row["target_storage_keys"].split(" | ") if path]
+        if len(source_paths) != len(storage_keys):
+            raise ValueError(f"Image group has mismatched source and target counts: {row['product_slug']}")
+        groups.append(
+            ImageGroup(
+                folder=source_paths[0].split("/", 1)[0],
+                category=row["category"],
+                slug=row["product_slug"],
+                name=row["product_name"],
+                source_paths=tuple(source_paths),
+                storage_keys=tuple(storage_keys),
+            )
+        )
+    return groups
 
 
-def extract_generation(record: dict[str, str], name: str) -> str:
-    source = record.get("Generation", "")
-    match = re.search(r"(\d+)(?:st|nd|rd|th)?\s*gen", source or name, flags=re.I)
-    if match:
-        return f"{match.group(1)}th Gen"
-    return ascii_text(source)
-
-
-def extract_display(name: str) -> str:
-    match = re.search(r"(\d+(?:\.\d+)?)\s*(?:inch|inches)", name, flags=re.I)
-    if match:
-        return f"{match.group(1)} inch"
-    if "qhd" in name.lower():
-        return "QHD"
-    return ""
-
-
-def category_noun(category: str) -> str:
-    return {
-        "laptops": "laptop",
-        "desktops": "desktop computer",
-        "printers": "printer",
-        "monitors": "monitor",
-        "storage": "storage device",
-        "smartphones": "smartphone",
-        "projectors": "projector",
-        "internet": "internet hardware",
-    }.get(category, "product")
-
-
-def category_title_noun(category: str) -> str:
-    return {
-        "laptops": "Laptop",
-        "desktops": "Desktop Computer",
-        "printers": "Printer",
-        "monitors": "Monitor",
-        "storage": "Storage Device",
-        "smartphones": "Smartphone",
-        "projectors": "Projector",
-        "internet": "Internet Hardware",
-    }.get(category, "Product")
-
-
-def category_use_case(category: str) -> str:
-    return {
-        "laptops": "work, study, business use, and everyday productivity",
-        "desktops": "office desks, reception setups, admin work, and business procurement",
-        "printers": "home office, school, and business printing workflows",
-        "monitors": "desk display upgrades and office workstation setups",
-        "storage": "backup, file transfer, and storage expansion needs",
-        "smartphones": "daily mobile use, calls, apps, and media",
-        "projectors": "office, classroom, and presentation setups",
-        "internet": "connectivity planning and internet hardware purchases",
-    }.get(category, "general technology buying")
-
-
-def spec_summary(facts: dict[str, str]) -> str:
-    parts = []
-    for key in ["processor", "ram", "storage", "generation", "display"]:
-        if facts.get(key):
-            parts.append(facts[key])
-    return ", ".join(parts)
-
-
-def build_specs(record: dict[str, str], name: str, category: str, condition: str, price: int) -> tuple[list[dict[str, str]], dict[str, str]]:
-    facts = {
-        "ram": extract_ram(name),
-        "storage": extract_storage(name),
-        "processor": extract_processor(name),
-        "generation": extract_generation(record, name),
-        "display": extract_display(name),
-    }
-    specs = [
-        {"label": "Product", "value": name},
-        {"label": "Brand", "value": ascii_text(record.get("Brand", ""))},
-        {"label": "Category", "value": CATEGORY_DEFINITIONS[category]["label"]},
-        {"label": "Condition", "value": title_condition(condition)},
-        {"label": "Listed price", "value": f"KES {price:,}" if price else "Confirm current price"},
+def match_tokens(value: str) -> list[str]:
+    tokens = re.findall(r"[a-z]+\d+[a-z0-9]*|\d+[a-z]+[a-z0-9]*|[a-z]+|\d+", value.casefold())
+    return [
+        token
+        for token in tokens
+        if token not in MATCH_STOPWORDS
+        and token not in {"i3", "i5", "i7", "i9", "ryzen", "rtx", "gtx"}
+        and not re.fullmatch(r"\d+(?:gb|tb)", token)
     ]
-    if facts["processor"]:
-        specs.append({"label": "Processor", "value": facts["processor"]})
-    if facts["generation"]:
-        specs.append({"label": "Generation", "value": facts["generation"]})
-    if facts["ram"]:
-        specs.append({"label": "Memory", "value": facts["ram"]})
-    if facts["storage"]:
-        specs.append({"label": "Storage", "value": facts["storage"]})
-    if facts["display"]:
-        specs.append({"label": "Display", "value": facts["display"]})
-    specs.append({"label": "Source category", "value": ascii_text(record.get("Category", ""))})
-    return specs, facts
 
 
-def product_description(name: str, brand: str, category: str, condition: str, price: int, facts: dict[str, str]) -> str:
-    condition_label = "Ex-UK" if condition == "Refurbished" else condition.lower()
-    descriptor = f"{condition_label} {category_noun(category)}"
-    article = "an" if descriptor[0].lower() in {"a", "e", "i", "o", "u"} else "a"
-    summary = spec_summary(facts)
-    price_part = f" at KES {price:,}" if price else ""
-    details = f" Key sheet details include {summary}." if summary else ""
-    brand_part = f" from {brand}" if brand else ""
-    return (
-        f"{name} is {article} {descriptor}{brand_part} listed by MobDeals Kenya{price_part}. "
-        f"It is positioned for {category_use_case(category)}.{details}"
-    )
+def match_profile(value: str) -> MatchProfile:
+    tokens = match_tokens(value)
+    return MatchProfile(tokens=frozenset(tokens), compact="-".join(tokens))
 
 
-def product_highlights(category: str, condition: str, price: int, facts: dict[str, str]) -> list[str]:
-    highlights = [f"{title_condition(condition)} listing from the MobDeals product sheet"]
-    for label, key in [
-        ("Processor", "processor"),
-        ("Memory", "ram"),
-        ("Storage", "storage"),
-        ("Generation", "generation"),
-        ("Display", "display"),
-    ]:
-        if facts.get(key):
-            highlights.append(f"{label}: {facts[key]}")
-    if price:
-        highlights.append(f"Listed price: KES {price:,}")
-    highlights.append("Confirm current stock, accessories, warranty terms, and delivery before purchase")
-    return highlights[:5]
+def token_weight(token: str) -> float:
+    if re.search(r"[a-z]", token) and re.search(r"\d", token):
+        return 8.0
+    if token.isdigit():
+        return 4.0 if len(token) >= 3 else 1.5
+    if token in BRAND_TOKENS:
+        return 1.0
+    return 2.5
 
 
-def warranty_note(condition: str) -> str:
-    if condition == "New":
-        return "Warranty terms confirmed before purchase"
-    return "Shop warranty and condition details confirmed before purchase"
+def match_score(product: MatchProfile, image: MatchProfile) -> float:
+    intersection = product.tokens & image.tokens
+    intersection_weight = sum(token_weight(token) for token in intersection)
+    image_weight = sum(token_weight(token) for token in image.tokens) or 1.0
+    union_weight = sum(token_weight(token) for token in product.tokens | image.tokens) or 1.0
+    containment = intersection_weight / image_weight
+    jaccard = intersection_weight / union_weight
+    sequence = SequenceMatcher(None, product.compact, image.compact).ratio()
+    return 0.6 * containment + 0.25 * jaccard + 0.15 * sequence
 
 
-def availability_note(category: str) -> str:
-    base = "Confirm current availability, exact unit details, and delivery timing before payment."
-    if category == "laptops":
-        return "Confirm exact unit condition, charger, battery status, and delivery timing before payment."
-    if category == "desktops":
-        return "Confirm included accessories, monitor bundle needs, and delivery timing before payment."
-    if category == "printers":
-        return "Confirm current stock, supplies, setup needs, and delivery timing before payment."
-    return base
+def rank_groups(title: str, groups: list[ImageGroup], profiles: dict[str, MatchProfile]) -> list[tuple[float, ImageGroup]]:
+    product_profile = match_profile(title)
+    ranked = [(match_score(product_profile, profiles[group.primary_source_path]), group) for group in groups]
+    return sorted(ranked, key=lambda item: (-item[0], item[1].primary_source_path.casefold()))
 
 
-def image_for_record(record: dict[str, str], images_dir: Path, category: str, images: list[dict[str, object]], fallback_by_category: dict[str, str]) -> list[dict[str, str]]:
-    image_name = Path(record.get("Image URL", "")).name
-    product_name = ascii_text(record.get("Product Name", ""))
-    brand = ascii_text(record.get("Brand", ""))
+def map_product_images(rows: list[dict[str, str]], groups: list[ImageGroup]) -> list[ProductImageMatch]:
+    groups_by_folder: dict[str, list[ImageGroup]] = defaultdict(list)
+    groups_by_primary = {group.primary_source_path: group for group in groups}
+    profiles = {group.primary_source_path: match_profile(group.name) for group in groups}
+    for group in groups:
+        groups_by_folder[group.folder].append(group)
 
-    candidates = [image_name, f"{Path(image_name).stem}.webp"] if image_name else []
-    for candidate in candidates:
-        path = images_dir / candidate
-        if path.exists():
-            return [{"src": f"/images/{candidate}", "alt": product_name}]
+    matches: list[ProductImageMatch] = []
+    errors: list[str] = []
+    for row in rows:
+        product_slug = ascii_text(row["slug"])
+        source_category = ascii_text(row["category"]).casefold()
+        override_path = IMAGE_GROUP_OVERRIDES.get(product_slug)
+        if override_path:
+            override_group = groups_by_primary.get(override_path)
+            if not override_group:
+                errors.append(f"{product_slug}: override image group not found: {override_path}")
+                continue
+            matches.append(
+                ProductImageMatch(
+                    product_slug=product_slug,
+                    source_category=source_category,
+                    group=override_group,
+                    score=1.0,
+                    gap=1.0,
+                    status="approximate-override",
+                )
+            )
+            continue
 
-    best_image = best_local_image(product_name, brand, category, images, fallback_by_category)
-    if best_image:
-        return [{"src": f"/images/{best_image}", "alt": product_name}]
-    return []
+        expected_folder = SOURCE_CATEGORY_FOLDERS[source_category]
+        ranked = rank_groups(row["title"], groups_by_folder[expected_folder], profiles)
+        if not ranked:
+            errors.append(f"{product_slug}: no image groups found for category '{source_category}'")
+            continue
+
+        if ranked[0][0] < 0.7:
+            global_ranked = rank_groups(row["title"], groups, profiles)
+            if global_ranked[0][0] > ranked[0][0]:
+                ranked = global_ranked
+
+        score, group = ranked[0]
+        gap = score - ranked[1][0] if len(ranked) > 1 else score
+        if score < 0.7:
+            errors.append(f"{product_slug}: no reliable image match (best {group.primary_source_path}, score {score:.3f})")
+            continue
+        status = "cross-category" if group.folder != expected_folder else "matched"
+        matches.append(ProductImageMatch(product_slug, source_category, group, score, gap, status))
+
+    if errors:
+        raise ValueError("Product image mapping failed:\n- " + "\n- ".join(errors))
+    return matches
 
 
-def seo_description(name: str, category: str, condition: str, price: int, facts: dict[str, str]) -> str:
-    summary = spec_summary(facts)
-    details = f" Specs: {summary}." if summary else ""
-    price_text = f" Listed price KES {price:,}." if price else ""
-    return (
-        f"{name} from MobDeals Kenya. {title_condition(condition)} {category_noun(category)} for {category_use_case(category)}."
-        f"{details}{price_text} Confirm availability before purchase."
-    )
+def spec_label(value: str) -> str:
+    lowered = value.casefold()
+    if re.search(r"\b(?:intel|core|ryzen|celeron|pentium|snapdragon)\b", lowered):
+        return "Processor"
+    if "ram" in lowered:
+        return "Memory"
+    if re.search(r"\b(?:ssd|hdd|nvme|storage)\b", lowered):
+        return "Storage"
+    if re.search(r"\b(?:rtx|gtx|radeon|graphics|gpu)\b", lowered):
+        return "Graphics"
+    if re.search(r"\b(?:display|screen|inch|hz)\b", lowered):
+        return "Display"
+    if re.search(r"\b\d+(?:st|nd|rd|th)\s+gen\b", lowered):
+        return "Generation"
+    return "Feature"
 
 
-def seo_title(name: str, category: str, condition: str) -> str:
-    return f"{name} - {title_condition(condition)} {category_title_noun(category)} Kenya"
+def product_specs(row: dict[str, str]) -> list[dict[str, str]]:
+    values = [ascii_text(value) for value in row.get("short_specs", "").split(";") if ascii_text(value)]
+    specs = [{"label": spec_label(value), "value": value} for value in values]
+    specs.append({"label": "Condition", "value": ascii_text(row["condition"])})
+    specs.append({"label": "Warranty", "value": ascii_text(row["warranty"])})
+    return specs
 
 
-def build_products(records: list[dict[str, str]], images_dir: Path) -> tuple[list[dict], Counter]:
-    products: list[dict] = []
-    slug_counts: Counter[str] = Counter()
+def product_highlights(row: dict[str, str]) -> list[str]:
+    highlights = [ascii_text(value) for value in row.get("short_specs", "").split(";") if ascii_text(value)]
+    highlights.append(ascii_text(row["warranty"]))
+    highlights.append("Confirm current stock and delivery timing before payment")
+    return highlights[:6]
+
+
+def build_products(rows: list[dict[str, str]], matches: list[ProductImageMatch]) -> tuple[list[dict[str, Any]], Counter[str]]:
+    matches_by_slug = {match.product_slug: match for match in matches}
+    products: list[dict[str, Any]] = []
     category_counts: Counter[str] = Counter()
-    first_featured_by_category: set[str] = set()
-    images, fallback_by_category = build_image_index(images_dir)
+    featured_categories: set[str] = set()
 
-    for index, record in enumerate(records):
-        raw_name = ascii_text(record.get("Product Name", ""))
-        name = display_name(raw_name)
-        brand = ascii_text(record.get("Brand", ""))
-        category = infer_category(record, name)
-        condition = normalize_condition(record.get("Condition", ""))
-        price = parse_price(record, raw_name)
-        specs, facts = build_specs(record, name, category, condition, price)
-        base_slug = slugify(name)
-        slug_counts[base_slug] += 1
-        slug = base_slug if slug_counts[base_slug] == 1 else f"{base_slug}-{slug_counts[base_slug]}"
+    for index, row in enumerate(rows):
+        slug = ascii_text(row["slug"])
+        match = matches_by_slug[slug]
+        category = match.group.category
         category_counts[category] += 1
-
-        product = {
-            "id": slug,
+        price = parse_integer(row["price_kes"], "price_kes", index + 2)
+        compare_at = parse_integer(row["compare_at_price"], "compare_at_price", index + 2)
+        price_data: dict[str, Any] = {"amount": price, "currency": "KES"}
+        if compare_at > price:
+            price_data["compareAtAmount"] = compare_at
+        title = ascii_text(row["title"])
+        images = [
+            {
+                "src": "",
+                "storageKey": storage_key,
+                "alt": title if image_index == 1 else f"{title} - image {image_index}",
+            }
+            for image_index, storage_key in enumerate(match.group.storage_keys, start=1)
+        ]
+        in_stock = parse_boolean(row["is_available"]) and ascii_text(row["stock_status"]).casefold() == "in stock"
+        product: dict[str, Any] = {
+            "id": ascii_text(row["sku"]),
             "slug": slug,
-            "name": name,
-            "brand": brand,
+            "name": title,
+            "brand": ascii_text(row["brand"]),
             "category": category,
-            "price": {"amount": price, "currency": "KES"},
-            "images": image_for_record(record, images_dir, category, images, fallback_by_category),
-            "inStock": True,
-            "description": product_description(name, brand, category, condition, price, facts),
-            "highlights": product_highlights(category, condition, price, facts),
-            "specs": specs,
-            "condition": condition,
-            "warranty": warranty_note(condition),
-            "availabilityNote": availability_note(category),
-            "seoTitle": seo_title(name, category, condition),
-            "seoDescription": seo_description(name, category, condition, price, facts),
+            "price": price_data,
+            "images": images,
+            "inStock": in_stock,
+            "description": ascii_text(row["short_description"]),
+            "descriptionHtml": row["description_html"].strip(),
+            "highlights": product_highlights(row),
+            "specs": product_specs(row),
+            "condition": normalize_condition(row["condition"]),
+            "warranty": ascii_text(row["warranty"]),
+            "availabilityNote": "In stock. Confirm current availability and delivery timing before payment."
+            if in_stock
+            else "Confirm availability and delivery timing before payment.",
+            "seoTitle": ascii_text(row["meta_title"]),
+            "seoDescription": ascii_text(row["meta_description"]),
+            "sourceJsonLd": json.loads(row["product_schema_json"]),
         }
-
-        if category not in first_featured_by_category or index < 4:
+        if index < 4 or category not in featured_categories:
             product["featured"] = True
-            first_featured_by_category.add(category)
-
+            featured_categories.add(category)
         products.append(product)
 
     return products, category_counts
 
 
-def categories_for_counts(category_counts: Counter[str]) -> list[dict]:
-    categories = []
+def categories_for_counts(category_counts: Counter[str]) -> list[dict[str, str]]:
+    categories: list[dict[str, str]] = []
     for slug in CATEGORY_ORDER:
         if category_counts.get(slug, 0) == 0:
             continue
-        entry = {"slug": slug, **CATEGORY_DEFINITIONS[slug]}
-        categories.append(entry)
+        categories.append({"slug": slug, **CATEGORY_DEFINITIONS[slug]})
     return categories
 
 
@@ -644,15 +557,24 @@ def ts_literal(value: object, indent: int = 0) -> str:
     return json.dumps(value, ensure_ascii=True, indent=2).replace("\n", "\n" + " " * indent)
 
 
-def render_products_ts(categories: list[dict], products: list[dict], source_path: Path) -> str:
+def render_products_ts(categories: list[dict[str, str]], products: list[dict[str, Any]], source: Path) -> str:
     return "\n".join(
         [
             "import type { Product, ProductCategory } from '@lib/products';",
+            "import { supabaseStorageImage } from '@lib/utils';",
             "",
-            f"// Generated from {source_path.name}. Re-run scripts/import_mobdeals_products.py after workbook updates.",
+            f"// Generated from {source.name} and product drop images. Re-run scripts/import_mobdeals_products.py after source updates.",
             f"export const productCategories: ProductCategory[] = {ts_literal(categories)};",
             "",
-            f"export const products: Product[] = {ts_literal(products)};",
+            f"const catalogProducts: Product[] = {ts_literal(products)};",
+            "",
+            "export const products: Product[] = catalogProducts.map((product) => ({",
+            "  ...product,",
+            "  images: product.images.map((image) => ({",
+            "    ...image,",
+            "    src: image.storageKey ? supabaseStorageImage(image.storageKey) : image.src",
+            "  }))",
+            "}));",
             "",
             "export function getAllProducts(): Product[] {",
             "  return products;",
@@ -698,23 +620,185 @@ def render_products_ts(categories: list[dict], products: list[dict], source_path
     )
 
 
+def write_json(path: Path, value: object) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def write_mapping(path: Path, rows: list[dict[str, str]], matches: list[ProductImageMatch]) -> None:
+    rows_by_slug = {ascii_text(row["slug"]): row for row in rows}
+    fieldnames = [
+        "product_slug",
+        "product_title",
+        "source_category",
+        "catalog_category",
+        "mapping_status",
+        "match_score",
+        "score_gap",
+        "image_group",
+        "source_images",
+        "storage_keys",
+    ]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        for match in matches:
+            row = rows_by_slug[match.product_slug]
+            writer.writerow(
+                {
+                    "product_slug": match.product_slug,
+                    "product_title": ascii_text(row["title"]),
+                    "source_category": match.source_category,
+                    "catalog_category": match.group.category,
+                    "mapping_status": match.status,
+                    "match_score": f"{match.score:.3f}",
+                    "score_gap": f"{match.gap:.3f}",
+                    "image_group": match.group.slug,
+                    "source_images": " | ".join(match.group.source_paths),
+                    "storage_keys": " | ".join(match.group.storage_keys),
+                }
+            )
+
+
+def build_manifest(matches: list[ProductImageMatch], image_root: Path) -> list[dict[str, Any]]:
+    products_by_group: dict[str, list[str]] = defaultdict(list)
+    selected_groups: dict[str, ImageGroup] = {}
+    for match in matches:
+        primary = match.group.primary_source_path
+        selected_groups[primary] = match.group
+        products_by_group[primary].append(match.product_slug)
+
+    manifest: list[dict[str, Any]] = []
+    for primary in sorted(selected_groups):
+        group = selected_groups[primary]
+        for source_path, storage_key in zip(group.source_paths, group.storage_keys):
+            source_file = image_root / source_path
+            manifest.append(
+                {
+                    "source_path": source_path,
+                    "storage_key": storage_key,
+                    "size_bytes": source_file.stat().st_size,
+                    "product_slugs": sorted(products_by_group[primary]),
+                }
+            )
+    return manifest
+
+
+def build_report(
+    source: Path,
+    image_root: Path,
+    rows: list[dict[str, str]],
+    groups: list[ImageGroup],
+    matches: list[ProductImageMatch],
+    category_counts: Counter[str],
+    manifest: list[dict[str, Any]],
+) -> dict[str, Any]:
+    selected_primary_paths = {match.group.primary_source_path for match in matches}
+    selected_assets = {item["source_path"] for item in manifest}
+    all_assets = {path for group in groups for path in group.source_paths}
+    corrections = [
+        {
+            "product_slug": match.product_slug,
+            "source_category": match.source_category,
+            "catalog_category": match.group.category,
+            "image_group": match.group.slug,
+        }
+        for match in matches
+        if CATEGORY_MAP[SOURCE_CATEGORY_FOLDERS[match.source_category]] != match.group.category
+    ]
+    return {
+        "source": str(source),
+        "image_root": str(image_root),
+        "product_count": len(rows),
+        "mapped_product_count": len(matches),
+        "catalog_categories": dict(category_counts),
+        "available_image_group_count": len(groups),
+        "selected_image_group_count": len(selected_primary_paths),
+        "unused_image_group_count": len(groups) - len(selected_primary_paths),
+        "available_image_count": len(all_assets),
+        "selected_image_count": len(selected_assets),
+        "unused_image_count": len(all_assets - selected_assets),
+        "storage_upload_bytes": sum(item["size_bytes"] for item in manifest),
+        "category_corrections": corrections,
+        "approximate_mappings": [
+            {
+                "product_slug": match.product_slug,
+                "image_group": match.group.slug,
+                "source_images": list(match.group.source_paths),
+            }
+            for match in matches
+            if match.status == "approximate-override"
+        ],
+        "low_gap_mappings": [
+            {
+                "product_slug": match.product_slug,
+                "score": round(match.score, 3),
+                "gap": round(match.gap, 3),
+                "image_group": match.group.slug,
+            }
+            for match in matches
+            if match.status == "matched" and match.gap < 0.05
+        ],
+    }
+
+
+def import_catalog(
+    source: Path,
+    image_root: Path,
+    output: Path,
+    report_path: Path,
+    mapping_path: Path,
+    manifest_path: Path,
+    expected_count: int | None,
+) -> dict[str, Any]:
+    rows = read_catalog_rows(source, expected_count)
+    groups = load_image_groups(image_root)
+    matches = map_product_images(rows, groups)
+    products, category_counts = build_products(rows, matches)
+    categories = categories_for_counts(category_counts)
+    manifest = build_manifest(matches, image_root)
+    report = build_report(source, image_root, rows, groups, matches, category_counts, manifest)
+
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(render_products_ts(categories, products, source), encoding="utf-8")
+    write_mapping(mapping_path, rows, matches)
+    write_json(manifest_path, manifest)
+    write_json(report_path, report)
+    return report
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("workbook", type=Path)
-    parser.add_argument("--output", type=Path, default=Path("src/data/products.ts"))
-    parser.add_argument("--images-dir", type=Path, default=Path("public/images"))
+    parser.add_argument("source", type=Path, nargs="?", default=DEFAULT_SOURCE)
+    parser.add_argument("--images", type=Path, default=DEFAULT_IMAGE_ROOT)
+    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--report", type=Path, default=DEFAULT_REPORT)
+    parser.add_argument("--mapping", type=Path, default=DEFAULT_MAPPING)
+    parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
+    parser.add_argument("--expected-count", type=int, default=241)
     args = parser.parse_args()
 
-    records = read_product_rows(args.workbook)
-    products, category_counts = build_products(records, args.images_dir)
-    categories = categories_for_counts(category_counts)
-    output = render_products_ts(categories, products, args.workbook)
-    args.output.write_text(output, encoding="utf-8")
-
-    print(f"Imported {len(products)} products")
-    for category in categories:
-        print(f"- {category['slug']}: {category_counts[category['slug']]}")
+    report = import_catalog(
+        source=args.source,
+        image_root=args.images,
+        output=args.output,
+        report_path=args.report,
+        mapping_path=args.mapping,
+        manifest_path=args.manifest,
+        expected_count=args.expected_count,
+    )
+    print(f"Imported {report['product_count']} products")
+    for category, count in report["catalog_categories"].items():
+        print(f"- {category}: {count}")
+    print(f"Selected {report['selected_image_count']} images from {report['selected_image_group_count']} groups")
+    print(f"Mapping report: {args.mapping}")
+    print(f"Upload manifest: {args.manifest}")
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except (OSError, ValueError) as error:
+        print(error, file=sys.stderr)
+        raise SystemExit(1) from error

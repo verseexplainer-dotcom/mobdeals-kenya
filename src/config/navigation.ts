@@ -12,10 +12,10 @@ export interface NavigationCategory extends NavigationLink {
 
 export const primaryNavigation: NavigationLink[] = [
   { label: 'Laptops', href: '/category/laptops' },
-  { label: 'Desktops', href: '/category/desktops' },
   { label: 'Printers', href: '/category/printers' },
   { label: 'Monitors', href: '/category/monitors' },
-  { label: 'Storage', href: '/category/storage' }
+  { label: 'Projectors', href: '/category/projectors' },
+  { label: 'Tablets', href: '/category/tablets' }
 ];
 
 export const categoryNavigation: NavigationCategory[] = [
@@ -33,14 +33,13 @@ export const categoryNavigation: NavigationCategory[] = [
     ]
   },
   {
-    label: 'Desktops',
-    href: '/category/desktops',
-    eyebrow: 'Office setups',
-    description: 'All-in-ones, ProDesk, EliteDesk, OptiPlex, ThinkCentre, and workstations.',
+    label: 'Tablets',
+    href: '/category/tablets',
+    eyebrow: 'Portable touch devices',
+    description: 'Lenovo tablets and detachable devices from the current catalog.',
     links: [
-      { label: 'Office Desktops', href: '/category/desktops/office' },
-      { label: 'All-in-One PCs', href: '/category/desktops/all-in-one' },
-      { label: 'Workstations', href: '/category/desktops/workstations' }
+      { label: 'Lenovo Tablets', href: '/category/tablets/lenovo' },
+      { label: 'Detachable Tablets', href: '/category/tablets/detachable' }
     ]
   },
   {
@@ -58,51 +57,41 @@ export const categoryNavigation: NavigationCategory[] = [
     label: 'Monitors',
     href: '/category/monitors',
     eyebrow: 'Display upgrades',
-    description: 'HP and Dell monitors for desk setups and office workstations.',
+    description: 'HP monitors for desk setups and office workstations.',
     links: [
-      { label: 'HP Monitors', href: '/category/monitors/hp' },
-      { label: 'Dell Monitors', href: '/category/monitors/dell' },
-      { label: '24 inch monitors', href: '/category/monitors/24-inch' }
-    ]
-  },
-  {
-    label: 'Storage',
-    href: '/category/storage',
-    eyebrow: 'Upgrade essentials',
-    description: 'External hard drives and storage options from the current catalog.',
-    links: [
-      { label: 'External drives', href: '/category/storage/external' },
-      { label: '1TB storage', href: '/category/storage/1tb' },
-      { label: '2TB storage', href: '/category/storage/2tb' }
-    ]
-  },
-  {
-    label: 'Smartphones',
-    href: '/category/smartphones',
-    eyebrow: 'Mobile devices',
-    description: 'Samsung and Apple phone listings with source-sheet pricing.',
-    links: [
-      { label: 'Samsung phones', href: '/category/smartphones/samsung' },
-      { label: 'Apple phones', href: '/category/smartphones/apple' }
+      { label: 'HP Monitors', href: '/category/monitors/hp' }
     ]
   },
   {
     label: 'Projectors',
     href: '/category/projectors',
     eyebrow: 'Presentation displays',
-    description: 'Projector listings for office, classroom, and event setups.',
+    description: 'Epson projectors for office, classroom, and event setups.',
     links: [
       { label: 'Epson Projectors', href: '/category/projectors/epson' },
-      { label: 'Presentation setups', href: '/category/projectors/presentation' }
+      { label: 'Full HD Projectors', href: '/category/projectors/full-hd' }
     ]
   },
   {
-    label: 'Internet',
-    href: '/category/internet',
-    eyebrow: 'Connectivity hardware',
-    description: 'Starlink and internet hardware listings for connectivity planning.',
+    label: 'Software',
+    href: '/category/software',
+    eyebrow: 'Security licences',
+    description: 'Kaspersky software for one, three, and five devices.',
     links: [
-      { label: 'Starlink', href: '/category/internet/starlink' }
+      { label: 'Kaspersky Standard', href: '/category/software/standard' },
+      { label: 'Kaspersky Plus', href: '/category/software/plus' },
+      { label: 'Kaspersky Premium', href: '/category/software/premium' }
+    ]
+  },
+  {
+    label: 'UPS & Power',
+    href: '/category/ups',
+    eyebrow: 'Backup power',
+    description: 'UPS and related connectivity hardware from the current sheet.',
+    links: [
+      { label: 'Lightwave UPS', href: '/category/ups/lightwave' },
+      { label: 'Mercury UPS', href: '/category/ups/mercury' },
+      { label: 'Starlink Mini', href: '/category/ups/starlink' }
     ]
   }
 ];

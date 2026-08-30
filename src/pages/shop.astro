@@ -18,7 +18,7 @@ const itemListSchema = stringifyJsonLd(createItemListSchema(products, '/shop'));
   seo={{
     title: 'Shop Electronics in Nairobi',
     description:
-      'Browse 340 current MobDeals Kenya listings across laptops, desktops, printers, monitors, storage, smartphones, projectors, and internet hardware.',
+      `Browse ${products.length} current MobDeals Kenya listings across laptops, tablets, printers, monitors, projectors, software, and backup power.`,
     pathname: '/shop'
   }}
 >
@@ -57,7 +57,7 @@ const itemListSchema = stringifyJsonLd(createItemListSchema(products, '/shop'));
       id="shop-categories-title"
       eyebrow="Shop by category"
       title="Start with the device family"
-      description="Each category page reflects the normalized catalog generated from the MobDeals workbook."
+      description="Each category reflects the current catalog sheet and its mapped product-drop media."
     />
     <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
       {productCategories.map((category) => (
@@ -75,7 +75,7 @@ const itemListSchema = stringifyJsonLd(createItemListSchema(products, '/shop'));
       id="all-products-title"
       eyebrow="All products"
       title="Current listed products"
-      description="These products come from the MobDeals SEO workbook. Supabase media can be attached later without changing the catalog structure."
+      description="These products come from the current MobDeals catalog sheet, with mapped gallery media served from Supabase Storage."
     />
     {products.length > 0 ? (
       <Grid columns="products" gap="md" class="mt-8">

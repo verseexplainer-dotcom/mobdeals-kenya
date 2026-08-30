@@ -1,6 +1,7 @@
 export interface ProductImage {
   src: string;
   alt: string;
+  storageKey?: string;
   width?: number;
   height?: number;
 }

@@ -4,10 +4,15 @@ import { getAllProducts, productCategories } from '@data/products';
 const catalogProducts = getAllProducts();
 const catalogProductCount = catalogProducts.length;
 const catalogCategoryCount = productCategories.length;
-const featuredCategoryOrder = ['laptops', 'desktops', 'printers', 'monitors'] as const;
+const featuredCategoryOrder = ['laptops', 'printers', 'monitors', 'tablets'] as const;
 const featuredCatalogProducts = featuredCategoryOrder
   .map((category) => catalogProducts.find((product) => product.category === category))
   .filter((product): product is ProductSummary => Boolean(product));
+const categoryProductCount = (category: string) => catalogProducts.filter((product) => product.category === category).length;
+const categoryProductMeta = (category: string) => {
+  const count = categoryProductCount(category);
+  return `${count} product${count === 1 ? '' : 's'}`;
+};
 
 export interface HomeCta {
   label: string;
@@ -83,7 +88,7 @@ export const heroSlides: HeroSlide[] = [
     eyebrow: 'Nairobi electronics store',
     title: 'MobDeals Kenya',
     description:
-      'Current laptops, desktops, printers, monitors, storage, phones, projectors, and internet hardware for Kenya shoppers who want clear specs before they spend.',
+      'Current laptops, tablets, printers, monitors, projectors, software, and backup power for Kenya shoppers who want clear specs before they spend.',
     image: {
       desktopSrc: '/images/home/home-hero-laptops-desktop.webp',
       mobileSrc: '/images/home/home-hero-laptops-mobile.webp',
@@ -92,8 +97,8 @@ export const heroSlides: HeroSlide[] = [
     primaryCta: { label: 'Shop products', href: '/shop' },
     secondaryCta: { label: 'Talk to support', href: '/contact' },
     productKicker: 'Business laptops',
-    productName: '340 listed products',
-    productSpec: 'HP, Lenovo, Dell, Epson, Samsung, and more',
+    productName: `${catalogProductCount} listed products`,
+    productSpec: 'HP, Lenovo, Dell, Epson, Kyocera, Kaspersky, and more',
     visual: 'laptop',
     backdrop: 'ink',
     metrics: [
@@ -105,7 +110,7 @@ export const heroSlides: HeroSlide[] = [
     eyebrow: 'Device catalog',
     title: 'Devices that fit the way Nairobi works.',
     description:
-      'Compare laptops, desktops, monitors, printers, storage, and phones with practical notes on price, condition, warranty, and availability.',
+      'Compare laptops, tablets, monitors, printers, projectors, and power products with practical notes on price, condition, warranty, and availability.',
     image: {
       desktopSrc: '/images/home/home-hero-smartphones-desktop.webp',
       mobileSrc: '/images/home/home-hero-smartphones-mobile.webp',
@@ -161,7 +166,7 @@ export const trustItems: TrustItem[] = [
   {
     label: '03',
     title: 'Customer trust built in',
-    description: 'Human support for laptops, desktops, printers, monitors, phones, storage, projectors, and internet hardware.'
+    description: 'Human support for laptops, tablets, printers, monitors, projectors, software, and backup power.'
   }
 ];
 
@@ -170,56 +175,49 @@ export const homeCategories: HomeCategory[] = [
     label: 'Laptops',
     href: '/category/laptops',
     description: 'HP, Dell, Lenovo, Microsoft, and Apple laptop listings.',
-    meta: '280 products',
+    meta: categoryProductMeta('laptops'),
     icon: 'laptop'
   },
   {
-    label: 'Desktops',
-    href: '/category/desktops',
-    description: 'All-in-ones, office PCs, mini PCs, and workstations.',
-    meta: '41 products',
-    icon: 'desktop'
+    label: 'Tablets',
+    href: '/category/tablets',
+    description: 'Lenovo tablets and detachable touch devices.',
+    meta: categoryProductMeta('tablets'),
+    icon: 'phone'
   },
   {
     label: 'Printers',
     href: '/category/printers',
     description: 'HP, Epson, and Kyocera printer listings.',
-    meta: '6 products',
+    meta: categoryProductMeta('printers'),
     icon: 'printer'
   },
   {
     label: 'Monitors',
     href: '/category/monitors',
-    description: 'HP and Dell displays for desk and office setups.',
-    meta: '7 products',
+    description: 'HP displays for desk and office setups.',
+    meta: categoryProductMeta('monitors'),
     icon: 'monitor'
-  },
-  {
-    label: 'Storage',
-    href: '/category/storage',
-    description: 'External hard drive and storage listings.',
-    meta: '2 products',
-    icon: 'storage'
-  },
-  {
-    label: 'Smartphones',
-    href: '/category/smartphones',
-    description: 'Samsung and Apple phone listings from the sheet.',
-    meta: '2 products',
-    icon: 'phone'
   },
   {
     label: 'Projectors',
     href: '/category/projectors',
-    description: 'Presentation display hardware for rooms and events.',
-    meta: '1 product',
+    description: 'Epson presentation hardware for rooms and events.',
+    meta: categoryProductMeta('projectors'),
     icon: 'projector'
   },
   {
-    label: 'Internet',
-    href: '/category/internet',
-    description: 'Connectivity hardware including Starlink listings.',
-    meta: '1 product',
+    label: 'Software',
+    href: '/category/software',
+    description: 'Kaspersky licences for one, three, and five devices.',
+    meta: categoryProductMeta('software'),
+    icon: 'storage'
+  },
+  {
+    label: 'UPS & Power',
+    href: '/category/ups',
+    description: 'Backup power and related connectivity hardware.',
+    meta: categoryProductMeta('ups'),
     icon: 'internet'
   }
 ];

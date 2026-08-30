@@ -1,6 +1,7 @@
 export interface ProductImage {
   src: string;
   alt: string;
+  storageKey?: string;
   width?: number;
   height?: number;
 }
@@ -35,6 +36,8 @@ export interface ProductSummary {
 
 export interface Product extends ProductSummary {
   description: string;
+  descriptionHtml?: string;
+  longDescription?: string;
   highlights: string[];
   specs: ProductSpec[];
   condition: ProductCondition;
@@ -43,6 +46,7 @@ export interface Product extends ProductSummary {
   relatedProductSlugs?: string[];
   seoTitle?: string;
   seoDescription?: string;
+  sourceJsonLd?: Record<string, unknown>;
 }
 
 export interface ProductCategory {
