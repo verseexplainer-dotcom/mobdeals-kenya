@@ -27,7 +27,7 @@ import { siteConfig } from '@config/site';
   </Section>
 </BaseLayout>
 
-<script define:vars={{ whatsappNumber: siteConfig.whatsappNumber }}>
+<script is:inline define:vars={{ whatsappNumber: siteConfig.whatsappNumber }}>
   const orderForm = document.querySelector('[data-order-form]');
   orderForm?.addEventListener('submit', (event) => {
     event.preventDefault();

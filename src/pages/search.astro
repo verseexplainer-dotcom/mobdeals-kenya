@@ -94,7 +94,7 @@ const helpMessage = encodeURIComponent('Hello MobDeals Kenya, I could not find t
   </Section>
 </BaseLayout>
 
-<script define:vars={{ searchableProducts, pageSize }}>
+<script is:inline define:vars={{ searchableProducts, pageSize }}>
   const searchForm = document.querySelector('[data-search-form]');
   const input = document.querySelector('[data-search-input]');
   const controls = Array.from(document.querySelectorAll('[data-filter]'));

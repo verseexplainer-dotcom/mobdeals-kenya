@@ -6,32 +6,36 @@ interface Props {
   class?: string;
   columns?: 'auto' | 'products' | 'features' | 'two' | 'three' | 'four';
   gap?: 'xs' | 'sm' | 'md' | 'lg';
+  [attribute: string]: unknown;
 }
 
 const {
   as: Tag = 'div',
   class: className,
   columns = 'auto',
-  gap = 'md'
-} = Astro.props;
+  gap = 'md',
+  ...attributes
+}: Props = Astro.props;
 
-const columnsClass = {
+const columnClasses: Record<NonNullable<Props['columns']>, string> = {
   auto: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3',
-  products: 'grid-cols-1 min-[26rem]:grid-cols-2 md:grid-cols-3 xl:grid-cols-4',
+  products: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4',
   features: 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3',
   two: 'grid-cols-1 md:grid-cols-2',
   three: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3',
   four: 'grid-cols-2 md:grid-cols-3 xl:grid-cols-4'
-}[columns];
+};
+const columnsClass = columnClasses[columns];
 
-const gapClass = {
+const gapClasses: Record<NonNullable<Props['gap']>, string> = {
   xs: 'gap-2 sm:gap-3',
   sm: 'gap-3 sm:gap-4',
   md: 'gap-4 sm:gap-6',
   lg: 'gap-6 lg:gap-8'
-}[gap];
+};
+const gapClass = gapClasses[gap];
 ---
 
-<Tag class={classNames('grid', columnsClass, gapClass, className)}>
+<Tag {...attributes} class={classNames('grid', columnsClass, gapClass, className)}>
   <slot />
 </Tag>

@@ -31,8 +31,8 @@ const itemListSchema = stringifyJsonLd(createItemListSchema(products, `/category
 ---
 
 <BaseLayout seo={{ title: presentation.seoTitle, description: presentation.seoDescription, pathname: `/category/${category.slug}` }}>
-  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
-  <script slot="head" type="application/ld+json" set:html={itemListSchema} />
+  <script is:inline slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <script is:inline slot="head" type="application/ld+json" set:html={itemListSchema} />
 
   <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
     <Breadcrumbs items={[{ label: 'Shop', href: '/shop' }, { label: category.label }]} />

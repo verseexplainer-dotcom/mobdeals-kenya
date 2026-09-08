@@ -9,7 +9,7 @@ interface Props {
 const { brands } = Astro.props;
 ---
 
-<section class="border-y border-ses-line bg-surface-container-low" aria-labelledby="featured-brands-title">
+<section class="border-y border-ses-line bg-surface-container-low" aria-labelledby="featured-brands-title" data-home-reveal>
   <Container size="xl" class="py-10 sm:py-12">
     <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
       <div>
@@ -21,13 +21,12 @@ const { brands } = Astro.props;
       <a href="/brands" class="text-label-md text-on-surface hover:text-ses-accent">View all brands</a>
     </div>
 
-    <div class="-mx-[var(--spacing-page)] mt-8 flex snap-x gap-3 overflow-x-auto px-[var(--spacing-page)] pb-2 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-5 md:overflow-visible md:px-0 [&::-webkit-scrollbar]:hidden">
+    <div class="-mx-[var(--spacing-page)] mt-8 flex snap-x overflow-x-auto px-[var(--spacing-page)] pb-2 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-5 md:overflow-visible md:px-0 [&::-webkit-scrollbar]:hidden">
       {brands.map((brand) => (
-        <a href={brand.href} class="group min-w-[13rem] snap-start rounded-card border border-ses-line bg-surface-container-lowest p-5 shadow-xs transition-[border-color,box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:border-primary-fixed-dim hover:shadow-soft md:min-w-0">
-          <p class="text-headline-lg font-display text-on-surface">{brand.name}</p>
-          <p class="mt-3 text-body-sm text-on-surface-variant">{brand.note}</p>
-          <span class="mt-5 inline-flex text-label-md text-on-surface group-hover:text-ses-accent">
-            Shop {brand.name}
+        <a href={brand.href} class="group flex min-w-[12rem] snap-start items-center justify-center border-r border-ses-line px-6 py-8 text-center transition-colors hover:bg-white/[0.04] md:min-w-0 first:border-l">
+          <span>
+            <span class="block text-headline-lg font-display text-on-surface transition-colors group-hover:text-tertiary">{brand.name}</span>
+            <span class="mt-2 block text-body-sm text-on-surface-variant">{brand.note}</span>
           </span>
         </a>
       ))}

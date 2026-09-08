@@ -21,15 +21,14 @@ export function getStaticPaths() {
         filter: link.href.split('/').filter(Boolean).at(-1)
       },
       props: {
-        label: link.label,
-        parentLabel: category.label
+        label: link.label
       }
     }));
   });
 }
 
 const { slug, filter } = Astro.params;
-const { label, parentLabel } = Astro.props;
+const { label } = Astro.props;
 const category = getCategoryBySlug(slug ?? '');
 
 if (!category) {

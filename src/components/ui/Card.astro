@@ -15,20 +15,22 @@ const {
   interactive = false,
   padding = 'md',
   variant = 'default'
-} = Astro.props;
+}: Props = Astro.props;
 
-const paddingClass = {
+const paddingClasses: Record<NonNullable<Props['padding']>, string> = {
   none: '',
   sm: 'p-4',
   md: 'p-5 sm:p-6',
   lg: 'p-6 sm:p-8'
-}[padding];
+};
+const paddingClass = paddingClasses[padding];
 
-const variantClass = {
+const variantClasses: Record<NonNullable<Props['variant']>, string> = {
   default: interactive ? 'premium-card-interactive' : 'premium-card',
   soft: 'rounded-card border border-ses-line bg-surface-container-low',
   outlined: 'rounded-card border border-ses-line bg-transparent'
-}[variant];
+};
+const variantClass = variantClasses[variant];
 ---
 
 <Tag class={classNames(variantClass, paddingClass, className)}>

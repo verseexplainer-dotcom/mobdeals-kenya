@@ -45,9 +45,9 @@ const breadcrumbSchema = stringifyJsonLd(createBreadcrumbSchema([
 ]));
 ---
 
-<BaseLayout seo={createProductSeo(product)}>
-  <script slot="head" type="application/ld+json" set:html={productSchema} />
-  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+<BaseLayout seo={createProductSeo(product)} mainClass="pb-20 lg:pb-0">
+  <script is:inline slot="head" type="application/ld+json" set:html={productSchema} />
+  <script is:inline slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
 
   <Section class="bg-surface-container-low/35" containerSize="xl" spacing="sm">
     <Breadcrumbs items={[{ label: 'Shop', href: '/shop' }, { label: category?.label ?? product.category, href: `/category/${product.category}` }, { label: product.name }]} />
@@ -122,4 +122,15 @@ const breadcrumbSchema = stringifyJsonLd(createBreadcrumbSchema([
   </Section>
 
   <RelatedProducts products={relatedProducts} />
+
+  <div class="fixed inset-x-0 bottom-0 z-40 border-t border-ses-line bg-background/96 px-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 shadow-ambient backdrop-blur lg:hidden" aria-label="Mobile purchase actions">
+    <div class="mx-auto grid w-full max-w-[32rem] grid-cols-2 gap-2">
+      <button type="button" class="inline-flex min-h-12 min-w-0 items-center justify-center whitespace-nowrap rounded-control bg-primary px-2 text-[0.72rem] font-semibold text-on-primary sm:px-3 sm:text-label-md" data-cart-add data-cart-product={JSON.stringify(cartProduct)} aria-label={`Add ${product.name} to cart`}>
+        ADD TO CART
+      </button>
+      <a href={whatsappHref} target="_blank" rel="noreferrer" class="inline-flex min-h-12 min-w-0 items-center justify-center whitespace-nowrap rounded-control bg-whatsapp px-2 text-center text-[0.72rem] font-semibold text-white sm:px-3 sm:text-label-md">
+        ORDER ON WHATSAPP
+      </a>
+    </div>
+  </div>
 </BaseLayout>

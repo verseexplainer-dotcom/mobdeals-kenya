@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /cart
+Disallow: /search
+Disallow: /track-order
+
+Sitemap: https://shop.mobdeals.co.ke/sitemap.xml

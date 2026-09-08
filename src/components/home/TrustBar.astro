@@ -12,9 +12,9 @@ const { items } = Astro.props;
 <section class="border-y border-ses-line bg-surface-container-low" aria-labelledby="trust-bar-title">
   <Container size="xl" class="py-5 sm:py-6">
     <h2 id="trust-bar-title" class="sr-only">Store trust signals</h2>
-    <div class="grid gap-px overflow-hidden rounded-card border border-ses-line bg-ses-line sm:grid-cols-2 xl:grid-cols-4">
-      {items.map((item) => (
-        <article class="grid gap-3 bg-surface-container-low px-5 py-5">
+    <div class="grid gap-y-6 sm:grid-cols-2 xl:grid-cols-4" data-home-reveal>
+      {items.map((item, index) => (
+        <article class={`grid gap-3 px-5 ${index > 0 ? 'xl:border-l xl:border-ses-line' : ''}`}>
           <p class="text-label-xs uppercase text-ses-accent">{item.label}</p>
           <div>
             <h3 class="text-title-md text-on-surface">{item.title}</h3>

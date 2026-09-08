@@ -14,12 +14,13 @@ const { products } = Astro.props;
 ---
 
 <Section class="bg-surface-container-low" containerSize="xl" ariaLabelledby="featured-products-title">
+  <div data-home-reveal>
   <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
     <SectionHeading
       id="featured-products-title"
       eyebrow="Featured Products"
       title="Featured Deals"
-      description="Popular products available from MobDeals."
+      description="A considered mix of laptops, printers, monitors and tablets from the current catalogue."
     />
     <Badge variant="primary" size="md">Popular</Badge>
   </div>
@@ -33,4 +34,10 @@ const { products } = Astro.props;
       />
     ))}
   </Grid>
+  <div class="mt-10 flex justify-center">
+    <a href="/shop" class="inline-flex min-h-11 items-center gap-2 rounded-control border border-ses-line px-5 text-label-md text-on-surface transition-colors hover:border-tertiary hover:text-tertiary">
+      View the full catalogue <span aria-hidden="true">→</span>
+    </a>
+  </div>
+  </div>
 </Section>

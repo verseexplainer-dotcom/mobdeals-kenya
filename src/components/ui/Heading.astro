@@ -19,9 +19,9 @@ const {
   align = 'left',
   size = 'lg',
   description
-} = Astro.props;
+}: Props = Astro.props;
 
-const sizes = {
+const sizes: Record<NonNullable<Props['size']>, string> = {
   sm: 'text-headline-sm',
   md: 'text-headline-lg md:text-headline-xl',
   lg: 'text-headline-xl md:text-display-lg-mobile',

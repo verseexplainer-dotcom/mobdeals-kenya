@@ -1,0 +1,4 @@
+-- Baseline for the migration already recorded on the hosted MobDeals project.
+-- The original migration created the empty public.products table. The later
+-- catalog migration is intentionally idempotent and creates the complete schema
+-- when replayed against a fresh local database.

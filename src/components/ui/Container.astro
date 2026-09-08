@@ -7,7 +7,7 @@ interface Props {
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'full';
 }
 
-const { as: Tag = 'div', class: className, size = 'lg' } = Astro.props;
+const { as: Tag = 'div', class: className, size = 'lg' }: Props = Astro.props;
 
 const sizes: Record<NonNullable<Props['size']>, string> = {
   xs: 'container-xs',

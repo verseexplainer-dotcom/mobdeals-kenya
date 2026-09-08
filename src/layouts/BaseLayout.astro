@@ -60,7 +60,7 @@ const organizationSchema = stringifyJsonLd(createOrganizationSchema());
     <meta name="twitter:description" content={meta.description} />
     <meta name="twitter:card" content={meta.image ? 'summary_large_image' : 'summary'} />
     {meta.image && <meta name="twitter:image" content={meta.image} />}
-    <script type="application/ld+json" set:html={organizationSchema} />
+    <script is:inline type="application/ld+json" set:html={organizationSchema} />
     <slot name="head" />
   </head>
   <body class={`min-h-screen bg-background text-on-background antialiased ${bodyClass}`}>
@@ -75,7 +75,7 @@ const organizationSchema = stringifyJsonLd(createOrganizationSchema());
       href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent('Hello MobDeals Kenya, I need help with a product.')}`}
       target="_blank"
       rel="noreferrer"
-      class="fixed bottom-4 right-4 z-30 inline-flex min-h-12 items-center gap-2 rounded-pill bg-whatsapp px-3.5 text-label-md text-white shadow-soft hover:bg-whatsapp-dark sm:bottom-6 sm:right-6 sm:px-4"
+      class="fixed bottom-[calc(1.5rem+env(safe-area-inset-bottom))] right-6 z-30 hidden min-h-12 items-center gap-2 rounded-pill bg-whatsapp px-4 text-label-md text-white shadow-soft hover:bg-whatsapp-dark sm:inline-flex"
       aria-label="Talk to MobDeals on WhatsApp"
     >
       <svg viewBox="0 0 24 24" class="size-5" fill="currentColor" aria-hidden="true">

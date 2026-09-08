@@ -1,8 +1,9 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
 
 /*
-  Astro 6 content collections use a top-level content config.
+  Astro content collections use a top-level content config.
   Guides are optional markdown content for future SEO pages; no pages are built yet.
 */
 const guides = defineCollection({

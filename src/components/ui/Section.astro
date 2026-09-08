@@ -22,14 +22,15 @@ const {
   spacing = 'md',
   ariaLabel,
   ariaLabelledby
-} = Astro.props;
+}: Props = Astro.props;
 
-const spacingClass = {
+const spacingClasses: Record<NonNullable<Props['spacing']>, string> = {
   sm: 'section-y-sm',
   md: 'section-y',
   lg: 'py-20 sm:py-24 lg:py-32',
   none: ''
-}[spacing];
+};
+const spacingClass = spacingClasses[spacing];
 ---
 
 <Tag id={id} class={classNames(spacingClass, className)} aria-label={ariaLabel} aria-labelledby={ariaLabelledby}>

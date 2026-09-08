@@ -42,7 +42,7 @@ const eyebrowClasses = {
         aria-hidden={index === 0 ? 'false' : 'true'}
         inert={index === 0 ? undefined : true}
       >
-        <picture class="absolute inset-0 z-0 block" aria-hidden="true">
+        <picture class="absolute inset-0 z-0 block overflow-hidden" aria-hidden="true" data-hero-image>
           <source media="(max-width: 767px)" srcset={slide.image.mobileSrc} />
           <img
             src={slide.image.desktopSrc}
@@ -52,18 +52,18 @@ const eyebrowClasses = {
             loading={index === 0 ? 'eager' : 'lazy'}
             fetchpriority={index === 0 ? 'high' : 'auto'}
             decoding="async"
-            class="size-full object-cover object-center"
+            class="size-full object-cover object-[62%_center] md:object-center"
           />
         </picture>
 
         <div class="absolute inset-0 z-0" aria-hidden="true">
           <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-tertiary/40 to-transparent"></div>
-          <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.98)_0%,rgba(2,6,23,0.88)_42%,rgba(2,6,23,0.26)_72%,rgba(2,6,23,0.7)_100%)] md:bg-[linear-gradient(90deg,rgba(2,6,23,0.98)_0%,rgba(2,6,23,0.9)_34%,rgba(2,6,23,0.4)_62%,rgba(2,6,23,0.08)_100%)]"></div>
+          <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.96)_0%,rgba(2,6,23,0.82)_47%,rgba(2,6,23,0.2)_76%,rgba(2,6,23,0.62)_100%)] md:bg-[linear-gradient(90deg,rgba(2,6,23,0.98)_0%,rgba(2,6,23,0.9)_34%,rgba(2,6,23,0.4)_62%,rgba(2,6,23,0.08)_100%)]"></div>
           <div class="absolute inset-0 bg-[linear-gradient(135deg,rgba(37,99,235,0.18),transparent_42%,rgba(56,189,248,0.08))]"></div>
         </div>
 
         <div class="container-xl relative z-10 grid min-h-[34rem] items-center py-12 sm:min-h-[36rem] sm:py-16 lg:min-h-[38rem] lg:py-20">
-          <div class="max-w-[43rem]">
+          <div class="max-w-[43rem]" data-hero-copy>
             <p class={`text-label-xs uppercase ${eyebrowClasses[slide.backdrop]}`}>{slide.eyebrow}</p>
             {index === 0 ? (
               <h1 id="home-hero-title" class="mt-4 text-display-lg-mobile font-display text-balance sm:text-display-lg">

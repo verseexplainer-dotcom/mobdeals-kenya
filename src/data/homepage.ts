@@ -5,8 +5,10 @@ import { siteConfig } from '@config/site';
 const products = getAllProducts();
 const featuredCategoryOrder = ['laptops', 'printers', 'monitors', 'tablets'] as const;
 const featuredCatalogProducts = featuredCategoryOrder
-  .map((category) => products.find((product) => product.category === category))
-  .filter((product): product is ProductSummary => Boolean(product));
+  .flatMap((category) => {
+    const product = products.find((candidate) => candidate.category === category);
+    return product ? [product] : [];
+  });
 const categoryProductMeta = (category: string) => {
   const count = products.filter((product) => product.category === category).length;
   return `${count} product${count === 1 ? '' : 's'}`;
@@ -42,30 +44,16 @@ export interface HomeCategory {
   href: string;
   description: string;
   meta: string;
-  icon: 'laptop' | 'phone' | 'desktop' | 'printer' | 'storage' | 'monitor' | 'projector' | 'internet';
-}
-
-export interface PromoBanner {
-  eyebrow: string;
-  title: string;
-  description: string;
-  href: string;
-  ctaLabel: string;
-  secondaryCta?: HomeCta;
-  visual: 'laptop' | 'phone' | 'printer';
-  tone: 'dark' | 'light';
+  image: {
+    src: string;
+    alt: string;
+  };
 }
 
 export interface BrandItem {
   name: string;
   href: string;
   note: string;
-}
-
-export interface WhyChooseItem {
-  label: string;
-  title: string;
-  description: string;
 }
 
 export const heroSlides: HeroSlide[] = [
@@ -84,6 +72,38 @@ export const heroSlides: HeroSlide[] = [
       href: `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent('Hello MobDeals Kenya, I would like to order a product.')}`
     },
     backdrop: 'ink'
+  },
+  {
+    eyebrow: 'BUSINESS & OFFICE SUPPLY',
+    title: 'Build a Better-Equipped Workplace.',
+    description: 'Source laptops, printers, monitors, projectors and supporting equipment for your team—with quotations and direct help from our Nairobi store.',
+    image: {
+      desktopSrc: '/images/home/home-hero-office-tech-desktop.webp',
+      mobileSrc: '/images/home/home-hero-office-tech-mobile.webp',
+      alt: 'Office printer and workplace technology'
+    },
+    primaryCta: { label: 'REQUEST A QUOTE', href: '/business' },
+    secondaryCta: {
+      label: 'CHAT WITH OUR TEAM',
+      href: `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent('Hello MobDeals Kenya, I need a quotation for office technology.')}`
+    },
+    backdrop: 'ink'
+  },
+  {
+    eyebrow: 'TECH FOR EVERYDAY LIFE',
+    title: 'The Right Device Changes Your Day.',
+    description: 'Compare practical technology for work, study and staying connected, with clear product details and support before you order.',
+    image: {
+      desktopSrc: '/images/home/home-hero-smartphones-desktop.webp',
+      mobileSrc: '/images/home/home-hero-smartphones-mobile.webp',
+      alt: 'Smartphones and connected technology accessories'
+    },
+    primaryCta: { label: 'EXPLORE THE CATALOGUE', href: '/shop' },
+    secondaryCta: {
+      label: 'HELP ME CHOOSE',
+      href: `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent('Hello MobDeals Kenya, please help me choose the right device.')}`
+    },
+    backdrop: 'ink'
   }
 ];
 
@@ -94,40 +114,38 @@ export const trustItems: TrustItem[] = [
   { label: 'Contact', title: 'Call & WhatsApp Support', description: 'Talk directly to our team when you need help.' }
 ];
 
+const categoryImage = (category: string, label: string): HomeCategory['image'] => {
+  const product = products.find((candidate) => candidate.category === category && candidate.images[0]);
+
+  return product?.images[0] ?? {
+    src: '/images/og-default.jpg',
+    alt: `${label} available from MobDeals Kenya`
+  };
+};
+
+const createHomeCategory = (
+  category: string,
+  label: string,
+  description: string
+): HomeCategory => ({
+  label,
+  href: `/category/${category}`,
+  description,
+  meta: categoryProductMeta(category),
+  image: categoryImage(category, label)
+});
+
 export const homeCategories: HomeCategory[] = [
-  { label: 'Laptops', href: '/category/laptops', description: 'For work, school, design and gaming.', meta: categoryProductMeta('laptops'), icon: 'laptop' },
-  { label: 'Tablets', href: '/category/tablets', description: 'Portable touch devices and detachables.', meta: categoryProductMeta('tablets'), icon: 'phone' },
-  { label: 'Printers', href: '/category/printers', description: 'Printing options for home and office.', meta: categoryProductMeta('printers'), icon: 'printer' },
-  { label: 'Monitors', href: '/category/monitors', description: 'Displays for desks and workstations.', meta: categoryProductMeta('monitors'), icon: 'monitor' },
-  { label: 'Projectors', href: '/category/projectors', description: 'For classrooms, meetings and events.', meta: categoryProductMeta('projectors'), icon: 'projector' },
-  { label: 'Software', href: '/category/software', description: 'Security licences for your devices.', meta: categoryProductMeta('software'), icon: 'storage' },
-  { label: 'UPS & Power', href: '/category/ups', description: 'Backup power and connectivity equipment.', meta: categoryProductMeta('ups'), icon: 'internet' }
+  createHomeCategory('laptops', 'Laptops', 'For work, school, design and gaming.'),
+  createHomeCategory('tablets', 'Tablets', 'Portable touch devices and detachables.'),
+  createHomeCategory('printers', 'Printers', 'Printing options for home and office.'),
+  createHomeCategory('monitors', 'Monitors', 'Displays for desks and workstations.'),
+  createHomeCategory('projectors', 'Projectors', 'For classrooms, meetings and events.'),
+  createHomeCategory('software', 'Software', 'Security licences for your devices.'),
+  createHomeCategory('ups', 'UPS & Power', 'Backup power and connectivity equipment.')
 ];
 
 export const featuredProducts: ProductSummary[] = featuredCatalogProducts;
-
-export const promoBanners: PromoBanner[] = [
-  {
-    eyebrow: 'Laptops',
-    title: 'Find the Right Laptop',
-    description: 'Need a laptop for work, school, software development, design or gaming? Browse by brand, specifications and budget.',
-    href: '/category/laptops',
-    ctaLabel: 'SHOP LAPTOPS',
-    secondaryCta: { label: 'GET HELP CHOOSING', href: '/contact' },
-    visual: 'laptop',
-    tone: 'dark'
-  },
-  {
-    eyebrow: 'Business Supply',
-    title: 'Equip Your Office',
-    description: 'Laptops, printers, monitors, projectors and other equipment for businesses, schools and organisations.',
-    href: '/shop',
-    ctaLabel: 'SHOP OFFICE TECH',
-    secondaryCta: { label: 'REQUEST A QUOTE', href: '/business' },
-    visual: 'printer',
-    tone: 'light'
-  }
-];
 
 export const featuredBrands: BrandItem[] = [
   { name: 'HP', href: '/brands/hp', note: 'Laptops, printers and monitors' },
@@ -135,12 +153,4 @@ export const featuredBrands: BrandItem[] = [
   { name: 'Dell', href: '/brands/dell', note: 'Business and performance laptops' },
   { name: 'Epson', href: '/brands/epson', note: 'Printers and projectors' },
   { name: 'Kyocera', href: '/brands/kyocera', note: 'Office printers' }
-];
-
-export const whyChooseItems: WhyChooseItem[] = [
-  { label: 'Store', title: 'Visit Our Nairobi Store', description: 'Buy online or speak to our team at our Nairobi CBD store.' },
-  { label: 'Details', title: 'Product Information', description: 'See the key specifications, condition and price before ordering.' },
-  { label: 'Warranty', title: 'Warranty Support', description: 'Applicable warranty information is provided before purchase.' },
-  { label: 'Delivery', title: 'Countrywide Delivery', description: 'Nairobi delivery, store pickup and upcountry delivery options are available.' },
-  { label: 'Business', title: 'Business Supply', description: 'Request quotations for multiple laptops, printers, monitors and other office equipment.' }
 ];

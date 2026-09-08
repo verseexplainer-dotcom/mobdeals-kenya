@@ -46,6 +46,18 @@ SUPABASE_SERVICE_ROLE_KEY=... python3 scripts/sync_supabase_products.py --upload
 
 The service role key is required only for uploads and must never be committed or exposed to Astro client code. The sync does not delete old bucket objects; unused previous images can be pruned separately after the replacement catalog is verified in production.
 
+## Supabase Catalog Sync
+
+After applying `supabase/migrations/`, validate and upsert the reviewed sheet rows and image mapping:
+
+```sh
+python3 scripts/sync_supabase_catalog.py
+python3 scripts/sync_supabase_catalog.py --apply
+```
+
+The sync is idempotent on category slug, product slug, and product image position. It writes the
+matched primary image to `products.image_url` and ordered galleries to `product_images`.
+
 ## Image-Only Template
 
 Generate a review CSV containing every image group in the drop, including groups that have no row in the supplied product sheet:

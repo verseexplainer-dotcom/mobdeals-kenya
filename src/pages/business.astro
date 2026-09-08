@@ -57,7 +57,7 @@ const supplyCategories = [
   </Section>
 </BaseLayout>
 
-<script define:vars={{ whatsappNumber: siteConfig.whatsappNumber }}>
+<script is:inline define:vars={{ whatsappNumber: siteConfig.whatsappNumber }}>
   const businessForm = document.querySelector('[data-business-form]');
   businessForm?.addEventListener('submit', (event) => {
     event.preventDefault();

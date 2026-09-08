@@ -33,6 +33,34 @@ python3 scripts/import_mobdeals_products.py
 python3 scripts/sync_supabase_products.py
 ```
 
+## Catalog Database
+
+The versioned database schema lives in `supabase/migrations/`. It provides:
+
+- `product_categories` for shopper-facing catalog navigation;
+- `products` for the complete reviewed sheet data and primary image URL;
+- `product_images` for ordered product galleries;
+- public read-only RLS policies for active, available products;
+- service-role-only writes through the server-side sync script.
+
+Link the correct hosted project and apply pending migrations:
+
+```sh
+npx supabase link --project-ref your-project-ref
+npx supabase db push
+```
+
+Validate the catalog payload without writing it, then perform the idempotent upsert:
+
+```sh
+python3 scripts/sync_supabase_catalog.py
+python3 scripts/sync_supabase_catalog.py --apply
+```
+
+The database sync uses the reviewed `product-drop-image-mapping.csv` output, stores the primary
+public URL in `products.image_url`, and stores every ordered gallery URL in `product_images`.
+It never puts the service role key into browser code or Cloudflare Pages.
+
 To upload missing objects, provide `SUPABASE_SERVICE_ROLE_KEY` only in the server-side shell:
 
 ```sh

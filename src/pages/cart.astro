@@ -71,7 +71,7 @@ import { siteConfig } from '@config/site';
   </Section>
 </BaseLayout>
 
-<script define:vars={{ whatsappNumber: siteConfig.whatsappNumber }}>
+<script is:inline define:vars={{ whatsappNumber: siteConfig.whatsappNumber }}>
   const CART_KEY = 'mobdeals_cart_v1';
   const currency = new Intl.NumberFormat('en-KE', {
     style: 'currency',

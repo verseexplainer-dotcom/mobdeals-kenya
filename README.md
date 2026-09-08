@@ -26,7 +26,7 @@ Current storefront status:
 
 Requirements:
 
-- Node.js `>=22.12.0`
+- Node.js `>=22.22.3`
 - npm
 
 Install dependencies:
@@ -95,9 +95,19 @@ Required public environment variables:
 - `PUBLIC_SUPABASE_URL`
 - `PUBLIC_SUPABASE_ANON_KEY`
 
-Set `PUBLIC_SITE_URL` to the full production origin, including the scheme: `https://shop.mobdeals.co.ke`. Set the Cloudflare Pages build environment to Node.js `22.12.0` or newer.
+Set `PUBLIC_SITE_URL` to the full production origin, including the scheme: `https://shop.mobdeals.co.ke`. Cloudflare Pages reads the Node.js version from `.nvmrc` (`22.22.3`).
 
 Keep secrets such as Supabase service role keys out of Cloudflare Pages public environment variables and out of frontend code.
+
+Push changes to `main` to trigger the connected Cloudflare Pages deployment. Before pushing, run
+`npm run check`, `npm run lint`, `npm run build`, `npm audit --omit=dev`, and `npm audit`.
+
+The sitemap is generated at `/sitemap.xml` from the catalog, categories, brands, and published guides.
+`public/robots.txt` advertises the shop-domain sitemap, and Pages serves `/account` as an HTTP 301 to `/contact`.
+
+The Supabase database contains the reviewed catalog and ordered image URLs; see `supabase/README.md`
+for migration and sync commands. The storefront remains statically generated from `src/data/products.ts`,
+so database changes alone do not update published pages: regenerate the catalog and push a new build.
 
 ## Project Structure
 

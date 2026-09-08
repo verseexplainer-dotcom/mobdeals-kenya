@@ -3,26 +3,40 @@
   "type": "module",
   "version": "0.1.0",
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=22.22.3"
   },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "astro check",
+    "lint": "eslint .",
+    "catalog:validate": "python3 scripts/sync_supabase_catalog.py",
+    "catalog:sync": "python3 scripts/sync_supabase_catalog.py --apply",
+    "cf:deploy": "wrangler pages deploy dist --project-name=mobdeals-kenya --branch=main"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.105.4",
-    "@tailwindcss/vite": "^4.3.0",
-    "astro": "^6.3.2",
+    "@supabase/supabase-js": "^2.116.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.3.2",
     "gsap": "^3.15.0",
-    "lenis": "^1.3.23",
-    "swiper": "^12.1.4",
-    "tailwindcss": "^4.3.0",
-    "three": "^0.184.0"
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
-    "supabase": "^2.98.2",
-    "wrangler": "^4.90.1"
+    "@astrojs/check": "^0.9.10",
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.20.1",
+    "eslint": "^10.10.0",
+    "eslint-plugin-astro": "^3.1.0",
+    "globals": "^17.12.0",
+    "supabase": "^2.117.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.0",
+    "wrangler": "^4.130.0"
+  },
+  "overrides": {
+    "svgo": "^4.1.0",
+    "sharp": "^0.35.4"
   }
 }

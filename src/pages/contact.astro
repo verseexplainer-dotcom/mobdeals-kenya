@@ -60,7 +60,7 @@ const contactCards = [
   </Section>
 </BaseLayout>
 
-<script define:vars={{ whatsappNumber: siteConfig.whatsappNumber }}>
+<script is:inline define:vars={{ whatsappNumber: siteConfig.whatsappNumber }}>
   const enquiryForm = document.querySelector('[data-enquiry-form]');
   enquiryForm?.addEventListener('submit', (event) => {
     event.preventDefault();

@@ -6,19 +6,14 @@ import {
   FeaturedProducts,
   HomeHeroSlider,
   NeedHelpChoosing,
-  NewsletterCTA,
-  SplitBanners,
-  TrustBar,
-  WhyChooseUs
+  TrustBar
 } from '@components/home';
 import {
   featuredBrands,
   featuredProducts,
   heroSlides,
   homeCategories,
-  promoBanners,
-  trustItems,
-  whyChooseItems
+  trustItems
 } from '@data/homepage';
 ---
 
@@ -33,9 +28,55 @@ import {
   <TrustBar items={trustItems} />
   <CategoryScroller categories={homeCategories} />
   <FeaturedProducts products={featuredProducts} />
-  <SplitBanners banners={promoBanners} />
   <BrandCarousel brands={featuredBrands} />
-  <WhyChooseUs items={whyChooseItems} />
   <NeedHelpChoosing />
-  <NewsletterCTA />
 </BaseLayout>
+
+<script>
+  import { gsap } from 'gsap';
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!reduceMotion) {
+    const activeSlide = document.querySelector<HTMLElement>('[data-hero-slide][data-active="true"]');
+    const heroCopy = activeSlide?.querySelector<HTMLElement>('[data-hero-copy]');
+    const heroImage = activeSlide?.querySelector<HTMLElement>('[data-hero-image]');
+
+    if (heroCopy) {
+      gsap.from(heroCopy.children, {
+        opacity: 0,
+        y: 24,
+        duration: 0.65,
+        stagger: 0.08,
+        ease: 'power2.out',
+        clearProps: 'all'
+      });
+    }
+
+    if (heroImage) {
+      gsap.from(heroImage, {
+        scale: 1.045,
+        duration: 1.4,
+        ease: 'power2.out',
+        clearProps: 'transform'
+      });
+    }
+
+    const reveals = document.querySelectorAll<HTMLElement>('[data-home-reveal]');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        gsap.from(entry.target, {
+          opacity: 0,
+          y: 22,
+          duration: 0.6,
+          ease: 'power2.out',
+          clearProps: 'all'
+        });
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.12 });
+
+    reveals.forEach((element) => observer.observe(element));
+  }
+</script>

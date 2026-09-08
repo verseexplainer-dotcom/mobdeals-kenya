@@ -3,7 +3,4 @@ export { default as CategoryScroller } from './CategoryScroller.astro';
 export { default as FeaturedProducts } from './FeaturedProducts.astro';
 export { default as HomeHeroSlider } from './HomeHeroSlider.astro';
 export { default as NeedHelpChoosing } from './NeedHelpChoosing.astro';
-export { default as NewsletterCTA } from './NewsletterCTA.astro';
-export { default as SplitBanners } from './SplitBanners.astro';
 export { default as TrustBar } from './TrustBar.astro';
-export { default as WhyChooseUs } from './WhyChooseUs.astro';
