@@ -14,7 +14,7 @@
     "preview:marketing": "cd marketing && astro preview --port 4322",
     "check:marketing": "astro check --root marketing",
     "verify:sites": "node scripts/verify-sites.mjs",
-    "cf:deploy:marketing": "wrangler pages deploy dist-marketing --project-name=mobdeals-marketing --branch=main --config wrangler.marketing.jsonc",
+    "cf:deploy:marketing": "wrangler pages deploy dist-marketing --project-name=mobdeals-marketing --branch=main",
     "astro": "astro",
     "check": "astro check",
     "lint": "eslint .",

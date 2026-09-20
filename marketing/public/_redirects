@@ -1,4 +1,3 @@
-https://www.mobdeals.co.ke/* https://mobdeals.co.ke/:splat 301
 /shop https://shop.mobdeals.co.ke/shop 301
 /products/* https://shop.mobdeals.co.ke/products/:splat 301
 /category/* https://shop.mobdeals.co.ke/category/:splat 301

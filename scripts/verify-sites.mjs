@@ -47,7 +47,9 @@ for (const [root, origin] of [['dist', 'https://shop.mobdeals.co.ke'], ['dist-ma
     const html = await readFile(`${root}/index.html`, 'utf8');
     assert(html.includes('href="https://shop.mobdeals.co.ke"'));
     assert(html.includes('href="https://shop.mobdeals.co.ke/products/'));
-    assert((await readFile(`${root}/_redirects`, 'utf8')).includes('https://www.mobdeals.co.ke/* https://mobdeals.co.ke/:splat 301'));
+    const middleware = await readFile('functions/_middleware.js', 'utf8');
+    assert(middleware.includes("requestUrl.hostname === 'www.mobdeals.co.ke'"));
+    assert(middleware.includes("Response.redirect(apexUrl.toString(), 301)"));
   }
   console.log(`${root}: ${htmlPaths.length} pages verified; canonical, sitemap, local media and credential checks passed.`);
 }
