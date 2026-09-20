@@ -11,11 +11,11 @@ MobDeals Kenya is a static-first Astro ecommerce frontend optimized for Cloudfla
 
 ## Data And Media
 
-- Product data is generated into `src/data/products.ts` from the MobDeals SEO workbook by `scripts/import_mobdeals_products.py`.
-- The current generated catalog contains 340 listings across laptops, desktops, printers, monitors, storage, smartphones, projectors, and internet hardware.
-- Committed product media lives as optimized WebP assets under `public/images`.
+- Product data is generated into `src/data/products.ts` from `product drop/products_for_supabase.csv` by `scripts/import_mobdeals_products.py`.
+- The current generated catalog contains 241 listings across laptops, tablets, printers, monitors, projectors, software, UPS, and related hardware.
+- Committed files under `public/images` are branding and homepage assets; product media is served from Supabase Storage.
 - Raw source-image drops such as `product drop/` stay local and ignored.
-- Supabase Storage public buckets remain supported for product media, using the free-tier `products` bucket.
+- Supabase Storage remains available for product media through the free-tier `product-images` bucket.
 - Browser-side Supabase access must use public anon credentials only. Service role keys and privileged credentials must not reach frontend code or public Cloudflare Pages variables.
 
 ## Application Shape

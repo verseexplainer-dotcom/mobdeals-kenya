@@ -7,7 +7,7 @@
 - [x] Add SEO metadata helpers to pages.
 - [x] Prepare Supabase Storage media workflow.
 - [x] Prepare Cloudflare Pages free-tier deployment notes.
-- [x] Generate current 340-product static catalog.
+- [x] Generate current 241-product static catalog.
 - [x] Add localStorage cart and WhatsApp checkout handoff.
 - [ ] Add formal smoke/accessibility/browser tests.
 - [ ] Complete manual mobile QA across common widths.

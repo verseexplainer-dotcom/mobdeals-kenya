@@ -1,0 +1,17 @@
+# Mobdeals project defaults.
+# Remote MCP servers are opt-in because this is a static Astro/Cloudflare site.
+
+[mcp_servers.supabase]
+enabled = false
+
+[mcp_servers.openaiDeveloperDocs]
+enabled = false
+
+[mcp_servers.playwright]
+enabled = false
+
+[mcp_servers."@21st-dev/magic"]
+enabled = false
+
+[mcp_servers.21st]
+enabled = false
