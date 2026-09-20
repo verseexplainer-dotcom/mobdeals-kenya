@@ -3,9 +3,8 @@
 .marketing { background: #102a2a; isolation: isolate; }
 .wrap { width: min(1280px, calc(100% - 96px)); margin-inline: auto; }
 .marketing-header { position: absolute; inset: 0 0 auto; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 48px; border-bottom: 1px solid #a7c0bb35; }
-.brand { display: flex; gap: 12px; align-items: center; font: 700 26px/1 var(--font-display); letter-spacing: -1px; }
-.brand img { width: 44px; height: 44px; object-fit: contain; border-radius: 8px; }
-.brand-country { display: block; font: 500 10px/1.6 var(--font-sans); letter-spacing: 3px; margin-top: 5px; }
+.brand { display: inline-flex; align-items: center; }
+.brand img { display: block; width: 176px; height: auto; aspect-ratio: 1200 / 292; object-fit: contain; }
 .marketing-header nav, .marketing-footer nav { display: flex; gap: 30px; font-size: 14px; }
 .marketing-header nav a, .marketing-footer a { transition: color .2s; }
 .marketing-header nav a:hover, .marketing-footer a:hover { color: #fb923c; }
@@ -103,8 +102,7 @@
   .wrap { width: calc(100% - 40px); }
   .marketing-header { padding: 16px 20px; gap: 12px; }
   .marketing-header nav { display: none; }
-  .brand { font-size: 20px; gap: 8px; }
-  .brand img { width: 32px; height: 32px; }
+  .brand img { width: 142px; }
   .header-cta { font-size: 12px; padding: 10px 12px; gap: 8px; }
   .marketing-hero { min-height: 760px; min-height: max(740px, 100svh); justify-content: flex-start; padding-top: 142px; background: linear-gradient(180deg, #102a2af5, #102a2ac9 53%, #102a2a30 82%, #102a2a); }
   .marketing h1 { font-size: clamp(43px, 10.8vw, 65px); letter-spacing: -2px; }
