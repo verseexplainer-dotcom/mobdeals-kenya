@@ -22,6 +22,8 @@ MobDeals Kenya is a static-first Astro ecommerce frontend optimized for Cloudfla
 
 - Product rendering is data-driven and component-based across `/shop`, `/category/[slug]`, `/category/[slug]/[filter]`, `/products/[slug]`, brands, search, and homepage sections.
 - Tailwind v4 tokens live in `src/styles/global.css`.
+- The shared palette uses deep teal surfaces, orange shopping actions and warm light text.
+- The separate apex marketing site lives in `marketing/src`, builds with `npm run build:marketing` into `dist-marketing`, and links to the storefront. See `docs/marketing-site.md` for media and domain setup.
 - Shared UI primitives live in `src/components/ui`.
 - Navigation, home, and product components live under `src/components`.
 - Foundation utilities live in `src/lib/utils`, product helpers in `src/lib/products`, Supabase helpers in `src/lib/supabase`, and SEO helpers in `src/lib/seo`.

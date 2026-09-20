@@ -1,105 +1,44 @@
 ---
 import type { Product } from '@lib/products';
-
-interface Props {
-  product: Product;
-}
-
+import { usableProductImages } from '@lib/products/images';
+import ProductImage from './ProductImage.astro';
+interface Props { product: Product; }
 const { product } = Astro.props;
-const images = product.images;
-const categoryKey = product.category.toLowerCase();
-let fallbackTone = 'from-primary-container to-surface';
-if (categoryKey.includes('smartphone') || categoryKey.includes('internet')) {
-  fallbackTone = 'from-secondary-container to-surface';
-} else if (categoryKey.includes('printer') || categoryKey.includes('projector')) {
-  fallbackTone = 'from-tertiary-container to-surface';
-} else if (categoryKey.includes('storage')) {
-  fallbackTone = 'from-surface-container-high to-surface';
-}
+const images = usableProductImages(product.images);
 ---
-
 <div class="space-y-4" data-product-gallery>
-  <div class={`relative aspect-square overflow-hidden rounded-card-lg border border-ses-line bg-gradient-to-br ${fallbackTone} shadow-premium`}>
-    {images[0] ? (
-      <img
-        src={images[0].src}
-        alt={images[0].alt}
-        width={images[0].width}
-        height={images[0].height}
-        loading="eager"
-        decoding="async"
-        data-gallery-main
-        class="size-full object-contain p-6 sm:p-10"
-      />
-    ) : (
-      <div class="flex size-full items-center justify-center p-8 text-white/90" aria-hidden="true">
-        {categoryKey.includes('smartphone') ? (
-          <div class="h-[76%] w-[40%] rounded-[2rem] border-[10px] border-current bg-white/10 shadow-ambient"></div>
-        ) : categoryKey.includes('printer') ? (
-          <div class="w-[70%]">
-            <div class="mx-auto h-10 w-3/4 rounded-t-md bg-current/20"></div>
-            <div class="rounded-card border-[8px] border-current bg-white/10 p-5">
-              <div class="h-3 w-24 rounded-pill bg-current/35"></div>
-              <div class="mt-10 h-20 rounded-md bg-current/12"></div>
-            </div>
-          </div>
-        ) : categoryKey.includes('desktop') ? (
-          <div class="flex items-end gap-5">
-            <div class="h-36 w-48 rounded-lg border-[9px] border-current bg-white/10"></div>
-            <div class="h-44 w-16 rounded-lg bg-current/20"></div>
-          </div>
-        ) : categoryKey.includes('storage') ? (
-          <div class="grid grid-cols-2 gap-5">
-            <div class="h-36 w-20 rounded-lg border-[8px] border-current bg-white/20"></div>
-            <div class="mt-10 h-28 w-20 rounded-lg bg-current/20"></div>
-          </div>
-        ) : categoryKey.includes('monitor') ? (
-          <div class="w-[74%]">
-            <div class="aspect-[16/10] rounded-lg border-[10px] border-current bg-white/10"></div>
-            <div class="mx-auto h-6 w-16 bg-current/25"></div>
-            <div class="mx-auto h-4 w-32 rounded-pill bg-current/25"></div>
-          </div>
-        ) : categoryKey.includes('projector') ? (
-          <div class="w-[70%]">
-            <div class="h-28 rounded-xl border-[10px] border-current bg-white/10"></div>
-            <div class="mx-auto mt-5 h-4 w-36 rounded-pill bg-current/25"></div>
-          </div>
-        ) : categoryKey.includes('internet') ? (
-          <div class="relative">
-            <div class="size-36 rounded-full border-[10px] border-current bg-white/10"></div>
-            <div class="absolute -right-12 top-4 size-24 rounded-full border-[6px] border-current opacity-30"></div>
-            <div class="absolute -right-20 top-0 size-36 rounded-full border-[6px] border-current opacity-20"></div>
-          </div>
-        ) : (
-          <div class="w-[74%]">
-            <div class="aspect-[16/10] rounded-lg border-[10px] border-current bg-white/10"></div>
-            <div class="mx-auto h-6 w-[84%] rounded-b-md bg-current/25"></div>
-          </div>
-        )}
-      </div>
-    )}
+  <div class="relative aspect-square overflow-hidden rounded-card-lg border border-ses-line bg-surface-container-lowest">
+    <ProductImage image={images[0]} category={product.category} priority gallery />
   </div>
-
   {images.length > 1 && (
-    <div class="flex snap-x gap-3 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" aria-label="Product images">
+    <div class="flex snap-x gap-3 overflow-x-auto pb-2" aria-label="Product images">
       {images.map((image, index) => (
         <button type="button" class="aspect-square w-20 shrink-0 snap-start overflow-hidden rounded-lg border border-ses-line bg-surface-container-lowest aria-[current=true]:border-secondary" aria-label={`Show image ${index + 1} of ${images.length}`} aria-current={index === 0 ? 'true' : 'false'} data-gallery-thumbnail data-image-src={image.src} data-image-alt={image.alt}>
-          <img src={image.src} alt="" width={image.width} height={image.height} loading="lazy" decoding="async" class="size-full object-contain p-3" />
+          <img src={image.src} alt="" width={image.width ?? 800} height={image.height ?? 800} loading="lazy" decoding="async" class="size-full object-contain p-3" />
         </button>
       ))}
     </div>
   )}
 </div>
-
 <script>
   document.querySelectorAll<HTMLElement>('[data-product-gallery]').forEach((gallery) => {
     const mainImage = gallery.querySelector<HTMLImageElement>('[data-gallery-main]');
+    const frame = gallery.querySelector<HTMLElement>('[data-product-image]');
     const thumbnails = Array.from(gallery.querySelectorAll<HTMLButtonElement>('[data-gallery-thumbnail]'));
     thumbnails.forEach((thumbnail) => {
+      const preview = thumbnail.querySelector('img');
+      const unavailable = () => {
+        thumbnail.disabled = true;
+        thumbnail.setAttribute('aria-label', 'Image unavailable');
+        preview?.style.setProperty('visibility', 'hidden');
+      };
+      preview?.addEventListener('error', unavailable);
+      if (preview?.complete && !preview.naturalWidth) unavailable();
       thumbnail.addEventListener('click', () => {
-        if (!mainImage || !thumbnail.dataset.imageSrc) return;
-        mainImage.src = thumbnail.dataset.imageSrc;
+        if (!mainImage || !frame || !thumbnail.dataset.imageSrc) return;
+        frame.dataset.state = 'exact';
         mainImage.alt = thumbnail.dataset.imageAlt ?? '';
+        mainImage.src = thumbnail.dataset.imageSrc;
         thumbnails.forEach((item) => item.setAttribute('aria-current', String(item === thumbnail)));
       });
     });

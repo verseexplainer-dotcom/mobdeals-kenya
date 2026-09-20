@@ -1,0 +1,55 @@
+---
+interface Props { src?: string; poster: string; mobilePoster: string; }
+const { src, poster, mobilePoster } = Astro.props;
+---
+<div class="scroll-film" data-scroll-film aria-hidden="true">
+  <picture>
+    <source media="(max-width: 767px)" srcset={mobilePoster} />
+    <img src={poster} alt="" width="1920" height="1080" fetchpriority="high" decoding="async" />
+  </picture>
+  {src && <video data-src={src} muted playsinline preload="none" tabindex="-1"></video>}
+</div>
+{src && <button type="button" class="film-toggle" data-film-toggle aria-pressed="false" hidden>Pause visual motion</button>}
+<script>
+  const film = document.querySelector<HTMLElement>('[data-scroll-film]');
+  const video = film?.querySelector('video');
+  const toggle = document.querySelector<HTMLButtonElement>('[data-film-toggle]');
+  if (film && video && toggle) {
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
+    let paused = false;
+    let failed = false;
+    let frame = 0;
+    const enabled = () => !reduced.matches && !connection?.saveData && !paused && !failed;
+    const seek = () => {
+      frame = 0;
+      if (!enabled() || !Number.isFinite(video.duration) || video.seeking) return;
+      const range = document.documentElement.scrollHeight - innerHeight;
+      const progress = range > 0 ? Math.max(0, Math.min(1, scrollY / range)) : 0;
+      const target = progress * Math.max(0, video.duration - 0.05);
+      if (Math.abs(video.currentTime - target) > 0.04) video.currentTime = target;
+    };
+    const schedule = () => { if (enabled() && !frame) frame = requestAnimationFrame(seek); };
+    const update = () => {
+      toggle.hidden = reduced.matches || !!connection?.saveData || failed;
+      toggle.setAttribute('aria-pressed', String(paused));
+      toggle.textContent = paused ? 'Resume visual motion' : 'Pause visual motion';
+      film.classList.toggle('film-static', !enabled());
+      if (enabled() && !video.getAttribute('src') && video.dataset.src) {
+        video.src = video.dataset.src;
+        video.load();
+      }
+      if (!enabled()) { cancelAnimationFrame(frame); frame = 0; video.pause(); }
+      schedule();
+    };
+    video.addEventListener('loadeddata', () => { film.classList.add('film-ready'); schedule(); });
+    video.addEventListener('loadedmetadata', schedule);
+    video.addEventListener('seeked', schedule);
+    video.addEventListener('error', () => { failed = true; update(); });
+    toggle.addEventListener('click', () => { paused = !paused; update(); });
+    reduced.addEventListener('change', update);
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule, { passive: true });
+    update();
+  }
+</script>

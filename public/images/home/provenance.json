@@ -1,0 +1,37 @@
+{
+  "category-laptops": {
+    "source": "product drop/laptop/hp_victus_15_fa2787nr_laptop.webp",
+    "importedAt": "2026-09-20T19:53:14.904Z",
+    "representative": true
+  },
+  "category-monitors": {
+    "source": "product drop/monitor/hp_monitor_524fs_monitor.webp",
+    "importedAt": "2026-09-20T19:53:16.556Z",
+    "representative": true
+  },
+  "category-ups": {
+    "source": "product drop/ups/mecer_650va_ups.webp",
+    "importedAt": "2026-09-20T19:53:18.897Z",
+    "representative": true
+  },
+  "category-printers": {
+    "source": "product drop/printer/epson_l3250_printer.webp",
+    "importedAt": "2026-09-20T19:53:22.052Z",
+    "representative": true
+  },
+  "category-projectors": {
+    "source": "product drop/projector/epson_co_w01_portable_wxga_projector_projector.webp",
+    "importedAt": "2026-09-20T19:53:23.486Z",
+    "representative": true
+  },
+  "category-software": {
+    "source": "product drop/software_box/kaspersky_standard_1_device_software_box.webp",
+    "importedAt": "2026-09-20T19:53:25.587Z",
+    "representative": true
+  },
+  "category-tablets": {
+    "source": "product drop/tablet/lenovo_x1_tab_core_m5_tablet.webp",
+    "importedAt": "2026-09-20T19:53:26.913Z",
+    "representative": true
+  }
+}

@@ -1,5 +1,8 @@
 # build output
 dist/
+dist-marketing/
+.marketing/
+.wrangler/
 # generated types
 .astro/
 supabase/.temp/

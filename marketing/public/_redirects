@@ -1,0 +1,15 @@
+https://www.mobdeals.co.ke/* https://mobdeals.co.ke/:splat 301
+/shop https://shop.mobdeals.co.ke/shop 301
+/products/* https://shop.mobdeals.co.ke/products/:splat 301
+/category/* https://shop.mobdeals.co.ke/category/:splat 301
+/brands https://shop.mobdeals.co.ke/brands 301
+/brands/* https://shop.mobdeals.co.ke/brands/:splat 301
+/cart https://shop.mobdeals.co.ke/cart 301
+/search https://shop.mobdeals.co.ke/search 301
+/warranty https://shop.mobdeals.co.ke/warranty 301
+/delivery https://shop.mobdeals.co.ke/delivery 301
+/contact /#contact 301
+/store /#contact 301
+/business /#business 301
+/blog https://shop.mobdeals.co.ke/blog 301
+/blog/* https://shop.mobdeals.co.ke/blog/:splat 301

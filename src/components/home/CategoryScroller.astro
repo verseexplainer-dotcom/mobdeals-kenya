@@ -17,13 +17,15 @@ const { categories } = Astro.props;
     <div class="-mx-[var(--spacing-page)] mt-10 flex snap-x gap-4 overflow-x-auto px-[var(--spacing-page)] pb-4 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-2 md:overflow-visible md:px-0 xl:grid-cols-4 [&::-webkit-scrollbar]:hidden">
       {categories.map((category) => (
       <a href={category.href} class="group flex min-w-[17rem] snap-start flex-col overflow-hidden rounded-card border border-ses-line bg-surface-container-lowest shadow-sm transition-[border-color,box-shadow,transform] duration-300 hover:-translate-y-1 hover:border-primary-fixed-dim hover:shadow-soft md:min-w-0">
-        <div class="relative flex h-48 items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_50%_34%,rgba(59,130,246,0.2),transparent_55%)] p-5">
+        <div class="relative flex h-48 items-center justify-center overflow-hidden bg-surface p-5">
           <div class="absolute inset-x-8 bottom-3 h-10 rounded-full bg-black/35 blur-xl" aria-hidden="true"></div>
           <img
             src={category.image.src}
+            srcset={`${category.image.src.replace('.webp', '-400.webp')} 400w, ${category.image.src} 800w`}
+            sizes="(max-width: 768px) 272px, (max-width: 1280px) 50vw, 320px"
             alt={category.image.alt}
-            width="640"
-            height="480"
+            width="800"
+            height="800"
             loading="lazy"
             decoding="async"
             class="relative size-full object-contain transition-transform duration-500 ease-standard group-hover:scale-[1.04]"

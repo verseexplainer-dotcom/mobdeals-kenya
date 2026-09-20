@@ -1,4 +1,6 @@
 ---
+import ProductImage from './ProductImage.astro';
+import { usableProductImages } from '@lib/products/images';
 import Badge from '@components/ui/Badge.astro';
 import Button from '@components/ui/Button.astro';
 import { formatProductPrice, type ProductSummary } from '@lib/products';
@@ -13,12 +15,11 @@ interface Props {
 }
 
 const { product, href, class: className, ctaLabel = 'View product', priority = false } = Astro.props;
-const image = product.images[0];
+const image = usableProductImages(product.images)[0];
 const productHref = href ?? `/products/${product.slug}`;
 const visibleSpecs = (product.specs ?? [])
   .filter((spec) => ['Processor', 'Memory', 'Storage', 'Display'].includes(spec.label))
   .slice(0, 2);
-const categoryKey = product.category.toLowerCase();
 
 const compareAt = product.price.compareAtAmount;
 const currentAmount = product.price.amount;
@@ -27,14 +28,6 @@ const discountPercent =
     ? Math.round((1 - currentAmount / compareAt) * 100)
     : null;
 
-let fallbackTone = 'bg-primary text-on-primary';
-if (categoryKey.includes('smartphone') || categoryKey.includes('internet')) {
-  fallbackTone = 'bg-secondary text-on-secondary';
-} else if (categoryKey.includes('printer') || categoryKey.includes('projector')) {
-  fallbackTone = 'bg-tertiary text-on-tertiary';
-} else if (categoryKey.includes('storage')) {
-  fallbackTone = 'bg-surface-container-high text-on-surface';
-}
 ---
 
 <article class={classNames('premium-card flex h-full flex-col overflow-hidden', className)}>
@@ -45,70 +38,7 @@ if (categoryKey.includes('smartphone') || categoryKey.includes('internet')) {
       </span>
     )}
     <div class="aspect-square overflow-hidden rounded-card bg-surface-container-lowest">
-      {image ? (
-        <img
-          src={image.src}
-          alt={image.alt}
-          width={image.width}
-          height={image.height}
-          loading={priority ? 'eager' : 'lazy'}
-          decoding="async"
-          class="size-full object-contain p-3 sm:p-4"
-        />
-      ) : (
-        <div class={`flex size-full items-center justify-center overflow-hidden ${fallbackTone}`} aria-hidden="true">
-          {categoryKey.includes('smartphone') && (
-            <div class="h-[72%] w-[38%] rounded-[1.4rem] border-[7px] border-current bg-white/15 shadow-soft"></div>
-          )}
-          {categoryKey.includes('printer') && (
-            <div class="w-[68%]">
-              <div class="mx-auto h-8 w-3/4 rounded-t-md bg-current/20"></div>
-              <div class="rounded-card border-[6px] border-current bg-white/15 p-4">
-                <div class="h-3 w-20 rounded-pill bg-current/30"></div>
-                <div class="mt-8 h-16 rounded-md bg-current/10"></div>
-              </div>
-            </div>
-          )}
-          {categoryKey.includes('desktop') && (
-            <div class="flex items-end gap-3">
-              <div class="h-28 w-36 rounded-md border-[7px] border-current bg-white/10"></div>
-              <div class="h-32 w-12 rounded-md bg-current/20"></div>
-            </div>
-          )}
-          {categoryKey.includes('storage') && (
-            <div class="grid grid-cols-2 gap-3">
-              <div class="h-28 w-16 rounded-md border-[6px] border-current bg-white/20"></div>
-              <div class="mt-8 h-20 w-16 rounded-md bg-current/20"></div>
-            </div>
-          )}
-          {categoryKey.includes('monitor') && (
-            <div class="w-[72%]">
-              <div class="aspect-[16/10] rounded-md border-[7px] border-current bg-white/10"></div>
-              <div class="mx-auto h-4 w-12 bg-current/25"></div>
-              <div class="mx-auto h-3 w-24 rounded-pill bg-current/25"></div>
-            </div>
-          )}
-          {categoryKey.includes('projector') && (
-            <div class="w-[68%]">
-              <div class="h-20 rounded-lg border-[7px] border-current bg-white/10"></div>
-              <div class="mx-auto mt-3 h-3 w-24 rounded-pill bg-current/25"></div>
-            </div>
-          )}
-          {categoryKey.includes('internet') && (
-            <div class="relative">
-              <div class="size-24 rounded-full border-[7px] border-current bg-white/10"></div>
-              <div class="absolute -right-8 top-2 size-16 rounded-full border-[4px] border-current opacity-30"></div>
-              <div class="absolute -right-14 top-0 size-24 rounded-full border-[4px] border-current opacity-20"></div>
-            </div>
-          )}
-          {!categoryKey.includes('smartphone') && !categoryKey.includes('printer') && !categoryKey.includes('desktop') && !categoryKey.includes('storage') && !categoryKey.includes('monitor') && !categoryKey.includes('projector') && !categoryKey.includes('internet') && (
-            <div class="w-[76%]">
-              <div class="aspect-[16/10] rounded-md border-[7px] border-current bg-white/10"></div>
-              <div class="mx-auto h-4 w-[86%] rounded-b-md bg-current/25"></div>
-            </div>
-          )}
-        </div>
-      )}
+      <ProductImage image={image} category={product.category} priority={priority} />
     </div>
   </a>
 

@@ -1,4 +1,5 @@
 export interface ProductImage {
+  representative?: boolean;
   src: string;
   alt: string;
   storageKey?: string;

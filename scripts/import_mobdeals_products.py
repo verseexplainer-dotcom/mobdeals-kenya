@@ -505,7 +505,9 @@ def build_products(rows: list[dict[str, str]], matches: list[ProductImageMatch])
         if compare_at > price:
             price_data["compareAtAmount"] = compare_at
         title = ascii_text(row["title"])
-        images = [
+        # A related model is not an exact product photo. Keep the mapping in the
+        # audit report, but let presentation use a labelled category fallback.
+        images = [] if match.status == "approximate-override" else [
             {
                 "src": "",
                 "storageKey": storage_key,

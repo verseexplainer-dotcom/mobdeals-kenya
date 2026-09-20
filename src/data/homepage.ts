@@ -1,6 +1,8 @@
 import type { ProductSummary } from '@lib/products';
 import { getAllProducts } from '@data/products';
 import { siteConfig } from '@config/site';
+import { categoryImage as categoryFallback } from '@lib/products/images';
+import { homeMedia } from './home-media';
 
 const products = getAllProducts();
 const featuredCategoryOrder = ['laptops', 'printers', 'monitors', 'tablets'] as const;
@@ -59,12 +61,11 @@ export interface BrandItem {
 export const heroSlides: HeroSlide[] = [
   {
     eyebrow: 'MOBDEALS KENYA',
-    title: 'Tech You Can Buy With Confidence.',
-    description: 'Shop laptops, printers, monitors, tablets and other electronics from our Nairobi store, with warranty support and countrywide delivery.',
+    title: 'Ready for Your Next Chapter.',
+    description: 'Find a laptop for lectures, assignments and everything after. Compare new and Ex-UK options with help from our Nairobi team.',
     image: {
-      desktopSrc: '/images/home/home-hero-laptops-desktop.webp',
-      mobileSrc: '/images/home/home-hero-laptops-mobile.webp',
-      alt: 'Laptop display at MobDeals Kenya'
+      ...homeMedia.student,
+      alt: 'Illustrative laptop study setup'
     },
     primaryCta: { label: 'SHOP NOW', href: '/shop' },
     secondaryCta: {
@@ -78,8 +79,7 @@ export const heroSlides: HeroSlide[] = [
     title: 'Build a Better-Equipped Workplace.',
     description: 'Source laptops, printers, monitors, projectors and supporting equipment for your team—with quotations and direct help from our Nairobi store.',
     image: {
-      desktopSrc: '/images/home/home-hero-office-tech-desktop.webp',
-      mobileSrc: '/images/home/home-hero-office-tech-mobile.webp',
+      ...homeMedia.office,
       alt: 'Office printer and workplace technology'
     },
     primaryCta: { label: 'REQUEST A QUOTE', href: '/business' },
@@ -90,13 +90,12 @@ export const heroSlides: HeroSlide[] = [
     backdrop: 'ink'
   },
   {
-    eyebrow: 'TECH FOR EVERYDAY LIFE',
-    title: 'The Right Device Changes Your Day.',
-    description: 'Compare practical technology for work, study and staying connected, with clear product details and support before you order.',
+    eyebrow: 'MAKE ROOM FOR GOOD WORK',
+    title: 'Your Desk. A Little More Capable.',
+    description: 'Find monitors and everyday technology for a workspace that works for you. Compare the details and get help choosing.',
     image: {
-      desktopSrc: '/images/home/home-hero-smartphones-desktop.webp',
-      mobileSrc: '/images/home/home-hero-smartphones-mobile.webp',
-      alt: 'Smartphones and connected technology accessories'
+      ...homeMedia.workstation,
+      alt: 'Illustrative monitor and workstation setup'
     },
     primaryCta: { label: 'EXPLORE THE CATALOGUE', href: '/shop' },
     secondaryCta: {
@@ -114,15 +113,6 @@ export const trustItems: TrustItem[] = [
   { label: 'Contact', title: 'Call & WhatsApp Support', description: 'Talk directly to our team when you need help.' }
 ];
 
-const categoryImage = (category: string, label: string): HomeCategory['image'] => {
-  const product = products.find((candidate) => candidate.category === category && candidate.images[0]);
-
-  return product?.images[0] ?? {
-    src: '/images/og-default.jpg',
-    alt: `${label} available from MobDeals Kenya`
-  };
-};
-
 const createHomeCategory = (
   category: string,
   label: string,
@@ -132,7 +122,7 @@ const createHomeCategory = (
   href: `/category/${category}`,
   description,
   meta: categoryProductMeta(category),
-  image: categoryImage(category, label)
+  image: categoryFallback(category)
 });
 
 export const homeCategories: HomeCategory[] = [
