@@ -17,9 +17,11 @@ from pathlib import Path
 from typing import Any
 
 from import_mobdeals_products import (
+    DEFAULT_ADDITIONAL_IMAGES,
     DEFAULT_IMAGE_ROOT,
     DEFAULT_SOURCE,
     build_manifest,
+    load_additional_images,
     load_image_groups,
     map_product_images,
     read_catalog_rows,
@@ -177,7 +179,8 @@ def main() -> None:
     rows = read_catalog_rows(args.source, args.expected_count)
     groups = load_image_groups(args.images)
     matches = map_product_images(rows, groups)
-    manifest = build_manifest(matches, args.images)
+    additional_images = load_additional_images(DEFAULT_ADDITIONAL_IMAGES, rows, args.images)
+    manifest = build_manifest(matches, args.images, additional_images)
     initial_results = check_storage(base_url, args.bucket, manifest, args.workers, args.timeout)
     missing_keys = {result["storage_key"] for result in initial_results if not result["exists"]}
     missing_items = [item for item in manifest if item["storage_key"] in missing_keys]

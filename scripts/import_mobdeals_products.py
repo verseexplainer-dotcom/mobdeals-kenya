@@ -23,6 +23,7 @@ DEFAULT_OUTPUT = Path("src/data/products.ts")
 DEFAULT_REPORT = Path("output/logs/product-drop-import-report.json")
 DEFAULT_MAPPING = Path("output/logs/product-drop-image-mapping.csv")
 DEFAULT_MANIFEST = Path("output/logs/product-drop-upload-manifest.json")
+DEFAULT_ADDITIONAL_IMAGES = Path("scripts/additional-product-images.json")
 
 REQUIRED_COLUMNS = {
     "title",
@@ -488,7 +489,35 @@ def product_highlights(row: dict[str, str]) -> list[str]:
     return highlights[:6]
 
 
-def build_products(rows: list[dict[str, str]], matches: list[ProductImageMatch]) -> tuple[list[dict[str, Any]], Counter[str]]:
+def load_additional_images(path: Path, rows: list[dict[str, str]], image_root: Path) -> dict[str, dict[str, str]]:
+    entries = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
+    if not isinstance(entries, list):
+        raise ValueError(f"Additional image mapping must be a list: {path}")
+    product_slugs = {ascii_text(row["slug"]) for row in rows}
+    additional: dict[str, dict[str, str]] = {}
+    storage_keys: set[str] = set()
+    for entry in entries:
+        if not isinstance(entry, dict):
+            raise ValueError("Additional image entries must be objects")
+        slug = entry.get("product_slug")
+        source_path = entry.get("source_path")
+        storage_key = entry.get("storage_key")
+        if not all(isinstance(value, str) for value in (slug, source_path, storage_key)):
+            raise ValueError("Additional image entries need product_slug, source_path, and storage_key")
+        if slug not in product_slugs or slug in additional or storage_key in storage_keys:
+            raise ValueError(f"Unknown or duplicate additional image mapping: {slug}")
+        if not source_path.startswith("optimized_v2/") or not source_path.endswith(".webp"):
+            raise ValueError(f"Unexpected additional image source: {source_path}")
+        if storage_key != f"laptop/additional/{slug}/02.webp":
+            raise ValueError(f"Unexpected additional image storage key: {storage_key}")
+        if not (image_root / source_path).is_file():
+            raise ValueError(f"Additional image does not exist: {image_root / source_path}")
+        additional[slug] = {"source_path": source_path, "storage_key": storage_key}
+        storage_keys.add(storage_key)
+    return additional
+
+
+def build_products(rows: list[dict[str, str]], matches: list[ProductImageMatch], additional_images: dict[str, dict[str, str]] | None = None) -> tuple[list[dict[str, Any]], Counter[str]]:
     matches_by_slug = {match.product_slug: match for match in matches}
     products: list[dict[str, Any]] = []
     category_counts: Counter[str] = Counter()
@@ -515,6 +544,10 @@ def build_products(rows: list[dict[str, str]], matches: list[ProductImageMatch])
             }
             for image_index, storage_key in enumerate(match.group.storage_keys, start=1)
         ]
+        if slug in (additional_images or {}):
+            if len(images) != 1:
+                raise ValueError(f"Additional image requires exactly one existing image: {slug}")
+            images.append({"src": "", "storageKey": additional_images[slug]["storage_key"], "alt": f"{title} - image 2"})
         in_stock = parse_boolean(row["is_available"]) and ascii_text(row["stock_status"]).casefold() == "in stock"
         product: dict[str, Any] = {
             "id": ascii_text(row["sku"]),
@@ -627,7 +660,7 @@ def write_json(path: Path, value: object) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def write_mapping(path: Path, rows: list[dict[str, str]], matches: list[ProductImageMatch]) -> None:
+def write_mapping(path: Path, rows: list[dict[str, str]], matches: list[ProductImageMatch], additional_images: dict[str, dict[str, str]] | None = None) -> None:
     rows_by_slug = {ascii_text(row["slug"]): row for row in rows}
     fieldnames = [
         "product_slug",
@@ -647,6 +680,9 @@ def write_mapping(path: Path, rows: list[dict[str, str]], matches: list[ProductI
         writer.writeheader()
         for match in matches:
             row = rows_by_slug[match.product_slug]
+            extra = (additional_images or {}).get(match.product_slug)
+            source_paths = list(match.group.source_paths) + ([extra["source_path"]] if extra else [])
+            storage_keys = list(match.group.storage_keys) + ([extra["storage_key"]] if extra else [])
             writer.writerow(
                 {
                     "product_slug": match.product_slug,
@@ -657,13 +693,13 @@ def write_mapping(path: Path, rows: list[dict[str, str]], matches: list[ProductI
                     "match_score": f"{match.score:.3f}",
                     "score_gap": f"{match.gap:.3f}",
                     "image_group": match.group.slug,
-                    "source_images": " | ".join(match.group.source_paths),
-                    "storage_keys": " | ".join(match.group.storage_keys),
+                    "source_images": " | ".join(source_paths),
+                    "storage_keys": " | ".join(storage_keys),
                 }
             )
 
 
-def build_manifest(matches: list[ProductImageMatch], image_root: Path) -> list[dict[str, Any]]:
+def build_manifest(matches: list[ProductImageMatch], image_root: Path, additional_images: dict[str, dict[str, str]] | None = None) -> list[dict[str, Any]]:
     products_by_group: dict[str, list[str]] = defaultdict(list)
     selected_groups: dict[str, ImageGroup] = {}
     for match in matches:
@@ -684,6 +720,13 @@ def build_manifest(matches: list[ProductImageMatch], image_root: Path) -> list[d
                     "product_slugs": sorted(products_by_group[primary]),
                 }
             )
+    for slug, extra in sorted((additional_images or {}).items()):
+        manifest.append({
+            "source_path": extra["source_path"],
+            "storage_key": extra["storage_key"],
+            "size_bytes": (image_root / extra["source_path"]).stat().st_size,
+            "product_slugs": [slug],
+        })
     return manifest
 
 
@@ -757,14 +800,15 @@ def import_catalog(
     rows = read_catalog_rows(source, expected_count)
     groups = load_image_groups(image_root)
     matches = map_product_images(rows, groups)
-    products, category_counts = build_products(rows, matches)
+    additional_images = load_additional_images(DEFAULT_ADDITIONAL_IMAGES, rows, image_root)
+    products, category_counts = build_products(rows, matches, additional_images)
     categories = categories_for_counts(category_counts)
-    manifest = build_manifest(matches, image_root)
+    manifest = build_manifest(matches, image_root, additional_images)
     report = build_report(source, image_root, rows, groups, matches, category_counts, manifest)
 
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(render_products_ts(categories, products, source), encoding="utf-8")
-    write_mapping(mapping_path, rows, matches)
+    write_mapping(mapping_path, rows, matches, additional_images)
     write_json(manifest_path, manifest)
     write_json(report_path, report)
     return report

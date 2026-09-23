@@ -1,0 +1,47 @@
+[
+  {
+    "product_slug": "dell-5300-8th-touch-x360-8th-gen",
+    "source_path": "optimized_v2/dell-latitude-5300-i5-8thgen-256gb-13-0-touch-x360-27000-md-wa-0052-01.webp",
+    "storage_key": "laptop/additional/dell-5300-8th-touch-x360-8th-gen/02.webp"
+  },
+  {
+    "product_slug": "hp-1040-g8-11th-x360-touch-11th-gen-2",
+    "source_path": "optimized_v2/hp-elitebook-1040-g8-i7-11thgen-32gb-512ssd-touch-x360-66000-md-wa-0170-01.webp",
+    "storage_key": "laptop/additional/hp-1040-g8-11th-x360-touch-11th-gen-2/02.webp"
+  },
+  {
+    "product_slug": "hp-745-g6-256gb-storage",
+    "source_path": "optimized_v2/hp-elitebook-745-g6-ryzen-5-8gb-256ssd-nontouch-29500-md-wa-0011-01.webp",
+    "storage_key": "laptop/additional/hp-745-g6-256gb-storage/02.webp"
+  },
+  {
+    "product_slug": "hp-840-g3-6th-gen",
+    "source_path": "optimized_v2/hp-elitebook-840-g3-i5-6thgen-8gb-256ssd-nontouch-25000-md-wa-0006-01.webp",
+    "storage_key": "laptop/additional/hp-840-g3-6th-gen/02.webp"
+  },
+  {
+    "product_slug": "hp-840-g5-8th-gen",
+    "source_path": "optimized_v2/hp-elitebook-840-g5-i5-8thgen-8gb-256ssd-nontouch-29000-md-wa-0112-01.webp",
+    "storage_key": "laptop/additional/hp-840-g5-8th-gen/02.webp"
+  },
+  {
+    "product_slug": "hp-830-g6-x360-8th-gen-2",
+    "source_path": "optimized_v2/hp-elitebook-x360-830-g6-i7-8thgen-8gb-256ssd-touch-x360-37000-md-wa-0009-01.webp",
+    "storage_key": "laptop/additional/hp-830-g6-x360-8th-gen-2/02.webp"
+  },
+  {
+    "product_slug": "hp-440-g5-8th-gen",
+    "source_path": "optimized_v2/hp-probook-440-g5-i5-8thgen-8gb-256ssd-nontouch-24500-md-wa-0319-01.webp",
+    "storage_key": "laptop/additional/hp-440-g5-8th-gen/02.webp"
+  },
+  {
+    "product_slug": "hp-440-g6-8th-gen",
+    "source_path": "optimized_v2/hp-probook-440-g6-i7-8thgen-8gb-256ssd-nontouch-26500-md-wa-0320-01.webp",
+    "storage_key": "laptop/additional/hp-440-g6-8th-gen/02.webp"
+  },
+  {
+    "product_slug": "lenovo-yoga-11e-x360-128gb-ssd",
+    "source_path": "optimized_v2/lenovo-yoga-11e-celeron-4gb-128ssd-touch-x360-13500-md-wa-0012-01.webp",
+    "storage_key": "laptop/additional/lenovo-yoga-11e-x360-128gb-ssd/02.webp"
+  }
+]

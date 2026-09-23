@@ -19,6 +19,7 @@ The importer:
 - Preserves source category folders in Storage keys such as `laptop/hp-victus-15-fa2787nr-laptop/01.webp`.
 - Uses the mapped image folder as the storefront category when the supplied sheet category is inconsistent.
 - Generates `src/data/products.ts` as the project catalog used by Astro.
+- Adds reviewed second images from `scripts/additional-product-images.json` to the generated catalog, mapping, and upload manifest.
 - Writes review artifacts under `output/logs/`, including the exact source-to-product image mapping.
 
 Optional flags:

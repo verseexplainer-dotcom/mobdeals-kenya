@@ -3196,6 +3196,11 @@ const catalogProducts: Product[] = [
         "src": "",
         "storageKey": "laptop/dell-5300-laptop/01.webp",
         "alt": "Dell 5300 8th Touch x360 Intel Core i5 8th Gen 8GB RAM 256GB Storage Used / Refurbished"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/additional/dell-5300-8th-touch-x360-8th-gen/02.webp",
+        "alt": "Dell 5300 8th Touch x360 Intel Core i5 8th Gen 8GB RAM 256GB Storage Used / Refurbished - image 2"
       }
     ],
     "inStock": true,
@@ -6654,6 +6659,11 @@ const catalogProducts: Product[] = [
         "src": "",
         "storageKey": "laptop/hp-440-g5-laptop/01.webp",
         "alt": "HP 440 G5 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/additional/hp-440-g5-8th-gen/02.webp",
+        "alt": "HP 440 G5 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished - image 2"
       }
     ],
     "inStock": true,
@@ -6908,6 +6918,11 @@ const catalogProducts: Product[] = [
         "src": "",
         "storageKey": "laptop/hp-840-g3-laptop/01.webp",
         "alt": "HP 840 G3 Intel Core i5 6th Gen 8GB RAM 256GB SSD Used / Refurbished"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/additional/hp-840-g3-6th-gen/02.webp",
+        "alt": "HP 840 G3 Intel Core i5 6th Gen 8GB RAM 256GB SSD Used / Refurbished - image 2"
       }
     ],
     "inStock": true,
@@ -7288,6 +7303,11 @@ const catalogProducts: Product[] = [
         "src": "",
         "storageKey": "laptop/hp-440-g6-laptop/01.webp",
         "alt": "HP 440 G6 Intel Core i7 8th Gen 8GB RAM 256GB SSD Used / Refurbished"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/additional/hp-440-g6-8th-gen/02.webp",
+        "alt": "HP 440 G6 Intel Core i7 8th Gen 8GB RAM 256GB SSD Used / Refurbished - image 2"
       }
     ],
     "inStock": true,
@@ -8059,6 +8079,11 @@ const catalogProducts: Product[] = [
         "src": "",
         "storageKey": "laptop/hp-745-g6-laptop/01.webp",
         "alt": "HP 745 G6 AMD Ryzen 5 8GB RAM 256GB Storage Used / Refurbished"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/additional/hp-745-g6-256gb-storage/02.webp",
+        "alt": "HP 745 G6 AMD Ryzen 5 8GB RAM 256GB Storage Used / Refurbished - image 2"
       }
     ],
     "inStock": true,
@@ -8303,6 +8328,11 @@ const catalogProducts: Product[] = [
         "src": "",
         "storageKey": "laptop/hp-840-g5-laptop/01.webp",
         "alt": "HP 840 G5 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/additional/hp-840-g5-8th-gen/02.webp",
+        "alt": "HP 840 G5 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished - image 2"
       }
     ],
     "inStock": true,
@@ -11418,6 +11448,11 @@ const catalogProducts: Product[] = [
         "src": "",
         "storageKey": "laptop/hp-830-g6-x360-laptop/01.webp",
         "alt": "HP 830 G6 x360 Intel Core i7 8th Gen 8GB RAM 256GB SSD Used / Refurbished"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/additional/hp-830-g6-x360-8th-gen-2/02.webp",
+        "alt": "HP 830 G6 x360 Intel Core i7 8th Gen 8GB RAM 256GB SSD Used / Refurbished - image 2"
       }
     ],
     "inStock": true,
@@ -15898,6 +15933,11 @@ const catalogProducts: Product[] = [
         "src": "",
         "storageKey": "laptop/hp-1040-g8-laptop/01.webp",
         "alt": "HP 1040 G8 11th x360 Touch Intel Core i7 11th Gen 32GB RAM 512GB Storage Used / Refurbished"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/additional/hp-1040-g8-11th-x360-touch-11th-gen-2/02.webp",
+        "alt": "HP 1040 G8 11th x360 Touch Intel Core i7 11th Gen 32GB RAM 512GB Storage Used / Refurbished - image 2"
       }
     ],
     "inStock": true,
@@ -19973,6 +20013,11 @@ const catalogProducts: Product[] = [
         "src": "",
         "storageKey": "laptop/lenovo-yoga-11e-x360-laptop/01.webp",
         "alt": "Lenovo Yoga 11E x360 Intel Celeron 4GB RAM 128GB SSD Used / Refurbished"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/additional/lenovo-yoga-11e-x360-128gb-ssd/02.webp",
+        "alt": "Lenovo Yoga 11E x360 Intel Celeron 4GB RAM 128GB SSD Used / Refurbished - image 2"
       }
     ],
     "inStock": true,
