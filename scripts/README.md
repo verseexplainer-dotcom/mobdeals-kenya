@@ -31,6 +31,24 @@ Optional flags:
 
 The importer refuses missing or unsafe product data and low-confidence image matches. Explicit approximate mappings remain visible in `output/logs/product-drop-import-report.json`.
 
+## Flat Product Batch Import
+
+For a flat image folder with a `products_for_supabase.csv` and `_rename_mapping.csv`, merge the batch with the current store catalog:
+
+```sh
+python3 scripts/import_product_batch.py
+```
+
+This prepares the merged storefront catalog, a deduplicated CSV, the image mapping, and an upload manifest under `output/logs/`. It matches images by the source IDs in the sheet, collapses exact duplicate batch rows, and retains existing Supabase images after the new primary image for matched products. Review the generated `product-batch-import-report.json` before applying.
+
+Upload the mapped images, upsert categories/products/galleries to Supabase, and deactivate replaced duplicate listings:
+
+```sh
+python3 scripts/import_product_batch.py --apply
+```
+
+The command reads `PUBLIC_SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` from the environment or local `.env` files. It never writes privileged credentials into frontend code.
+
 ## Supabase Media Sync
 
 Check whether every image used by the generated catalog exists in the public `product-images` bucket:

@@ -5,7 +5,7 @@ import { categoryImage as categoryFallback } from '@lib/products/images';
 import { homeMedia } from './home-media';
 
 const products = getAllProducts();
-const featuredCategoryOrder = ['laptops', 'printers', 'monitors', 'tablets'] as const;
+const featuredCategoryOrder = ['laptops', 'desktops', 'smartphones', 'printers', 'monitors', 'tablets'] as const;
 const featuredCatalogProducts = featuredCategoryOrder
   .flatMap((category) => {
     const product = products.find((candidate) => candidate.category === category);
@@ -127,6 +127,8 @@ const createHomeCategory = (
 
 export const homeCategories: HomeCategory[] = [
   createHomeCategory('laptops', 'Laptops', 'For work, school, design and gaming.'),
+  createHomeCategory('desktops', 'Desktop Computers', 'For home and office workstations.'),
+  createHomeCategory('smartphones', 'Smartphones', 'Mobile devices for work and everyday use.'),
   createHomeCategory('tablets', 'Tablets', 'Portable touch devices and detachables.'),
   createHomeCategory('printers', 'Printers', 'Printing options for home and office.'),
   createHomeCategory('monitors', 'Monitors', 'Displays for desks and workstations.'),

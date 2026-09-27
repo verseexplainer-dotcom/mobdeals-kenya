@@ -12,6 +12,22 @@ export const productCategories: ProductCategory[] = [
     "seoDescription": "Shop current MobDeals laptops in Nairobi with visible prices, specifications, condition, warranty, and delivery support across Kenya."
   },
   {
+    "slug": "desktops",
+    "label": "Desktop Computers",
+    "eyebrow": "Business and home workstations",
+    "description": "Desktop computers and all-in-one systems for everyday work, study, and office setups.",
+    "seoTitle": "Desktop Computers in Nairobi",
+    "seoDescription": "Browse desktop computers from MobDeals in Nairobi with current prices, specifications, and Kenya delivery support."
+  },
+  {
+    "slug": "smartphones",
+    "label": "Smartphones",
+    "eyebrow": "Mobile devices",
+    "description": "Smartphones for communication, work, and everyday use with clear prices and condition details.",
+    "seoTitle": "Smartphones in Nairobi",
+    "seoDescription": "Shop smartphones from MobDeals in Nairobi with current prices, condition details, and Kenya delivery support."
+  },
+  {
     "slug": "tablets",
     "label": "Tablets",
     "eyebrow": "Portable touch devices",
@@ -62,6 +78,16028 @@ export const productCategories: ProductCategory[] = [
 ];
 
 const catalogProducts: Product[] = [
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-T470S-I5-7TH-GEN-8GB-256GB-SSD-14-INCH-NON-TOUC-179379BD",
+    "slug": "lenovo-thinkpad-t470s-7th-gen",
+    "name": "Lenovo ThinkPad T470s | Intel Core i5 (7th Gen) | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 27140,
+      "currency": "KES",
+      "compareAtAmount": 32568
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-t470s-7th-gen/01.webp",
+        "alt": "Lenovo ThinkPad T470s | Intel Core i5 (7th Gen) | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad T470s is listed at KES 27,140 in Kenya, in brand new condition with 6 months warranty. This configuration includes Intel Core i5 (7th Gen), 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad T470s is listed at KES 27,140 in Kenya, in brand new condition with 6 months warranty. This configuration includes Intel Core i5 (7th Gen), 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (7th Gen)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Connectivity: HDMI</li>\n  <li>Feature: Non-Touch</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (7th Gen)",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "HDMI",
+      "Non-Touch"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (7th Gen)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Brand New"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "New",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad T470s Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad T470s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-t470s-7th-gen#product",
+      "name": "Lenovo ThinkPad T470s | Intel Core i5 (7th Gen) | 8GB | 256GB SSD",
+      "description": "Lenovo ThinkPad T470s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-T470S-I5-7TH-GEN-8GB-256GB-SSD-14-INCH-NON-TOUC-179379BD",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad T470s",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (7th Gen)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Brand New"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-t470s-7th-gen",
+        "priceCurrency": "KES",
+        "price": "27140",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    },
+    "featured": true
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G5-I7-8TH-GEN-16GB-256GB-SSD-14-INCH-TOUCHSCREEN-E-6189B31B",
+    "slug": "hp-elitebook-840-g5-8th-gen",
+    "name": "HP EliteBook 840 G5 | Intel Core i7 Processor (8th Generation) | 16GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 46020,
+      "currency": "KES",
+      "compareAtAmount": 55224
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g5-8th-gen/01.webp",
+        "alt": "HP EliteBook 840 G5 | Intel Core i7 Processor (8th Generation) | 16GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g5-8th-gen/02.webp",
+        "alt": "HP EliteBook 840 G5 | Intel Core i7 Processor (8th Generation) | 16GB | 256GB SSD - image 2"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g5-8th-gen/03.webp",
+        "alt": "HP EliteBook 840 G5 | Intel Core i7 Processor (8th Generation) | 16GB | 256GB SSD - image 3"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G5 is listed at KES 46,020 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 Processor (8th Generation), 16GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G5 is listed at KES 46,020 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 Processor (8th Generation), 16GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 Processor (8th Generation)</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 Processor (8th Generation)",
+      "16GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 Processor (8th Generation)"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G5 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G5 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g5-8th-gen#product",
+      "name": "HP EliteBook 840 G5 | Intel Core i7 Processor (8th Generation) | 16GB | 256GB SSD",
+      "description": "HP EliteBook 840 G5 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G5-I7-8TH-GEN-16GB-256GB-SSD-14-INCH-TOUCHSCREEN-E-6189B31B",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G5",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 Processor (8th Generation)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g5-8th-gen",
+        "priceCurrency": "KES",
+        "price": "46020",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    },
+    "featured": true
+  },
+  {
+    "id": "DELL-DELL-VOSTRO-15-3510-I7-11TH-GEN-8GB-256GB-SSD-2GB-NVIDIA-DEDICATE-C4115081",
+    "slug": "dell-vostro-15-3510-11th-gen",
+    "name": "Dell Vostro 15 3510 | Intel Core i7 (11th Gen) | 8GB | 256GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 29500,
+      "currency": "KES",
+      "compareAtAmount": 35400
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-vostro-15-3510-11th-gen/01.webp",
+        "alt": "Dell Vostro 15 3510 | Intel Core i7 (11th Gen) | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Vostro 15 3510 is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 (11th Gen), 8GB RAM, 256GB SSD, 15.6-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Vostro 15 3510 is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 (11th Gen), 8GB RAM, 256GB SSD, 15.6-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 (11th Gen)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 15.6-inch</li>\n  <li>Graphics: 2GB NVIDIA Dedicated GPU</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 (11th Gen)",
+      "8GB RAM",
+      "256GB SSD",
+      "15.6-inch display",
+      "2GB NVIDIA Dedicated GPU",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 (11th Gen)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "15.6-inch display"
+      },
+      {
+        "label": "Graphics",
+        "value": "2GB NVIDIA Dedicated GPU"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Vostro 15 3510 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Vostro 15 3510 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-vostro-15-3510-11th-gen#product",
+      "name": "Dell Vostro 15 3510 | Intel Core i7 (11th Gen) | 8GB | 256GB SSD",
+      "description": "Dell Vostro 15 3510 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-VOSTRO-15-3510-I7-11TH-GEN-8GB-256GB-SSD-2GB-NVIDIA-DEDICATE-C4115081",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Vostro 15 3510",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 (11th Gen)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "15.6-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Graphics",
+          "value": "2GB NVIDIA Dedicated GPU"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-vostro-15-3510-11th-gen",
+        "priceCurrency": "KES",
+        "price": "29500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    },
+    "featured": true
+  },
+  {
+    "id": "LENOVO-LENOVO-X270-I5-6TH-GEN-8GB-256GB-SSD-12-5-INCH-EX-UK-8CB6D66F",
+    "slug": "lenovo-x270-6th-gen",
+    "name": "Lenovo X270 | Core i5 6th gen 2.5ghz | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 21830,
+      "currency": "KES",
+      "compareAtAmount": 26196
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-x270-6th-gen/01.webp",
+        "alt": "Lenovo X270 | Core i5 6th gen 2.5ghz | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo X270 is listed at KES 21,830 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 6th gen 2.5ghz, 8GB RAM, 256GB SSD, 12.5-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo X270 is listed at KES 21,830 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 6th gen 2.5ghz, 8GB RAM, 256GB SSD, 12.5-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 6th gen 2.5ghz</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 12.5-inch</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 6th gen 2.5ghz",
+      "8GB RAM",
+      "256GB SSD",
+      "12.5-inch display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 6th gen 2.5ghz"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "12.5-inch display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo X270 Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo X270 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-x270-6th-gen#product",
+      "name": "Lenovo X270 | Core i5 6th gen 2.5ghz | 8GB | 256GB SSD",
+      "description": "Lenovo X270 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-X270-I5-6TH-GEN-8GB-256GB-SSD-12-5-INCH-EX-UK-8CB6D66F",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo X270",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 6th gen 2.5ghz"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "6th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "12.5-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-x270-6th-gen",
+        "priceCurrency": "KES",
+        "price": "21830",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    },
+    "featured": true
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-745-G6-RYZEN5-8GB-256GB-SSD-DEDICATED-AMD-RADEON-GRAPH-4DD338B9",
+    "slug": "hp-elitebook-745-g6-256gb-ssd",
+    "name": "HP EliteBook 745 G6 | Ryzen 5 Pro (3500U) | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 34220,
+      "currency": "KES",
+      "compareAtAmount": 41064
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-745-g6-256gb-ssd/01.webp",
+        "alt": "HP EliteBook 745 G6 | Ryzen 5 Pro (3500U) | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 745 G6 is listed at KES 34,220 in Kenya, in ex uk condition with 6 months warranty. This configuration includes AMD Ryzen 5 Pro (3500U), 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 745 G6 is listed at KES 34,220 in Kenya, in ex uk condition with 6 months warranty. This configuration includes AMD Ryzen 5 Pro (3500U), 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: AMD Ryzen 5 Pro (3500U)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Graphics: Dedicated Amd Radeon Graphics (2GB)</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "AMD Ryzen 5 Pro (3500U)",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "Touchscreen",
+      "Dedicated Amd Radeon Graphics (2GB)"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "AMD Ryzen 5 Pro (3500U)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Graphics",
+        "value": "Dedicated Amd Radeon Graphics (2GB)"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 745 G6 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 745 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-745-g6-256gb-ssd#product",
+      "name": "HP EliteBook 745 G6 | Ryzen 5 Pro (3500U) | 8GB | 256GB SSD",
+      "description": "HP EliteBook 745 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-745-G6-RYZEN5-8GB-256GB-SSD-DEDICATED-AMD-RADEON-GRAPH-4DD338B9",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 745 G6",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "AMD Ryzen 5 Pro (3500U)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Graphics",
+          "value": "Dedicated Amd Radeon Graphics (2GB)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-745-g6-256gb-ssd",
+        "priceCurrency": "KES",
+        "price": "34220",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-T480S-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCR-10AE69E3",
+    "slug": "lenovo-thinkpad-t480s-8th-gen",
+    "name": "Lenovo ThinkPad T480s | Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo) | 8GB",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 29500,
+      "currency": "KES",
+      "compareAtAmount": 35400
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-t480s-8th-gen/01.webp",
+        "alt": "Lenovo ThinkPad T480s | Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo) | 8GB"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad T480s is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo), 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad T480s is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo), 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Connectivity: HDMI</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo)",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "HDMI",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad T480s Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad T480s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-t480s-8th-gen#product",
+      "name": "Lenovo ThinkPad T480s | Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo) | 8GB",
+      "description": "Lenovo ThinkPad T480s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-T480S-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCR-10AE69E3",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad T480s",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-t480s-8th-gen",
+        "priceCurrency": "KES",
+        "price": "29500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G4-I7-7TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCREEN-EX-FBC02E82",
+    "slug": "hp-elitebook-840-g4-7th-gen",
+    "name": "HP EliteBook 840 G4 | Intel Core i7 7th Generation | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 30680,
+      "currency": "KES",
+      "compareAtAmount": 36816
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g4-7th-gen/01.webp",
+        "alt": "HP EliteBook 840 G4 | Intel Core i7 7th Generation | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G4 is listed at KES 30,680 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 7th Generation, 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G4 is listed at KES 30,680 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 7th Generation, 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 7th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Connectivity: HDMI, USB 3.0</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 7th Generation",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "HDMI, USB 3.0",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 7th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, USB 3.0"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G4 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G4 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g4-7th-gen#product",
+      "name": "HP EliteBook 840 G4 | Intel Core i7 7th Generation | 8GB | 256GB SSD",
+      "description": "HP EliteBook 840 G4 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G4-I7-7TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCREEN-EX-FBC02E82",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G4",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 7th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, USB 3.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g4-7th-gen",
+        "priceCurrency": "KES",
+        "price": "30680",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-3340-I5-4TH-GEN-8GB-500GB-HDD-13-3-INCH-HD-EX-UK-4ACC244C",
+    "slug": "dell-latitude-3340-4th-gen",
+    "name": "Dell Latitude 3340 | Intel Core i5 4th Generation | 8GB | 500GB HDD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 17700,
+      "currency": "KES",
+      "compareAtAmount": 21240
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-3340-4th-gen/01.webp",
+        "alt": "Dell Latitude 3340 | Intel Core i5 4th Generation | 8GB | 500GB HDD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/dell-3340-laptop/01.webp",
+        "alt": "Dell Latitude 3340 | Intel Core i5 4th Generation | 8GB | 500GB HDD - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude 3340 is listed at KES 17,700 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 4th Generation, 8GB RAM, 500GB HDD, 13.3-inch HD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude 3340 is listed at KES 17,700 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 4th Generation, 8GB RAM, 500GB HDD, 13.3-inch HD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 4th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 500GB HDD</li>\n  <li>Display: 13.3-inch HD</li>\n  <li>Connectivity: Wi-Fi, Bluetooth, HDMI</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 4th Generation",
+      "8GB RAM",
+      "500GB HDD",
+      "13.3-inch HD display",
+      "Wi-Fi, Bluetooth, HDMI",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 4th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "500GB HDD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch HD display"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, Bluetooth, HDMI"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude 3340 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude 3340 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB HDD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-3340-4th-gen#product",
+      "name": "Dell Latitude 3340 | Intel Core i5 4th Generation | 8GB | 500GB HDD",
+      "description": "Dell Latitude 3340 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB HDD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-3340-I5-4TH-GEN-8GB-500GB-HDD-13-3-INCH-HD-EX-UK-4ACC244C",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude 3340",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 4th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "4th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "500GB HDD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch HD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, Bluetooth, HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-3340-4th-gen",
+        "priceCurrency": "KES",
+        "price": "17700",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-VOSTRO-15-3510-I7-11TH-GEN-8GB-256GB-SSD-INTEL-UHD-GRAPHICS-7DF4BD45",
+    "slug": "dell-vostro-15-3510-11th-gen-2",
+    "name": "Dell Vostro 15 3510 | Intel Core i7 (11th Gen) | 8GB | 256GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 29500,
+      "currency": "KES",
+      "compareAtAmount": 35400
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-vostro-15-3510-11th-gen-2/01.webp",
+        "alt": "Dell Vostro 15 3510 | Intel Core i7 (11th Gen) | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Vostro 15 3510 is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 (11th Gen), 8GB RAM, 256GB SSD, 15.6-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Vostro 15 3510 is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 (11th Gen), 8GB RAM, 256GB SSD, 15.6-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 (11th Gen)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 15.6-inch</li>\n  <li>Connectivity: HDMI</li>\n  <li>Graphics: Intel UHD GRAPHICS</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 (11th Gen)",
+      "8GB RAM",
+      "256GB SSD",
+      "15.6-inch display",
+      "HDMI",
+      "Intel UHD GRAPHICS"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 (11th Gen)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "15.6-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI"
+      },
+      {
+        "label": "Processor",
+        "value": "Intel UHD GRAPHICS"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Vostro 15 3510 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Vostro 15 3510 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-vostro-15-3510-11th-gen-2#product",
+      "name": "Dell Vostro 15 3510 | Intel Core i7 (11th Gen) | 8GB | 256GB SSD",
+      "description": "Dell Vostro 15 3510 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-VOSTRO-15-3510-I7-11TH-GEN-8GB-256GB-SSD-INTEL-UHD-GRAPHICS-7DF4BD45",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Vostro 15 3510",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 (11th Gen)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "15.6-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Graphics",
+          "value": "Intel UHD GRAPHICS"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-vostro-15-3510-11th-gen-2",
+        "priceCurrency": "KES",
+        "price": "29500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G6-I7-8TH-GEN-16GB-512GB-SSD-14-INCH-FHD-TOUCHSCRE-B7E1BA88",
+    "slug": "hp-elitebook-840-g6-8th-gen",
+    "name": "HP EliteBook 840 G6 | Intel Core i7 (8th Generation) | 16GB | 512GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 48380,
+      "currency": "KES",
+      "compareAtAmount": 58056
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g6-8th-gen/01.webp",
+        "alt": "HP EliteBook 840 G6 | Intel Core i7 (8th Generation) | 16GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G6 is listed at KES 48,380 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 (8th Generation), 16GB RAM, 512GB SSD, 14-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G6 is listed at KES 48,380 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 (8th Generation), 16GB RAM, 512GB SSD, 14-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 (8th Generation)</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 14-inch FHD</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 (8th Generation)",
+      "16GB RAM",
+      "512GB SSD",
+      "14-inch FHD display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 (8th Generation)"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch FHD display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G6 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-8th-gen#product",
+      "name": "HP EliteBook 840 G6 | Intel Core i7 (8th Generation) | 16GB | 512GB SSD",
+      "description": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G6-I7-8TH-GEN-16GB-512GB-SSD-14-INCH-FHD-TOUCHSCRE-B7E1BA88",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G6",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 (8th Generation)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-8th-gen",
+        "priceCurrency": "KES",
+        "price": "48380",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G1-I5-4TH-GEN-8GB-256GB-SSD-14-INCH-HD-OPEN-BOX-AD3AF26F",
+    "slug": "hp-elitebook-840-g1-4th-gen",
+    "name": "HP EliteBook 840 G1 | Intel Core i5 (4th Generation) | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 24780,
+      "currency": "KES",
+      "compareAtAmount": 29736
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g1-4th-gen/01.webp",
+        "alt": "HP EliteBook 840 G1 | Intel Core i5 (4th Generation) | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G1 is listed at KES 24,780 in Kenya, in open box condition with 6 months warranty. This configuration includes Intel Core i5 (4th Generation), 8GB RAM, 256GB SSD, 14-inch HD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G1 is listed at KES 24,780 in Kenya, in open box condition with 6 months warranty. This configuration includes Intel Core i5 (4th Generation), 8GB RAM, 256GB SSD, 14-inch HD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (4th Generation)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch HD</li>\n  <li>Condition: Open Box</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (4th Generation)",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch HD display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (4th Generation)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch HD display"
+      },
+      {
+        "label": "Condition",
+        "value": "Open Box"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Open box",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G1 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G1 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g1-4th-gen#product",
+      "name": "HP EliteBook 840 G1 | Intel Core i5 (4th Generation) | 8GB | 256GB SSD",
+      "description": "HP EliteBook 840 G1 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G1-I5-4TH-GEN-8GB-256GB-SSD-14-INCH-HD-OPEN-BOX-AD3AF26F",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G1",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (4th Generation)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "4th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch HD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Open Box"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g1-4th-gen",
+        "priceCurrency": "KES",
+        "price": "24780",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-T490-I7-8TH-GEN-32GB-256GB-SSD-14-INCH-OPEN-BOX-A2779F54",
+    "slug": "lenovo-thinkpad-t490-8th-gen",
+    "name": "Lenovo ThinkPad T490 | Intel Core i7 (8th Generation) | 32GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 41300,
+      "currency": "KES",
+      "compareAtAmount": 49560
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-t490-8th-gen/01.webp",
+        "alt": "Lenovo ThinkPad T490 | Intel Core i7 (8th Generation) | 32GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad T490 is listed at KES 41,300 in Kenya, in open box condition with 6 months warranty. This configuration includes Intel Core i7 (8th Generation), 32GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad T490 is listed at KES 41,300 in Kenya, in open box condition with 6 months warranty. This configuration includes Intel Core i7 (8th Generation), 32GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 (8th Generation)</li>\n  <li>RAM: 32GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Condition: Open Box</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 (8th Generation)",
+      "32GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 (8th Generation)"
+      },
+      {
+        "label": "Memory",
+        "value": "32GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Condition",
+        "value": "Open Box"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Open box",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad T490 Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad T490 for office work, school, and multitasking in Kenya. 32GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-t490-8th-gen#product",
+      "name": "Lenovo ThinkPad T490 | Intel Core i7 (8th Generation) | 32GB | 256GB SSD",
+      "description": "Lenovo ThinkPad T490 for office work, school, and multitasking in Kenya. 32GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-T490-I7-8TH-GEN-32GB-256GB-SSD-14-INCH-OPEN-BOX-A2779F54",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad T490",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 (8th Generation)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "32GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Open Box"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-t490-8th-gen",
+        "priceCurrency": "KES",
+        "price": "41300",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G5-I5-7TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCREEN-EX-18508DEA",
+    "slug": "hp-elitebook-840-g5-7th-gen",
+    "name": "HP EliteBook 840 G5 | Intel Core i5 Processor (7th Generation) | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 36580,
+      "currency": "KES",
+      "compareAtAmount": 43896
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g5-7th-gen/01.webp",
+        "alt": "HP EliteBook 840 G5 | Intel Core i5 Processor (7th Generation) | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G5 is listed at KES 36,580 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 Processor (7th Generation), 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G5 is listed at KES 36,580 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 Processor (7th Generation), 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 Processor (7th Generation)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 Processor (7th Generation)",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 Processor (7th Generation)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G5 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G5 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g5-7th-gen#product",
+      "name": "HP EliteBook 840 G5 | Intel Core i5 Processor (7th Generation) | 8GB | 256GB SSD",
+      "description": "HP EliteBook 840 G5 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G5-I5-7TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCREEN-EX-18508DEA",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G5",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 Processor (7th Generation)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g5-7th-gen",
+        "priceCurrency": "KES",
+        "price": "36580",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G8-I5-11TH-GEN-16GB-512GB-SSD-14-INCH-FHD-EX-UK-753C65B5",
+    "slug": "hp-elitebook-840-g8-11th-gen",
+    "name": "HP EliteBook 840 G8 | Intel Core i5 Processor | 16GB | 512GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 48380,
+      "currency": "KES",
+      "compareAtAmount": 58056
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g8-11th-gen/01.webp",
+        "alt": "HP EliteBook 840 G8 | Intel Core i5 Processor | 16GB | 512GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g8-11th-gen/02.webp",
+        "alt": "HP EliteBook 840 G8 | Intel Core i5 Processor | 16GB | 512GB SSD - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G8 is listed at KES 48,380 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 Processor, 16GB RAM, 512GB SSD, 14-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G8 is listed at KES 48,380 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 Processor, 16GB RAM, 512GB SSD, 14-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 Processor</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 14-inch FHD</li>\n  <li>Generation: 11th Gen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 Processor",
+      "16GB RAM",
+      "512GB SSD",
+      "14-inch FHD display",
+      "11th Gen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 Processor"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch FHD display"
+      },
+      {
+        "label": "Generation",
+        "value": "11th Gen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G8 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g8-11th-gen#product",
+      "name": "HP EliteBook 840 G8 | Intel Core i5 Processor | 16GB | 512GB SSD",
+      "description": "HP EliteBook 840 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G8-I5-11TH-GEN-16GB-512GB-SSD-14-INCH-FHD-EX-UK-753C65B5",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 Processor"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g8-11th-gen",
+        "priceCurrency": "KES",
+        "price": "48380",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKCENTRE-M92P-I5-3RD-GEN-8GB-500GB-HDD-INTEL-HD-20-IN-933665D0",
+    "slug": "lenovo-thinkcentre-m92p-3rd-gen",
+    "name": "Lenovo ThinkCentre M92p | Intel Core i5 (3rd Generation) | 8GB | 500GB HDD",
+    "brand": "Lenovo",
+    "category": "desktops",
+    "price": {
+      "amount": 22420,
+      "currency": "KES",
+      "compareAtAmount": 25110
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "desktop/lenovo-thinkcentre-m92p-3rd-gen/01.webp",
+        "alt": "Lenovo ThinkCentre M92p | Intel Core i5 (3rd Generation) | 8GB | 500GB HDD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkCentre M92p is listed at KES 22,420 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (3rd Generation), 8GB RAM, 500GB HDD, 20-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkCentre M92p is listed at KES 22,420 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (3rd Generation), 8GB RAM, 500GB HDD, 20-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (3rd Generation)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 500GB HDD</li>\n  <li>Display: 20-inch</li>\n  <li>Graphics: Intel HD</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Offices that need a fixed workstation for admin and desk work</li>\n  <li>Users who spend long hours on documents, systems, and reports</li>\n  <li>Buyers who prefer stability over portability</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog\">Buying Guides Index</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (3rd Generation)",
+      "8GB RAM",
+      "500GB HDD",
+      "20-inch display",
+      "Intel HD",
+      "Lenovo ThinkCentre M92p Mini PC Desktop Set"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (3rd Generation)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "500GB HDD"
+      },
+      {
+        "label": "Display",
+        "value": "20-inch display"
+      },
+      {
+        "label": "Processor",
+        "value": "Intel HD"
+      },
+      {
+        "label": "Feature",
+        "value": "Lenovo ThinkCentre M92p Mini PC Desktop Set"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkCentre M92p Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkCentre M92p for office setup and dependable workstation use in Kenya. 8GB RAM and 500GB HDD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkcentre-m92p-3rd-gen#product",
+      "name": "Lenovo ThinkCentre M92p | Intel Core i5 (3rd Generation) | 8GB | 500GB HDD",
+      "description": "Lenovo ThinkCentre M92p for office setup and dependable workstation use in Kenya. 8GB RAM and 500GB HDD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKCENTRE-M92P-I5-3RD-GEN-8GB-500GB-HDD-INTEL-HD-20-IN-933665D0",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkCentre M92p",
+      "category": "desktop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (3rd Generation)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "3rd Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "500GB HDD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "20-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Graphics",
+          "value": "Intel HD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkcentre-m92p-3rd-gen",
+        "priceCurrency": "KES",
+        "price": "22420",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    },
+    "featured": true
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G6-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCREEN-EX-92432B74",
+    "slug": "hp-elitebook-840-g6-8th-gen-2",
+    "name": "HP EliteBook 840 G6 | Intel Core i5 8th Gen | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 36580,
+      "currency": "KES",
+      "compareAtAmount": 40970
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g6-8th-gen-2/01.webp",
+        "alt": "HP EliteBook 840 G6 | Intel Core i5 8th Gen | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G6 is listed at KES 36,580 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Gen, 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G6 is listed at KES 36,580 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Gen, 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 8th Gen</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Connectivity: Wi-Fi, Bluetooth, HDMI, USB-C, USB 3.0</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 8th Gen",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "Wi-Fi, Bluetooth, HDMI, USB-C, USB 3.0",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 8th Gen"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, Bluetooth, HDMI, USB-C, USB 3.0"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G6 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-8th-gen-2#product",
+      "name": "HP EliteBook 840 G6 | Intel Core i5 8th Gen | 8GB | 256GB SSD",
+      "description": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G6-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCREEN-EX-92432B74",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G6",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, Bluetooth, HDMI, USB-C, USB 3.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-8th-gen-2",
+        "priceCurrency": "KES",
+        "price": "36580",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-820-G4-I5-7TH-GEN-8GB-256GB-SSD-12-5-INCH-TOUCHSCREEN-89931951",
+    "slug": "hp-elitebook-820-g4-7th-gen",
+    "name": "HP EliteBook 820 G4 | Intel Core i5 7th Gen | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 31860,
+      "currency": "KES",
+      "compareAtAmount": 35683
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-820-g4-7th-gen/01.webp",
+        "alt": "HP EliteBook 820 G4 | Intel Core i5 7th Gen | 8GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-820-g4-7th-gen/02.webp",
+        "alt": "HP EliteBook 820 G4 | Intel Core i5 7th Gen | 8GB | 256GB SSD - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 820 G4 is listed at KES 31,860 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 7th Gen, 8GB RAM, 256GB SSD, 12.5-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 820 G4 is listed at KES 31,860 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 7th Gen, 8GB RAM, 256GB SSD, 12.5-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 7th Gen</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 12.5-inch</li>\n  <li>Connectivity: Wi-Fi, Bluetooth, USB-C, USB 3.0, VGA, DisplayPort</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 7th Gen",
+      "8GB RAM",
+      "256GB SSD",
+      "12.5-inch display",
+      "Wi-Fi, Bluetooth, USB-C, USB 3.0, VGA, DisplayPort",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 7th Gen"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "12.5-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, Bluetooth, USB-C, USB 3.0, VGA, DisplayPort"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 820 G4 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 820 G4 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-820-g4-7th-gen#product",
+      "name": "HP EliteBook 820 G4 | Intel Core i5 7th Gen | 8GB | 256GB SSD",
+      "description": "HP EliteBook 820 G4 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-820-G4-I5-7TH-GEN-8GB-256GB-SSD-12-5-INCH-TOUCHSCREEN-89931951",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 820 G4",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "12.5-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, Bluetooth, USB-C, USB 3.0, VGA, DisplayPort"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-820-g4-7th-gen",
+        "priceCurrency": "KES",
+        "price": "31860",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-T490-I7-8TH-GEN-32GB-256GB-SSD-14-INCH-FHD-NON-1E34CC8F",
+    "slug": "lenovo-thinkpad-t490-8th-gen-2",
+    "name": "Lenovo ThinkPad T490 | Core i7 8th Gen | 32GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 42480,
+      "currency": "KES",
+      "compareAtAmount": 47578
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-t490-8th-gen-2/01.webp",
+        "alt": "Lenovo ThinkPad T490 | Core i7 8th Gen | 32GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad T490 is listed at KES 42,480 in Kenya, in open box condition with 6 months warranty. This configuration includes Intel Core i7 8th Gen, 32GB RAM, 256GB SSD, 14-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad T490 is listed at KES 42,480 in Kenya, in open box condition with 6 months warranty. This configuration includes Intel Core i7 8th Gen, 32GB RAM, 256GB SSD, 14-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 8th Gen</li>\n  <li>RAM: 32GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch FHD</li>\n  <li>Operating System: Windows 11</li>\n  <li>Connectivity: HDMI, Thunderbolt, USB-C</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 8th Gen",
+      "32GB RAM",
+      "256GB SSD",
+      "14-inch FHD display",
+      "Windows 11",
+      "HDMI, Thunderbolt, USB-C"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 8th Gen"
+      },
+      {
+        "label": "Memory",
+        "value": "32GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch FHD display"
+      },
+      {
+        "label": "Feature",
+        "value": "Windows 11"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, Thunderbolt, USB-C"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Open Box"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Open box",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad T490 Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad T490 for office work, school, and multitasking in Kenya. 32GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-t490-8th-gen-2#product",
+      "name": "Lenovo ThinkPad T490 | Core i7 8th Gen | 32GB | 256GB SSD",
+      "description": "Lenovo ThinkPad T490 for office work, school, and multitasking in Kenya. 32GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-T490-I7-8TH-GEN-32GB-256GB-SSD-14-INCH-FHD-NON-1E34CC8F",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad T490",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "32GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Operating System",
+          "value": "Windows 11"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, Thunderbolt, USB-C"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Open Box"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-t490-8th-gen-2",
+        "priceCurrency": "KES",
+        "price": "42480",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-PROBOOK-440-G4-I5-7TH-GEN-8GB-256GB-SSD-INTEL-HD-GRAPHICS-14-INC-52A01352",
+    "slug": "hp-probook-440-g4-7th-gen",
+    "name": "HP ProBook 440 G4 | Intel Core i5 7th Generation | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 29500,
+      "currency": "KES",
+      "compareAtAmount": 33040
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-440-g4-7th-gen/01.webp",
+        "alt": "HP ProBook 440 G4 | Intel Core i5 7th Generation | 8GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-440-g4-7th-gen/02.webp",
+        "alt": "HP ProBook 440 G4 | Intel Core i5 7th Generation | 8GB | 256GB SSD - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "HP ProBook 440 G4 is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 7th Generation, 8GB RAM, 256GB SSD, 14-inch HD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP ProBook 440 G4 is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 7th Generation, 8GB RAM, 256GB SSD, 14-inch HD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 7th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch HD</li>\n  <li>Connectivity: HDMI</li>\n  <li>Graphics: Intel HD Graphics</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 7th Generation",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch HD display",
+      "HDMI",
+      "Non-Touch"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 7th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch HD display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Processor",
+        "value": "Intel HD Graphics"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP ProBook 440 G4 Price in Kenya | Mobdeals",
+    "seoDescription": "HP ProBook 440 G4 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-probook-440-g4-7th-gen#product",
+      "name": "HP ProBook 440 G4 | Intel Core i5 7th Generation | 8GB | 256GB SSD",
+      "description": "HP ProBook 440 G4 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-PROBOOK-440-G4-I5-7TH-GEN-8GB-256GB-SSD-INTEL-HD-GRAPHICS-14-INC-52A01352",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP ProBook 440 G4",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 7th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch HD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Graphics",
+          "value": "Intel HD Graphics"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-probook-440-g4-7th-gen",
+        "priceCurrency": "KES",
+        "price": "29500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G7-I5-10TH-GEN-8GB-256GB-SSD-14-INCH-FHD-TOUCHSCRE-8A64B17C",
+    "slug": "hp-elitebook-840-g7-10th-gen",
+    "name": "HP EliteBook 840 G7 | Core i5 10th Gen | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 42480,
+      "currency": "KES",
+      "compareAtAmount": 47578
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g7-10th-gen/01.webp",
+        "alt": "HP EliteBook 840 G7 | Core i5 10th Gen | 8GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-840-g7-laptop/01.webp",
+        "alt": "HP EliteBook 840 G7 | Core i5 10th Gen | 8GB | 256GB SSD - image 2"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g7-10th-gen/03.webp",
+        "alt": "HP EliteBook 840 G7 | Core i5 10th Gen | 8GB | 256GB SSD - image 3"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G7 is listed at KES 42,480 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 10th Gen, 8GB RAM, 256GB SSD, 14-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G7 is listed at KES 42,480 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 10th Gen, 8GB RAM, 256GB SSD, 14-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 10th Gen</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch FHD</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 10th Gen",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch FHD display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 10th Gen"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch FHD display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G7 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G7 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g7-10th-gen#product",
+      "name": "HP EliteBook 840 G7 | Core i5 10th Gen | 8GB | 256GB SSD",
+      "description": "HP EliteBook 840 G7 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G7-I5-10TH-GEN-8GB-256GB-SSD-14-INCH-FHD-TOUCHSCRE-8A64B17C",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G7",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 10th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "10th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g7-10th-gen",
+        "priceCurrency": "KES",
+        "price": "42480",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-1040-G4-I5-7TH-GEN-8GB-256GB-SSD-TOUCHSCREEN-EX-UK-13F93E8A",
+    "slug": "hp-elitebook-1040-g4-7th-gen",
+    "name": "HP EliteBook 1040 G4 | Intel Core i5 - 7th Generation | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 35400,
+      "currency": "KES",
+      "compareAtAmount": 39648
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-1040-g4-7th-gen/01.webp",
+        "alt": "HP EliteBook 1040 G4 | Intel Core i5 - 7th Generation | 8GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-1040-g4-7th-gen/02.webp",
+        "alt": "HP EliteBook 1040 G4 | Intel Core i5 - 7th Generation | 8GB | 256GB SSD - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 1040 G4 is listed at KES 35,400 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 - 7th Generation, 8GB RAM, 256GB SSD, HDMI. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 1040 G4 is listed at KES 35,400 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 \u2013 7th Generation, 8GB RAM, 256GB SSD, HDMI.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 \u2013 7th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Connectivity: HDMI</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 - 7th Generation",
+      "8GB RAM",
+      "256GB SSD",
+      "HDMI",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 - 7th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 1040 G4 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 1040 G4 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-1040-g4-7th-gen#product",
+      "name": "HP EliteBook 1040 G4 | Intel Core i5 \u2013 7th Generation | 8GB | 256GB SSD",
+      "description": "HP EliteBook 1040 G4 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-1040-G4-I5-7TH-GEN-8GB-256GB-SSD-TOUCHSCREEN-EX-UK-13F93E8A",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 1040 G4",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 \u2013 7th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-1040-g4-7th-gen",
+        "priceCurrency": "KES",
+        "price": "35400",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-X1-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCREEN-541974C5",
+    "slug": "lenovo-thinkpad-x1-8th-gen",
+    "name": "Lenovo ThinkPad X1 | Intel Core i5 (8th Generation) | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 33040,
+      "currency": "KES",
+      "compareAtAmount": 37005
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x1-8th-gen/01.webp",
+        "alt": "Lenovo ThinkPad X1 | Intel Core i5 (8th Generation) | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad X1 is listed at KES 33,040 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (8th Generation), 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad X1 is listed at KES 33,040 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (8th Generation), 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (8th Generation)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (8th Generation)",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (8th Generation)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad X1 Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad X1 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x1-8th-gen#product",
+      "name": "Lenovo ThinkPad X1 | Intel Core i5 (8th Generation) | 8GB | 256GB SSD",
+      "description": "Lenovo ThinkPad X1 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-X1-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCREEN-541974C5",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad X1",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (8th Generation)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x1-8th-gen",
+        "priceCurrency": "KES",
+        "price": "33040",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-850-G3-I7-6TH-GEN-8GB-256GB-SSD-15-6-INCH-NON-TOUCH-EX-6106DF0F",
+    "slug": "hp-elitebook-850-g3-6th-gen",
+    "name": "HP EliteBook 850 G3 | Intel Core i7 - 6th Generation | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 28320,
+      "currency": "KES",
+      "compareAtAmount": 31718
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-850-g3-6th-gen/01.webp",
+        "alt": "HP EliteBook 850 G3 | Intel Core i7 - 6th Generation | 8GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-850-g3-laptop/01.webp",
+        "alt": "HP EliteBook 850 G3 | Intel Core i7 - 6th Generation | 8GB | 256GB SSD - image 2"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-850-g3-6th-gen/03.webp",
+        "alt": "HP EliteBook 850 G3 | Intel Core i7 - 6th Generation | 8GB | 256GB SSD - image 3"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 850 G3 is listed at KES 28,320 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 - 6th Generation, 8GB RAM, 256GB SSD, 15.6-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 850 G3 is listed at KES 28,320 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 \u2013 6th Generation, 8GB RAM, 256GB SSD, 15.6-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 \u2013 6th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 15.6-inch</li>\n  <li>Feature: Non-Touch</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 - 6th Generation",
+      "8GB RAM",
+      "256GB SSD",
+      "15.6-inch display",
+      "Non-Touch",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 - 6th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "15.6-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 850 G3 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 850 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-850-g3-6th-gen#product",
+      "name": "HP EliteBook 850 G3 | Intel Core i7 \u2013 6th Generation | 8GB | 256GB SSD",
+      "description": "HP EliteBook 850 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-850-G3-I7-6TH-GEN-8GB-256GB-SSD-15-6-INCH-NON-TOUCH-EX-6106DF0F",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 850 G3",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 \u2013 6th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "6th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "15.6-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-850-g3-6th-gen",
+        "priceCurrency": "KES",
+        "price": "28320",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-3350-I5-5TH-GEN-8GB-500GB-EX-UK-039CAF33",
+    "slug": "dell-latitude-3350-5th-gen",
+    "name": "Dell Latitude 3350 | Intel Core i5 - 5th Generation | 8GB | 500GB",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 20650,
+      "currency": "KES",
+      "compareAtAmount": 23128
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-3350-5th-gen/01.webp",
+        "alt": "Dell Latitude 3350 | Intel Core i5 - 5th Generation | 8GB | 500GB"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/dell-3350-laptop/01.webp",
+        "alt": "Dell Latitude 3350 | Intel Core i5 - 5th Generation | 8GB | 500GB - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude 3350 is listed at KES 20,650 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 - 5th Generation, 8GB RAM, 500GB Storage, HDMI. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude 3350 is listed at KES 20,650 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 \u2013 5th Generation, 8GB RAM, 500GB Storage, HDMI.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 \u2013 5th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 500GB Storage</li>\n  <li>Connectivity: HDMI</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 - 5th Generation",
+      "8GB RAM",
+      "500GB Storage",
+      "HDMI",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 - 5th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "500GB Storage"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude 3350 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude 3350 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB Storage. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-3350-5th-gen#product",
+      "name": "Dell Latitude 3350 | Intel Core i5 \u2013 5th Generation | 8GB | 500GB",
+      "description": "Dell Latitude 3350 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB Storage. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-3350-I5-5TH-GEN-8GB-500GB-EX-UK-039CAF33",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude 3350",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 \u2013 5th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "5th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "500GB Storage"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-3350-5th-gen",
+        "priceCurrency": "KES",
+        "price": "20650",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-YOGA-I5-8GB-256GB-SSD-12-5-INCH-HD-TOUCHSCREEN-F2901907",
+    "slug": "lenovo-thinkpad-yoga-256gb-ssd",
+    "name": "Lenovo ThinkPad Yoga | Intel Core i5 Processor | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 28320,
+      "currency": "KES",
+      "compareAtAmount": 31718
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-yoga-256gb-ssd/01.webp",
+        "alt": "Lenovo ThinkPad Yoga | Intel Core i5 Processor | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad Yoga is listed at KES 28,320 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 Processor, 8GB RAM, 256GB SSD, 12.5-inch HD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad Yoga is listed at KES 28,320 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 Processor, 8GB RAM, 256GB SSD, 12.5-inch HD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 Processor</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 12.5-inch HD</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 Processor",
+      "8GB RAM",
+      "256GB SSD",
+      "12.5-inch HD display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 Processor"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "12.5-inch HD display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad Yoga Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad Yoga for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-yoga-256gb-ssd#product",
+      "name": "Lenovo ThinkPad Yoga | Intel Core i5 Processor | 8GB | 256GB SSD",
+      "description": "Lenovo ThinkPad Yoga for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-YOGA-I5-8GB-256GB-SSD-12-5-INCH-HD-TOUCHSCREEN-F2901907",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad Yoga",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 Processor"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "12.5-inch HD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-yoga-256gb-ssd",
+        "priceCurrency": "KES",
+        "price": "28320",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-VOSTRO-15-3510-I5-11TH-GEN-8GB-256GB-SSD-2GB-NVIDIA-DEDICATE-6E1E2848",
+    "slug": "dell-vostro-15-3510-11th-gen-4",
+    "name": "Dell Vostro 15 3510 | Intel Core i5 (11th Gen) | 8GB | 256GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 31860,
+      "currency": "KES",
+      "compareAtAmount": 35683
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-vostro-15-3510-11th-gen-4/01.webp",
+        "alt": "Dell Vostro 15 3510 | Intel Core i5 (11th Gen) | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Vostro 15 3510 is listed at KES 31,860 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (11th Gen), 8GB RAM, 256GB SSD, 15.6-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Vostro 15 3510 is listed at KES 31,860 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (11th Gen), 8GB RAM, 256GB SSD, 15.6-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (11th Gen)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 15.6-inch</li>\n  <li>Graphics: 2GB NVIDIA Dedicated GPU</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (11th Gen)",
+      "8GB RAM",
+      "256GB SSD",
+      "15.6-inch display",
+      "2GB NVIDIA Dedicated GPU",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (11th Gen)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "15.6-inch display"
+      },
+      {
+        "label": "Graphics",
+        "value": "2GB NVIDIA Dedicated GPU"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Vostro 15 3510 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Vostro 15 3510 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-vostro-15-3510-11th-gen-4#product",
+      "name": "Dell Vostro 15 3510 | Intel Core i5 (11th Gen) | 8GB | 256GB SSD",
+      "description": "Dell Vostro 15 3510 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-VOSTRO-15-3510-I5-11TH-GEN-8GB-256GB-SSD-2GB-NVIDIA-DEDICATE-6E1E2848",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Vostro 15 3510",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (11th Gen)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "15.6-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Graphics",
+          "value": "2GB NVIDIA Dedicated GPU"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-vostro-15-3510-11th-gen-4",
+        "priceCurrency": "KES",
+        "price": "31860",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-X13-YOGA-I5-10TH-GEN-16GB-256GB-SSD-13-3-INCH-F-7CF416C7",
+    "slug": "lenovo-thinkpad-x13-yoga-10th-gen",
+    "name": "Lenovo ThinkPad X13 YOGA | Intel Core i5 - 10th Generation | 16GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 38940,
+      "currency": "KES",
+      "compareAtAmount": 43613
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x13-yoga-10th-gen/01.webp",
+        "alt": "Lenovo ThinkPad X13 YOGA | Intel Core i5 - 10th Generation | 16GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad X13 YOGA is listed at KES 38,940 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 - 10th Generation, 16GB RAM, 256GB SSD, 13.3-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad X13 YOGA is listed at KES 38,940 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 \u2014 10th Generation, 16GB RAM, 256GB SSD, 13.3-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 \u2014 10th Generation</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 13.3-inch FHD</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 - 10th Generation",
+      "16GB RAM",
+      "256GB SSD",
+      "13.3-inch FHD display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 - 10th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch FHD display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad X13 YOGA Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad X13 YOGA for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x13-yoga-10th-gen#product",
+      "name": "Lenovo ThinkPad X13 YOGA | Intel Core i5 \u2014 10th Generation | 16GB | 256GB SSD",
+      "description": "Lenovo ThinkPad X13 YOGA for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-X13-YOGA-I5-10TH-GEN-16GB-256GB-SSD-13-3-INCH-F-7CF416C7",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad X13 YOGA",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 \u2014 10th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "10th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x13-yoga-10th-gen",
+        "priceCurrency": "KES",
+        "price": "38940",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-3400-I5-8GB-256GB-SSD-14-INCH-EX-UK-19A7F50E",
+    "slug": "dell-latitude-3400-256gb-ssd",
+    "name": "Dell Latitude 3400 | Corei5 8th | 8GB | 256GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 29500,
+      "currency": "KES",
+      "compareAtAmount": 33040
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-3400-256gb-ssd/01.webp",
+        "alt": "Dell Latitude 3400 | Corei5 8th | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude 3400 is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 8th, 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude 3400 is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 8th, 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Corei5 8th</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Corei5 8th",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Feature",
+        "value": "Corei5 8th"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude 3400 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude 3400 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-3400-256gb-ssd#product",
+      "name": "Dell Latitude 3400 | Corei5 8th | 8GB | 256GB SSD",
+      "description": "Dell Latitude 3400 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-3400-I5-8GB-256GB-SSD-14-INCH-EX-UK-19A7F50E",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude 3400",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Corei5 8th"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-3400-256gb-ssd",
+        "priceCurrency": "KES",
+        "price": "29500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-X360-1030-G2-I5-8GB-256GB-SSD-TOUCHSCREEN-EX-UK-1B80ED7F",
+    "slug": "hp-elitebook-x360-1030-g2-256gb-ssd",
+    "name": "HP EliteBook x360 1030 G2 | Core i5 | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 40120,
+      "currency": "KES",
+      "compareAtAmount": 4300864
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-x360-1030-g2-256gb-ssd/01.webp",
+        "alt": "HP EliteBook x360 1030 G2 | Core i5 | 8GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-x360-1030-g2-256gb-ssd/02.webp",
+        "alt": "HP EliteBook x360 1030 G2 | Core i5 | 8GB | 256GB SSD - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook x360 1030 G2 is listed at KES 40,120 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, Touchscreen. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook x360 1030 G2 is listed at KES 40,120 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, Touchscreen.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "Touchscreen",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook x360 1030 G2 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook x360 1030 G2 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-x360-1030-g2-256gb-ssd#product",
+      "name": "HP EliteBook x360 1030 G2 | Core i5 | 8GB | 256GB SSD",
+      "description": "HP EliteBook x360 1030 G2 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-X360-1030-G2-I5-8GB-256GB-SSD-TOUCHSCREEN-EX-UK-1B80ED7F",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook x360 1030 G2",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-x360-1030-g2-256gb-ssd",
+        "priceCurrency": "KES",
+        "price": "40120",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-E5450-I5-5TH-GEN-8GB-500GB-HDD-EX-UK-DCFBB0E6",
+    "slug": "dell-latitude-e5450-5th-gen",
+    "name": "Dell Latitude E5450 | Intel core i5 5th generation | 8GB | 500GB HDD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 20650,
+      "currency": "KES",
+      "compareAtAmount": 22137
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-e5450-5th-gen/01.webp",
+        "alt": "Dell Latitude E5450 | Intel core i5 5th generation | 8GB | 500GB HDD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude E5450 is listed at KES 20,650 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel core i5 5th generation, 8GB RAM, 500GB HDD. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude E5450 is listed at KES 20,650 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel core i5 5th generation, 8GB RAM, 500GB HDD.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel core i5 5th generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 500GB HDD</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel core i5 5th generation",
+      "8GB RAM",
+      "500GB HDD",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel core i5 5th generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "500GB HDD"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude E5450 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude E5450 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB HDD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-e5450-5th-gen#product",
+      "name": "Dell Latitude E5450 | Intel core i5 5th generation | 8GB | 500GB HDD",
+      "description": "Dell Latitude E5450 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB HDD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-E5450-I5-5TH-GEN-8GB-500GB-HDD-EX-UK-DCFBB0E6",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude E5450",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel core i5 5th generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "5th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "500GB HDD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-e5450-5th-gen",
+        "priceCurrency": "KES",
+        "price": "20650",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-PROBOOK-640-G2-I5-6TH-GEN-8GB-256GB-SSD-14-INCH-EX-UK-692B9061",
+    "slug": "hp-probook-640-g2-6th-gen",
+    "name": "HP ProBook 640 G2 | Intel Core i5 6th Generation | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 25370,
+      "currency": "KES",
+      "compareAtAmount": 27197
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-640-g2-6th-gen/01.webp",
+        "alt": "HP ProBook 640 G2 | Intel Core i5 6th Generation | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP ProBook 640 G2 is listed at KES 25,370 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 6th Generation, 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP ProBook 640 G2 is listed at KES 25,370 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 6th Generation, 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 6th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 6th Generation",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 6th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP ProBook 640 G2 Price in Kenya | Mobdeals",
+    "seoDescription": "HP ProBook 640 G2 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-probook-640-g2-6th-gen#product",
+      "name": "HP ProBook 640 G2 | Intel Core i5 6th Generation | 8GB | 256GB SSD",
+      "description": "HP ProBook 640 G2 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-PROBOOK-640-G2-I5-6TH-GEN-8GB-256GB-SSD-14-INCH-EX-UK-692B9061",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP ProBook 640 G2",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 6th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "6th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-probook-640-g2-6th-gen",
+        "priceCurrency": "KES",
+        "price": "25370",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-X1-YOGA-I7-16GB-256GB-SSD-14-INCH-TOUCHSCREEN-EX-UK-CAAE0F2B",
+    "slug": "lenovo-x1-yoga-256gb-ssd",
+    "name": "Lenovo X1 YOGA | Corei7 7th | 16GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 40120,
+      "currency": "KES",
+      "compareAtAmount": 43009
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-x1-yoga-256gb-ssd/01.webp",
+        "alt": "Lenovo X1 YOGA | Corei7 7th | 16GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo X1 YOGA is listed at KES 40,120 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei7 7th, 16GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo X1 YOGA is listed at KES 40,120 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei7 7th, 16GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Corei7 7th</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Corei7 7th",
+      "16GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Feature",
+        "value": "Corei7 7th"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo X1 YOGA Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo X1 YOGA for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-x1-yoga-256gb-ssd#product",
+      "name": "Lenovo X1 YOGA | Corei7 7th | 16GB | 256GB SSD",
+      "description": "Lenovo X1 YOGA for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-X1-YOGA-I7-16GB-256GB-SSD-14-INCH-TOUCHSCREEN-EX-UK-CAAE0F2B",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo X1 YOGA",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Corei7 7th"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-x1-yoga-256gb-ssd",
+        "priceCurrency": "KES",
+        "price": "40120",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G6-I5-8GB-256GB-SSD-14-INCH-FHD-EX-UK-A87F97C9",
+    "slug": "hp-elitebook-840-g6-256gb-ssd",
+    "name": "HP EliteBook 840 G6 | Corei5 8th | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 36580,
+      "currency": "KES",
+      "compareAtAmount": 39214
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g6-256gb-ssd/01.webp",
+        "alt": "HP EliteBook 840 G6 | Corei5 8th | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G6 is listed at KES 36,580 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 8th, 8GB RAM, 256GB SSD, 14-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G6 is listed at KES 36,580 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 8th, 8GB RAM, 256GB SSD, 14-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Corei5 8th</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch FHD</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Corei5 8th",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch FHD display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Feature",
+        "value": "Corei5 8th"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch FHD display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G6 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-256gb-ssd#product",
+      "name": "HP EliteBook 840 G6 | Corei5 8th | 8GB | 256GB SSD",
+      "description": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G6-I5-8GB-256GB-SSD-14-INCH-FHD-EX-UK-A87F97C9",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G6",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Corei5 8th"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-256gb-ssd",
+        "priceCurrency": "KES",
+        "price": "36580",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-X360-1040-G8-I7-11TH-GEN-32GB-512GB-SSD-14-INCH-FHD-TO-885AE1E8",
+    "slug": "hp-elitebook-x360-1040-g8-11th-gen",
+    "name": "HP EliteBook x360 1040 G8 | Intel Core i7 - 11th Generation | 32GB | 512GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 79060,
+      "currency": "KES",
+      "compareAtAmount": 84752
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-x360-1040-g8-11th-gen/01.webp",
+        "alt": "HP EliteBook x360 1040 G8 | Intel Core i7 - 11th Generation | 32GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook x360 1040 G8 is listed at KES 79,060 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 - 11th Generation, 32GB RAM, 512GB SSD, 14-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook x360 1040 G8 is listed at KES 79,060 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 \u2013 11th Generation, 32GB RAM, 512GB SSD, 14-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 \u2013 11th Generation</li>\n  <li>RAM: 32GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 14-inch FHD</li>\n  <li>Connectivity: HDMI, Thunderbolt</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 - 11th Generation",
+      "32GB RAM",
+      "512GB SSD",
+      "14-inch FHD display",
+      "HDMI, Thunderbolt",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 - 11th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "32GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch FHD display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, Thunderbolt"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook x360 1040 G8 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook x360 1040 G8 for office work, school, and multitasking in Kenya. 32GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-x360-1040-g8-11th-gen#product",
+      "name": "HP EliteBook x360 1040 G8 | Intel Core i7 \u2013 11th Generation | 32GB | 512GB SSD",
+      "description": "HP EliteBook x360 1040 G8 for office work, school, and multitasking in Kenya. 32GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-X360-1040-G8-I7-11TH-GEN-32GB-512GB-SSD-14-INCH-FHD-TO-885AE1E8",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook x360 1040 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 \u2013 11th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "32GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, Thunderbolt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-x360-1040-g8-11th-gen",
+        "priceCurrency": "KES",
+        "price": "79060",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-YOGA-I5-8TH-GEN-256GB-SSD-TOUCHSCREEN-EX-UK-D0E61349",
+    "slug": "lenovo-thinkpad-yoga-8th-gen",
+    "name": "Lenovo ThinkPad Yoga | Intel Core i5 - 8th Generation | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 31860,
+      "currency": "KES",
+      "compareAtAmount": 34154
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-yoga-8th-gen/01.webp",
+        "alt": "Lenovo ThinkPad Yoga | Intel Core i5 - 8th Generation | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad Yoga is listed at KES 31,860 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 - 8th Generation, 256GB SSD, Touchscreen. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad Yoga is listed at KES 31,860 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 \u2013 8th Generation, 256GB SSD, Touchscreen.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 \u2013 8th Generation</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 - 8th Generation",
+      "256GB SSD",
+      "Touchscreen",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 - 8th Generation"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad Yoga Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad Yoga for office work, school, and multitasking in Kenya. 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-yoga-8th-gen#product",
+      "name": "Lenovo ThinkPad Yoga | Intel Core i5 \u2013 8th Generation | 256GB SSD",
+      "description": "Lenovo ThinkPad Yoga for office work, school, and multitasking in Kenya. 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-YOGA-I5-8TH-GEN-256GB-SSD-TOUCHSCREEN-EX-UK-D0E61349",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad Yoga",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 \u2013 8th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-yoga-8th-gen",
+        "priceCurrency": "KES",
+        "price": "31860",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-T470S-I5-6TH-GEN-8GB-256GB-SSD-14-INCH-NON-TOUC-C84968F0",
+    "slug": "lenovo-thinkpad-t470s-6th-gen",
+    "name": "Lenovo ThinkPad T470s | Intel Core i5 (6th Generation) | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 23600,
+      "currency": "KES",
+      "compareAtAmount": 25299
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-t470s-6th-gen/01.webp",
+        "alt": "Lenovo ThinkPad T470s | Intel Core i5 (6th Generation) | 8GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-t470-laptop/01.webp",
+        "alt": "Lenovo ThinkPad T470s | Intel Core i5 (6th Generation) | 8GB | 256GB SSD - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad T470s is listed at KES 23,600 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (6th Generation), 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad T470s is listed at KES 23,600 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (6th Generation), 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (6th Generation)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Connectivity: Wi-Fi, Bluetooth, HDMI</li>\n  <li>Feature: Non-Touch</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (6th Generation)",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "Wi-Fi, Bluetooth, HDMI",
+      "Non-Touch"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (6th Generation)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, Bluetooth, HDMI"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad T470s Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad T470s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-t470s-6th-gen#product",
+      "name": "Lenovo ThinkPad T470s | Intel Core i5 (6th Generation) | 8GB | 256GB SSD",
+      "description": "Lenovo ThinkPad T470s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-T470S-I5-6TH-GEN-8GB-256GB-SSD-14-INCH-NON-TOUC-C84968F0",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad T470s",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (6th Generation)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "6th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, Bluetooth, HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-t470s-6th-gen",
+        "priceCurrency": "KES",
+        "price": "23600",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G3-I5-6TH-GEN-8GB-256GB-SSD-INTEL-HD-GRAPHICS-14-I-15B2898B",
+    "slug": "hp-elitebook-840-g3-6th-gen-2",
+    "name": "HP EliteBook 840 G3 | Intel Core i5 6th Generation | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 27140,
+      "currency": "KES",
+      "compareAtAmount": 29094
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g3-6th-gen-2/01.webp",
+        "alt": "HP EliteBook 840 G3 | Intel Core i5 6th Generation | 8GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-840-g3-laptop/01.webp",
+        "alt": "HP EliteBook 840 G3 | Intel Core i5 6th Generation | 8GB | 256GB SSD - image 2"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/additional/hp-840-g3-6th-gen/02.webp",
+        "alt": "HP EliteBook 840 G3 | Intel Core i5 6th Generation | 8GB | 256GB SSD - image 3"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g3-6th-gen-2/04.webp",
+        "alt": "HP EliteBook 840 G3 | Intel Core i5 6th Generation | 8GB | 256GB SSD - image 4"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g3-6th-gen-2/05.webp",
+        "alt": "HP EliteBook 840 G3 | Intel Core i5 6th Generation | 8GB | 256GB SSD - image 5"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G3 is listed at KES 27,140 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 6th Generation, 8GB RAM, 256GB SSD, 14-inch HD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G3 is listed at KES 27,140 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 6th Generation, 8GB RAM, 256GB SSD, 14-inch HD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 6th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch HD</li>\n  <li>Connectivity: Wi-Fi</li>\n  <li>Graphics: Intel HD Graphics</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 6th Generation",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch HD display",
+      "Wi-Fi",
+      "Intel HD Graphics"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 6th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch HD display"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi"
+      },
+      {
+        "label": "Processor",
+        "value": "Intel HD Graphics"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G3 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g3-6th-gen-2#product",
+      "name": "HP EliteBook 840 G3 | Intel Core i5 6th Generation | 8GB | 256GB SSD",
+      "description": "HP EliteBook 840 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G3-I5-6TH-GEN-8GB-256GB-SSD-INTEL-HD-GRAPHICS-14-I-15B2898B",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G3",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 6th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "6th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch HD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Graphics",
+          "value": "Intel HD Graphics"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g3-6th-gen-2",
+        "priceCurrency": "KES",
+        "price": "27140",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-1040-G8-I7-11TH-GEN-32GB-512GB-SSD-14-INCH-TOUCHSCREEN-A2504FA5",
+    "slug": "hp-elitebook-1040-g8-11th-gen",
+    "name": "HP EliteBook 1040 G8 | Core i7 | 32GB | 512GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 74930,
+      "currency": "KES",
+      "compareAtAmount": 80325
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-1040-g8-11th-gen/01.webp",
+        "alt": "HP EliteBook 1040 G8 | Core i7 | 32GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 1040 G8 is listed at KES 74,930 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 32GB RAM, 512GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 1040 G8 is listed at KES 74,930 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 32GB RAM, 512GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 32GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Generation: 11th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7",
+      "32GB RAM",
+      "512GB SSD",
+      "14-inch display",
+      "11th Gen",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7"
+      },
+      {
+        "label": "Memory",
+        "value": "32GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "11th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 1040 G8 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 1040 G8 for office work, school, and multitasking in Kenya. 32GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-1040-g8-11th-gen#product",
+      "name": "HP EliteBook 1040 G8 | Core i7 | 32GB | 512GB SSD",
+      "description": "HP EliteBook 1040 G8 for office work, school, and multitasking in Kenya. 32GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-1040-G8-I7-11TH-GEN-32GB-512GB-SSD-14-INCH-TOUCHSCREEN-A2504FA5",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 1040 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "32GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-1040-g8-11th-gen",
+        "priceCurrency": "KES",
+        "price": "74930",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-3490-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-EX-UK-9C072084",
+    "slug": "dell-latitude-3490-8th-gen",
+    "name": "Dell Latitude 3490 | Corei5 8th Gen | 8GB | 256GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 28320,
+      "currency": "KES",
+      "compareAtAmount": 30359
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-3490-8th-gen/01.webp",
+        "alt": "Dell Latitude 3490 | Corei5 8th Gen | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude 3490 is listed at KES 28,320 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 8th Gen, 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude 3490 is listed at KES 28,320 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 8th Gen, 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Corei5 8th Gen</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Corei5 8th Gen",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "Corei5 8th Gen"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude 3490 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude 3490 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-3490-8th-gen#product",
+      "name": "Dell Latitude 3490 | Corei5 8th Gen | 8GB | 256GB SSD",
+      "description": "Dell Latitude 3490 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-3490-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-EX-UK-9C072084",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude 3490",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Corei5 8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-3490-8th-gen",
+        "priceCurrency": "KES",
+        "price": "28320",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-PROBOOK-640-G8-I5-11TH-GEN-16GB-512GB-SSD-14-INCH-NON-TOUCH-EX-U-9C28D8A6",
+    "slug": "hp-probook-640-g8-11th-gen",
+    "name": "HP ProBook 640 G8 | Intel Core i5 | 16GB | 512GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 43660,
+      "currency": "KES",
+      "compareAtAmount": 46804
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-640-g8-11th-gen/01.webp",
+        "alt": "HP ProBook 640 G8 | Intel Core i5 | 16GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP ProBook 640 G8 is listed at KES 43,660 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 16GB RAM, 512GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP ProBook 640 G8 is listed at KES 43,660 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 16GB RAM, 512GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Generation: 11th Gen</li>\n  <li>Feature: Non-Touch</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "16GB RAM",
+      "512GB SSD",
+      "14-inch display",
+      "11th Gen",
+      "Non-Touch"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "11th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP ProBook 640 G8 Price in Kenya | Mobdeals",
+    "seoDescription": "HP ProBook 640 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-probook-640-g8-11th-gen#product",
+      "name": "HP ProBook 640 G8 | Intel Core i5 | 16GB | 512GB SSD",
+      "description": "HP ProBook 640 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-PROBOOK-640-G8-I5-11TH-GEN-16GB-512GB-SSD-14-INCH-NON-TOUCH-EX-U-9C28D8A6",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP ProBook 640 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-probook-640-g8-11th-gen",
+        "priceCurrency": "KES",
+        "price": "43660",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-3310-I5-8TH-GEN-8GB-256GB-SSD-13-3-INCH-FHD-TOUCHSC-C29DD347",
+    "slug": "dell-latitude-3310-8th-gen",
+    "name": "Dell Latitude 3310 | Intel Core i5 | 8GB | 256GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 28320,
+      "currency": "KES",
+      "compareAtAmount": 30359
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-3310-8th-gen/01.webp",
+        "alt": "Dell Latitude 3310 | Intel Core i5 | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude 3310 is listed at KES 28,320 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, 13.3-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude 3310 is listed at KES 28,320 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, 13.3-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 13.3-inch FHD</li>\n  <li>Generation: 8th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "13.3-inch FHD display",
+      "8th Gen",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch FHD display"
+      },
+      {
+        "label": "Generation",
+        "value": "8th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude 3310 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude 3310 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-3310-8th-gen#product",
+      "name": "Dell Latitude 3310 | Intel Core i5 | 8GB | 256GB SSD",
+      "description": "Dell Latitude 3310 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-3310-I5-8TH-GEN-8GB-256GB-SSD-13-3-INCH-FHD-TOUCHSC-C29DD347",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude 3310",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-3310-8th-gen",
+        "priceCurrency": "KES",
+        "price": "28320",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-T460S-I5-6TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCR-D04D66B1",
+    "slug": "lenovo-thinkpad-t460s-6th-gen",
+    "name": "Lenovo ThinkPad T460s | Intel Core i5 (6th Gen) | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 24780,
+      "currency": "KES",
+      "compareAtAmount": 26564
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-t460s-6th-gen/01.webp",
+        "alt": "Lenovo ThinkPad T460s | Intel Core i5 (6th Gen) | 8GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-t460s-laptop/01.webp",
+        "alt": "Lenovo ThinkPad T460s | Intel Core i5 (6th Gen) | 8GB | 256GB SSD - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad T460s is listed at KES 24,780 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (6th Gen), 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad T460s is listed at KES 24,780 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (6th Gen), 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (6th Gen)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Connectivity: HDMI</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (6th Gen)",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "HDMI",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (6th Gen)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad T460s Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad T460s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-t460s-6th-gen#product",
+      "name": "Lenovo ThinkPad T460s | Intel Core i5 (6th Gen) | 8GB | 256GB SSD",
+      "description": "Lenovo ThinkPad T460s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-T460S-I5-6TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCR-D04D66B1",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad T460s",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (6th Gen)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "6th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-t460s-6th-gen",
+        "priceCurrency": "KES",
+        "price": "24780",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-PROBOOK-440-G5-I5-7TH-GEN-8GB-256GB-SSD-INTEL-HD-GRAPHICS-14-INC-F072122A",
+    "slug": "hp-probook-440-g5-7th-gen",
+    "name": "HP ProBook 440 G5 | Intel Core i5 7th Generation | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 25960,
+      "currency": "KES",
+      "compareAtAmount": 27829
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-440-g5-7th-gen/01.webp",
+        "alt": "HP ProBook 440 G5 | Intel Core i5 7th Generation | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP ProBook 440 G5 is listed at KES 25,960 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 7th Generation, 8GB RAM, 256GB SSD, 14-inch HD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP ProBook 440 G5 is listed at KES 25,960 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 7th Generation, 8GB RAM, 256GB SSD, 14-inch HD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 7th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch HD</li>\n  <li>Connectivity: Wi-Fi, HDMI</li>\n  <li>Graphics: Intel HD Graphics</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 7th Generation",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch HD display",
+      "Wi-Fi, HDMI",
+      "Non-Touch"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 7th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch HD display"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, HDMI"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Processor",
+        "value": "Intel HD Graphics"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP ProBook 440 G5 Price in Kenya | Mobdeals",
+    "seoDescription": "HP ProBook 440 G5 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-probook-440-g5-7th-gen#product",
+      "name": "HP ProBook 440 G5 | Intel Core i5 7th Generation | 8GB | 256GB SSD",
+      "description": "HP ProBook 440 G5 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-PROBOOK-440-G5-I5-7TH-GEN-8GB-256GB-SSD-INTEL-HD-GRAPHICS-14-INC-F072122A",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP ProBook 440 G5",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 7th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch HD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Graphics",
+          "value": "Intel HD Graphics"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-probook-440-g5-7th-gen",
+        "priceCurrency": "KES",
+        "price": "25960",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G8-I5-11TH-GEN-16GB-256GB-SSD-14-INCH-FHD-EX-UK-C68BD104",
+    "slug": "hp-elitebook-840-g8-11th-gen-3",
+    "name": "HP EliteBook 840 G8 | Intel Core i5 Processor | 16GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 43660,
+      "currency": "KES",
+      "compareAtAmount": 46804
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g8-11th-gen-3/01.webp",
+        "alt": "HP EliteBook 840 G8 | Intel Core i5 Processor | 16GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-840-g8-laptop/01.webp",
+        "alt": "HP EliteBook 840 G8 | Intel Core i5 Processor | 16GB | 256GB SSD - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G8 is listed at KES 43,660 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 Processor, 16GB RAM, 256GB SSD, 14-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G8 is listed at KES 43,660 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 Processor, 16GB RAM, 256GB SSD, 14-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 Processor</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch FHD</li>\n  <li>Generation: 11th Gen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 Processor",
+      "16GB RAM",
+      "256GB SSD",
+      "14-inch FHD display",
+      "11th Gen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 Processor"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch FHD display"
+      },
+      {
+        "label": "Generation",
+        "value": "11th Gen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G8 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g8-11th-gen-3#product",
+      "name": "HP EliteBook 840 G8 | Intel Core i5 Processor | 16GB | 256GB SSD",
+      "description": "HP EliteBook 840 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G8-I5-11TH-GEN-16GB-256GB-SSD-14-INCH-FHD-EX-UK-C68BD104",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 Processor"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g8-11th-gen-3",
+        "priceCurrency": "KES",
+        "price": "43660",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-PROBOOK-440-G9-I5-12TH-GEN-16GB-256GB-SSD-14-INCH-NON-TOUCH-EX-U-2E6C6B89",
+    "slug": "hp-probook-440-g9-12th-gen",
+    "name": "HP ProBook 440 G9 | Intel Core i5 12th Generation | 16GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 44840,
+      "currency": "KES",
+      "compareAtAmount": 48068
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-440-g9-12th-gen/01.webp",
+        "alt": "HP ProBook 440 G9 | Intel Core i5 12th Generation | 16GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP ProBook 440 G9 is listed at KES 44,840 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 12th Generation, 16GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP ProBook 440 G9 is listed at KES 44,840 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 12th Generation, 16GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 12th Generation</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Feature: Non-Touch</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 12th Generation",
+      "16GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "Non-Touch",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 12th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP ProBook 440 G9 Price in Kenya | Mobdeals",
+    "seoDescription": "HP ProBook 440 G9 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-probook-440-g9-12th-gen#product",
+      "name": "HP ProBook 440 G9 | Intel Core i5 12th Generation | 16GB | 256GB SSD",
+      "description": "HP ProBook 440 G9 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-PROBOOK-440-G9-I5-12TH-GEN-16GB-256GB-SSD-14-INCH-NON-TOUCH-EX-U-2E6C6B89",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP ProBook 440 G9",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 12th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "12th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-probook-440-g9-12th-gen",
+        "priceCurrency": "KES",
+        "price": "44840",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-7450-I5-8GB-256GB-SSD-14-INCH-EX-UK-40C30679",
+    "slug": "dell-latitude-7450-256gb-ssd",
+    "name": "Dell Latitude 7450 | Corei5 5th | 8GB | 256GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 21240,
+      "currency": "KES",
+      "compareAtAmount": 22769
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-7450-256gb-ssd/01.webp",
+        "alt": "Dell Latitude 7450 | Corei5 5th | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude 7450 is listed at KES 21,240 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 5th, 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude 7450 is listed at KES 21,240 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 5th, 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Corei5 5th</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Corei5 5th",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Feature",
+        "value": "Corei5 5th"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude 7450 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude 7450 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-7450-256gb-ssd#product",
+      "name": "Dell Latitude 7450 | Corei5 5th | 8GB | 256GB SSD",
+      "description": "Dell Latitude 7450 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-7450-I5-8GB-256GB-SSD-14-INCH-EX-UK-40C30679",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude 7450",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Corei5 5th"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-7450-256gb-ssd",
+        "priceCurrency": "KES",
+        "price": "21240",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-PROBOOK-640-G5-I5-8TH-GEN-16GB-256GB-SSD-14-INCH-EX-UK-E342BAED",
+    "slug": "hp-probook-640-g5-8th-gen",
+    "name": "HP ProBook 640 G5 | Intel Core i5 | 16GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 34220,
+      "currency": "KES",
+      "compareAtAmount": 36684
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-640-g5-8th-gen/01.webp",
+        "alt": "HP ProBook 640 G5 | Intel Core i5 | 16GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP ProBook 640 G5 is listed at KES 34,220 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 16GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP ProBook 640 G5 is listed at KES 34,220 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 16GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Generation: 8th Gen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "16GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "8th Gen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "8th Gen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP ProBook 640 G5 Price in Kenya | Mobdeals",
+    "seoDescription": "HP ProBook 640 G5 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-probook-640-g5-8th-gen#product",
+      "name": "HP ProBook 640 G5 | Intel Core i5 | 16GB | 256GB SSD",
+      "description": "HP ProBook 640 G5 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-PROBOOK-640-G5-I5-8TH-GEN-16GB-256GB-SSD-14-INCH-EX-UK-E342BAED",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP ProBook 640 G5",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-probook-640-g5-8th-gen",
+        "priceCurrency": "KES",
+        "price": "34220",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-T460S-I5-6TH-GEN-256GB-SSD-14-INCH-NON-TOUCH-EX-DE86EF8C",
+    "slug": "lenovo-thinkpad-t460s-6th-gen-2",
+    "name": "Lenovo ThinkPad T460s | Intel Core i5 (6th Gen) | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 23600,
+      "currency": "KES",
+      "compareAtAmount": 25299
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-t460s-6th-gen-2/01.webp",
+        "alt": "Lenovo ThinkPad T460s | Intel Core i5 (6th Gen) | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad T460s is listed at KES 23,600 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (6th Gen), 256GB SSD, 14-inch display, Non-Touch. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad T460s is listed at KES 23,600 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (6th Gen), 256GB SSD, 14-inch display, Non-Touch.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (6th Gen)</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Feature: Non-Touch</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (6th Gen)",
+      "256GB SSD",
+      "14-inch display",
+      "Non-Touch",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (6th Gen)"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad T460s Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad T460s for office work, school, and multitasking in Kenya. 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-t460s-6th-gen-2#product",
+      "name": "Lenovo ThinkPad T460s | Intel Core i5 (6th Gen) | 256GB SSD",
+      "description": "Lenovo ThinkPad T460s for office work, school, and multitasking in Kenya. 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-T460S-I5-6TH-GEN-256GB-SSD-14-INCH-NON-TOUCH-EX-DE86EF8C",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad T460s",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (6th Gen)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "6th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-t460s-6th-gen-2",
+        "priceCurrency": "KES",
+        "price": "23600",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-820-G3-I3-6TH-GEN-8GB-256GB-SSD-12-5-INCH-NON-TOUCH-EX-8C183AE3",
+    "slug": "hp-elitebook-820-g3-6th-gen",
+    "name": "HP EliteBook 820 G3 | Intel Core i3 (6th Gen) | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 23010,
+      "currency": "KES",
+      "compareAtAmount": 26277
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-820-g3-6th-gen/01.webp",
+        "alt": "HP EliteBook 820 G3 | Intel Core i3 (6th Gen) | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 820 G3 is listed at KES 23,010 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i3 (6th Gen), 8GB RAM, 256GB SSD, 12.5-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 820 G3 is listed at KES 23,010 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i3 (6th Gen), 8GB RAM, 256GB SSD, 12.5-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i3 (6th Gen)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 12.5-inch</li>\n  <li>Connectivity: USB-C, USB 3.0</li>\n  <li>Feature: Non-Touch</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i3 (6th Gen)",
+      "8GB RAM",
+      "256GB SSD",
+      "12.5-inch display",
+      "USB-C, USB 3.0",
+      "Non-Touch"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i3 (6th Gen)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "12.5-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "USB-C, USB 3.0"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 820 G3 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 820 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-820-g3-6th-gen#product",
+      "name": "HP EliteBook 820 G3 | Intel Core i3 (6th Gen) | 8GB | 256GB SSD",
+      "description": "HP EliteBook 820 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-820-G3-I3-6TH-GEN-8GB-256GB-SSD-12-5-INCH-NON-TOUCH-EX-8C183AE3",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 820 G3",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i3 (6th Gen)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "6th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "12.5-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "USB-C, USB 3.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-820-g3-6th-gen",
+        "priceCurrency": "KES",
+        "price": "23010",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G1-I5-4TH-GEN-8GB-256GB-SSD-14-INCH-HD-EX-UK-193E1179",
+    "slug": "hp-elitebook-840-g1-4th-gen-2",
+    "name": "HP EliteBook 840 G1 | Intel Core i5 (4th Generation) | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 23010,
+      "currency": "KES",
+      "compareAtAmount": 26277
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g1-4th-gen-2/01.webp",
+        "alt": "HP EliteBook 840 G1 | Intel Core i5 (4th Generation) | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G1 is listed at KES 23,010 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (4th Generation), 8GB RAM, 256GB SSD, 14-inch HD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G1 is listed at KES 23,010 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (4th Generation), 8GB RAM, 256GB SSD, 14-inch HD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (4th Generation)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch HD</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (4th Generation)",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch HD display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (4th Generation)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch HD display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G1 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G1 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g1-4th-gen-2#product",
+      "name": "HP EliteBook 840 G1 | Intel Core i5 (4th Generation) | 8GB | 256GB SSD",
+      "description": "HP EliteBook 840 G1 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G1-I5-4TH-GEN-8GB-256GB-SSD-14-INCH-HD-EX-UK-193E1179",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G1",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (4th Generation)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "4th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch HD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g1-4th-gen-2",
+        "priceCurrency": "KES",
+        "price": "23010",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-820-G1-I5-4TH-GEN-8GB-500GB-HDD-INTEL-HD-GRAPHICS-12-5-99BD61C3",
+    "slug": "hp-elitebook-820-g1-4th-gen",
+    "name": "HP EliteBook 820 G1 | Intel Core i5 4th Gen | 8GB | 500GB HDD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 21240,
+      "currency": "KES",
+      "compareAtAmount": 24256
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-820-g1-4th-gen/01.webp",
+        "alt": "HP EliteBook 820 G1 | Intel Core i5 4th Gen | 8GB | 500GB HDD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 820 G1 is listed at KES 21,240 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 4th Gen, 8GB RAM, 500GB HDD, 12.5-inch HD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 820 G1 is listed at KES 21,240 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 4th Gen, 8GB RAM, 500GB HDD, 12.5-inch HD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 4th Gen</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 500GB HDD</li>\n  <li>Display: 12.5-inch HD</li>\n  <li>Connectivity: Wi-Fi, Bluetooth, VGA, DisplayPort, Ethernet (LAN)</li>\n  <li>Graphics: Intel HD Graphics</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 4th Gen",
+      "8GB RAM",
+      "500GB HDD",
+      "12.5-inch HD display",
+      "Wi-Fi, Bluetooth, VGA, DisplayPort, Ethernet (LAN)",
+      "Intel HD Graphics"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 4th Gen"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "500GB HDD"
+      },
+      {
+        "label": "Display",
+        "value": "12.5-inch HD display"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, Bluetooth, VGA, DisplayPort, Ethernet (LAN)"
+      },
+      {
+        "label": "Processor",
+        "value": "Intel HD Graphics"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 820 G1 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 820 G1 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB HDD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-820-g1-4th-gen#product",
+      "name": "HP EliteBook 820 G1 | Intel Core i5 4th Gen | 8GB | 500GB HDD",
+      "description": "HP EliteBook 820 G1 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB HDD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-820-G1-I5-4TH-GEN-8GB-500GB-HDD-INTEL-HD-GRAPHICS-12-5-99BD61C3",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 820 G1",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 4th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "4th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "500GB HDD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "12.5-inch HD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Graphics",
+          "value": "Intel HD Graphics"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, Bluetooth, VGA, DisplayPort, Ethernet (LAN)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-820-g1-4th-gen",
+        "priceCurrency": "KES",
+        "price": "21240",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-PROBOOK-X360-11-G2-I5-7TH-GEN-8GB-128GB-SSD-11-6-INCH-HD-TOUCHSC-90FE6008",
+    "slug": "hp-probook-x360-11-g2-7th-gen",
+    "name": "HP ProBook x360 11 G2 | Intel Core i5 7th Gen | 8GB | 128GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 20060,
+      "currency": "KES",
+      "compareAtAmount": 22909
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-x360-11-g2-7th-gen/01.webp",
+        "alt": "HP ProBook x360 11 G2 | Intel Core i5 7th Gen | 8GB | 128GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP ProBook x360 11 G2 is listed at KES 20,060 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 7th Gen, 8GB RAM, 128GB SSD, 11.6-inch HD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP ProBook x360 11 G2 is listed at KES 20,060 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 7th Gen, 8GB RAM, 128GB SSD, 11.6-inch HD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 7th Gen</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 128GB SSD</li>\n  <li>Display: 11.6-inch HD</li>\n  <li>Connectivity: Wi-Fi, Bluetooth, HDMI, USB 3.0</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 7th Gen",
+      "8GB RAM",
+      "128GB SSD",
+      "11.6-inch HD display",
+      "Wi-Fi, Bluetooth, HDMI, USB 3.0",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 7th Gen"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "11.6-inch HD display"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, Bluetooth, HDMI, USB 3.0"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP ProBook x360 11 G2 Price in Kenya | Mobdeals",
+    "seoDescription": "HP ProBook x360 11 G2 for office work, school, and multitasking in Kenya. 8GB RAM and 128GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-probook-x360-11-g2-7th-gen#product",
+      "name": "HP ProBook x360 11 G2 | Intel Core i5 7th Gen | 8GB | 128GB SSD",
+      "description": "HP ProBook x360 11 G2 for office work, school, and multitasking in Kenya. 8GB RAM and 128GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-PROBOOK-X360-11-G2-I5-7TH-GEN-8GB-128GB-SSD-11-6-INCH-HD-TOUCHSC-90FE6008",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP ProBook x360 11 G2",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "128GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "11.6-inch HD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, Bluetooth, HDMI, USB 3.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-probook-x360-11-g2-7th-gen",
+        "priceCurrency": "KES",
+        "price": "20060",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-3520-I5-11TH-GEN-8GB-256GB-SSD-INTEL-IRIS-XE-GRAPHI-9582374D",
+    "slug": "dell-latitude-3520-11th-gen",
+    "name": "Dell Latitude 3520 | Intel Core i5 | 8GB | 256GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 31860,
+      "currency": "KES",
+      "compareAtAmount": 36384
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-3520-11th-gen/01.webp",
+        "alt": "Dell Latitude 3520 | Intel Core i5 | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude 3520 is listed at KES 31,860 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, 15.6-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude 3520 is listed at KES 31,860 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, 15.6-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 15.6-inch</li>\n  <li>Generation: 11th Gen</li>\n  <li>Connectivity: Wi-Fi, Bluetooth</li>\n  <li>Graphics: Intel Iris Xe Graphics</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "15.6-inch display",
+      "11th Gen",
+      "Wi-Fi, Bluetooth"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "15.6-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "11th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, Bluetooth"
+      },
+      {
+        "label": "Processor",
+        "value": "Intel Iris Xe Graphics"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude 3520 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude 3520 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-3520-11th-gen#product",
+      "name": "Dell Latitude 3520 | Intel Core i5 | 8GB | 256GB SSD",
+      "description": "Dell Latitude 3520 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-3520-I5-11TH-GEN-8GB-256GB-SSD-INTEL-IRIS-XE-GRAPHI-9582374D",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude 3520",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "15.6-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Graphics",
+          "value": "Intel Iris Xe Graphics"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, Bluetooth"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-3520-11th-gen",
+        "priceCurrency": "KES",
+        "price": "31860",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-X360-I5-16GB-256GB-SSD-13-3-INCH-TOUCHSCREEN-EX-UK-D6523F71",
+    "slug": "hp-x360-256gb-ssd",
+    "name": "HP X360 | Corei5 8th | 16GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 55460,
+      "currency": "KES",
+      "compareAtAmount": 63335
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-x360-256gb-ssd/01.webp",
+        "alt": "HP X360 | Corei5 8th | 16GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP X360 is listed at KES 55,460 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 8th, 16GB RAM, 256GB SSD, 13.3-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP X360 is listed at KES 55,460 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 8th, 16GB RAM, 256GB SSD, 13.3-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Corei5 8th</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 13.3-inch</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Corei5 8th",
+      "16GB RAM",
+      "256GB SSD",
+      "13.3-inch display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Feature",
+        "value": "Corei5 8th"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP X360 Price in Kenya | Mobdeals",
+    "seoDescription": "HP X360 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-x360-256gb-ssd#product",
+      "name": "HP X360 | Corei5 8th | 16GB | 256GB SSD",
+      "description": "HP X360 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-X360-I5-16GB-256GB-SSD-13-3-INCH-TOUCHSCREEN-EX-UK-D6523F71",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP X360",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Corei5 8th"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-x360-256gb-ssd",
+        "priceCurrency": "KES",
+        "price": "55460",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-E7480-I5-6TH-GEN-8GB-256GB-SSD-14-INCH-FHD-EX-UK-1FB16DE1",
+    "slug": "dell-latitude-e7480-6th-gen",
+    "name": "Dell Latitude E7480 | Intel Core i5 (6th Gen) | 8GB | 256GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 24780,
+      "currency": "KES",
+      "compareAtAmount": 28299
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-e7480-6th-gen/01.webp",
+        "alt": "Dell Latitude E7480 | Intel Core i5 (6th Gen) | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude E7480 is listed at KES 24,780 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (6th Gen), 8GB RAM, 256GB SSD, 14-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude E7480 is listed at KES 24,780 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (6th Gen), 8GB RAM, 256GB SSD, 14-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (6th Gen)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch FHD</li>\n  <li>Connectivity: HDMI, USB 3.0, Ethernet (LAN)</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (6th Gen)",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch FHD display",
+      "HDMI, USB 3.0, Ethernet (LAN)",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (6th Gen)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch FHD display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, USB 3.0, Ethernet (LAN)"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude E7480 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude E7480 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-e7480-6th-gen#product",
+      "name": "Dell Latitude E7480 | Intel Core i5 (6th Gen) | 8GB | 256GB SSD",
+      "description": "Dell Latitude E7480 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-E7480-I5-6TH-GEN-8GB-256GB-SSD-14-INCH-FHD-EX-UK-1FB16DE1",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude E7480",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (6th Gen)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "6th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, USB 3.0, Ethernet (LAN)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-e7480-6th-gen",
+        "priceCurrency": "KES",
+        "price": "24780",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-X360-I5-8TH-GEN-8GB-256GB-SSD-13-3-INCH-TOUCHSCREEN-EX-U-10ECC91B",
+    "slug": "lenovo-x360-8th-gen",
+    "name": "Lenovo X360 | Core i5 | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 35400,
+      "currency": "KES",
+      "compareAtAmount": 40427
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-x360-8th-gen/01.webp",
+        "alt": "Lenovo X360 | Core i5 | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo X360 is listed at KES 35,400 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, 13.3-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo X360 is listed at KES 35,400 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, 13.3-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 13.3-inch</li>\n  <li>Generation: 8th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "13.3-inch display",
+      "8th Gen",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "8th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo X360 Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo X360 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-x360-8th-gen#product",
+      "name": "Lenovo X360 | Core i5 | 8GB | 256GB SSD",
+      "description": "Lenovo X360 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-X360-I5-8TH-GEN-8GB-256GB-SSD-13-3-INCH-TOUCHSCREEN-EX-U-10ECC91B",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo X360",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-x360-8th-gen",
+        "priceCurrency": "KES",
+        "price": "35400",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-X360-CELERON-4GB-128GB-SSD-11-6-INCH-TOUCHSCREEN-EX-UK-55D99634",
+    "slug": "lenovo-x360-128gb-ssd",
+    "name": "Lenovo X360 | Intel Celeron Processor | 4GB | 128GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 16520,
+      "currency": "KES",
+      "compareAtAmount": 18866
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-x360-128gb-ssd/01.webp",
+        "alt": "Lenovo X360 | Intel Celeron Processor | 4GB | 128GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo X360 is listed at KES 16,520 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Celeron Processor, 4GB RAM, 128GB SSD, 11.6-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo X360 is listed at KES 16,520 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Celeron Processor, 4GB RAM, 128GB SSD, 11.6-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Celeron Processor</li>\n  <li>RAM: 4GB RAM</li>\n  <li>Storage: 128GB SSD</li>\n  <li>Display: 11.6-inch</li>\n  <li>Connectivity: Wi-Fi</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Celeron Processor",
+      "4GB RAM",
+      "128GB SSD",
+      "11.6-inch display",
+      "Wi-Fi",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Celeron Processor"
+      },
+      {
+        "label": "Memory",
+        "value": "4GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "11.6-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo X360 Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo X360 for office work, school, and multitasking in Kenya. 4GB RAM and 128GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-x360-128gb-ssd#product",
+      "name": "Lenovo X360 | Intel Celeron Processor | 4GB | 128GB SSD",
+      "description": "Lenovo X360 for office work, school, and multitasking in Kenya. 4GB RAM and 128GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-X360-CELERON-4GB-128GB-SSD-11-6-INCH-TOUCHSCREEN-EX-UK-55D99634",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo X360",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Celeron Processor"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "4GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "128GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "11.6-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-x360-128gb-ssd",
+        "priceCurrency": "KES",
+        "price": "16520",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-830-G5-I5-8TH-GEN-8GB-256GB-SSD-13-3-INCH-TOUCHSCREEN-6DC5137F-SRC-39466D5455",
+    "slug": "hp-elitebook-830-g5-8th-gen-2",
+    "name": "HP EliteBook 830 G5 | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 34810,
+      "currency": "KES",
+      "compareAtAmount": 39753
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-830-g5-8th-gen-2/01.webp",
+        "alt": "HP EliteBook 830 G5 | 8GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "product_images_webp/hp-elitebook-830-g5-8th-gen-2/02.webp",
+        "alt": "HP EliteBook 830 G5 | 8GB | 256GB SSD - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 830 G5 is listed at KES 34,810 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Generation (1.8GHz Base Speed 3.5ghz Turbo speed ), 8GB RAM, 256GB SSD, 13.3-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 830 G5 is listed at KES 34,810 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Generation (1.8GHz Base Speed 3.5ghz Turbo speed ), 8GB RAM, 256GB SSD, 13.3-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 8th Generation (1.8GHz Base Speed 3.5ghz Turbo speed )</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 13.3-inch</li>\n  <li>Connectivity: Wi-Fi, Bluetooth, HDMI</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 8th Generation (1.8GHz Base Speed 3.5ghz Turbo speed )",
+      "8GB RAM",
+      "256GB SSD",
+      "13.3-inch display",
+      "Wi-Fi, Bluetooth, HDMI",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 8th Generation (1.8GHz Base Speed 3.5ghz Turbo speed )"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, Bluetooth, HDMI"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 830 G5 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 830 G5 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-830-g5-8th-gen-2#product",
+      "name": "HP EliteBook 830 G5 | 8GB | 256GB SSD",
+      "description": "HP EliteBook 830 G5 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-830-G5-I5-8TH-GEN-8GB-256GB-SSD-13-3-INCH-TOUCHSCREEN-6DC5137F-SRC-39466D5455",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 830 G5",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 8th Generation (1.8GHz Base Speed 3.5ghz Turbo speed )"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, Bluetooth, HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-830-g5-8th-gen-2",
+        "priceCurrency": "KES",
+        "price": "34810",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-XPS-13-I7-12TH-GEN-16GB-512GB-SSD-13-4-INCH-BRAND-NEW-1F4F9008",
+    "slug": "dell-xps-13-12th-gen",
+    "name": "Dell XPS 13 | Intel Core i7 12th Gen Processor | 16GB | 512GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 120360,
+      "currency": "KES",
+      "compareAtAmount": 137451
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-xps-13-12th-gen/01.webp",
+        "alt": "Dell XPS 13 | Intel Core i7 12th Gen Processor | 16GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell XPS 13 is listed at KES 120,360 in Kenya, in brand new condition with 1yr warranty. This configuration includes Intel Core i7 12th Gen Processor, 16GB RAM, 512GB SSD, 13.4-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell XPS 13 is listed at KES 120,360 in Kenya, in brand new condition with 1yr warranty. This configuration includes Intel Core i7 12th Gen Processor, 16GB RAM, 512GB SSD, 13.4-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 12th Gen Processor</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 13.4-inch</li>\n  <li>Condition: Brand New</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 12th Gen Processor",
+      "16GB RAM",
+      "512GB SSD",
+      "13.4-inch display",
+      "1yr warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 12th Gen Processor"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.4-inch display"
+      },
+      {
+        "label": "Condition",
+        "value": "Brand New"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "New",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell XPS 13 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell XPS 13 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-xps-13-12th-gen#product",
+      "name": "Dell XPS 13 | Intel Core i7 12th Gen Processor | 16GB | 512GB SSD",
+      "description": "Dell XPS 13 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-XPS-13-I7-12TH-GEN-16GB-512GB-SSD-13-4-INCH-BRAND-NEW-1F4F9008",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell XPS 13",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 12th Gen Processor"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "12th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.4-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Brand New"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-xps-13-12th-gen",
+        "priceCurrency": "KES",
+        "price": "120360",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-5430-I5-12TH-GEN-16GB-512GB-SSD-14-INCH-EX-UK-0372606C",
+    "slug": "dell-latitude-5430-12th-gen",
+    "name": "Dell Latitude 5430 | Intel Core i5 Processor | 16GB | 512GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 43660,
+      "currency": "KES",
+      "compareAtAmount": 49860
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-5430-12th-gen/01.webp",
+        "alt": "Dell Latitude 5430 | Intel Core i5 Processor | 16GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude 5430 is listed at KES 43,660 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 Processor, 16GB RAM, 512GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude 5430 is listed at KES 43,660 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 Processor, 16GB RAM, 512GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 Processor</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Generation: 12th Gen</li>\n  <li>Connectivity: Wi-Fi, Bluetooth, HDMI, USB-C</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 Processor",
+      "16GB RAM",
+      "512GB SSD",
+      "14-inch display",
+      "12th Gen",
+      "Wi-Fi, Bluetooth, HDMI, USB-C"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 Processor"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "12th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, Bluetooth, HDMI, USB-C"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude 5430 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude 5430 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-5430-12th-gen#product",
+      "name": "Dell Latitude 5430 | Intel Core i5 Processor | 16GB | 512GB SSD",
+      "description": "Dell Latitude 5430 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-5430-I5-12TH-GEN-16GB-512GB-SSD-14-INCH-EX-UK-0372606C",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude 5430",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 Processor"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "12th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, Bluetooth, HDMI, USB-C"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-5430-12th-gen",
+        "priceCurrency": "KES",
+        "price": "43660",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-830-G7-I5-8GB-256GB-SSD-13-3-INCH-EX-UK-5F26B8BA",
+    "slug": "hp-elitebook-830-g7-256gb-ssd",
+    "name": "HP EliteBook 830 G7 | Corei5 10th | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 37760,
+      "currency": "KES",
+      "compareAtAmount": 43122
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-830-g7-256gb-ssd/01.webp",
+        "alt": "HP EliteBook 830 G7 | Corei5 10th | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 830 G7 is listed at KES 37,760 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 10th, 8GB RAM, 256GB SSD, 13.3-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 830 G7 is listed at KES 37,760 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 10th, 8GB RAM, 256GB SSD, 13.3-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Corei5 10th</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 13.3-inch</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Corei5 10th",
+      "8GB RAM",
+      "256GB SSD",
+      "13.3-inch display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Feature",
+        "value": "Corei5 10th"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 830 G7 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 830 G7 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-830-g7-256gb-ssd#product",
+      "name": "HP EliteBook 830 G7 | Corei5 10th | 8GB | 256GB SSD",
+      "description": "HP EliteBook 830 G7 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-830-G7-I5-8GB-256GB-SSD-13-3-INCH-EX-UK-5F26B8BA",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 830 G7",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Corei5 10th"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-830-g7-256gb-ssd",
+        "priceCurrency": "KES",
+        "price": "37760",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G6-I5-8GB-256GB-SSD-14-INCH-EX-UK-6CF8D834",
+    "slug": "hp-elitebook-840-g6-256gb-ssd-2",
+    "name": "HP EliteBook 840 G6 | Corei5 8th | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 35400,
+      "currency": "KES",
+      "compareAtAmount": 40427
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g6-256gb-ssd-2/01.webp",
+        "alt": "HP EliteBook 840 G6 | Corei5 8th | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G6 is listed at KES 35,400 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 8th, 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G6 is listed at KES 35,400 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 8th, 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Corei5 8th</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Corei5 8th",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Feature",
+        "value": "Corei5 8th"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G6 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-256gb-ssd-2#product",
+      "name": "HP EliteBook 840 G6 | Corei5 8th | 8GB | 256GB SSD",
+      "description": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G6-I5-8GB-256GB-SSD-14-INCH-EX-UK-6CF8D834",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G6",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Corei5 8th"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-256gb-ssd-2",
+        "priceCurrency": "KES",
+        "price": "35400",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-3520-I7-11TH-GEN-8GB-256GB-SSD-INTEL-IRIS-XE-GRAPHI-2ABEF14C",
+    "slug": "dell-latitude-3520-11th-gen-2",
+    "name": "Dell Latitude 3520 | Intel Core i7 | 8GB | 256GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 30680,
+      "currency": "KES",
+      "compareAtAmount": 35037
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-3520-11th-gen-2/01.webp",
+        "alt": "Dell Latitude 3520 | Intel Core i7 | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude 3520 is listed at KES 30,680 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 8GB RAM, 256GB SSD, 15.6-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude 3520 is listed at KES 30,680 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 8GB RAM, 256GB SSD, 15.6-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 15.6-inch</li>\n  <li>Generation: 11th Gen</li>\n  <li>Connectivity: Wi-Fi, Bluetooth</li>\n  <li>Graphics: Intel Iris Xe Graphics</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7",
+      "8GB RAM",
+      "256GB SSD",
+      "15.6-inch display",
+      "11th Gen",
+      "Wi-Fi, Bluetooth"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "15.6-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "11th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, Bluetooth"
+      },
+      {
+        "label": "Processor",
+        "value": "Intel Iris Xe Graphics"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude 3520 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude 3520 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-3520-11th-gen-2#product",
+      "name": "Dell Latitude 3520 | Intel Core i7 | 8GB | 256GB SSD",
+      "description": "Dell Latitude 3520 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-3520-I7-11TH-GEN-8GB-256GB-SSD-INTEL-IRIS-XE-GRAPHI-2ABEF14C",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude 3520",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "15.6-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Graphics",
+          "value": "Intel Iris Xe Graphics"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, Bluetooth"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-3520-11th-gen-2",
+        "priceCurrency": "KES",
+        "price": "30680",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-X360-830-G8-I7-11TH-GEN-32GB-512GB-SSD-13-3-INCH-FHD-T-08FB6584",
+    "slug": "hp-elitebook-x360-830-g8-11th-gen",
+    "name": "HP EliteBook x360 830 G8 | Intel Core i7 - 11th Generation | 32GB | 512GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 77880,
+      "currency": "KES",
+      "compareAtAmount": 88939
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-x360-830-g8-11th-gen/01.webp",
+        "alt": "HP EliteBook x360 830 G8 | Intel Core i7 - 11th Generation | 32GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook x360 830 G8 is listed at KES 77,880 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 - 11th Generation, 32GB RAM, 512GB SSD, 13.3-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook x360 830 G8 is listed at KES 77,880 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 \u2013 11th Generation, 32GB RAM, 512GB SSD, 13.3-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 \u2013 11th Generation</li>\n  <li>RAM: 32GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 13.3-inch FHD</li>\n  <li>Connectivity: Thunderbolt</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 - 11th Generation",
+      "32GB RAM",
+      "512GB SSD",
+      "13.3-inch FHD display",
+      "Thunderbolt",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 - 11th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "32GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch FHD display"
+      },
+      {
+        "label": "Feature",
+        "value": "Thunderbolt"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook x360 830 G8 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook x360 830 G8 for office work, school, and multitasking in Kenya. 32GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-x360-830-g8-11th-gen#product",
+      "name": "HP EliteBook x360 830 G8 | Intel Core i7 \u2013 11th Generation | 32GB | 512GB SSD",
+      "description": "HP EliteBook x360 830 G8 for office work, school, and multitasking in Kenya. 32GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-X360-830-G8-I7-11TH-GEN-32GB-512GB-SSD-13-3-INCH-FHD-T-08FB6584",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook x360 830 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 \u2013 11th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "32GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Thunderbolt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-x360-830-g8-11th-gen",
+        "priceCurrency": "KES",
+        "price": "77880",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-X1-YOGA-I7-10TH-GEN-16GB-512GB-SSD-14-INCH-TOUCHSCREEN-E-DEF9E84A",
+    "slug": "lenovo-x1-yoga-10th-gen",
+    "name": "Lenovo X1 YOGA | Core i7 | 16GB | 512GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 60770,
+      "currency": "KES",
+      "compareAtAmount": 69399
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-x1-yoga-10th-gen/01.webp",
+        "alt": "Lenovo X1 YOGA | Core i7 | 16GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo X1 YOGA is listed at KES 60,770 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 512GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo X1 YOGA is listed at KES 60,770 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 512GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Generation: 10th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "14-inch display",
+      "10th Gen",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "10th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo X1 YOGA Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo X1 YOGA for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-x1-yoga-10th-gen#product",
+      "name": "Lenovo X1 YOGA | Core i7 | 16GB | 512GB SSD",
+      "description": "Lenovo X1 YOGA for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-X1-YOGA-I7-10TH-GEN-16GB-512GB-SSD-14-INCH-TOUCHSCREEN-E-DEF9E84A",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo X1 YOGA",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "10th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-x1-yoga-10th-gen",
+        "priceCurrency": "KES",
+        "price": "60770",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-PROBOOK-640-G1-I5-4TH-GEN-8GB-500GB-HDD-14-INCH-EX-UK-BD2BD761",
+    "slug": "hp-probook-640-g1-4th-gen",
+    "name": "HP ProBook 640 G1 | Intel Core i5 (4th Gen) | 8GB | 500GB HDD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 19470,
+      "currency": "KES",
+      "compareAtAmount": 22235
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-640-g1-4th-gen/01.webp",
+        "alt": "HP ProBook 640 G1 | Intel Core i5 (4th Gen) | 8GB | 500GB HDD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP ProBook 640 G1 is listed at KES 19,470 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (4th Gen), 8GB RAM, 500GB HDD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP ProBook 640 G1 is listed at KES 19,470 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (4th Gen), 8GB RAM, 500GB HDD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (4th Gen)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 500GB HDD</li>\n  <li>Display: 14-inch</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (4th Gen)",
+      "8GB RAM",
+      "500GB HDD",
+      "14-inch display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (4th Gen)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "500GB HDD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP ProBook 640 G1 Price in Kenya | Mobdeals",
+    "seoDescription": "HP ProBook 640 G1 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB HDD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-probook-640-g1-4th-gen#product",
+      "name": "HP ProBook 640 G1 | Intel Core i5 (4th Gen) | 8GB | 500GB HDD",
+      "description": "HP ProBook 640 G1 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB HDD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-PROBOOK-640-G1-I5-4TH-GEN-8GB-500GB-HDD-14-INCH-EX-UK-BD2BD761",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP ProBook 640 G1",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (4th Gen)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "4th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "500GB HDD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-probook-640-g1-4th-gen",
+        "priceCurrency": "KES",
+        "price": "19470",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G1-I5-4TH-GEN-8GB-500GB-HDD-14-INCH-HD-EX-UK-EDEFB353",
+    "slug": "hp-elitebook-840-g1-4th-gen-3",
+    "name": "HP EliteBook 840 G1 | Intel Core i5 (4th Generation) | 8GB | 500GB HDD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 22420,
+      "currency": "KES",
+      "compareAtAmount": 25604
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g1-4th-gen-3/01.webp",
+        "alt": "HP EliteBook 840 G1 | Intel Core i5 (4th Generation) | 8GB | 500GB HDD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G1 is listed at KES 22,420 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (4th Generation), 8GB RAM, 500GB HDD, 14-inch HD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G1 is listed at KES 22,420 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (4th Generation), 8GB RAM, 500GB HDD, 14-inch HD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (4th Generation)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 500GB HDD</li>\n  <li>Display: 14-inch HD</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (4th Generation)",
+      "8GB RAM",
+      "500GB HDD",
+      "14-inch HD display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (4th Generation)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "500GB HDD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch HD display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G1 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G1 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB HDD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g1-4th-gen-3#product",
+      "name": "HP EliteBook 840 G1 | Intel Core i5 (4th Generation) | 8GB | 500GB HDD",
+      "description": "HP EliteBook 840 G1 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB HDD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G1-I5-4TH-GEN-8GB-500GB-HDD-14-INCH-HD-EX-UK-EDEFB353",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G1",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (4th Generation)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "4th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "500GB HDD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch HD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g1-4th-gen-3",
+        "priceCurrency": "KES",
+        "price": "22420",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G2-I5-5TH-GEN-8GB-500GB-HDD-14-INCH-EX-UK-D7990CC6",
+    "slug": "hp-elitebook-840-g2-5th-gen",
+    "name": "HP EliteBook 840 G2 | Intel Core i5 - 5th Generation | 8GB | 500GB HDD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 23010,
+      "currency": "KES",
+      "compareAtAmount": 26277
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g2-5th-gen/01.webp",
+        "alt": "HP EliteBook 840 G2 | Intel Core i5 - 5th Generation | 8GB | 500GB HDD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G2 is listed at KES 23,010 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 - 5th Generation, 8GB RAM, 500GB HDD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G2 is listed at KES 23,010 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 \u2013 5th Generation, 8GB RAM, 500GB HDD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 \u2013 5th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 500GB HDD</li>\n  <li>Display: 14-inch</li>\n  <li>Operating System: Windows 11</li>\n  <li>Connectivity: Wi-Fi, Bluetooth, DisplayPort</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 - 5th Generation",
+      "8GB RAM",
+      "500GB HDD",
+      "14-inch display",
+      "Windows 11",
+      "Wi-Fi, Bluetooth, DisplayPort"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 - 5th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "500GB HDD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Windows 11"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, Bluetooth, DisplayPort"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G2 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G2 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB HDD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g2-5th-gen#product",
+      "name": "HP EliteBook 840 G2 | Intel Core i5 \u2013 5th Generation | 8GB | 500GB HDD",
+      "description": "HP EliteBook 840 G2 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB HDD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G2-I5-5TH-GEN-8GB-500GB-HDD-14-INCH-EX-UK-D7990CC6",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G2",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 \u2013 5th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "5th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "500GB HDD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Operating System",
+          "value": "Windows 11"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, Bluetooth, DisplayPort"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g2-5th-gen",
+        "priceCurrency": "KES",
+        "price": "23010",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "SAMSUNG-SAMSUNG-GALAXY-J337A-2GB-16GB-EX-UK-1A4432E1",
+    "slug": "samsung-galaxy-j337a-16gb-storage",
+    "name": "Samsung Galaxy J337A | 2GB | 16GB",
+    "brand": "Samsung",
+    "category": "smartphones",
+    "price": {
+      "amount": 9440,
+      "currency": "KES",
+      "compareAtAmount": 10780
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "smartphone/samsung-galaxy-j337a-16gb-storage/01.webp",
+        "alt": "Samsung Galaxy J337A | 2GB | 16GB"
+      }
+    ],
+    "inStock": true,
+    "description": "Samsung Galaxy J337A is listed at KES 9,440 in Kenya, in ex uk condition with 6 months warranty. This configuration includes 2GB RAM, 16GB Storage. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Samsung Galaxy J337A is listed at KES 9,440 in Kenya, in ex uk condition with 6 months warranty. This configuration includes 2GB RAM, 16GB Storage.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>RAM: 2GB RAM</li>\n  <li>Storage: 16GB Storage</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Buyers who want a phone for daily communication and apps</li>\n  <li>Users balancing work chats, browsing, and routine media use</li>\n  <li>Shoppers comparing practical value over flashy marketing</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/refurbished-phone-checks\">Refurbished Phone Checks Before Buying</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "2GB RAM",
+      "16GB Storage",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "2GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "16GB Storage"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Samsung Galaxy J337A Price in Kenya | Mobdeals",
+    "seoDescription": "Samsung Galaxy J337A for daily communication and practical storage in Kenya. 2GB RAM and 16GB Storage. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/samsung-galaxy-j337a-16gb-storage#product",
+      "name": "Samsung Galaxy J337A | 2GB | 16GB",
+      "description": "Samsung Galaxy J337A for daily communication and practical storage in Kenya. 2GB RAM and 16GB Storage. Order from Mobdeals online store today.",
+      "sku": "SAMSUNG-SAMSUNG-GALAXY-J337A-2GB-16GB-EX-UK-1A4432E1",
+      "brand": {
+        "@type": "Brand",
+        "name": "Samsung"
+      },
+      "model": "Samsung Galaxy J337A",
+      "category": "smartphone",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "2GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "16GB Storage"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/samsung-galaxy-j337a-16gb-storage",
+        "priceCurrency": "KES",
+        "price": "9440",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    },
+    "featured": true
+  },
+  {
+    "id": "APPLE-APPLE-IPHONE-14-BIONIC-128GB-6-1-INCH-EX-UK-18FA9705",
+    "slug": "apple-iphone-14-128gb-storage",
+    "name": "Apple iPhone 14 | A15 Bionic | 128GB",
+    "brand": "Apple",
+    "category": "smartphones",
+    "price": {
+      "amount": 54280,
+      "currency": "KES",
+      "compareAtAmount": 61988
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "smartphone/apple-iphone-14-128gb-storage/01.webp",
+        "alt": "Apple iPhone 14 | A15 Bionic | 128GB"
+      }
+    ],
+    "inStock": true,
+    "description": "Apple iPhone 14 is listed at KES 54,280 in Kenya, in ex uk condition with 6 months warranty. This configuration includes A15 Bionic, 128GB Storage, 6.1-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Apple iPhone 14 is listed at KES 54,280 in Kenya, in ex uk condition with 6 months warranty. This configuration includes A15 Bionic, 128GB Storage, 6.1-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: A15 Bionic</li>\n  <li>Storage: 128GB Storage</li>\n  <li>Display: 6.1-inch</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Buyers who want a phone for daily communication and apps</li>\n  <li>Users balancing work chats, browsing, and routine media use</li>\n  <li>Shoppers comparing practical value over flashy marketing</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/refurbished-phone-checks\">Refurbished Phone Checks Before Buying</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "A15 Bionic",
+      "128GB Storage",
+      "6.1-inch display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Feature",
+        "value": "A15 Bionic"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB Storage"
+      },
+      {
+        "label": "Display",
+        "value": "6.1-inch display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Apple iPhone 14 Price in Kenya | Mobdeals",
+    "seoDescription": "Apple iPhone 14 for daily communication and practical storage in Kenya. 128GB Storage. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/apple-iphone-14-128gb-storage#product",
+      "name": "Apple iPhone 14 | A15 Bionic | 128GB",
+      "description": "Apple iPhone 14 for daily communication and practical storage in Kenya. 128GB Storage. Order from Mobdeals online store today.",
+      "sku": "APPLE-APPLE-IPHONE-14-BIONIC-128GB-6-1-INCH-EX-UK-18FA9705",
+      "brand": {
+        "@type": "Brand",
+        "name": "Apple"
+      },
+      "model": "Apple iPhone 14",
+      "category": "smartphone",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "A15 Bionic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "128GB Storage"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "6.1-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/apple-iphone-14-128gb-storage",
+        "priceCurrency": "KES",
+        "price": "54280",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "APPLE-APPLE-IPHONE-12-BIONIC-64GB-EX-UK-5BE336A2",
+    "slug": "apple-iphone-12-64gb-storage",
+    "name": "Apple iPhone 12 | A14 Bionic | 64GB",
+    "brand": "Apple",
+    "category": "smartphones",
+    "price": {
+      "amount": 33630,
+      "currency": "KES",
+      "compareAtAmount": 38405
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "smartphone/apple-iphone-12-64gb-storage/01.webp",
+        "alt": "Apple iPhone 12 | A14 Bionic | 64GB"
+      }
+    ],
+    "inStock": true,
+    "description": "Apple iPhone 12 is listed at KES 33,630 in Kenya, in ex uk condition with 6 months warranty. This configuration includes A14 Bionic, 64GB Storage. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Apple iPhone 12 is listed at KES 33,630 in Kenya, in ex uk condition with 6 months warranty. This configuration includes A14 Bionic, 64GB Storage.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: A14 Bionic</li>\n  <li>Storage: 64GB Storage</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Buyers who want a phone for daily communication and apps</li>\n  <li>Users balancing work chats, browsing, and routine media use</li>\n  <li>Shoppers comparing practical value over flashy marketing</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/refurbished-phone-checks\">Refurbished Phone Checks Before Buying</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "A14 Bionic",
+      "64GB Storage",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Feature",
+        "value": "A14 Bionic"
+      },
+      {
+        "label": "Storage",
+        "value": "64GB Storage"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Apple iPhone 12 Price in Kenya | Mobdeals",
+    "seoDescription": "Apple iPhone 12 for daily communication and practical storage in Kenya. Key details include 64GB Storage. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/apple-iphone-12-64gb-storage#product",
+      "name": "Apple iPhone 12 | A14 Bionic | 64GB",
+      "description": "Apple iPhone 12 for daily communication and practical storage in Kenya. Key details include 64GB Storage. Order from Mobdeals online store today.",
+      "sku": "APPLE-APPLE-IPHONE-12-BIONIC-64GB-EX-UK-5BE336A2",
+      "brand": {
+        "@type": "Brand",
+        "name": "Apple"
+      },
+      "model": "Apple iPhone 12",
+      "category": "smartphone",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "A14 Bionic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "64GB Storage"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/apple-iphone-12-64gb-storage",
+        "priceCurrency": "KES",
+        "price": "33630",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "SAMSUNG-SAMSUNG-GALAXY-S21-FE-6GB-128GB-EX-UK-FB77C641",
+    "slug": "samsung-galaxy-s21-fe-128gb-storage",
+    "name": "Samsung Galaxy S21 FE | 6GB | 128GB",
+    "brand": "Samsung",
+    "category": "smartphones",
+    "price": {
+      "amount": 32450,
+      "currency": "KES",
+      "compareAtAmount": 37058
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "smartphone/samsung-galaxy-s21-fe-128gb-storage/01.webp",
+        "alt": "Samsung Galaxy S21 FE | 6GB | 128GB"
+      }
+    ],
+    "inStock": true,
+    "description": "Samsung Galaxy S21 FE is listed at KES 32,450 in Kenya, in ex uk condition with 6 months warranty. This configuration includes 6GB RAM, 128GB Storage. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Samsung Galaxy S21 FE is listed at KES 32,450 in Kenya, in ex uk condition with 6 months warranty. This configuration includes 6GB RAM, 128GB Storage.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>RAM: 6GB RAM</li>\n  <li>Storage: 128GB Storage</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Buyers who want a phone for daily communication and apps</li>\n  <li>Users balancing work chats, browsing, and routine media use</li>\n  <li>Shoppers comparing practical value over flashy marketing</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/refurbished-phone-checks\">Refurbished Phone Checks Before Buying</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "6GB RAM",
+      "128GB Storage",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "6GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB Storage"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Samsung Galaxy S21 FE Price in Kenya | Mobdeals",
+    "seoDescription": "Samsung Galaxy S21 FE for daily communication and practical storage in Kenya. 6GB RAM and 128GB Storage. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/samsung-galaxy-s21-fe-128gb-storage#product",
+      "name": "Samsung Galaxy S21 FE | 6GB | 128GB",
+      "description": "Samsung Galaxy S21 FE for daily communication and practical storage in Kenya. 6GB RAM and 128GB Storage. Order from Mobdeals online store today.",
+      "sku": "SAMSUNG-SAMSUNG-GALAXY-S21-FE-6GB-128GB-EX-UK-FB77C641",
+      "brand": {
+        "@type": "Brand",
+        "name": "Samsung"
+      },
+      "model": "Samsung Galaxy S21 FE",
+      "category": "smartphone",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "6GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "128GB Storage"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/samsung-galaxy-s21-fe-128gb-storage",
+        "priceCurrency": "KES",
+        "price": "32450",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-PROBOOK-11-G1-CELERON-4GB-128GB-SSD-11-6-INCH-TOUCHSCREEN-EX-UK-1AE42A7B",
+    "slug": "hp-probook-11-g1-128gb-ssd-3",
+    "name": "HP ProBook 11 G1 | Intel Celeron Processor | 4GB | 128GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 16520,
+      "currency": "KES",
+      "compareAtAmount": 18866
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-11-g1-128gb-ssd-3/01.webp",
+        "alt": "HP ProBook 11 G1 | Intel Celeron Processor | 4GB | 128GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-11-g1-128gb-ssd-3/02.webp",
+        "alt": "HP ProBook 11 G1 | Intel Celeron Processor | 4GB | 128GB SSD - image 2"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-11-g1-128gb-ssd-3/03.webp",
+        "alt": "HP ProBook 11 G1 | Intel Celeron Processor | 4GB | 128GB SSD - image 3"
+      }
+    ],
+    "inStock": true,
+    "description": "HP ProBook 11 G1 is listed at KES 16,520 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Celeron Processor, 4GB RAM, 128GB SSD, 11.6-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP ProBook 11 G1 is listed at KES 16,520 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Celeron Processor, 4GB RAM, 128GB SSD, 11.6-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Celeron Processor</li>\n  <li>RAM: 4GB RAM</li>\n  <li>Storage: 128GB SSD</li>\n  <li>Display: 11.6-inch</li>\n  <li>Connectivity: Wi-Fi, Bluetooth</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Celeron Processor",
+      "4GB RAM",
+      "128GB SSD",
+      "11.6-inch display",
+      "Wi-Fi, Bluetooth",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Celeron Processor"
+      },
+      {
+        "label": "Memory",
+        "value": "4GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "11.6-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, Bluetooth"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP ProBook 11 G1 Price in Kenya | Mobdeals",
+    "seoDescription": "HP ProBook 11 G1 for office work, school, and multitasking in Kenya. 4GB RAM and 128GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-probook-11-g1-128gb-ssd-3#product",
+      "name": "HP ProBook 11 G1 | Intel Celeron Processor | 4GB | 128GB SSD",
+      "description": "HP ProBook 11 G1 for office work, school, and multitasking in Kenya. 4GB RAM and 128GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-PROBOOK-11-G1-CELERON-4GB-128GB-SSD-11-6-INCH-TOUCHSCREEN-EX-UK-1AE42A7B",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP ProBook 11 G1",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Celeron Processor"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "4GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "128GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "11.6-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, Bluetooth"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-probook-11-g1-128gb-ssd-3",
+        "priceCurrency": "KES",
+        "price": "16520",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-5400-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCREEN-E-2EC9C9C6",
+    "slug": "dell-latitude-5400-8th-gen",
+    "name": "Dell Latitude 5400 | Intel Core i5 8th Generation | 8GB | 256GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 29500,
+      "currency": "KES",
+      "compareAtAmount": 33689
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-5400-8th-gen/01.webp",
+        "alt": "Dell Latitude 5400 | Intel Core i5 8th Generation | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude 5400 is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Generation, 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude 5400 is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Generation, 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 8th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 8th Generation",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 8th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude 5400 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude 5400 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-5400-8th-gen#product",
+      "name": "Dell Latitude 5400 | Intel Core i5 8th Generation | 8GB | 256GB SSD",
+      "description": "Dell Latitude 5400 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-5400-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCREEN-E-2EC9C9C6",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude 5400",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 8th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-5400-8th-gen",
+        "priceCurrency": "KES",
+        "price": "29500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-830-G8-I5-10TH-GEN-8GB-256GB-SSD-EX-UK-7C5EB1C0",
+    "slug": "hp-elitebook-830-g8-10th-gen",
+    "name": "HP EliteBook 830 G8 | Intel Core i5 | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 38940,
+      "currency": "KES",
+      "compareAtAmount": 44469
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-830-g8-10th-gen/01.webp",
+        "alt": "HP EliteBook 830 G8 | Intel Core i5 | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 830 G8 is listed at KES 38,940 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, 10th Gen. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 830 G8 is listed at KES 38,940 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, 10th Gen.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 10th Gen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "10th Gen",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "10th Gen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 830 G8 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 830 G8 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-830-g8-10th-gen#product",
+      "name": "HP EliteBook 830 G8 | Intel Core i5 | 8GB | 256GB SSD",
+      "description": "HP EliteBook 830 G8 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-830-G8-I5-10TH-GEN-8GB-256GB-SSD-EX-UK-7C5EB1C0",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 830 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "10th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-830-g8-10th-gen",
+        "priceCurrency": "KES",
+        "price": "38940",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-T495-RYZEN5-8GB-256GB-SSD-14-INCH-FHD-EX-UK-8B75D981",
+    "slug": "lenovo-thinkpad-t495-256gb-ssd",
+    "name": "Lenovo ThinkPad T495 | Ryzen 5 Pro | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 34220,
+      "currency": "KES",
+      "compareAtAmount": 39079
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-t495-256gb-ssd/01.webp",
+        "alt": "Lenovo ThinkPad T495 | Ryzen 5 Pro | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad T495 is listed at KES 34,220 in Kenya, in ex uk condition with 6 months warranty. This configuration includes AMD Ryzen 5 Pro, 8GB RAM, 256GB SSD, 14-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad T495 is listed at KES 34,220 in Kenya, in ex uk condition with 6 months warranty. This configuration includes AMD Ryzen 5 Pro, 8GB RAM, 256GB SSD, 14-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: AMD Ryzen 5 Pro</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch FHD</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "AMD Ryzen 5 Pro",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch FHD display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "AMD Ryzen 5 Pro"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch FHD display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad T495 Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad T495 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-t495-256gb-ssd#product",
+      "name": "Lenovo ThinkPad T495 | Ryzen 5 Pro | 8GB | 256GB SSD",
+      "description": "Lenovo ThinkPad T495 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-T495-RYZEN5-8GB-256GB-SSD-14-INCH-FHD-EX-UK-8B75D981",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad T495",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "AMD Ryzen 5 Pro"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-t495-256gb-ssd",
+        "priceCurrency": "KES",
+        "price": "34220",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "TOSHIBA-TOSHIBA-DYNABOOK-I5-11TH-GEN-8GB-256GB-SSD-TOUCHSCREEN-EX-UK-017A39EB",
+    "slug": "toshiba-dynabook-11th-gen",
+    "name": "Toshiba Dynabook | Intel Core i5 | 8GB | 256GB SSD",
+    "brand": "Toshiba",
+    "category": "laptops",
+    "price": {
+      "amount": 33040,
+      "currency": "KES",
+      "compareAtAmount": 37732
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/toshiba-dynabook-11th-gen/01.webp",
+        "alt": "Toshiba Dynabook | Intel Core i5 | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Toshiba Dynabook is listed at KES 33,040 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, 11th Gen. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Toshiba Dynabook is listed at KES 33,040 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, 11th Gen.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 11th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "11th Gen",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "11th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Toshiba Dynabook Price in Kenya | Mobdeals",
+    "seoDescription": "Toshiba Dynabook for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/toshiba-dynabook-11th-gen#product",
+      "name": "Toshiba Dynabook | Intel Core i5 | 8GB | 256GB SSD",
+      "description": "Toshiba Dynabook for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "TOSHIBA-TOSHIBA-DYNABOOK-I5-11TH-GEN-8GB-256GB-SSD-TOUCHSCREEN-EX-UK-017A39EB",
+      "brand": {
+        "@type": "Brand",
+        "name": "Toshiba"
+      },
+      "model": "Toshiba Dynabook",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/toshiba-dynabook-11th-gen",
+        "priceCurrency": "KES",
+        "price": "33040",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-612-DETACHABLE-I3-4GB-128GB-TOUCHSCREEN-EX-UK-21AB46EF",
+    "slug": "hp-612-detachable-128gb-storage",
+    "name": "HP 612 Detachable | Intel Core i3 Processor | 4GB | 128GB",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 19470,
+      "currency": "KES",
+      "compareAtAmount": 22235
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-612-detachable-128gb-storage/01.webp",
+        "alt": "HP 612 Detachable | Intel Core i3 Processor | 4GB | 128GB"
+      }
+    ],
+    "inStock": true,
+    "description": "HP 612 Detachable is listed at KES 19,470 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i3 Processor, 4GB RAM, 128GB Storage, Touchscreen. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP 612 Detachable is listed at KES 19,470 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i3 Processor, 4GB RAM, 128GB Storage, Touchscreen.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i3 Processor</li>\n  <li>RAM: 4GB RAM</li>\n  <li>Storage: 128GB Storage</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i3 Processor",
+      "4GB RAM",
+      "128GB Storage",
+      "Touchscreen",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i3 Processor"
+      },
+      {
+        "label": "Memory",
+        "value": "4GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB Storage"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP 612 Detachable Price in Kenya | Mobdeals",
+    "seoDescription": "HP 612 Detachable for office work, school, and multitasking in Kenya. 4GB RAM and 128GB Storage. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-612-detachable-128gb-storage#product",
+      "name": "HP 612 Detachable | Intel Core i3 Processor | 4GB | 128GB",
+      "description": "HP 612 Detachable for office work, school, and multitasking in Kenya. 4GB RAM and 128GB Storage. Order from Mobdeals online store today.",
+      "sku": "HP-HP-612-DETACHABLE-I3-4GB-128GB-TOUCHSCREEN-EX-UK-21AB46EF",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP 612 Detachable",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i3 Processor"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "4GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "128GB Storage"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-612-detachable-128gb-storage",
+        "priceCurrency": "KES",
+        "price": "19470",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-820-G3-I5-6TH-GEN-8GB-256GB-SSD-12-5-INCH-EX-UK-36212C99",
+    "slug": "hp-elitebook-820-g3-6th-gen-2",
+    "name": "HP EliteBook 820 G3 | Intel Core i5 - 6th Generation | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 27140,
+      "currency": "KES",
+      "compareAtAmount": 30994
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-820-g3-6th-gen-2/01.webp",
+        "alt": "HP EliteBook 820 G3 | Intel Core i5 - 6th Generation | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 820 G3 is listed at KES 27,140 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 - 6th Generation, 8GB RAM, 256GB SSD, 12.5-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 820 G3 is listed at KES 27,140 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 \u2013 6th Generation, 8GB RAM, 256GB SSD, 12.5-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 \u2013 6th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 12.5-inch</li>\n  <li>Connectivity: USB-C, USB 3.0, VGA, DisplayPort, Ethernet (LAN)</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 - 6th Generation",
+      "8GB RAM",
+      "256GB SSD",
+      "12.5-inch display",
+      "USB-C, USB 3.0, VGA, DisplayPort, Ethernet (LAN)",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 - 6th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "12.5-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "USB-C, USB 3.0, VGA, DisplayPort, Ethernet (LAN)"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 820 G3 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 820 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-820-g3-6th-gen-2#product",
+      "name": "HP EliteBook 820 G3 | Intel Core i5 \u2013 6th Generation | 8GB | 256GB SSD",
+      "description": "HP EliteBook 820 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-820-G3-I5-6TH-GEN-8GB-256GB-SSD-12-5-INCH-EX-UK-36212C99",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 820 G3",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 \u2013 6th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "6th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "12.5-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "USB-C, USB 3.0, VGA, DisplayPort, Ethernet (LAN)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-820-g3-6th-gen-2",
+        "priceCurrency": "KES",
+        "price": "27140",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G8-I7-11TH-GEN-16GB-256GB-SSD-EX-UK-B5AA09CE",
+    "slug": "hp-elitebook-840-g8-11th-gen-4",
+    "name": "HP EliteBook 840 G8 | Intel Core i7 | 16GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 50150,
+      "currency": "KES",
+      "compareAtAmount": 57271
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g8-11th-gen-4/01.webp",
+        "alt": "HP EliteBook 840 G8 | Intel Core i7 | 16GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G8 is listed at KES 50,150 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 256GB SSD, 11th Gen. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G8 is listed at KES 50,150 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 256GB SSD, 11th Gen.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 11th Gen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7",
+      "16GB RAM",
+      "256GB SSD",
+      "11th Gen",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "11th Gen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G8 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g8-11th-gen-4#product",
+      "name": "HP EliteBook 840 G8 | Intel Core i7 | 16GB | 256GB SSD",
+      "description": "HP EliteBook 840 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G8-I7-11TH-GEN-16GB-256GB-SSD-EX-UK-B5AA09CE",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g8-11th-gen-4",
+        "priceCurrency": "KES",
+        "price": "50150",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-PROBOOK-640-G4-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-HD-NON-TOUCH-EX-78F1BEEB",
+    "slug": "hp-probook-640-g4-8th-gen",
+    "name": "HP ProBook 640 G4 | Intel Core i5 (8th Gen) | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 29500,
+      "currency": "KES",
+      "compareAtAmount": 33689
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-640-g4-8th-gen/01.webp",
+        "alt": "HP ProBook 640 G4 | Intel Core i5 (8th Gen) | 8GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-640-g4-laptop/01.webp",
+        "alt": "HP ProBook 640 G4 | Intel Core i5 (8th Gen) | 8GB | 256GB SSD - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "HP ProBook 640 G4 is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (8th Gen), 8GB RAM, 256GB SSD, 14-inch HD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP ProBook 640 G4 is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (8th Gen), 8GB RAM, 256GB SSD, 14-inch HD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (8th Gen)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch HD</li>\n  <li>Feature: Non-Touch</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (8th Gen)",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch HD display",
+      "Non-Touch",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (8th Gen)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch HD display"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP ProBook 640 G4 Price in Kenya | Mobdeals",
+    "seoDescription": "HP ProBook 640 G4 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-probook-640-g4-8th-gen#product",
+      "name": "HP ProBook 640 G4 | Intel Core i5 (8th Gen) | 8GB | 256GB SSD",
+      "description": "HP ProBook 640 G4 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-PROBOOK-640-G4-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-HD-NON-TOUCH-EX-78F1BEEB",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP ProBook 640 G4",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (8th Gen)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch HD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-probook-640-g4-8th-gen",
+        "priceCurrency": "KES",
+        "price": "29500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-PROBOOK-435-G7-RYZEN7-16GB-256GB-SSD-TOUCHSCREEN-EX-UK-AB46B97E",
+    "slug": "hp-probook-435-g7-256gb-ssd",
+    "name": "HP ProBook 435 G7 | Ryzen 7 PRO 4750U | 16GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 43070,
+      "currency": "KES",
+      "compareAtAmount": 49186
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-435-g7-256gb-ssd/01.webp",
+        "alt": "HP ProBook 435 G7 | Ryzen 7 PRO 4750U | 16GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP ProBook 435 G7 is listed at KES 43,070 in Kenya, in ex uk condition with 6 months warranty. This configuration includes AMD Ryzen 7 Pro 4750U, 16GB RAM, 256GB SSD, Touchscreen. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP ProBook 435 G7 is listed at KES 43,070 in Kenya, in ex uk condition with 6 months warranty. This configuration includes AMD Ryzen 7 Pro 4750U, 16GB RAM, 256GB SSD, Touchscreen.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: AMD Ryzen 7 Pro 4750U</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "AMD Ryzen 7 Pro 4750U",
+      "16GB RAM",
+      "256GB SSD",
+      "Touchscreen",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "AMD Ryzen 7 Pro 4750U"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP ProBook 435 G7 Price in Kenya | Mobdeals",
+    "seoDescription": "HP ProBook 435 G7 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-probook-435-g7-256gb-ssd#product",
+      "name": "HP ProBook 435 G7 | Ryzen 7 PRO 4750U | 16GB | 256GB SSD",
+      "description": "HP ProBook 435 G7 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-PROBOOK-435-G7-RYZEN7-16GB-256GB-SSD-TOUCHSCREEN-EX-UK-AB46B97E",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP ProBook 435 G7",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "AMD Ryzen 7 Pro 4750U"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-probook-435-g7-256gb-ssd",
+        "priceCurrency": "KES",
+        "price": "43070",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-X390-I7-8TH-GEN-16GB-256GB-SSD-13-3-INCH-FHD-TOUCHSCREEN-693842CE",
+    "slug": "lenovo-x390-8th-gen",
+    "name": "Lenovo X390 | Core i7 | 16GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 41890,
+      "currency": "KES",
+      "compareAtAmount": 47838
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-x390-8th-gen/01.webp",
+        "alt": "Lenovo X390 | Core i7 | 16GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo X390 is listed at KES 41,890 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 256GB SSD, 13.3-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo X390 is listed at KES 41,890 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 256GB SSD, 13.3-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 13.3-inch FHD</li>\n  <li>Generation: 8th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7",
+      "16GB RAM",
+      "256GB SSD",
+      "13.3-inch FHD display",
+      "8th Gen",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch FHD display"
+      },
+      {
+        "label": "Generation",
+        "value": "8th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo X390 Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo X390 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-x390-8th-gen#product",
+      "name": "Lenovo X390 | Core i7 | 16GB | 256GB SSD",
+      "description": "Lenovo X390 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-X390-I7-8TH-GEN-16GB-256GB-SSD-13-3-INCH-FHD-TOUCHSCREEN-693842CE",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo X390",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-x390-8th-gen",
+        "priceCurrency": "KES",
+        "price": "41890",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-T470S-I7-7TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCR-825256D0",
+    "slug": "lenovo-thinkpad-t470s-7th-gen-2",
+    "name": "Lenovo ThinkPad T470s | Intel Core i7 - 7th Gen | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 25960,
+      "currency": "KES",
+      "compareAtAmount": 29646
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-t470s-7th-gen-2/01.webp",
+        "alt": "Lenovo ThinkPad T470s | Intel Core i7 - 7th Gen | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad T470s is listed at KES 25,960 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 - 7th Gen, 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad T470s is listed at KES 25,960 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 \u2014 7th Gen, 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 \u2014 7th Gen</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Connectivity: HDMI</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 - 7th Gen",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "HDMI",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 - 7th Gen"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad T470s Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad T470s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-t470s-7th-gen-2#product",
+      "name": "Lenovo ThinkPad T470s | Intel Core i7 \u2014 7th Gen | 8GB | 256GB SSD",
+      "description": "Lenovo ThinkPad T470s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-T470S-I7-7TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCR-825256D0",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad T470s",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 \u2014 7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-t470s-7th-gen-2",
+        "priceCurrency": "KES",
+        "price": "25960",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-7280-I5-6TH-GEN-8GB-256GB-SSD-12-5-INCH-HD-NON-TOUC-E05E49D5",
+    "slug": "dell-latitude-7280-6th-gen",
+    "name": "Dell Latitude 7280 | Core i5 (Non touch) | 8GB | 256GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 23010,
+      "currency": "KES",
+      "compareAtAmount": 26277
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-7280-6th-gen/01.webp",
+        "alt": "Dell Latitude 7280 | Core i5 (Non touch) | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude 7280 is listed at KES 23,010 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (Non touch), 8GB RAM, 256GB SSD, 12.5-inch HD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude 7280 is listed at KES 23,010 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (Non touch), 8GB RAM, 256GB SSD, 12.5-inch HD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (Non touch)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 12.5-inch HD</li>\n  <li>Generation: 6th Gen</li>\n  <li>Connectivity: Wi-Fi, HDMI, USB 3.0, Ethernet (LAN)</li>\n  <li>Feature: Non-Touch</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (Non touch)",
+      "8GB RAM",
+      "256GB SSD",
+      "12.5-inch HD display",
+      "6th Gen",
+      "Wi-Fi, HDMI, USB 3.0, Ethernet (LAN)"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (Non touch)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "12.5-inch HD display"
+      },
+      {
+        "label": "Generation",
+        "value": "6th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, HDMI, USB 3.0, Ethernet (LAN)"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude 7280 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude 7280 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-7280-6th-gen#product",
+      "name": "Dell Latitude 7280 | Core i5 (Non touch) | 8GB | 256GB SSD",
+      "description": "Dell Latitude 7280 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-7280-I5-6TH-GEN-8GB-256GB-SSD-12-5-INCH-HD-NON-TOUC-E05E49D5",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude 7280",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (Non touch)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "6th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "12.5-inch HD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, HDMI, USB 3.0, Ethernet (LAN)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-7280-6th-gen",
+        "priceCurrency": "KES",
+        "price": "23010",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-5420-I5-11TH-GEN-16GB-512GB-SSD-14-INCH-EX-UK-AB437104",
+    "slug": "dell-latitude-5420-11th-gen",
+    "name": "Dell Latitude 5420 | Intel Core i5 - 11th Generation | 16GB | 512GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 42480,
+      "currency": "KES",
+      "compareAtAmount": 48512
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-5420-11th-gen/01.webp",
+        "alt": "Dell Latitude 5420 | Intel Core i5 - 11th Generation | 16GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude 5420 is listed at KES 42,480 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 - 11th Generation, 16GB RAM, 512GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude 5420 is listed at KES 42,480 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 \u2014 11th Generation, 16GB RAM, 512GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 \u2014 11th Generation</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 - 11th Generation",
+      "16GB RAM",
+      "512GB SSD",
+      "14-inch display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 - 11th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude 5420 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude 5420 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-5420-11th-gen#product",
+      "name": "Dell Latitude 5420 | Intel Core i5 \u2014 11th Generation | 16GB | 512GB SSD",
+      "description": "Dell Latitude 5420 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-5420-I5-11TH-GEN-16GB-512GB-SSD-14-INCH-EX-UK-AB437104",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude 5420",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 \u2014 11th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-5420-11th-gen",
+        "priceCurrency": "KES",
+        "price": "42480",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-PROBOOK-11-G7-CELERON-4GB-128GB-SSD-11-6-INCH-TOUCHSCREEN-EX-UK-810BAC96",
+    "slug": "hp-probook-11-g7-128gb-ssd",
+    "name": "HP ProBook 11 G7 | Intel Celeron Processor | 4GB | 128GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 17700,
+      "currency": "KES",
+      "compareAtAmount": 20213
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-11-g7-128gb-ssd/01.webp",
+        "alt": "HP ProBook 11 G7 | Intel Celeron Processor | 4GB | 128GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP ProBook 11 G7 is listed at KES 17,700 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Celeron Processor, 4GB RAM, 128GB SSD, 11.6-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP ProBook 11 G7 is listed at KES 17,700 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Celeron Processor, 4GB RAM, 128GB SSD, 11.6-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Celeron Processor</li>\n  <li>RAM: 4GB RAM</li>\n  <li>Storage: 128GB SSD</li>\n  <li>Display: 11.6-inch</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Celeron Processor",
+      "4GB RAM",
+      "128GB SSD",
+      "11.6-inch display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Celeron Processor"
+      },
+      {
+        "label": "Memory",
+        "value": "4GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "11.6-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP ProBook 11 G7 Price in Kenya | Mobdeals",
+    "seoDescription": "HP ProBook 11 G7 for office work, school, and multitasking in Kenya. 4GB RAM and 128GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-probook-11-g7-128gb-ssd#product",
+      "name": "HP ProBook 11 G7 | Intel Celeron Processor | 4GB | 128GB SSD",
+      "description": "HP ProBook 11 G7 for office work, school, and multitasking in Kenya. 4GB RAM and 128GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-PROBOOK-11-G7-CELERON-4GB-128GB-SSD-11-6-INCH-TOUCHSCREEN-EX-UK-810BAC96",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP ProBook 11 G7",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Celeron Processor"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "4GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "128GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "11.6-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-probook-11-g7-128gb-ssd",
+        "priceCurrency": "KES",
+        "price": "17700",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-L490-I7-8TH-GEN-8GB-180GB-SSD-14-INCH-NON-TOUCH-0DAD5122",
+    "slug": "lenovo-thinkpad-l490-8th-gen",
+    "name": "Lenovo ThinkPad L490 | Intel Core i7 8th Generation | 8GB | 180GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 21830,
+      "currency": "KES",
+      "compareAtAmount": 24930
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-l490-8th-gen/01.webp",
+        "alt": "Lenovo ThinkPad L490 | Intel Core i7 8th Generation | 8GB | 180GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad L490 is listed at KES 21,830 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 8th Generation, 8GB RAM, 180GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad L490 is listed at KES 21,830 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 8th Generation, 8GB RAM, 180GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 8th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 180GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Connectivity: HDMI</li>\n  <li>Feature: Non-Touch</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 8th Generation",
+      "8GB RAM",
+      "180GB SSD",
+      "14-inch display",
+      "HDMI",
+      "Non-Touch"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 8th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "180GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad L490 Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad L490 for office work, school, and multitasking in Kenya. 8GB RAM and 180GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-l490-8th-gen#product",
+      "name": "Lenovo ThinkPad L490 | Intel Core i7 8th Generation | 8GB | 180GB SSD",
+      "description": "Lenovo ThinkPad L490 for office work, school, and multitasking in Kenya. 8GB RAM and 180GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-L490-I7-8TH-GEN-8GB-180GB-SSD-14-INCH-NON-TOUCH-0DAD5122",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad L490",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 8th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "180GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-l490-8th-gen",
+        "priceCurrency": "KES",
+        "price": "21830",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-YOGA-I5-7TH-GEN-8GB-256GB-SSD-13-3-INCH-TOUCHSC-51A8D8F6",
+    "slug": "lenovo-thinkpad-yoga-7th-gen",
+    "name": "Lenovo ThinkPad Yoga | Intel Core i5 - 7th Generation | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 28910,
+      "currency": "KES",
+      "compareAtAmount": 33015
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-yoga-7th-gen/01.webp",
+        "alt": "Lenovo ThinkPad Yoga | Intel Core i5 - 7th Generation | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad Yoga is listed at KES 28,910 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 - 7th Generation, 8GB RAM, 256GB SSD, 13.3-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad Yoga is listed at KES 28,910 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 \u2013 7th Generation, 8GB RAM, 256GB SSD, 13.3-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 \u2013 7th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 13.3-inch</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 - 7th Generation",
+      "8GB RAM",
+      "256GB SSD",
+      "13.3-inch display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 - 7th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad Yoga Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad Yoga for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-yoga-7th-gen#product",
+      "name": "Lenovo ThinkPad Yoga | Intel Core i5 \u2013 7th Generation | 8GB | 256GB SSD",
+      "description": "Lenovo ThinkPad Yoga for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-YOGA-I5-7TH-GEN-8GB-256GB-SSD-13-3-INCH-TOUCHSC-51A8D8F6",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad Yoga",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 \u2013 7th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-yoga-7th-gen",
+        "priceCurrency": "KES",
+        "price": "28910",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "SAMSUNG-SAMSUNG-GALAXY-S10-8GB-512GB-EX-UK-A8D24A9A",
+    "slug": "samsung-galaxy-s10-512gb-storage",
+    "name": "Samsung Galaxy S10 | 8GB | 512GB",
+    "brand": "Samsung",
+    "category": "smartphones",
+    "price": {
+      "amount": 30680,
+      "currency": "KES",
+      "compareAtAmount": 35037
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "smartphone/samsung-galaxy-s10-512gb-storage/01.webp",
+        "alt": "Samsung Galaxy S10 | 8GB | 512GB"
+      }
+    ],
+    "inStock": true,
+    "description": "Samsung Galaxy S10 is listed at KES 30,680 in Kenya, in ex uk condition with 6 months warranty. This configuration includes 8GB RAM, 512GB Storage. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Samsung Galaxy S10 is listed at KES 30,680 in Kenya, in ex uk condition with 6 months warranty. This configuration includes 8GB RAM, 512GB Storage.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 512GB Storage</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Buyers who want a phone for daily communication and apps</li>\n  <li>Users balancing work chats, browsing, and routine media use</li>\n  <li>Shoppers comparing practical value over flashy marketing</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/refurbished-phone-checks\">Refurbished Phone Checks Before Buying</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "8GB RAM",
+      "512GB Storage",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB Storage"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Samsung Galaxy S10 Price in Kenya | Mobdeals",
+    "seoDescription": "Samsung Galaxy S10 for daily communication and practical storage in Kenya. 8GB RAM and 512GB Storage. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/samsung-galaxy-s10-512gb-storage#product",
+      "name": "Samsung Galaxy S10 | 8GB | 512GB",
+      "description": "Samsung Galaxy S10 for daily communication and practical storage in Kenya. 8GB RAM and 512GB Storage. Order from Mobdeals online store today.",
+      "sku": "SAMSUNG-SAMSUNG-GALAXY-S10-8GB-512GB-EX-UK-A8D24A9A",
+      "brand": {
+        "@type": "Brand",
+        "name": "Samsung"
+      },
+      "model": "Samsung Galaxy S10",
+      "category": "smartphone",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB Storage"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/samsung-galaxy-s10-512gb-storage",
+        "priceCurrency": "KES",
+        "price": "30680",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-E5550-I5-5TH-GEN-8GB-128GB-SSD-15-6-INCH-EX-UK-B7696AA6",
+    "slug": "dell-latitude-e5550-5th-gen",
+    "name": "Dell Latitude E5550 | Intel Core i5 - 5th Generation | 8GB | 128GB SSD",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 17700,
+      "currency": "KES",
+      "compareAtAmount": 20213
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-e5550-5th-gen/01.webp",
+        "alt": "Dell Latitude E5550 | Intel Core i5 - 5th Generation | 8GB | 128GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude E5550 is listed at KES 17,700 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 - 5th Generation, 8GB RAM, 128GB SSD, 15.6-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell Latitude E5550 is listed at KES 17,700 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 \u2013 5th Generation, 8GB RAM, 128GB SSD, 15.6-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 \u2013 5th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 128GB SSD</li>\n  <li>Display: 15.6-inch</li>\n  <li>Connectivity: HDMI, USB 3.0, VGA, Ethernet (LAN)</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 - 5th Generation",
+      "8GB RAM",
+      "128GB SSD",
+      "15.6-inch display",
+      "HDMI, USB 3.0, VGA, Ethernet (LAN)",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 - 5th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "15.6-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, USB 3.0, VGA, Ethernet (LAN)"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude E5550 Price in Kenya | Mobdeals",
+    "seoDescription": "Dell Latitude E5550 for office work, school, and multitasking in Kenya. 8GB RAM and 128GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-e5550-5th-gen#product",
+      "name": "Dell Latitude E5550 | Intel Core i5 \u2013 5th Generation | 8GB | 128GB SSD",
+      "description": "Dell Latitude E5550 for office work, school, and multitasking in Kenya. 8GB RAM and 128GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-E5550-I5-5TH-GEN-8GB-128GB-SSD-15-6-INCH-EX-UK-B7696AA6",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude E5550",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 \u2013 5th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "5th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "128GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "15.6-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, USB 3.0, VGA, Ethernet (LAN)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-e5550-5th-gen",
+        "priceCurrency": "KES",
+        "price": "17700",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-250-G8-I5-10TH-GEN-8GB-256GB-SSD-15-6-INCH-EX-UK-4102B431",
+    "slug": "hp-250-g8-10th-gen",
+    "name": "HP 250 G8 | Intel Core i5 - 10th Generation | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 25960,
+      "currency": "KES",
+      "compareAtAmount": 29646
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-250-g8-10th-gen/01.webp",
+        "alt": "HP 250 G8 | Intel Core i5 - 10th Generation | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP 250 G8 is listed at KES 25,960 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 - 10th Generation, 8GB RAM, 256GB SSD, 15.6-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP 250 G8 is listed at KES 25,960 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 \u2013 10th Generation, 8GB RAM, 256GB SSD, 15.6-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 \u2013 10th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 15.6-inch</li>\n  <li>Connectivity: Wi-Fi, Bluetooth, HDMI</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 - 10th Generation",
+      "8GB RAM",
+      "256GB SSD",
+      "15.6-inch display",
+      "Wi-Fi, Bluetooth, HDMI",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 - 10th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "15.6-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Wi-Fi, Bluetooth, HDMI"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP 250 G8 Price in Kenya | Mobdeals",
+    "seoDescription": "HP 250 G8 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-250-g8-10th-gen#product",
+      "name": "HP 250 G8 | Intel Core i5 \u2013 10th Generation | 8GB | 256GB SSD",
+      "description": "HP 250 G8 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-250-G8-I5-10TH-GEN-8GB-256GB-SSD-15-6-INCH-EX-UK-4102B431",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP 250 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 \u2013 10th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "10th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "15.6-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "Wi-Fi, Bluetooth, HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-250-g8-10th-gen",
+        "priceCurrency": "KES",
+        "price": "25960",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-PROBOOK-11-G6-I5-10TH-GEN-8GB-256GB-SSD-11-6-INCH-TOUCHSCREEN-EX-5FB66733",
+    "slug": "hp-probook-11-g6-10th-gen-2",
+    "name": "HP ProBook 11 G6 | Intel Core i5 - 10th Generation | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 28320,
+      "currency": "KES",
+      "compareAtAmount": 32341
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-probook-11-g6-10th-gen-2/01.webp",
+        "alt": "HP ProBook 11 G6 | Intel Core i5 - 10th Generation | 8GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "product_images_webp/hp-probook-11-g6-10th-gen-2/02.webp",
+        "alt": "HP ProBook 11 G6 | Intel Core i5 - 10th Generation | 8GB | 256GB SSD - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "HP ProBook 11 G6 is listed at KES 28,320 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 - 10th Generation, 8GB RAM, 256GB SSD, 11.6-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP ProBook 11 G6 is listed at KES 28,320 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 \u2013 10th Generation, 8GB RAM, 256GB SSD, 11.6-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 \u2013 10th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 11.6-inch</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 - 10th Generation",
+      "8GB RAM",
+      "256GB SSD",
+      "11.6-inch display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 - 10th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "11.6-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP ProBook 11 G6 Price in Kenya | Mobdeals",
+    "seoDescription": "HP ProBook 11 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-probook-11-g6-10th-gen-2#product",
+      "name": "HP ProBook 11 G6 | Intel Core i5 \u2013 10th Generation | 8GB | 256GB SSD",
+      "description": "HP ProBook 11 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-PROBOOK-11-G6-I5-10TH-GEN-8GB-256GB-SSD-11-6-INCH-TOUCHSCREEN-EX-5FB66733",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP ProBook 11 G6",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 \u2013 10th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "10th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "11.6-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-probook-11-g6-10th-gen-2",
+        "priceCurrency": "KES",
+        "price": "28320",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-830-G8-I5-11TH-GEN-8GB-256GB-SSD-13-3-INCH-FHD-TOUCHSC-F5274E1F",
+    "slug": "hp-elitebook-830-g8-11th-gen",
+    "name": "HP EliteBook 830 G8 | Corei5 11th Gen | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 42480,
+      "currency": "KES",
+      "compareAtAmount": 48512
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-830-g8-11th-gen/01.webp",
+        "alt": "HP EliteBook 830 G8 | Corei5 11th Gen | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 830 G8 is listed at KES 42,480 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 11th Gen, 8GB RAM, 256GB SSD, 13.3-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 830 G8 is listed at KES 42,480 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 11th Gen, 8GB RAM, 256GB SSD, 13.3-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Corei5 11th Gen</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 13.3-inch FHD</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Corei5 11th Gen",
+      "8GB RAM",
+      "256GB SSD",
+      "13.3-inch FHD display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "Corei5 11th Gen"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch FHD display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 830 G8 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 830 G8 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-830-g8-11th-gen#product",
+      "name": "HP EliteBook 830 G8 | Corei5 11th Gen | 8GB | 256GB SSD",
+      "description": "HP EliteBook 830 G8 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-830-G8-I5-11TH-GEN-8GB-256GB-SSD-13-3-INCH-FHD-TOUCHSC-F5274E1F",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 830 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Corei5 11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-830-g8-11th-gen",
+        "priceCurrency": "KES",
+        "price": "42480",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-T480S-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-NON-TOUC-EE38D12D",
+    "slug": "lenovo-thinkpad-t480s-8th-gen-2",
+    "name": "Lenovo ThinkPad T480s | Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo) | 8GB",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 28320,
+      "currency": "KES",
+      "compareAtAmount": 32341
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-t480s-8th-gen-2/01.webp",
+        "alt": "Lenovo ThinkPad T480s | Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo) | 8GB"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad T480s is listed at KES 28,320 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo), 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad T480s is listed at KES 28,320 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo), 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Connectivity: HDMI</li>\n  <li>Feature: Non-Touch</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo)",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "HDMI",
+      "Non-Touch"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad T480s Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad T480s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-t480s-8th-gen-2#product",
+      "name": "Lenovo ThinkPad T480s | Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo) | 8GB",
+      "description": "Lenovo ThinkPad T480s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-T480S-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-NON-TOUC-EE38D12D",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad T480s",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 8th Gen (1.6GHz up to 3.4GHz Turbo)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-t480s-8th-gen-2",
+        "priceCurrency": "KES",
+        "price": "28320",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-X250-I5-5TH-GEN-8GB-256GB-SSD-12-5-INCH-NON-TOU-A459C0F6",
+    "slug": "lenovo-thinkpad-x250-5th-gen",
+    "name": "Lenovo ThinkPad X250 | Intel Core i5 (5th Generation) | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 20650,
+      "currency": "KES",
+      "compareAtAmount": 23582
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x250-5th-gen/01.webp",
+        "alt": "Lenovo ThinkPad X250 | Intel Core i5 (5th Generation) | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad X250 is listed at KES 20,650 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (5th Generation), 8GB RAM, 256GB SSD, 12.5-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad X250 is listed at KES 20,650 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (5th Generation), 8GB RAM, 256GB SSD, 12.5-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (5th Generation)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 12.5-inch</li>\n  <li>Feature: Non-Touch</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 (5th Generation)",
+      "8GB RAM",
+      "256GB SSD",
+      "12.5-inch display",
+      "Non-Touch",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 (5th Generation)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "12.5-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad X250 Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad X250 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x250-5th-gen#product",
+      "name": "Lenovo ThinkPad X250 | Intel Core i5 (5th Generation) | 8GB | 256GB SSD",
+      "description": "Lenovo ThinkPad X250 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-X250-I5-5TH-GEN-8GB-256GB-SSD-12-5-INCH-NON-TOU-A459C0F6",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad X250",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 (5th Generation)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "5th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "12.5-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x250-5th-gen",
+        "priceCurrency": "KES",
+        "price": "20650",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-X280-I5-8TH-GEN-8GB-256GB-SSD-12-5-INCH-NON-TOU-63E7C6FA",
+    "slug": "lenovo-thinkpad-x280-8th-gen",
+    "name": "Lenovo ThinkPad X280 | Corei5 8th Gen | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 25960,
+      "currency": "KES",
+      "compareAtAmount": 29646
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x280-8th-gen/01.webp",
+        "alt": "Lenovo ThinkPad X280 | Corei5 8th Gen | 8GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-x280-laptop/01.webp",
+        "alt": "Lenovo ThinkPad X280 | Corei5 8th Gen | 8GB | 256GB SSD - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad X280 is listed at KES 25,960 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 8th Gen, 8GB RAM, 256GB SSD, 12.5-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad X280 is listed at KES 25,960 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 8th Gen, 8GB RAM, 256GB SSD, 12.5-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Corei5 8th Gen</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 12.5-inch</li>\n  <li>Feature: Non-Touch</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Corei5 8th Gen",
+      "8GB RAM",
+      "256GB SSD",
+      "12.5-inch display",
+      "Non-Touch",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "Corei5 8th Gen"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "12.5-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad X280 Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad X280 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x280-8th-gen#product",
+      "name": "Lenovo ThinkPad X280 | Corei5 8th Gen | 8GB | 256GB SSD",
+      "description": "Lenovo ThinkPad X280 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-X280-I5-8TH-GEN-8GB-256GB-SSD-12-5-INCH-NON-TOU-63E7C6FA",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad X280",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Corei5 8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "12.5-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x280-8th-gen",
+        "priceCurrency": "KES",
+        "price": "25960",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-X1-YOGA-GEN-6-I7-11TH-GEN-32GB-512GB-SSD-TOUCHS-8C04EC78",
+    "slug": "lenovo-thinkpad-x1-yoga-gen-6-11th-gen",
+    "name": "Lenovo ThinkPad X1 Yoga Gen 6 | Intel Core i7 (11th Gen) | 32GB | 512GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 76700,
+      "currency": "KES",
+      "compareAtAmount": 87591
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x1-yoga-gen-6-11th-gen/01.webp",
+        "alt": "Lenovo ThinkPad X1 Yoga Gen 6 | Intel Core i7 (11th Gen) | 32GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad X1 Yoga Gen 6 is listed at KES 76,700 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 (11th Gen), 32GB RAM, 512GB SSD, Touchscreen. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad X1 Yoga Gen 6 is listed at KES 76,700 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 (11th Gen), 32GB RAM, 512GB SSD, Touchscreen.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 (11th Gen)</li>\n  <li>RAM: 32GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 (11th Gen)",
+      "32GB RAM",
+      "512GB SSD",
+      "Touchscreen",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 (11th Gen)"
+      },
+      {
+        "label": "Memory",
+        "value": "32GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad X1 Yoga Gen 6 Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad X1 Yoga Gen 6 for office work, school, and multitasking in Kenya. 32GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x1-yoga-gen-6-11th-gen#product",
+      "name": "Lenovo ThinkPad X1 Yoga Gen 6 | Intel Core i7 (11th Gen) | 32GB | 512GB SSD",
+      "description": "Lenovo ThinkPad X1 Yoga Gen 6 for office work, school, and multitasking in Kenya. 32GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-X1-YOGA-GEN-6-I7-11TH-GEN-32GB-512GB-SSD-TOUCHS-8C04EC78",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad X1 Yoga Gen 6",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 (11th Gen)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "32GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x1-yoga-gen-6-11th-gen",
+        "priceCurrency": "KES",
+        "price": "76700",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "DELL-DELL-P2422H-24-INCH-EX-UK-64DB5EAF",
+    "slug": "dell-p2422h",
+    "name": "Dell P2422H",
+    "brand": "Dell",
+    "category": "monitors",
+    "price": {
+      "amount": 12980,
+      "currency": "KES",
+      "compareAtAmount": 14823
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "monitor/dell-p2422h/01.webp",
+        "alt": "Dell P2422H"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell P2422H is listed at KES 12,980 in Kenya, in ex uk condition with 6 months warranty. This configuration includes 24-inch display, HDMI, VGA, DisplayPort, Dell P2422H 24\" Edge-to-Edge Full HD Monitor. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Dell P2422H is listed at KES 12,980 in Kenya, in ex uk condition with 6 months warranty. This configuration includes 24-inch display, HDMI, VGA, DisplayPort, Dell P2422H 24&quot; Edge-to-Edge Full HD Monitor.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Display: 24-inch</li>\n  <li>Connectivity: HDMI, VGA, DisplayPort</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n  <li>Additional Note: Dell P2422H 24&quot; Edge-to-Edge Full HD Monitor</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Practical everyday use</li>\n  <li>Verified product needs</li>\n  <li>Routine daily tasks</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog\">Buying Guides Index</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "24-inch display",
+      "HDMI, VGA, DisplayPort",
+      "Dell P2422H 24\" Edge-to-Edge Full HD Monitor",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "24-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, VGA, DisplayPort"
+      },
+      {
+        "label": "Feature",
+        "value": "Dell P2422H 24\" Edge-to-Edge Full HD Monitor"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell P2422H Price in Kenya | Mobdeals",
+    "seoDescription": "Dell P2422H for everyday use in Kenya. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-p2422h#product",
+      "name": "Dell P2422H",
+      "description": "Dell P2422H for everyday use in Kenya. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-P2422H-24-INCH-EX-UK-64DB5EAF",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell P2422H",
+      "category": "monitor",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "24-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, VGA, DisplayPort"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-p2422h",
+        "priceCurrency": "KES",
+        "price": "12980",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    },
+    "featured": true
+  },
+  {
+    "id": "LENOVO-LENOVO-X270-I5-7TH-GEN-8GB-256GB-SSD-12-5-INCH-EX-UK-991C5DC0",
+    "slug": "lenovo-x270-7th-gen",
+    "name": "Lenovo X270 | Corei5 7th Gen | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 24190,
+      "currency": "KES",
+      "compareAtAmount": 27625
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-x270-7th-gen/01.webp",
+        "alt": "Lenovo X270 | Corei5 7th Gen | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo X270 is listed at KES 24,190 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 7th Gen, 8GB RAM, 256GB SSD, 12.5-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo X270 is listed at KES 24,190 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Corei5 7th Gen, 8GB RAM, 256GB SSD, 12.5-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Corei5 7th Gen</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 12.5-inch</li>\n  <li>Condition: Ex UK</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Corei5 7th Gen",
+      "8GB RAM",
+      "256GB SSD",
+      "12.5-inch display",
+      "6 months warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "Corei5 7th Gen"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "12.5-inch display"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo X270 Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo X270 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-x270-7th-gen#product",
+      "name": "Lenovo X270 | Corei5 7th Gen | 8GB | 256GB SSD",
+      "description": "Lenovo X270 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-X270-I5-7TH-GEN-8GB-256GB-SSD-12-5-INCH-EX-UK-991C5DC0",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo X270",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Corei5 7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "12.5-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-x270-7th-gen",
+        "priceCurrency": "KES",
+        "price": "24190",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-X360-1030-G8-I7-11TH-GEN-16GB-512GB-SSD-13-3-INCH-TOUC-39C7CC87",
+    "slug": "hp-elitebook-x360-1030-g8-11th-gen",
+    "name": "HP EliteBook x360 1030 G8 | Intel Core i7 | 16GB | 512GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 67260,
+      "currency": "KES",
+      "compareAtAmount": 76811
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-x360-1030-g8-11th-gen/01.webp",
+        "alt": "HP EliteBook x360 1030 G8 | Intel Core i7 | 16GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook x360 1030 G8 is listed at KES 67,260 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 512GB SSD, 13.3-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook x360 1030 G8 is listed at KES 67,260 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 512GB SSD, 13.3-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 13.3-inch</li>\n  <li>Generation: 11th Gen</li>\n  <li>Connectivity: HDMI, Thunderbolt, USB-C</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "13.3-inch display",
+      "11th Gen",
+      "HDMI, Thunderbolt, USB-C"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "11th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, Thunderbolt, USB-C"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook x360 1030 G8 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook x360 1030 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-x360-1030-g8-11th-gen#product",
+      "name": "HP EliteBook x360 1030 G8 | Intel Core i7 | 16GB | 512GB SSD",
+      "description": "HP EliteBook x360 1030 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-X360-1030-G8-I7-11TH-GEN-16GB-512GB-SSD-13-3-INCH-TOUC-39C7CC87",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook x360 1030 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, Thunderbolt, USB-C"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-x360-1030-g8-11th-gen",
+        "priceCurrency": "KES",
+        "price": "67260",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-1030-G4-I7-8TH-GEN-16GB-512GB-SSD-13-3-INCH-FHD-TOUCHS-A342711F",
+    "slug": "hp-elitebook-1030-g4-8th-gen",
+    "name": "HP EliteBook 1030 G4 | Intel Core i7 8th Generation Processor | 16GB | 512GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 53100,
+      "currency": "KES",
+      "compareAtAmount": 60640
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-1030-g4-8th-gen/01.webp",
+        "alt": "HP EliteBook 1030 G4 | Intel Core i7 8th Generation Processor | 16GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 1030 G4 is listed at KES 53,100 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 8th Generation Processor, 16GB RAM, 512GB SSD, 13.3-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 1030 G4 is listed at KES 53,100 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 8th Generation Processor, 16GB RAM, 512GB SSD, 13.3-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 8th Generation Processor</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 13.3-inch FHD</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 8th Generation Processor",
+      "16GB RAM",
+      "512GB SSD",
+      "13.3-inch FHD display",
+      "Touchscreen",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 8th Generation Processor"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch FHD display"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 1030 G4 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 1030 G4 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-1030-g4-8th-gen#product",
+      "name": "HP EliteBook 1030 G4 | Intel Core i7 8th Generation Processor | 16GB | 512GB SSD",
+      "description": "HP EliteBook 1030 G4 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-1030-G4-I7-8TH-GEN-16GB-512GB-SSD-13-3-INCH-FHD-TOUCHS-A342711F",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 1030 G4",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 8th Generation Processor"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-1030-g4-8th-gen",
+        "priceCurrency": "KES",
+        "price": "53100",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-630-G10-I7-13TH-GEN-16GB-512GB-SSD-13-3-INCH-TOUCHSCRE-1AD3A099",
+    "slug": "hp-elitebook-630-g10-13th-gen",
+    "name": "HP EliteBook 630 G10 | Intel Core i7 | 16GB | 512GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 67260,
+      "currency": "KES",
+      "compareAtAmount": 76811
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-630-g10-13th-gen/01.webp",
+        "alt": "HP EliteBook 630 G10 | Intel Core i7 | 16GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 630 G10 is listed at KES 67,260 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 512GB SSD, 13.3-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 630 G10 is listed at KES 67,260 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 512GB SSD, 13.3-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 13.3-inch</li>\n  <li>Generation: 13th Gen</li>\n  <li>Connectivity: HDMI, USB-C</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "13.3-inch display",
+      "13th Gen",
+      "HDMI, USB-C"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "13th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, USB-C"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 630 G10 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 630 G10 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-630-g10-13th-gen#product",
+      "name": "HP EliteBook 630 G10 | Intel Core i7 | 16GB | 512GB SSD",
+      "description": "HP EliteBook 630 G10 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-630-G10-I7-13TH-GEN-16GB-512GB-SSD-13-3-INCH-TOUCHSCRE-1AD3A099",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 630 G10",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "13th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, USB-C"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-630-g10-13th-gen",
+        "priceCurrency": "KES",
+        "price": "67260",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G6-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-FHD-NON-TOUCH-F386A9E9",
+    "slug": "hp-elitebook-840-g6-8th-gen-4",
+    "name": "HP EliteBook 840 G6 | Intel Core i5 8th Generation | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 33630,
+      "currency": "KES",
+      "compareAtAmount": 38405
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g6-8th-gen-4/01.webp",
+        "alt": "HP EliteBook 840 G6 | Intel Core i5 8th Generation | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G6 is listed at KES 33,630 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Generation, 8GB RAM, 256GB SSD, 14-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G6 is listed at KES 33,630 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Generation, 8GB RAM, 256GB SSD, 14-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 8th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch FHD</li>\n  <li>Connectivity: HDMI</li>\n  <li>Feature: Non-Touch</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 8th Generation",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch FHD display",
+      "HDMI",
+      "Non-Touch"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 8th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch FHD display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G6 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-8th-gen-4#product",
+      "name": "HP EliteBook 840 G6 | Intel Core i5 8th Generation | 8GB | 256GB SSD",
+      "description": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G6-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-FHD-NON-TOUCH-F386A9E9",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G6",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 8th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-8th-gen-4",
+        "priceCurrency": "KES",
+        "price": "33630",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-T14S-I7-10TH-GEN-32GB-512GB-SSD-14-INCH-TOUCHSC-5A6E6450",
+    "slug": "lenovo-thinkpad-t14s-10th-gen",
+    "name": "Lenovo ThinkPad T14s | Intel Core i7 | 32GB | 512GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 59000,
+      "currency": "KES",
+      "compareAtAmount": 67378
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-t14s-10th-gen/01.webp",
+        "alt": "Lenovo ThinkPad T14s | Intel Core i7 | 32GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad T14s is listed at KES 59,000 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 32GB RAM, 512GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad T14s is listed at KES 59,000 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 32GB RAM, 512GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 32GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Generation: 10th Gen</li>\n  <li>Connectivity: HDMI, Thunderbolt, USB-C</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7",
+      "32GB RAM",
+      "512GB SSD",
+      "14-inch display",
+      "10th Gen",
+      "HDMI, Thunderbolt, USB-C"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7"
+      },
+      {
+        "label": "Memory",
+        "value": "32GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "10th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, Thunderbolt, USB-C"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad T14s Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad T14s for office work, school, and multitasking in Kenya. 32GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-t14s-10th-gen#product",
+      "name": "Lenovo ThinkPad T14s | Intel Core i7 | 32GB | 512GB SSD",
+      "description": "Lenovo ThinkPad T14s for office work, school, and multitasking in Kenya. 32GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-T14S-I7-10TH-GEN-32GB-512GB-SSD-14-INCH-TOUCHSC-5A6E6450",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad T14s",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "10th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "32GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, Thunderbolt, USB-C"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-t14s-10th-gen",
+        "priceCurrency": "KES",
+        "price": "59000",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-X13-YOGA-I5-10TH-GEN-8GB-256GB-SSD-13-3-INCH-TO-40A33ED0",
+    "slug": "lenovo-thinkpad-x13-yoga-10th-gen-2",
+    "name": "Lenovo ThinkPad X13 Yoga | Intel Core i5 | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 35400,
+      "currency": "KES",
+      "compareAtAmount": 40427
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x13-yoga-10th-gen-2/01.webp",
+        "alt": "Lenovo ThinkPad X13 Yoga | Intel Core i5 | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad X13 Yoga is listed at KES 35,400 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, 13.3-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad X13 Yoga is listed at KES 35,400 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, 13.3-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 13.3-inch</li>\n  <li>Generation: 10th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "13.3-inch display",
+      "10th Gen",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "10th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad X13 Yoga Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad X13 Yoga for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x13-yoga-10th-gen-2#product",
+      "name": "Lenovo ThinkPad X13 Yoga | Intel Core i5 | 8GB | 256GB SSD",
+      "description": "Lenovo ThinkPad X13 Yoga for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-X13-YOGA-I5-10TH-GEN-8GB-256GB-SSD-13-3-INCH-TO-40A33ED0",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad X13 Yoga",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "10th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x13-yoga-10th-gen-2",
+        "priceCurrency": "KES",
+        "price": "35400",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-X380-YOGA-I7-8TH-GEN-16GB-256GB-SSD-13-3-INCH-T-245FE4B1",
+    "slug": "lenovo-thinkpad-x380-yoga-8th-gen",
+    "name": "Lenovo ThinkPad X380 Yoga | Intel Core i7 | 16GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 37760,
+      "currency": "KES",
+      "compareAtAmount": 43122
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x380-yoga-8th-gen/01.webp",
+        "alt": "Lenovo ThinkPad X380 Yoga | Intel Core i7 | 16GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad X380 Yoga is listed at KES 37,760 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 256GB SSD, 13.3-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad X380 Yoga is listed at KES 37,760 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 256GB SSD, 13.3-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 13.3-inch</li>\n  <li>Generation: 8th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7",
+      "16GB RAM",
+      "256GB SSD",
+      "13.3-inch display",
+      "8th Gen",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "8th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad X380 Yoga Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad X380 Yoga for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x380-yoga-8th-gen#product",
+      "name": "Lenovo ThinkPad X380 Yoga | Intel Core i7 | 16GB | 256GB SSD",
+      "description": "Lenovo ThinkPad X380 Yoga for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-X380-YOGA-I7-8TH-GEN-16GB-256GB-SSD-13-3-INCH-T-245FE4B1",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad X380 Yoga",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x380-yoga-8th-gen",
+        "priceCurrency": "KES",
+        "price": "37760",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-X380-YOGA-I7-8TH-GEN-8GB-256GB-SSD-13-3-INCH-TO-5B0BE384",
+    "slug": "lenovo-thinkpad-x380-yoga-8th-gen-2",
+    "name": "Lenovo ThinkPad X380 Yoga | Intel Core i7 | 8GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 34220,
+      "currency": "KES",
+      "compareAtAmount": 39079
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x380-yoga-8th-gen-2/01.webp",
+        "alt": "Lenovo ThinkPad X380 Yoga | Intel Core i7 | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad X380 Yoga is listed at KES 34,220 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 8GB RAM, 256GB SSD, 13.3-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad X380 Yoga is listed at KES 34,220 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 8GB RAM, 256GB SSD, 13.3-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 13.3-inch</li>\n  <li>Generation: 8th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7",
+      "8GB RAM",
+      "256GB SSD",
+      "13.3-inch display",
+      "8th Gen",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "8th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad X380 Yoga Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad X380 Yoga for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x380-yoga-8th-gen-2#product",
+      "name": "Lenovo ThinkPad X380 Yoga | Intel Core i7 | 8GB | 256GB SSD",
+      "description": "Lenovo ThinkPad X380 Yoga for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-X380-YOGA-I7-8TH-GEN-8GB-256GB-SSD-13-3-INCH-TO-5B0BE384",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad X380 Yoga",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x380-yoga-8th-gen-2",
+        "priceCurrency": "KES",
+        "price": "34220",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-T490S-I7-8TH-GEN-16GB-256GB-SSD-14-INCH-EX-UK-5F188380",
+    "slug": "lenovo-thinkpad-t490s-8th-gen",
+    "name": "Lenovo ThinkPad T490s | Intel Core i7 | 16GB | 256GB SSD",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 34810,
+      "currency": "KES",
+      "compareAtAmount": 39753
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-t490s-8th-gen/01.webp",
+        "alt": "Lenovo ThinkPad T490s | Intel Core i7 | 16GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad T490s is listed at KES 34,810 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>Lenovo ThinkPad T490s is listed at KES 34,810 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Generation: 8th Gen</li>\n  <li>Connectivity: HDMI, Thunderbolt, USB-C</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7",
+      "16GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "8th Gen",
+      "HDMI, Thunderbolt, USB-C"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Generation",
+        "value": "8th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, Thunderbolt, USB-C"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad T490s Price in Kenya | Mobdeals",
+    "seoDescription": "Lenovo ThinkPad T490s for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-t490s-8th-gen#product",
+      "name": "Lenovo ThinkPad T490s | Intel Core i7 | 16GB | 256GB SSD",
+      "description": "Lenovo ThinkPad T490s for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-T490S-I7-8TH-GEN-16GB-256GB-SSD-14-INCH-EX-UK-5F188380",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad T490s",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, Thunderbolt, USB-C"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-t490s-8th-gen",
+        "priceCurrency": "KES",
+        "price": "34810",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-840-G3-I7-6TH-GEN-8GB-256GB-SSD-14-INCH-EX-UK-59ADA703",
+    "slug": "hp-elitebook-840-g3-6th-gen-4",
+    "name": "HP EliteBook 840 G3 | Intel Core i7 - 6th Generation | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 29500,
+      "currency": "KES",
+      "compareAtAmount": 33689
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g3-6th-gen-4/01.webp",
+        "alt": "HP EliteBook 840 G3 | Intel Core i7 - 6th Generation | 8GB | 256GB SSD"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-840-g3-laptop/01.webp",
+        "alt": "HP EliteBook 840 G3 | Intel Core i7 - 6th Generation | 8GB | 256GB SSD - image 2"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G3 is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 - 6th Generation, 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 840 G3 is listed at KES 29,500 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 \u2013 6th Generation, 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 \u2013 6th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Connectivity: USB-C, USB 3.0, VGA, DisplayPort, Ethernet (LAN)</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 - 6th Generation",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "USB-C, USB 3.0, VGA, DisplayPort, Ethernet (LAN)",
+      "6 months warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 - 6th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "USB-C, USB 3.0, VGA, DisplayPort, Ethernet (LAN)"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G3 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 840 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g3-6th-gen-4#product",
+      "name": "HP EliteBook 840 G3 | Intel Core i7 \u2013 6th Generation | 8GB | 256GB SSD",
+      "description": "HP EliteBook 840 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G3-I7-6TH-GEN-8GB-256GB-SSD-14-INCH-EX-UK-59ADA703",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G3",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 \u2013 6th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "6th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "USB-C, USB 3.0, VGA, DisplayPort, Ethernet (LAN)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g3-6th-gen-4",
+        "priceCurrency": "KES",
+        "price": "29500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-X360-1030-G2-I5-7TH-GEN-16GB-256GB-SSD-13-3-INCH-FHD-T-CA3E9419",
+    "slug": "hp-elitebook-x360-1030-g2-7th-gen",
+    "name": "HP EliteBook x360 1030 G2 | Intel Core i5 - 7th Generation | 16GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 42480,
+      "currency": "KES",
+      "compareAtAmount": 48512
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-x360-1030-g2-7th-gen/01.webp",
+        "alt": "HP EliteBook x360 1030 G2 | Intel Core i5 - 7th Generation | 16GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook x360 1030 G2 is listed at KES 42,480 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 - 7th Generation, 16GB RAM, 256GB SSD, 13.3-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook x360 1030 G2 is listed at KES 42,480 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 \u2013 7th Generation, 16GB RAM, 256GB SSD, 13.3-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 \u2013 7th Generation</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 13.3-inch FHD</li>\n  <li>Connectivity: USB 3.0</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i5 - 7th Generation",
+      "16GB RAM",
+      "256GB SSD",
+      "13.3-inch FHD display",
+      "USB 3.0",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5 - 7th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch FHD display"
+      },
+      {
+        "label": "Feature",
+        "value": "USB 3.0"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook x360 1030 G2 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook x360 1030 G2 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-x360-1030-g2-7th-gen#product",
+      "name": "HP EliteBook x360 1030 G2 | Intel Core i5 \u2013 7th Generation | 16GB | 256GB SSD",
+      "description": "HP EliteBook x360 1030 G2 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-X360-1030-G2-I5-7TH-GEN-16GB-256GB-SSD-13-3-INCH-FHD-T-CA3E9419",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook x360 1030 G2",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5 \u2013 7th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "USB 3.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-x360-1030-g2-7th-gen",
+        "priceCurrency": "KES",
+        "price": "42480",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-X360-1030-G3-I7-8TH-GEN-16GB-512GB-SSD-13-3-INCH-FHD-T-5CAFC606",
+    "slug": "hp-elitebook-x360-1030-g3-8th-gen",
+    "name": "HP EliteBook x360 1030 G3 | Intel Core i7 - 8th Generation | 16GB | 512GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 53100,
+      "currency": "KES",
+      "compareAtAmount": 60640
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-x360-1030-g3-8th-gen/01.webp",
+        "alt": "HP EliteBook x360 1030 G3 | Intel Core i7 - 8th Generation | 16GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook x360 1030 G3 is listed at KES 53,100 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 - 8th Generation, 16GB RAM, 512GB SSD, 13.3-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook x360 1030 G3 is listed at KES 53,100 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 \u2013 8th Generation, 16GB RAM, 512GB SSD, 13.3-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 \u2013 8th Generation</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 13.3-inch FHD</li>\n  <li>Connectivity: HDMI, Thunderbolt, USB 3.0</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 - 8th Generation",
+      "16GB RAM",
+      "512GB SSD",
+      "13.3-inch FHD display",
+      "HDMI, Thunderbolt, USB 3.0",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 - 8th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch FHD display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, Thunderbolt, USB 3.0"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook x360 1030 G3 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook x360 1030 G3 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-x360-1030-g3-8th-gen#product",
+      "name": "HP EliteBook x360 1030 G3 | Intel Core i7 \u2013 8th Generation | 16GB | 512GB SSD",
+      "description": "HP EliteBook x360 1030 G3 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-X360-1030-G3-I7-8TH-GEN-16GB-512GB-SSD-13-3-INCH-FHD-T-5CAFC606",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook x360 1030 G3",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 \u2013 8th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch FHD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, Thunderbolt, USB 3.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-x360-1030-g3-8th-gen",
+        "priceCurrency": "KES",
+        "price": "53100",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-745-RYZEN5-8GB-256GB-SSD-14-INCH-NON-TOUCH-EX-UK-E53BF249",
+    "slug": "hp-elitebook-745-256gb-ssd",
+    "name": "HP EliteBook 745 | Ryzen 5 Pro | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 31270,
+      "currency": "KES",
+      "compareAtAmount": 35710
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-745-256gb-ssd/01.webp",
+        "alt": "HP EliteBook 745 | Ryzen 5 Pro | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 745 is listed at KES 31,270 in Kenya, in ex uk condition with 6 months warranty. This configuration includes AMD Ryzen 5 Pro, 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 745 is listed at KES 31,270 in Kenya, in ex uk condition with 6 months warranty. This configuration includes AMD Ryzen 5 Pro, 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: AMD Ryzen 5 Pro</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Connectivity: HDMI, USB-C, USB 3.0, Ethernet (LAN)</li>\n  <li>Feature: Non-Touch</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "AMD Ryzen 5 Pro",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "HDMI, USB-C, USB 3.0, Ethernet (LAN)",
+      "Non-Touch"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "AMD Ryzen 5 Pro"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, USB-C, USB 3.0, Ethernet (LAN)"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 745 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 745 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-745-256gb-ssd#product",
+      "name": "HP EliteBook 745 | Ryzen 5 Pro | 8GB | 256GB SSD",
+      "description": "HP EliteBook 745 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-745-RYZEN5-8GB-256GB-SSD-14-INCH-NON-TOUCH-EX-UK-E53BF249",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 745",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "AMD Ryzen 5 Pro"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, USB-C, USB 3.0, Ethernet (LAN)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-745-256gb-ssd",
+        "priceCurrency": "KES",
+        "price": "31270",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-845-G8-RYZEN5-8GB-256GB-SSD-14-INCH-NON-TOUCH-EX-UK-9D774DED",
+    "slug": "hp-elitebook-845-g8-256gb-ssd",
+    "name": "HP EliteBook 845 G8 | Ryzen 5 Pro | 8GB | 256GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 38940,
+      "currency": "KES",
+      "compareAtAmount": 44469
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-845-g8-256gb-ssd/01.webp",
+        "alt": "HP EliteBook 845 G8 | Ryzen 5 Pro | 8GB | 256GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 845 G8 is listed at KES 38,940 in Kenya, in ex uk condition with 6 months warranty. This configuration includes AMD Ryzen 5 Pro, 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 845 G8 is listed at KES 38,940 in Kenya, in ex uk condition with 6 months warranty. This configuration includes AMD Ryzen 5 Pro, 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: AMD Ryzen 5 Pro</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Connectivity: HDMI, USB-C, USB 3.0</li>\n  <li>Feature: Non-Touch</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "AMD Ryzen 5 Pro",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch display",
+      "HDMI, USB-C, USB 3.0",
+      "Non-Touch"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "AMD Ryzen 5 Pro"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, USB-C, USB 3.0"
+      },
+      {
+        "label": "Feature",
+        "value": "Non-Touch"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 845 G8 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 845 G8 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-845-g8-256gb-ssd#product",
+      "name": "HP EliteBook 845 G8 | Ryzen 5 Pro | 8GB | 256GB SSD",
+      "description": "HP EliteBook 845 G8 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-845-G8-RYZEN5-8GB-256GB-SSD-14-INCH-NON-TOUCH-EX-UK-9D774DED",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 845 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "AMD Ryzen 5 Pro"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "14-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, USB-C, USB 3.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-845-g8-256gb-ssd",
+        "priceCurrency": "KES",
+        "price": "38940",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-830-G7-I7-10TH-GEN-16GB-512GB-SSD-13-3-INCH-TOUCHSCREE-AF2754A9",
+    "slug": "hp-elitebook-830-g7-10th-gen",
+    "name": "HP EliteBook 830 G7 | Intel Core i7 - 10th Generation | 16GB | 512GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 48380,
+      "currency": "KES",
+      "compareAtAmount": 55250
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-830-g7-10th-gen/01.webp",
+        "alt": "HP EliteBook 830 G7 | Intel Core i7 - 10th Generation | 16GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 830 G7 is listed at KES 48,380 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 - 10th Generation, 16GB RAM, 512GB SSD, 13.3-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 830 G7 is listed at KES 48,380 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 \u2013 10th Generation, 16GB RAM, 512GB SSD, 13.3-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 \u2013 10th Generation</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 13.3-inch</li>\n  <li>Connectivity: HDMI, Thunderbolt, USB-C</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 - 10th Generation",
+      "16GB RAM",
+      "512GB SSD",
+      "13.3-inch display",
+      "HDMI, Thunderbolt, USB-C",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 - 10th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, Thunderbolt, USB-C"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 830 G7 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 830 G7 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-830-g7-10th-gen#product",
+      "name": "HP EliteBook 830 G7 | Intel Core i7 \u2013 10th Generation | 16GB | 512GB SSD",
+      "description": "HP EliteBook 830 G7 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-830-G7-I7-10TH-GEN-16GB-512GB-SSD-13-3-INCH-TOUCHSCREE-AF2754A9",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 830 G7",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 \u2013 10th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "10th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, Thunderbolt, USB-C"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-830-g7-10th-gen",
+        "priceCurrency": "KES",
+        "price": "48380",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-830-G8-I7-11TH-GEN-16GB-512GB-SSD-13-3-INCH-TOUCHSCREE-DAC45E10",
+    "slug": "hp-elitebook-830-g8-11th-gen-2",
+    "name": "HP EliteBook 830 G8 | Intel Core i7 - 11th Generation | 16GB | 512GB SSD",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 55460,
+      "currency": "KES",
+      "compareAtAmount": 63335
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-830-g8-11th-gen-2/01.webp",
+        "alt": "HP EliteBook 830 G8 | Intel Core i7 - 11th Generation | 16GB | 512GB SSD"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 830 G8 is listed at KES 55,460 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 - 11th Generation, 16GB RAM, 512GB SSD, 13.3-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
+    "descriptionHtml": "<p>HP EliteBook 830 G8 is listed at KES 55,460 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 \u2013 11th Generation, 16GB RAM, 512GB SSD, 13.3-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 \u2013 11th Generation</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 13.3-inch</li>\n  <li>Connectivity: HDMI, Thunderbolt</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
+    "highlights": [
+      "Intel Core i7 - 11th Generation",
+      "16GB RAM",
+      "512GB SSD",
+      "13.3-inch display",
+      "HDMI, Thunderbolt",
+      "Touchscreen"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7 - 11th Generation"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.3-inch display"
+      },
+      {
+        "label": "Feature",
+        "value": "HDMI, Thunderbolt"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Ex UK"
+      },
+      {
+        "label": "Warranty",
+        "value": "6 months warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "6 months warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 830 G8 Price in Kenya | Mobdeals",
+    "seoDescription": "HP EliteBook 830 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-830-g8-11th-gen-2#product",
+      "name": "HP EliteBook 830 G8 | Intel Core i7 \u2013 11th Generation | 16GB | 512GB SSD",
+      "description": "HP EliteBook 830 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-830-G8-I7-11TH-GEN-16GB-512GB-SSD-13-3-INCH-TOUCHSCREE-DAC45E10",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 830 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7 \u2013 11th Generation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "512GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display",
+          "value": "13.3-inch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Connectivity",
+          "value": "HDMI, Thunderbolt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Ex UK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "6 months warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-830-g8-11th-gen-2",
+        "priceCurrency": "KES",
+        "price": "55460",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 6,
+            "unitCode": "MON"
+          }
+        }
+      }
+    }
+  },
   {
     "id": "HP-HP-VICTUS-15-FA2787NR-I7-13TH-GEN-16GB-512GB-SSD-RTX-5060-8GB-BRAND-DBFB9516",
     "slug": "hp-victus-15-fa2787nr-13th-gen",
@@ -1893,260 +17931,6 @@ const catalogProducts: Product[] = [
         "url": "https://mobdeals.co.ke/product/dell-5440-4th-gen",
         "priceCurrency": "KES",
         "price": "17000",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/RefurbishedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
-    "id": "DELL-DELL-3340-I5-4TH-GEN-8GB-500GB-USED-REFURBISHED-A2909182",
-    "slug": "dell-3340-4th-gen",
-    "name": "Dell 3340 Intel Core i5 4th Gen 8GB RAM 500GB Storage Used / Refurbished",
-    "brand": "Dell",
-    "category": "laptops",
-    "price": {
-      "amount": 19000,
-      "currency": "KES",
-      "compareAtAmount": 20200
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/dell-3340-laptop/01.webp",
-        "alt": "Dell 3340 Intel Core i5 4th Gen 8GB RAM 500GB Storage Used / Refurbished"
-      }
-    ],
-    "inStock": true,
-    "description": "Dell 3340 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 500GB Storage, and 4th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 6 months warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
-    "descriptionHtml": "<p>Dell 3340 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 500GB Storage, and 4th Gen. Listed price is KES 19,000.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>500GB Storage gives you practical space for everyday files</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 500GB Storage combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 500GB Storage</li>\n  <li>Generation: 4th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Dell 3340 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 6 months warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Dell 3340 is KES 19,000. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Dell 3340 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
-    "highlights": [
-      "Intel Core i5",
-      "8GB RAM",
-      "500GB Storage",
-      "4th Gen",
-      "6 months warranty",
-      "Confirm current stock and delivery timing before payment"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i5"
-      },
-      {
-        "label": "Memory",
-        "value": "8GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "500GB Storage"
-      },
-      {
-        "label": "Generation",
-        "value": "4th Gen"
-      },
-      {
-        "label": "Condition",
-        "value": "Used / Refurbished"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "Dell 3340 - 8GB RAM and 500GB Storage",
-    "seoDescription": "Dell 3340 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB Storage. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/dell-3340-4th-gen#product",
-      "name": "Dell 3340 Intel Core i5 4th Gen 8GB RAM 500GB Storage Used / Refurbished",
-      "description": "Dell 3340 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB Storage. Order from Mobdeals online store today.",
-      "sku": "DELL-DELL-3340-I5-4TH-GEN-8GB-500GB-USED-REFURBISHED-A2909182",
-      "brand": {
-        "@type": "Brand",
-        "name": "Dell"
-      },
-      "model": "Dell 3340",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i5"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "4th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "8GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "500GB Storage"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Used / Refurbished"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/dell-3340-4th-gen",
-        "priceCurrency": "KES",
-        "price": "19000",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/RefurbishedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
-    "id": "DELL-DELL-3350-I5-5TH-GEN-8GB-500GB-USED-REFURBISHED-F8C5C4AD",
-    "slug": "dell-3350-5th-gen",
-    "name": "Dell 3350 Intel Core i5 5th Gen 8GB RAM 500GB Storage Used / Refurbished",
-    "brand": "Dell",
-    "category": "laptops",
-    "price": {
-      "amount": 20000,
-      "currency": "KES",
-      "compareAtAmount": 21300
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/dell-3350-laptop/01.webp",
-        "alt": "Dell 3350 Intel Core i5 5th Gen 8GB RAM 500GB Storage Used / Refurbished"
-      }
-    ],
-    "inStock": true,
-    "description": "Dell 3350 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 500GB Storage, and 5th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 6 months warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
-    "descriptionHtml": "<p>Dell 3350 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 500GB Storage, and 5th Gen. Listed price is KES 20,000.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>500GB Storage gives you practical space for everyday files</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 500GB Storage combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 500GB Storage</li>\n  <li>Generation: 5th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Dell 3350 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 6 months warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Dell 3350 is KES 20,000. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Dell 3350 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
-    "highlights": [
-      "Intel Core i5",
-      "8GB RAM",
-      "500GB Storage",
-      "5th Gen",
-      "6 months warranty",
-      "Confirm current stock and delivery timing before payment"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i5"
-      },
-      {
-        "label": "Memory",
-        "value": "8GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "500GB Storage"
-      },
-      {
-        "label": "Generation",
-        "value": "5th Gen"
-      },
-      {
-        "label": "Condition",
-        "value": "Used / Refurbished"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "Dell 3350 - 8GB RAM and 500GB Storage",
-    "seoDescription": "Dell 3350 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB Storage. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/dell-3350-5th-gen#product",
-      "name": "Dell 3350 Intel Core i5 5th Gen 8GB RAM 500GB Storage Used / Refurbished",
-      "description": "Dell 3350 for office work, school, and multitasking in Kenya. 8GB RAM and 500GB Storage. Order from Mobdeals online store today.",
-      "sku": "DELL-DELL-3350-I5-5TH-GEN-8GB-500GB-USED-REFURBISHED-F8C5C4AD",
-      "brand": {
-        "@type": "Brand",
-        "name": "Dell"
-      },
-      "model": "Dell 3350",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i5"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "5th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "8GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "500GB Storage"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Used / Refurbished"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/dell-3350-5th-gen",
-        "priceCurrency": "KES",
-        "price": "20000",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/RefurbishedCondition",
         "seller": {
@@ -6776,265 +22560,6 @@ const catalogProducts: Product[] = [
     }
   },
   {
-    "id": "HP-HP-640-G4-I5-8TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-7CE871C9",
-    "slug": "hp-640-g4-8th-gen",
-    "name": "HP 640 G4 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished",
-    "brand": "HP",
-    "category": "laptops",
-    "price": {
-      "amount": 25000,
-      "currency": "KES",
-      "compareAtAmount": 28000
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/hp-640-g4-laptop/01.webp",
-        "alt": "HP 640 G4 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished"
-      }
-    ],
-    "inStock": true,
-    "description": "HP 640 G4 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 256GB SSD, and 8th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 6 months warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
-    "descriptionHtml": "<p>HP 640 G4 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 256GB SSD, and 8th Gen. Listed price is KES 25,000.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 8th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>HP 640 G4 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 6 months warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for HP 640 G4 is KES 25,000. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If HP 640 G4 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
-    "highlights": [
-      "Intel Core i5",
-      "8GB RAM",
-      "256GB SSD",
-      "8th Gen",
-      "6 months warranty",
-      "Confirm current stock and delivery timing before payment"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i5"
-      },
-      {
-        "label": "Memory",
-        "value": "8GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "256GB SSD"
-      },
-      {
-        "label": "Generation",
-        "value": "8th Gen"
-      },
-      {
-        "label": "Condition",
-        "value": "Used / Refurbished"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "HP 640 G4 - 8GB RAM and 256GB SSD",
-    "seoDescription": "HP 640 G4 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/hp-640-g4-8th-gen#product",
-      "name": "HP 640 G4 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished",
-      "description": "HP 640 G4 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-      "sku": "HP-HP-640-G4-I5-8TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-7CE871C9",
-      "brand": {
-        "@type": "Brand",
-        "name": "HP"
-      },
-      "model": "HP 640 G4",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i5"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "8th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "8GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "256GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Used / Refurbished"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/hp-640-g4-8th-gen",
-        "priceCurrency": "KES",
-        "price": "25000",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/RefurbishedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
-    "id": "HP-HP-840-G3-I5-6TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-A0761CE1",
-    "slug": "hp-840-g3-6th-gen",
-    "name": "HP 840 G3 Intel Core i5 6th Gen 8GB RAM 256GB SSD Used / Refurbished",
-    "brand": "HP",
-    "category": "laptops",
-    "price": {
-      "amount": 25000,
-      "currency": "KES",
-      "compareAtAmount": 28000
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/hp-840-g3-laptop/01.webp",
-        "alt": "HP 840 G3 Intel Core i5 6th Gen 8GB RAM 256GB SSD Used / Refurbished"
-      },
-      {
-        "src": "",
-        "storageKey": "laptop/additional/hp-840-g3-6th-gen/02.webp",
-        "alt": "HP 840 G3 Intel Core i5 6th Gen 8GB RAM 256GB SSD Used / Refurbished - image 2"
-      }
-    ],
-    "inStock": true,
-    "description": "HP 840 G3 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 256GB SSD, and 6th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 6 months warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
-    "descriptionHtml": "<p>HP 840 G3 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 256GB SSD, and 6th Gen. Listed price is KES 25,000.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 6th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>HP 840 G3 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 6 months warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for HP 840 G3 is KES 25,000. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If HP 840 G3 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
-    "highlights": [
-      "Intel Core i5",
-      "8GB RAM",
-      "256GB SSD",
-      "6th Gen",
-      "6 months warranty",
-      "Confirm current stock and delivery timing before payment"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i5"
-      },
-      {
-        "label": "Memory",
-        "value": "8GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "256GB SSD"
-      },
-      {
-        "label": "Generation",
-        "value": "6th Gen"
-      },
-      {
-        "label": "Condition",
-        "value": "Used / Refurbished"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "HP 840 G3 - 8GB RAM and 256GB SSD",
-    "seoDescription": "HP 840 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/hp-840-g3-6th-gen#product",
-      "name": "HP 840 G3 Intel Core i5 6th Gen 8GB RAM 256GB SSD Used / Refurbished",
-      "description": "HP 840 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-      "sku": "HP-HP-840-G3-I5-6TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-A0761CE1",
-      "brand": {
-        "@type": "Brand",
-        "name": "HP"
-      },
-      "model": "HP 840 G3",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i5"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "6th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "8GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "256GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Used / Refurbished"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/hp-840-g3-6th-gen",
-        "priceCurrency": "KES",
-        "price": "25000",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/RefurbishedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
     "id": "HP-HP-850-G3-I5-6TH-GEN-8GB-256GB-SSD-1GB-GRAPHICS-USED-REFURBISHED-49A1F96D",
     "slug": "hp-850-g3-6th-gen",
     "name": "HP 850 G3 Intel Core i5 6th Gen 8GB RAM 256GB SSD 1GB Graphics Used / Refurbished",
@@ -7420,133 +22945,6 @@ const catalogProducts: Product[] = [
     }
   },
   {
-    "id": "HP-HP-840-G3-I7-6TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-C076D6F3",
-    "slug": "hp-840-g3-6th-gen-2",
-    "name": "HP 840 G3 Intel Core i7 6th Gen 8GB RAM 256GB SSD Used / Refurbished",
-    "brand": "HP",
-    "category": "laptops",
-    "price": {
-      "amount": 27000,
-      "currency": "KES",
-      "compareAtAmount": 30300
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/hp-840-g3-laptop/01.webp",
-        "alt": "HP 840 G3 Intel Core i7 6th Gen 8GB RAM 256GB SSD Used / Refurbished"
-      }
-    ],
-    "inStock": true,
-    "description": "HP 840 G3 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i7, 8GB RAM, 256GB SSD, and 6th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 6 months warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
-    "descriptionHtml": "<p>HP 840 G3 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i7, 8GB RAM, 256GB SSD, and 6th Gen. Listed price is KES 27,000.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i7 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i7, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 6th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>HP 840 G3 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 6 months warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for HP 840 G3 is KES 27,000. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If HP 840 G3 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
-    "highlights": [
-      "Intel Core i7",
-      "8GB RAM",
-      "256GB SSD",
-      "6th Gen",
-      "6 months warranty",
-      "Confirm current stock and delivery timing before payment"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i7"
-      },
-      {
-        "label": "Memory",
-        "value": "8GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "256GB SSD"
-      },
-      {
-        "label": "Generation",
-        "value": "6th Gen"
-      },
-      {
-        "label": "Condition",
-        "value": "Used / Refurbished"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "HP 840 G3 - 8GB RAM and 256GB SSD",
-    "seoDescription": "HP 840 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/hp-840-g3-6th-gen-2#product",
-      "name": "HP 840 G3 Intel Core i7 6th Gen 8GB RAM 256GB SSD Used / Refurbished",
-      "description": "HP 840 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-      "sku": "HP-HP-840-G3-I7-6TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-C076D6F3",
-      "brand": {
-        "@type": "Brand",
-        "name": "HP"
-      },
-      "model": "HP 840 G3",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i7"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "6th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "8GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "256GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Used / Refurbished"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/hp-840-g3-6th-gen-2",
-        "priceCurrency": "KES",
-        "price": "27000",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/RefurbishedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
     "id": "HP-HP-840-G4-I5-7TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-37C8C511",
     "slug": "hp-840-g4-7th-gen",
     "name": "HP 840 G4 Intel Core i5 7th Gen 8GB RAM 256GB SSD Used / Refurbished",
@@ -7654,142 +23052,6 @@ const catalogProducts: Product[] = [
       "offers": {
         "@type": "Offer",
         "url": "https://mobdeals.co.ke/product/hp-840-g4-7th-gen",
-        "priceCurrency": "KES",
-        "price": "27000",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/RefurbishedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
-    "id": "HP-HP-850-G3-I7-6TH-GEN-8GB-256GB-SSD-1GB-GRAPHICS-USED-REFURBISHED-BC1078C9",
-    "slug": "hp-850-g3-6th-gen-2",
-    "name": "HP 850 G3 Intel Core i7 6th Gen 8GB RAM 256GB SSD 1GB Graphics Used / Refurbished",
-    "brand": "HP",
-    "category": "laptops",
-    "price": {
-      "amount": 27000,
-      "currency": "KES",
-      "compareAtAmount": 30300
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/hp-850-g3-laptop/01.webp",
-        "alt": "HP 850 G3 Intel Core i7 6th Gen 8GB RAM 256GB SSD 1GB Graphics Used / Refurbished"
-      }
-    ],
-    "inStock": true,
-    "description": "HP 850 G3 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i7, 8GB RAM, 256GB SSD, and 6th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 6 months warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
-    "descriptionHtml": "<p>HP 850 G3 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i7, 8GB RAM, 256GB SSD, and 6th Gen. Listed price is KES 27,000.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i7 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i7, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 6th Gen</li>\n  <li>Graphics: 1GB Graphics</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>HP 850 G3 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 6 months warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for HP 850 G3 is KES 27,000. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If HP 850 G3 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
-    "highlights": [
-      "Intel Core i7",
-      "8GB RAM",
-      "256GB SSD",
-      "6th Gen",
-      "1GB Graphics",
-      "6 months warranty"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i7"
-      },
-      {
-        "label": "Memory",
-        "value": "8GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "256GB SSD"
-      },
-      {
-        "label": "Generation",
-        "value": "6th Gen"
-      },
-      {
-        "label": "Graphics",
-        "value": "1GB Graphics"
-      },
-      {
-        "label": "Condition",
-        "value": "Used / Refurbished"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "HP 850 G3 - 8GB RAM and 256GB SSD",
-    "seoDescription": "HP 850 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/hp-850-g3-6th-gen-2#product",
-      "name": "HP 850 G3 Intel Core i7 6th Gen 8GB RAM 256GB SSD 1GB Graphics Used / Refurbished",
-      "description": "HP 850 G3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-      "sku": "HP-HP-850-G3-I7-6TH-GEN-8GB-256GB-SSD-1GB-GRAPHICS-USED-REFURBISHED-BC1078C9",
-      "brand": {
-        "@type": "Brand",
-        "name": "HP"
-      },
-      "model": "HP 850 G3",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i7"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "6th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "8GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "256GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Graphics",
-          "value": "1GB Graphics"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Used / Refurbished"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/hp-850-g3-6th-gen-2",
         "priceCurrency": "KES",
         "price": "27000",
         "availability": "https://schema.org/InStock",
@@ -10290,133 +25552,6 @@ const catalogProducts: Product[] = [
     }
   },
   {
-    "id": "HP-HP-840-G7-I5-10TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-A76EE530",
-    "slug": "hp-840-g7-10th-gen",
-    "name": "HP 840 G7 Intel Core i5 10th Gen 8GB RAM 256GB SSD Used / Refurbished",
-    "brand": "HP",
-    "category": "laptops",
-    "price": {
-      "amount": 34000,
-      "currency": "KES",
-      "compareAtAmount": 38100
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/hp-840-g7-laptop/01.webp",
-        "alt": "HP 840 G7 Intel Core i5 10th Gen 8GB RAM 256GB SSD Used / Refurbished"
-      }
-    ],
-    "inStock": true,
-    "description": "HP 840 G7 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 256GB SSD, and 10th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 6 months warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
-    "descriptionHtml": "<p>HP 840 G7 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 256GB SSD, and 10th Gen. Listed price is KES 34,000.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 10th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>HP 840 G7 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 6 months warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for HP 840 G7 is KES 34,000. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If HP 840 G7 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
-    "highlights": [
-      "Intel Core i5",
-      "8GB RAM",
-      "256GB SSD",
-      "10th Gen",
-      "6 months warranty",
-      "Confirm current stock and delivery timing before payment"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i5"
-      },
-      {
-        "label": "Memory",
-        "value": "8GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "256GB SSD"
-      },
-      {
-        "label": "Generation",
-        "value": "10th Gen"
-      },
-      {
-        "label": "Condition",
-        "value": "Used / Refurbished"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "HP 840 G7 - 8GB RAM and 256GB SSD",
-    "seoDescription": "HP 840 G7 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/hp-840-g7-10th-gen#product",
-      "name": "HP 840 G7 Intel Core i5 10th Gen 8GB RAM 256GB SSD Used / Refurbished",
-      "description": "HP 840 G7 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-      "sku": "HP-HP-840-G7-I5-10TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-A76EE530",
-      "brand": {
-        "@type": "Brand",
-        "name": "HP"
-      },
-      "model": "HP 840 G7",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i5"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "10th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "8GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "256GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Used / Refurbished"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/hp-840-g7-10th-gen",
-        "priceCurrency": "KES",
-        "price": "34000",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/RefurbishedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
     "id": "HP-HP-840-G6-8TH-TOUCH-GLASS-I5-8TH-GEN-8GB-256GB-USED-REFURBISHED-09B0CC07",
     "slug": "hp-840-g6-8th-touch-glass-8th-gen",
     "name": "HP 840 G6 8th Touch Glass Intel Core i5 8th Gen 8GB RAM 256GB Storage Used / Refurbished",
@@ -11547,133 +26682,6 @@ const catalogProducts: Product[] = [
         "url": "https://mobdeals.co.ke/product/hp-830-g6-x360-8th-gen-2",
         "priceCurrency": "KES",
         "price": "38000",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/RefurbishedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
-    "id": "HP-HP-840-G8-I5-11TH-GEN-16GB-256GB-SSD-USED-REFURBISHED-DCBBBD27",
-    "slug": "hp-840-g8-11th-gen-2",
-    "name": "HP 840 G8 Intel Core i5 11th Gen 16GB RAM 256GB SSD Used / Refurbished",
-    "brand": "HP",
-    "category": "laptops",
-    "price": {
-      "amount": 38500,
-      "currency": "KES",
-      "compareAtAmount": 43200
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/hp-840-g8-laptop/01.webp",
-        "alt": "HP 840 G8 Intel Core i5 11th Gen 16GB RAM 256GB SSD Used / Refurbished"
-      }
-    ],
-    "inStock": true,
-    "description": "HP 840 G8 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 16GB RAM, 256GB SSD, and 11th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 6 months warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
-    "descriptionHtml": "<p>HP 840 G8 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 16GB RAM, 256GB SSD, and 11th Gen. Listed price is KES 38,500.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 16GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 16GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 11th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>HP 840 G8 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 6 months warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for HP 840 G8 is KES 38,500. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If HP 840 G8 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
-    "highlights": [
-      "Intel Core i5",
-      "16GB RAM",
-      "256GB SSD",
-      "11th Gen",
-      "6 months warranty",
-      "Confirm current stock and delivery timing before payment"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i5"
-      },
-      {
-        "label": "Memory",
-        "value": "16GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "256GB SSD"
-      },
-      {
-        "label": "Generation",
-        "value": "11th Gen"
-      },
-      {
-        "label": "Condition",
-        "value": "Used / Refurbished"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "HP 840 G8 - 16GB RAM and 256GB SSD",
-    "seoDescription": "HP 840 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/hp-840-g8-11th-gen-2#product",
-      "name": "HP 840 G8 Intel Core i5 11th Gen 16GB RAM 256GB SSD Used / Refurbished",
-      "description": "HP 840 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-      "sku": "HP-HP-840-G8-I5-11TH-GEN-16GB-256GB-SSD-USED-REFURBISHED-DCBBBD27",
-      "brand": {
-        "@type": "Brand",
-        "name": "HP"
-      },
-      "model": "HP 840 G8",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i5"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "11th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "16GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "256GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Used / Refurbished"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/hp-840-g8-11th-gen-2",
-        "priceCurrency": "KES",
-        "price": "38500",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/RefurbishedCondition",
         "seller": {
@@ -20491,254 +35499,6 @@ const catalogProducts: Product[] = [
     }
   },
   {
-    "id": "LENOVO-LENOVO-T460S-I5-6TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-1FB06B6F",
-    "slug": "lenovo-t460s-6th-gen",
-    "name": "Lenovo T460s Intel Core i5 6th Gen 8GB RAM 256GB SSD Used / Refurbished",
-    "brand": "Lenovo",
-    "category": "laptops",
-    "price": {
-      "amount": 22500,
-      "currency": "KES",
-      "compareAtAmount": 25200
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/lenovo-t460s-laptop/01.webp",
-        "alt": "Lenovo T460s Intel Core i5 6th Gen 8GB RAM 256GB SSD Used / Refurbished"
-      }
-    ],
-    "inStock": true,
-    "description": "Lenovo T460s suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 256GB SSD, and 6th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 6 months warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
-    "descriptionHtml": "<p>Lenovo T460s is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 256GB SSD, and 6th Gen. Listed price is KES 22,500.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 6th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Lenovo T460s is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 6 months warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Lenovo T460s is KES 22,500. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Lenovo T460s matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
-    "highlights": [
-      "Intel Core i5",
-      "8GB RAM",
-      "256GB SSD",
-      "6th Gen",
-      "6 months warranty",
-      "Confirm current stock and delivery timing before payment"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i5"
-      },
-      {
-        "label": "Memory",
-        "value": "8GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "256GB SSD"
-      },
-      {
-        "label": "Generation",
-        "value": "6th Gen"
-      },
-      {
-        "label": "Condition",
-        "value": "Used / Refurbished"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "Lenovo T460s - 8GB RAM and 256GB SSD",
-    "seoDescription": "Lenovo T460s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/lenovo-t460s-6th-gen#product",
-      "name": "Lenovo T460s Intel Core i5 6th Gen 8GB RAM 256GB SSD Used / Refurbished",
-      "description": "Lenovo T460s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-      "sku": "LENOVO-LENOVO-T460S-I5-6TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-1FB06B6F",
-      "brand": {
-        "@type": "Brand",
-        "name": "Lenovo"
-      },
-      "model": "Lenovo T460s",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i5"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "6th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "8GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "256GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Used / Refurbished"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/lenovo-t460s-6th-gen",
-        "priceCurrency": "KES",
-        "price": "22500",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/RefurbishedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
-    "id": "LENOVO-LENOVO-T470S-I5-6TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-C35809F1",
-    "slug": "lenovo-t470s-6th-gen",
-    "name": "Lenovo T470s Intel Core i5 6th Gen 8GB RAM 256GB SSD Used / Refurbished",
-    "brand": "Lenovo",
-    "category": "laptops",
-    "price": {
-      "amount": 23000,
-      "currency": "KES",
-      "compareAtAmount": 25800
-    },
-    "images": [],
-    "inStock": true,
-    "description": "Lenovo T470s suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 256GB SSD, and 6th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 6 months warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
-    "descriptionHtml": "<p>Lenovo T470s is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 256GB SSD, and 6th Gen. Listed price is KES 23,000.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 6th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Lenovo T470s is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 6 months warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Lenovo T470s is KES 23,000. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Lenovo T470s matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
-    "highlights": [
-      "Intel Core i5",
-      "8GB RAM",
-      "256GB SSD",
-      "6th Gen",
-      "6 months warranty",
-      "Confirm current stock and delivery timing before payment"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i5"
-      },
-      {
-        "label": "Memory",
-        "value": "8GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "256GB SSD"
-      },
-      {
-        "label": "Generation",
-        "value": "6th Gen"
-      },
-      {
-        "label": "Condition",
-        "value": "Used / Refurbished"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "Lenovo T470s - 8GB RAM and 256GB SSD",
-    "seoDescription": "Lenovo T470s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/lenovo-t470s-6th-gen#product",
-      "name": "Lenovo T470s Intel Core i5 6th Gen 8GB RAM 256GB SSD Used / Refurbished",
-      "description": "Lenovo T470s for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-      "sku": "LENOVO-LENOVO-T470S-I5-6TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-C35809F1",
-      "brand": {
-        "@type": "Brand",
-        "name": "Lenovo"
-      },
-      "model": "Lenovo T470s",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i5"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "6th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "8GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "256GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Used / Refurbished"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/lenovo-t470s-6th-gen",
-        "priceCurrency": "KES",
-        "price": "23000",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/RefurbishedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
     "id": "LENOVO-LENOVO-T470-I5-7TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-A6C4C9CD",
     "slug": "lenovo-t470-7th-gen",
     "name": "Lenovo T470 Intel Core i5 7th Gen 8GB RAM 256GB SSD Used / Refurbished",
@@ -20973,133 +35733,6 @@ const catalogProducts: Product[] = [
       "offers": {
         "@type": "Offer",
         "url": "https://mobdeals.co.ke/product/lenovo-t470-6th-gen-2",
-        "priceCurrency": "KES",
-        "price": "23500",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/RefurbishedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
-    "id": "LENOVO-LENOVO-X280-I5-8TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-D98207F0",
-    "slug": "lenovo-x280-8th-gen",
-    "name": "Lenovo X280 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished",
-    "brand": "Lenovo",
-    "category": "laptops",
-    "price": {
-      "amount": 23500,
-      "currency": "KES",
-      "compareAtAmount": 26400
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/lenovo-x280-laptop/01.webp",
-        "alt": "Lenovo X280 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished"
-      }
-    ],
-    "inStock": true,
-    "description": "Lenovo X280 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 256GB SSD, and 8th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 6 months warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
-    "descriptionHtml": "<p>Lenovo X280 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 256GB SSD, and 8th Gen. Listed price is KES 23,500.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 8th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 6 months warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Lenovo X280 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 6 months warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Lenovo X280 is KES 23,500. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Lenovo X280 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
-    "highlights": [
-      "Intel Core i5",
-      "8GB RAM",
-      "256GB SSD",
-      "8th Gen",
-      "6 months warranty",
-      "Confirm current stock and delivery timing before payment"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i5"
-      },
-      {
-        "label": "Memory",
-        "value": "8GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "256GB SSD"
-      },
-      {
-        "label": "Generation",
-        "value": "8th Gen"
-      },
-      {
-        "label": "Condition",
-        "value": "Used / Refurbished"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "Lenovo X280 - 8GB RAM and 256GB SSD",
-    "seoDescription": "Lenovo X280 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/lenovo-x280-8th-gen#product",
-      "name": "Lenovo X280 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished",
-      "description": "Lenovo X280 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-      "sku": "LENOVO-LENOVO-X280-I5-8TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-D98207F0",
-      "brand": {
-        "@type": "Brand",
-        "name": "Lenovo"
-      },
-      "model": "Lenovo X280",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i5"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "8th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "8GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "256GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Used / Refurbished"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/lenovo-x280-8th-gen",
         "priceCurrency": "KES",
         "price": "23500",
         "availability": "https://schema.org/InStock",

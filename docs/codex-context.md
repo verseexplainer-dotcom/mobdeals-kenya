@@ -24,7 +24,7 @@ This project does not require an MCP server for ordinary source edits. MCP serve
 
 ## Current verified facts
 
-- `src/data/products.ts`: 241 product records.
+- `src/data/products.ts`: 346 product records after the September 2026 batch merge.
 - Supabase bucket: `product-images`.
-- `npm run build`: 298 static pages verified on 2026-09-20.
+- `npm run build`: 407 static pages verified on 2026-09-27.
 

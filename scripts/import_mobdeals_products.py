@@ -58,6 +58,13 @@ SOURCE_CATEGORY_FOLDERS = {
 }
 
 CATEGORY_DEFINITIONS = {
+    "desktops": {
+        "label": "Desktop Computers",
+        "eyebrow": "Business and home workstations",
+        "description": "Desktop computers and all-in-one systems for everyday work, study, and office setups.",
+        "seoTitle": "Desktop Computers in Nairobi",
+        "seoDescription": "Browse desktop computers from MobDeals in Nairobi with current prices, specifications, and Kenya delivery support.",
+    },
     "laptops": {
         "label": "Laptops",
         "eyebrow": "Work, study, and creator machines",
@@ -100,6 +107,13 @@ CATEGORY_DEFINITIONS = {
         "seoTitle": "Software Licences in Nairobi",
         "seoDescription": "Shop software licences from MobDeals in Nairobi with current prices and support across Kenya.",
     },
+    "smartphones": {
+        "label": "Smartphones",
+        "eyebrow": "Mobile devices",
+        "description": "Smartphones for communication, work, and everyday use with clear prices and condition details.",
+        "seoTitle": "Smartphones in Nairobi",
+        "seoDescription": "Shop smartphones from MobDeals in Nairobi with current prices, condition details, and Kenya delivery support.",
+    },
     "ups": {
         "label": "UPS & Power",
         "eyebrow": "Backup power and connectivity",
@@ -109,7 +123,7 @@ CATEGORY_DEFINITIONS = {
     },
 }
 
-CATEGORY_ORDER = ["laptops", "tablets", "monitors", "printers", "projectors", "software", "ups"]
+CATEGORY_ORDER = ["laptops", "desktops", "smartphones", "tablets", "monitors", "printers", "projectors", "software", "ups"]
 
 IMAGE_GROUP_OVERRIDES = {
     "lenovo-t470s-6th-gen": "laptop/lenovo_t470_laptop.webp",

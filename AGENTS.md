@@ -6,7 +6,7 @@ Use this file as the compact project brief. Do not load the whole `ai/` tree for
 
 - Astro 7 static site, TypeScript, Tailwind CSS v4.
 - Production hosting: Cloudflare Pages, branch `main`, build `npm run build`, output `dist`.
-- Catalog: 241 generated product records in `src/data/products.ts`.
+- Catalog: 346 product records in `src/data/products.ts`; incoming drops merge through `scripts/import_product_batch.py`.
 - Product media bucket: Supabase Storage `product-images`.
 - Browser Supabase access uses public anon credentials only.
 - Cart is browser-local and hands off to WhatsApp; there is no order, payment, or account backend.

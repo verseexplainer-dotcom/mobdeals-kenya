@@ -6,6 +6,12 @@ export interface CategoryPresentation {
 }
 
 const categoryPresentations: Record<string, CategoryPresentation> = {
+  desktops: {
+    eyebrow: 'Business and home workstations',
+    description: 'Browse desktop computers and all-in-one systems for everyday work, study and office setups.',
+    seoTitle: 'Desktop Computers',
+    seoDescription: 'Shop desktop computers from MobDeals Kenya with current prices and specifications.'
+  },
   laptops: {
     eyebrow: 'Work, study and performance',
     description: 'Browse HP, Dell, Lenovo and Apple laptops by specifications, condition and price.',
@@ -41,6 +47,12 @@ const categoryPresentations: Record<string, CategoryPresentation> = {
     description: 'Browse software licences by product level and device coverage.',
     seoTitle: 'Software Licences',
     seoDescription: 'Shop software licences from MobDeals Kenya.'
+  },
+  smartphones: {
+    eyebrow: 'Mobile devices',
+    description: 'Browse smartphones for communication, work and everyday use.',
+    seoTitle: 'Smartphones',
+    seoDescription: 'Shop smartphones from MobDeals Kenya with listed prices and condition information.'
   },
   ups: {
     eyebrow: 'Backup power and connectivity',
