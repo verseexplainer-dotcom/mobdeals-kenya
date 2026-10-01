@@ -1,0 +1,30 @@
+---
+import Button from '@components/ui/Button.astro';
+import Section from '@components/ui/Section.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  seo={{
+    title: 'Page Not Found',
+    description: 'The requested MobDeals Kenya page could not be found.',
+    pathname: '/404',
+    noIndex: true
+  }}
+>
+  <Section class="bg-surface-container-low/40" containerSize="md" spacing="lg">
+    <div class="mx-auto max-w-2xl text-center">
+      <p class="text-label-xs uppercase text-ses-accent">404 · Page not found</p>
+      <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">
+        We couldn’t find that page.
+      </h1>
+      <p class="mx-auto mt-5 max-w-xl text-body-lg text-on-surface-variant">
+        The address may be outdated, or the product may have moved. Browse the current catalogue or contact our Nairobi team for help.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <Button href="/shop" size="lg">BROWSE THE SHOP</Button>
+        <Button href="/contact" variant="secondary" size="lg">CONTACT MOBDEALS</Button>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>
