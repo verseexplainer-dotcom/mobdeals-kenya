@@ -35,7 +35,7 @@ const organizationSchema = stringifyJsonLd(createOrganizationSchema());
     <meta name="theme-color" content={meta.themeColor} />
     <title>{meta.title}</title>
     <meta name="description" content={meta.description} />
-    {meta.noIndex && <meta name="robots" content="noindex,nofollow" />}
+    {meta.noIndex && <meta name="robots" content="noindex" />}
     {meta.canonical && <link rel="canonical" href={meta.canonical} />}
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
