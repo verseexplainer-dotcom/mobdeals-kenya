@@ -3,6 +3,7 @@
 /category/* https://shop.mobdeals.co.ke/category/:splat 301
 /brands https://shop.mobdeals.co.ke/brands 301
 /brands/* https://shop.mobdeals.co.ke/brands/:splat 301
+/brand/* https://shop.mobdeals.co.ke/brands/:splat 301
 /cart https://shop.mobdeals.co.ke/cart 301
 /search https://shop.mobdeals.co.ke/search 301
 /warranty https://shop.mobdeals.co.ke/warranty 301
