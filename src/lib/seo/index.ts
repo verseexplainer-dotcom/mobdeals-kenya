@@ -103,34 +103,40 @@ function productHasVariantValue(product: Product, value: string): boolean {
     || product.specs.some((spec) => spec.value.trim().toLowerCase() === normalizedValue);
 }
 
+function getProductTitleBase(product: Product): string {
+  const title = product.seoTitle ?? `${product.name} Price in Kenya`;
+  return title.replace(/\s*\|\s*Mobdeals(?: Kenya)?\s*$/i, '').trim();
+}
+
 function getProductTitle(product: Product, catalog: Product[]): string {
-  const sameNameProducts = catalog.filter((candidate) => candidate.name === product.name);
+  const baseTitle = getProductTitleBase(product);
+  const sameTitleProducts = catalog.filter((candidate) => getProductTitleBase(candidate) === baseTitle);
   let variantLabel: string | undefined;
 
-  if (sameNameProducts.length > 1) {
+  if (sameTitleProducts.length > 1) {
     const candidates = [
       product.condition,
       ...product.specs
-        .filter((spec) => ['Graphics', 'Touchscreen', 'Feature', 'Display'].includes(spec.label))
+        .filter((spec) => ['Graphics', 'Touchscreen', 'Feature', 'Display', 'Processor', 'Memory', 'Storage'].includes(spec.label))
         .map((spec) => spec.value.trim())
     ].filter((value, index, values) => value.length > 0 && values.indexOf(value) === index);
 
     variantLabel = candidates.find((value) =>
-      sameNameProducts.every(
+      sameTitleProducts.every(
         (candidate) => candidate.slug === product.slug || !productHasVariantValue(candidate, value)
       )
     );
 
     if (!variantLabel) {
       const price = formatProductPrice(product.price);
-      const priceIsUnique = sameNameProducts.every(
+      const priceIsUnique = sameTitleProducts.every(
         (candidate) => candidate.slug === product.slug || formatProductPrice(candidate.price) !== price
       );
       variantLabel = priceIsUnique ? price : product.slug;
     }
   }
 
-  return `${product.name}${variantLabel ? ` – ${variantLabel}` : ''} Price in Kenya`;
+  return `${baseTitle}${variantLabel ? ` – ${variantLabel}` : ''}`;
 }
 
 export function createProductSeo(product: Product, catalog: Product[] = [product]): SeoInput {
