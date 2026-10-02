@@ -96,9 +96,52 @@ export function createCategorySeo(category: ProductCategory, productCount: numbe
   };
 }
 
-export function createProductSeo(product: Product): SeoInput {
+function productHasVariantValue(product: Product, value: string): boolean {
+  const normalizedValue = value.trim().toLowerCase();
+
+  return product.condition.toLowerCase() === normalizedValue
+    || product.specs.some((spec) => spec.value.trim().toLowerCase() === normalizedValue);
+}
+
+function getProductTitleBase(product: Product): string {
+  const title = product.seoTitle ?? `${product.name} Price in Kenya`;
+  return title.replace(/\s*\|\s*Mobdeals(?: Kenya)?\s*$/i, '').trim();
+}
+
+function getProductTitle(product: Product, catalog: Product[]): string {
+  const baseTitle = getProductTitleBase(product);
+  const sameTitleProducts = catalog.filter((candidate) => getProductTitleBase(candidate) === baseTitle);
+  let variantLabel: string | undefined;
+
+  if (sameTitleProducts.length > 1) {
+    const candidates = [
+      product.condition,
+      ...product.specs
+        .filter((spec) => ['Graphics', 'Touchscreen', 'Feature', 'Display', 'Processor', 'Memory', 'Storage'].includes(spec.label))
+        .map((spec) => spec.value.trim())
+    ].filter((value, index, values) => value.length > 0 && values.indexOf(value) === index);
+
+    variantLabel = candidates.find((value) =>
+      sameTitleProducts.every(
+        (candidate) => candidate.slug === product.slug || !productHasVariantValue(candidate, value)
+      )
+    );
+
+    if (!variantLabel) {
+      const price = formatProductPrice(product.price);
+      const priceIsUnique = sameTitleProducts.every(
+        (candidate) => candidate.slug === product.slug || formatProductPrice(candidate.price) !== price
+      );
+      variantLabel = priceIsUnique ? price : product.slug;
+    }
+  }
+
+  return `${baseTitle}${variantLabel ? ` – ${variantLabel}` : ''}`;
+}
+
+export function createProductSeo(product: Product, catalog: Product[] = [product]): SeoInput {
   return {
-    title: product.seoTitle ?? product.name,
+    title: getProductTitle(product, catalog),
     description: `${product.name}. ${getProductDisplaySummary(product)} Price: ${formatProductPrice(product.price)}.`,
     image: product.images[0]?.src,
     pathname: `/products/${product.slug}`,
@@ -128,7 +171,7 @@ export function createProductSchema(product: Product) {
     '@type': 'Product',
     name: product.name,
     image: imageUrls.length > 0 ? imageUrls : undefined,
-    description: getProductDisplaySummary(product),
+    description: product.description,
     sku: product.id,
     brand: product.brand
       ? {

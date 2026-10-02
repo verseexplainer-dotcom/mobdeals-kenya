@@ -41,6 +41,24 @@ for (const [root, origin] of [['dist', 'https://shop.mobdeals.co.ke'], ['dist-ma
   assert(urls.length > 0);
   assert(urls.every((url) => new URL(url).origin === origin), `Mixed sitemap domains in ${root}`);
   assert((await readFile(`${root}/robots.txt`, 'utf8')).includes(`Sitemap: ${origin}/sitemap.xml`));
+  if (root === 'dist') {
+    assert(!sitemap.includes('<changefreq>'), 'Storefront sitemap should not emit ignored changefreq hints');
+    assert(!sitemap.includes('<priority>'), 'Storefront sitemap should not emit ignored priority hints');
+
+    const productHtmlPaths = htmlPaths.filter((path) => path.includes('/products/'));
+    const productTitles = await Promise.all(productHtmlPaths.map(async (path) => {
+      const html = await readFile(path, 'utf8');
+      const title = html.match(/<title>(.*?)<\/title>/)?.[1];
+      assert(title, `Missing product title: ${path}`);
+      return title;
+    }));
+    assert.equal(new Set(productTitles).size, productTitles.length, 'Product page titles must be unique');
+
+    for (const path of htmlPaths) {
+      const html = await readFile(path, 'utf8');
+      assert(!html.includes('No matching products found'), `Zero-result filter page was generated: ${path}`);
+    }
+  }
   if (root === 'dist-marketing') {
     assert.equal(urls.length, 1, 'Marketing sitemap must contain only the homepage');
     assert.equal(htmlPaths.length, 2, 'Marketing build must contain only homepage and 404');

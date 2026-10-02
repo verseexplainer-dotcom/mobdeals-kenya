@@ -36,7 +36,7 @@ const searchableProducts = products.map((product, index) => ({
 const helpMessage = encodeURIComponent('Hello MobDeals Kenya, I could not find the product I need. Please help me find an alternative.');
 ---
 
-<BaseLayout seo={{ title: 'Search Products', description: 'Search MobDeals laptops, printers, monitors, tablets, projectors, software and UPS systems.', pathname: '/search' }}>
+<BaseLayout seo={{ title: 'Search Products', description: 'Search MobDeals laptops, printers, monitors, tablets, projectors, software and UPS systems.', pathname: '/search', noIndex: true }}>
   <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
     <Breadcrumbs items={[{ label: 'Search' }]} />
     <div class="mt-8 max-w-4xl">

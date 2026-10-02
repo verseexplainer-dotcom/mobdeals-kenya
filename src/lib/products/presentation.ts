@@ -40,3 +40,17 @@ export function getProductDisplaySummary(product: Product): string {
     ? `Key details include ${details.join(', ')}.`
     : 'See the listed price, condition and warranty information, then contact our team to confirm availability.';
 }
+
+export function productMatchesCatalogFilter(product: Product, filter: string): boolean {
+  const normalizedFilter = filter.replace(/-/g, ' ').trim().toLowerCase();
+
+  if (!normalizedFilter) {
+    return false;
+  }
+
+  const haystack = `${product.name} ${product.brand ?? ''} ${product.description} ${product.specs
+    .map((spec) => `${spec.label} ${spec.value}`)
+    .join(' ')}`.toLowerCase();
+
+  return haystack.includes(normalizedFilter);
+}

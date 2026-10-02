@@ -10,20 +10,32 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import { getCategoryPresentation } from '@config/catalog';
 import { categoryNavigation } from '@config/navigation';
 import { getCategoryBySlug, getProductsByCategory } from '@data/products';
+import { productMatchesCatalogFilter } from '@lib/products';
 
 export function getStaticPaths() {
   return categoryNavigation.flatMap((category) => {
     const parentSlug = category.href.split('/').filter(Boolean).at(-1);
 
-    return (category.links ?? []).filter((link) => link.href.split('/').filter(Boolean).length > 2).map((link) => ({
-      params: {
-        slug: parentSlug,
-        filter: link.href.split('/').filter(Boolean).at(-1)
-      },
-      props: {
-        label: link.label
-      }
-    }));
+    if (!parentSlug) {
+      return [];
+    }
+
+    const categoryProducts = getProductsByCategory(parentSlug);
+
+    return (category.links ?? [])
+      .filter((link) => link.href.split('/').filter(Boolean).length > 2)
+      .flatMap((link) => {
+        const filter = link.href.split('/').filter(Boolean).at(-1);
+
+        if (!filter || !categoryProducts.some((product) => productMatchesCatalogFilter(product, filter))) {
+          return [];
+        }
+
+        return [{
+          params: { slug: parentSlug, filter },
+          props: { label: link.label }
+        }];
+      });
   });
 }
 
@@ -35,20 +47,17 @@ if (!category) {
   return Astro.redirect('/shop');
 }
 
-const normalizedFilter = (filter ?? '').replace(/-/g, ' ').toLowerCase();
 const presentation = getCategoryPresentation(category.slug);
 const categoryProducts = getProductsByCategory(category.slug);
-const filteredProducts = categoryProducts.filter((product) => {
-  const haystack = `${product.name} ${product.brand ?? ''} ${product.description} ${product.specs.map((spec) => `${spec.label} ${spec.value}`).join(' ')}`.toLowerCase();
-  return haystack.includes(normalizedFilter);
-});
+const filteredProducts = categoryProducts.filter((product) => productMatchesCatalogFilter(product, filter ?? ''));
 ---
 
 <BaseLayout
   seo={{
     title: label,
     description: `Browse ${label.toLowerCase()} from MobDeals Kenya and compare prices, condition and key specifications.`,
-    pathname: `/category/${slug}/${filter}`
+    pathname: `/category/${slug}/${filter}`,
+    noIndex: filteredProducts.length === 0
   }}
 >
   <Section class="bg-surface-container-low/40" containerSize="xl" spacing="sm">
