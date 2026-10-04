@@ -61,6 +61,7 @@ const organizationSchema = stringifyJsonLd(createOrganizationSchema());
     <meta name="twitter:card" content={meta.image ? 'summary_large_image' : 'summary'} />
     {meta.image && <meta name="twitter:image" content={meta.image} />}
     <script is:inline type="application/ld+json" set:html={organizationSchema} />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9876261469782990" crossorigin="anonymous"></script>
     <slot name="head" />
   </head>
   <body class={`min-h-screen bg-background text-on-background antialiased ${bodyClass}`}>
@@ -75,11 +76,11 @@ const organizationSchema = stringifyJsonLd(createOrganizationSchema());
       href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent('Hello MobDeals Kenya, I need help with a product.')}`}
       target="_blank"
       rel="noreferrer"
-      class="fixed bottom-[calc(1.5rem+env(safe-area-inset-bottom))] right-6 z-30 hidden min-h-12 items-center gap-2 rounded-pill bg-whatsapp px-4 text-label-md text-on-secondary shadow-soft hover:bg-whatsapp-dark sm:inline-flex"
+      class="fixed bottom-[calc(1.5rem+env(safe-area-inset-bottom))] right-6 z-30 hidden min-h-12 items-center gap-2 rounded-pill bg-whatsapp px-4 text-label-md text-on-secondary shadow-soft hover:shadow-medium active:shadow-none"
       aria-label="Talk to MobDeals on WhatsApp"
     >
       <svg viewBox="0 0 24 24" class="size-5" fill="currentColor" aria-hidden="true">
-        <path d="M12 2a9.7 9.7 0 0 0-8.4 14.5L2 22l5.7-1.5A9.8 9.8 0 1 0 12 2Zm0 17.8a7.8 7.8 0 0 1-4-1.1l-.3-.2-3.4.9.9-3.3-.2-.4A7.8 7.8 0 1 1 12 19.8Zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1-1.4-.7-2.4-1.3-3.3-2.9-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.5 3.9 1.7.7 2.4.8 3.3.7 1-.1 1.4-.7 1.6-1.3.2-.6.2-1.1.1-1.2-.1-.2-.2-.2-.4-.3Z"></path>
+        <path d="M12 2a9.7 9.7 0 0 0-8.4 14.5L2 22l5.7-1.5A9.8 9.8 0 1 0 12 2Zm0 17.8a7.8 7.8 0 0 1-4-1.1l-.3-.2-3.4.9.9-3.3-.2-.4A7.8 7.8 0 1 1 12 19.8Zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6 0-.2 0-1 .3-1.2.4s-.3.2-.5.4c-.2.2-.6.6-.7.7-.1.2-.3.3-.5.2-.2 0-1-.4-1.9-1.2-.7-.6-1.1-1.3-1.2-1.5 0-.2 0-.3.1-.5 0-.1.2-.3.4-.5l.3-.3c.2-.2.2-.4.3-.6 0-.2 0-.4-.2-.6-.1-.2-.5-1.2-.7-1.7-.2-.4-.3-.4-.5-.4h-.4c-.2 0-.5.1-.7.3-.2.3-.9 1-.9 2.3 0 1.4.6 2.7 1.5 3.5 1 .9 2.2 1.4 3.5 1.4h.5c.2 0 .4-.1.4-.1.2 0 .5.2.7.4.2.2.8.8 1.7 1.4.3.2.6.3 1 .3.2 0 .3 0 .5-.1.1 0 1.2-.3 1.4-.7.2-.4.2-1 .2-1.1v-1z"/>
       </svg>
       <span class="hidden sm:inline">WhatsApp</span>
     </a>
