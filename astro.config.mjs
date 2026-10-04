@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://shop.mobdeals.co.ke',
+  site: 'https://mobdeals.co.ke',
   output: 'static',
   trailingSlash: 'never',
   vite: {
