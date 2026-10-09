@@ -11,7 +11,10 @@ for (const [root, origin] of [['dist', 'https://shop.mobdeals.co.ke'], ['dist-ma
   const htmlPaths = paths.filter((path) => path.endsWith('.html'));
   for (const path of htmlPaths) {
     const html = await readFile(path, 'utf8');
-    if (!path.endsWith('/404.html') && !path.endsWith('/404/index.html')) {
+    // Skip 404 pages and Astro redirect stubs (http-equiv refresh) from canonical check.
+    // Redirect stubs are noindex and Astro generates their canonical from astro.config site URL.
+    const isRedirectStub = html.includes('http-equiv="refresh"');
+    if (!path.endsWith('/404.html') && !path.endsWith('/404/index.html') && !isRedirectStub) {
       const canonical = html.match(/<link rel="canonical" href="([^"]+)"/);
       assert(canonical, `Missing canonical: ${path}`);
       assert.equal(new URL(canonical[1]).origin, origin, `Wrong canonical: ${path}`);

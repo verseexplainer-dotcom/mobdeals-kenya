@@ -12,9 +12,8 @@ import { siteConfig } from '@config/site';
 import { formatProductPrice, getProductDisplaySpecs, getProductDisplaySummary } from '@lib/products';
 import { absoluteUrl, createBreadcrumbSchema, createProductSchema, createProductSeo, stringifyJsonLd } from '@lib/seo';
 
-const catalog = getAllProducts();
-
 export function getStaticPaths() {
+  const catalog = getAllProducts();
   return catalog.map((product) => ({
     params: { slug: product.slug },
     props: { product }
@@ -22,6 +21,7 @@ export function getStaticPaths() {
 }
 
 const { product } = Astro.props;
+const catalog = getAllProducts();
 const category = getCategoryBySlug(product.category);
 const relatedProducts = getRelatedProducts(product);
 const displaySpecs = getProductDisplaySpecs(product);
