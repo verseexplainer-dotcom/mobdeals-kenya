@@ -22,6 +22,9 @@ pnpm-debug.log*
 .playwright-cli/
 output/
 
+# graphify generated output (regenerated on demand via `graphify update .`)
+graphify-out/
+
 # local source asset drops
 product drop/
 
