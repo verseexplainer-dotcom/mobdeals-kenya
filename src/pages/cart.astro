@@ -22,6 +22,7 @@ import { siteConfig } from '@config/site';
           Review your items, then send your order to our team for stock and delivery confirmation.
         </p>
 
+        <p class="mt-4 text-body-sm text-on-surface-variant" data-cart-status role="status"></p>
         <div class="mt-8 grid gap-4" data-cart-items></div>
 
         <div class="mt-8 hidden rounded-card border border-ses-line bg-surface-container-lowest p-8" data-cart-empty>
@@ -56,6 +57,7 @@ import { siteConfig } from '@config/site';
           rel="noreferrer"
           class="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-control bg-primary px-6 text-body-md font-semibold text-on-primary transition hover:-translate-y-0.5 hover:bg-primary-container"
           data-cart-whatsapp
+          data-whatsapp-number={siteConfig.whatsappNumber}
         >
           CONFIRM ORDER ON WHATSAPP
         </a>
@@ -71,8 +73,8 @@ import { siteConfig } from '@config/site';
   </Section>
 </BaseLayout>
 
-<script is:inline define:vars={{ whatsappNumber: siteConfig.whatsappNumber }}>
-  const CART_KEY = 'mobdeals_cart_v1';
+<script>
+  import { readCart, writeCart as persistCart, updateCartCount, type CartItem } from '@lib/cart';
   const currency = new Intl.NumberFormat('en-KE', {
     style: 'currency',
     currency: 'KES',
@@ -83,27 +85,17 @@ import { siteConfig } from '@config/site';
   const emptyState = document.querySelector('[data-cart-empty]');
   const totalItems = document.querySelector('[data-cart-total-items]');
   const totalPrice = document.querySelector('[data-cart-total]');
-  const checkout = document.querySelector('[data-cart-whatsapp]');
+  const checkout = document.querySelector<HTMLAnchorElement>('[data-cart-whatsapp]');
   const clearButton = document.querySelector('[data-cart-clear]');
 
-  const readCart = () => {
-    try {
-      return JSON.parse(localStorage.getItem(CART_KEY) || '[]');
-    } catch {
-      return [];
-    }
+  const whatsappNumber = checkout?.dataset.whatsappNumber ?? '';
+  const status = document.querySelector('[data-cart-status]');
+  const writeCart = (items: CartItem[]) => {
+    const saved = persistCart(items);
+    if (status) status.textContent = saved ? '' : 'Unable to save your cart. Please enable browser storage and try again.';
   };
 
-  const writeCart = (items) => {
-    localStorage.setItem(CART_KEY, JSON.stringify(items));
-    const count = items.reduce((total, item) => total + item.quantity, 0);
-    document.querySelectorAll('[data-cart-count]').forEach((target) => {
-      target.textContent = String(count);
-      target.toggleAttribute('hidden', count === 0);
-    });
-  };
-
-  const checkoutHref = (items) => {
+  const checkoutHref = (items: CartItem[]) => {
     const lines = items.map((item, index) => {
       const amount = item.price?.amount ?? 0;
       return `${index + 1}. ${item.name} x${item.quantity} - ${currency.format(amount * item.quantity)} (${location.origin}/products/${item.slug})`;
@@ -121,9 +113,9 @@ import { siteConfig } from '@config/site';
     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
   };
 
-  const productPath = (slug) => `/products/${String(slug || '').replace(/[^a-z0-9-]/gi, '')}`;
+  const productPath = (slug: string) => `/products/${String(slug || '').replace(/[^a-z0-9-]/gi, '')}`;
 
-  const createCartItem = (item) => {
+  const createCartItem = (item: CartItem) => {
     const article = document.createElement('article');
     article.className = 'grid gap-4 rounded-card border border-ses-line bg-surface-container-lowest p-4 sm:grid-cols-[7rem_1fr_auto] sm:items-center';
 
@@ -192,7 +184,7 @@ import { siteConfig } from '@config/site';
 
   const renderCart = () => {
     const items = readCart();
-    writeCart(items);
+    updateCartCount(items);
     const count = items.reduce((total, item) => total + item.quantity, 0);
     const total = items.reduce((sum, item) => sum + (item.price?.amount ?? 0) * item.quantity, 0);
 
@@ -200,7 +192,7 @@ import { siteConfig } from '@config/site';
     if (totalPrice) totalPrice.textContent = currency.format(total);
     if (checkout) {
       checkout.href = items.length > 0 ? checkoutHref(items) : `https://wa.me/${whatsappNumber}`;
-      checkout.toggleAttribute('aria-disabled', items.length === 0);
+      checkout.setAttribute('aria-disabled', String(items.length === 0));
       checkout.classList.toggle('pointer-events-none', items.length === 0);
       checkout.classList.toggle('opacity-50', items.length === 0);
       checkout.tabIndex = items.length === 0 ? -1 : 0;
@@ -215,9 +207,9 @@ import { siteConfig } from '@config/site';
     const target = event.target;
     if (!(target instanceof HTMLElement)) return;
     const items = readCart();
-    const inc = target.closest('[data-cart-inc]');
-    const dec = target.closest('[data-cart-dec]');
-    const remove = target.closest('[data-cart-remove]');
+    const inc = target.closest<HTMLElement>('[data-cart-inc]');
+    const dec = target.closest<HTMLElement>('[data-cart-dec]');
+    const remove = target.closest<HTMLElement>('[data-cart-remove]');
 
     if (inc) {
       const item = items.find((entry) => entry.slug === inc.dataset.cartInc);
@@ -244,5 +236,6 @@ import { siteConfig } from '@config/site';
     renderCart();
   });
 
+  window.addEventListener('storage', renderCart);
   renderCart();
 </script>

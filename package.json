@@ -20,7 +20,8 @@
     "lint": "eslint .",
     "catalog:validate": "python3 scripts/sync_supabase_catalog.py",
     "catalog:sync": "python3 scripts/sync_supabase_catalog.py --apply",
-    "cf:deploy": "wrangler pages deploy dist --project-name=mobdeals-kenya --branch=main"
+    "cf:deploy": "wrangler pages deploy dist --project-name=mobdeals-kenya --branch=main",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.116.0",

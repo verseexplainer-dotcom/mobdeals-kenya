@@ -31,23 +31,28 @@ const display = exact || fallback;
   [data-state='unavailable'] img { visibility: hidden; }
 </style>
 <script>
-  document.querySelectorAll<HTMLElement>('[data-product-image]').forEach((frame) => {
-    const photo = frame.querySelector<HTMLImageElement>('[data-product-photo]');
-    if (!photo) return;
-    const recover = () => {
-      const fallback = photo.dataset.fallbackSrc;
-      if (!fallback || photo.getAttribute('src') === fallback) {
-        frame.dataset.state = 'unavailable';
-        photo.alt = '';
-        return;
-      }
-      frame.dataset.state = 'representative';
-      photo.alt = photo.dataset.fallbackAlt ?? 'Category illustration';
-      photo.removeAttribute('srcset');
-      photo.src = fallback;
-    };
-    photo.addEventListener('error', recover);
+  const recover = (photo: HTMLImageElement) => {
+    const frame = photo.closest<HTMLElement>('[data-product-image]');
+    if (!frame) return;
+    const fallback = photo.dataset.fallbackSrc;
+    if (!fallback || photo.getAttribute('src') === fallback) {
+      frame.dataset.state = 'unavailable';
+      photo.alt = '';
+      return;
+    }
+    frame.dataset.state = 'representative';
+    photo.alt = photo.dataset.fallbackAlt ?? 'Category illustration';
+    photo.removeAttribute('srcset');
+    photo.src = fallback;
+  };
+  // Capture also handles cards cloned from search and load-more templates.
+  document.addEventListener('error', (event) => {
+    if (event.target instanceof HTMLImageElement && event.target.matches('[data-product-photo]')) {
+      recover(event.target);
+    }
+  }, true);
+  document.querySelectorAll<HTMLImageElement>('[data-product-photo]').forEach((photo) => {
     // Cached errors may happen before this bundled script executes.
-    if (photo.complete && photo.naturalWidth === 0) recover();
+    if (photo.complete && photo.naturalWidth === 0) recover(photo);
   });
 </script>

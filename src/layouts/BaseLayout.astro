@@ -61,7 +61,7 @@ const organizationSchema = stringifyJsonLd(createOrganizationSchema());
     <meta name="twitter:card" content={meta.image ? 'summary_large_image' : 'summary'} />
     {meta.image && <meta name="twitter:image" content={meta.image} />}
     <script is:inline type="application/ld+json" set:html={organizationSchema} />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9876261469782990" crossorigin="anonymous"></script>
+    <script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9876261469782990" crossorigin="anonymous"></script>
     <slot name="head" />
   </head>
   <body class={`min-h-screen bg-background text-on-background antialiased ${bodyClass}`}>

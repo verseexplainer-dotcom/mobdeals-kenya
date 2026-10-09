@@ -11,6 +11,11 @@ for (const [root, origin] of [['dist', 'https://shop.mobdeals.co.ke'], ['dist-ma
   const htmlPaths = paths.filter((path) => path.endsWith('.html'));
   for (const path of htmlPaths) {
     const html = await readFile(path, 'utf8');
+    for (const match of html.matchAll(/(?:href|src|poster)="(\/(?!\/)[^"]*)"/g)) {
+      const target = `${root}${decodeURIComponent(new URL(match[1], origin).pathname)}`.replace(/\/$/, '');
+      assert([target, `${target}/index.html`, `${target}.html`].some((candidate) => paths.includes(candidate)),
+        `Missing local target ${match[1]} in ${path}`);
+    }
     // Skip 404 pages and Astro redirect stubs (http-equiv refresh) from canonical check.
     // Redirect stubs are noindex and Astro generates their canonical from astro.config site URL.
     const isRedirectStub = html.includes('http-equiv="refresh"');

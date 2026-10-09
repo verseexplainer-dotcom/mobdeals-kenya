@@ -1,3 +1,6 @@
+import { getProductsByCategory } from '@data/products';
+import { productMatchesCatalogFilter } from '@lib/products';
+
 export interface NavigationLink {
   label: string;
   href: string;
@@ -20,7 +23,7 @@ export const primaryNavigation: NavigationLink[] = [
   { label: 'Contact', href: '/contact' }
 ];
 
-export const categoryNavigation: NavigationCategory[] = [
+const configuredCategories: NavigationCategory[] = [
   {
     label: 'Laptops',
     href: '/category/laptops',
@@ -85,6 +88,18 @@ export const categoryNavigation: NavigationCategory[] = [
     ]
   }
 ];
+
+// Keep menus aligned with the filter routes that the static build can generate.
+export const categoryNavigation: NavigationCategory[] = configuredCategories.map((category) => {
+  const products = getProductsByCategory(category.href.split('/').at(-1) ?? '');
+  return {
+    ...category,
+    links: category.links?.filter((link) => {
+      const segments = link.href.split('/').filter(Boolean);
+      return segments.length <= 2 || products.some((product) => productMatchesCatalogFilter(product, segments.at(-1) ?? ''));
+    })
+  };
+});
 
 export const supportNavigation: NavigationLink[] = [
   { label: 'Warranty', href: '/warranty' },
