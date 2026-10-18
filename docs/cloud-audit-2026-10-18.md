@@ -22,11 +22,8 @@ Supabase still reports `disable_signup: false`. Disabling new user signup needs
 the owner's dashboard access or a Supabase management token. No database schema,
 catalog row, Storage object, or Auth user was changed by these fixes.
 
-The owner's SQL result, `supabase_migrations.schema_migrations`, confirms the
-migration-history table exists; it does not include the RLS, grant, function, or
-constraint results. The SQL checklist now returns all checks and migration
-versions together in one JSON `audit` result for easier sharing. Those checks
-remain unverified until the full result is reviewed.
+The first SQL result confirmed only migration-table existence. The owner then
+supplied the full consolidated audit result; its findings are recorded below.
 
 Remediation verification passed `npm run check`, `npm run check:marketing`,
 `npm run lint`, both production builds, and `npm run verify:sites` (409 storefront
@@ -38,6 +35,61 @@ all four project/environment combinations matching. The AST knowledge graph was
 updated without an LLM/API call.
 
 The original audit below records the state before these fixes.
+
+## Supabase SQL follow-up
+
+The supplied JSON confirms RLS is enabled on all three catalog tables and
+`storage.objects`. Category, gallery, and Storage read policies match the
+versioned schema. Catalog constraints include primary/foreign keys, unique
+slugs and gallery positions, positive prices/dimensions, and normalized image
+paths. `rls_forced: false` alone is not a failure; database owners and the
+service role have a separate administrative role from public shoppers.
+
+Corrections are needed:
+
+- `products` has two permissive SELECT policies. The older **Public can read
+  active products** checks only `is_active`, weakening the intended active and
+  available condition because permissive policies combine with OR. The earlier
+  matching product counts did not expose this case: the hidden records were
+  both inactive and unavailable.
+- `anon` and `authenticated` have unnecessary INSERT/UPDATE/DELETE/TRUNCATE/
+  REFERENCES/TRIGGER grants on the catalog tables. No public write RLS policy
+  was supplied, so this is not proof that ordinary API writes succeed. However,
+  TRUNCATE and REFERENCES are outside RLS, and the grants exceed the intended
+  SELECT-only catalog access. See [PostgreSQL row security](https://www.postgresql.org/docs/17/ddl-rowsecurity.html).
+- Both roles, and PUBLIC, can execute `set_updated_at()` and the optional
+  security-definer `rls_auto_enable()`. These are database trigger helpers rather
+  than storefront RPC endpoints. The audit did not include their return types
+  or function bodies, so it does not establish a callable privileged exploit.
+  The correction removes unnecessary client execution privileges while keeping
+  the helpers and existing owner/service-role access. The read-only audit now
+  includes function return types for clearer interpretation.
+- Migration history contains the four versions through `20260909003000`, but
+  does not record `20260927000000`. Desktop/smartphone categories are present
+  in the live catalog; their existence alone does not reconcile migration
+  history. The pending idempotent category migration can be applied through the
+  linked CLI along with the new correction.
+
+Prepared correction: `supabase/migrations/20261018000000_harden_catalog_access.sql`.
+It changes only catalog policies/privileges and trigger-helper ACLs; managed
+Storage grants and catalog rows are preserved. **This correction has not been
+applied to hosted Supabase.** The available API credentials do not provide SQL
+DDL access. Apply it as described in `supabase/README.md`, then rerun the
+read-only audit. Repository pushes do not apply database migrations.
+
+The correction passed a full migration replay and regression checks in an
+isolated PostgreSQL 17 container. Tests reproduced the active/unavailable read
+exposure before the correction, verified filtered reads for both public roles
+afterward, checked removal of all non-SELECT catalog grants and helper EXECUTE
+grants, and confirmed service-role updates and timestamp triggers still work.
+Managed Storage grants were preserved. Reapplying the correction and applying it
+without the optional auto-RLS helper both succeeded. The consolidated read-only
+audit executed successfully. The test container was removed afterward; no hosted
+database was used for these tests.
+
+A fresh public Auth-settings check still returned `disable_signup: false` with
+email enabled. The hosted global signup setting therefore remains unverified
+as disabled, despite the owner's reported dashboard change.
 
 ## Initial audit
 

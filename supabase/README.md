@@ -50,6 +50,28 @@ npx supabase link --project-ref your-project-ref
 npx supabase db push
 ```
 
+The October audit found a legacy active-only read policy and broad default
+catalog grants on the hosted database. The correction is
+`migrations/20261018000000_harden_catalog_access.sql`. It removes that legacy
+policy, keeps active-and-available public reads, gives `anon`/`authenticated`
+SELECT-only catalog access, and removes direct browser execution privileges on
+the trigger helpers. Service-role imports and managed Storage grants are
+preserved. No product rows or files are deleted.
+
+The supplied audit history does not record `20260927000000` (the category
+migration), although both categories are present in live data. A linked
+`supabase db push` applies the idempotent pending category migration and the
+access correction and records their versions. If using SQL Editor instead, run
+the entire access-correction file as the database owner, then run
+`docs/cloud-audit-readonly.sql` and review the single `audit` JSON result.
+SQL Editor execution alone does not update CLI migration history; reconcile it
+through the linked CLI rather than inventing migration-history entries.
+
+The project service-role API key cannot execute migration DDL. Applying these
+files requires SQL Editor, a linked CLI/database connection, or suitably scoped
+Supabase management access. Pushing this repository only rebuilds the static
+sites; it does not apply database migrations.
+
 Validate the catalog payload without writing it, then perform the idempotent upsert:
 
 ```sh
