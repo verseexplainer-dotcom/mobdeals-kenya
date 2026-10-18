@@ -75,6 +75,8 @@ import { siteConfig } from '@config/site';
 
 <script>
   import { readCart, writeCart as persistCart, updateCartCount, type CartItem } from '@lib/cart';
+  import { trackEvent } from '@lib/analytics';
+  import { getAttributionEventProperties } from '@lib/analytics/attribution';
   const currency = new Intl.NumberFormat('en-KE', {
     style: 'currency',
     currency: 'KES',
@@ -93,6 +95,26 @@ import { siteConfig } from '@config/site';
   const writeCart = (items: CartItem[]) => {
     const saved = persistCart(items);
     if (status) status.textContent = saved ? '' : 'Unable to save your cart. Please enable browser storage and try again.';
+    return saved;
+  };
+  const trackCartMutation = (name: 'add_to_cart' | 'remove_from_cart', item: CartItem, quantity: number) => {
+    const price = item.price?.amount ?? 0;
+    trackEvent({
+      name,
+      properties: {
+        currency: 'KES',
+        value: price * quantity,
+        items: [{
+          item_id: item.slug,
+          item_name: item.name,
+          item_brand: item.brand ?? '',
+          item_category: item.category ?? '',
+          price,
+          quantity
+        }],
+        ...getAttributionEventProperties()
+      }
+    });
   };
 
   const checkoutHref = (items: CartItem[]) => {
@@ -213,26 +235,38 @@ import { siteConfig } from '@config/site';
 
     if (inc) {
       const item = items.find((entry) => entry.slug === inc.dataset.cartInc);
-      if (item) item.quantity += 1;
-      writeCart(items);
+      if (item) {
+        item.quantity += 1;
+        if (writeCart(items)) trackCartMutation('add_to_cart', item, 1);
+      } else {
+        writeCart(items);
+      }
       renderCart();
     }
 
     if (dec) {
       const item = items.find((entry) => entry.slug === dec.dataset.cartDec);
-      if (item) item.quantity -= 1;
-      writeCart(items.filter((entry) => entry.quantity > 0));
+      if (item) {
+        item.quantity -= 1;
+        if (writeCart(items.filter((entry) => entry.quantity > 0))) trackCartMutation('remove_from_cart', item, 1);
+      } else {
+        writeCart(items.filter((entry) => entry.quantity > 0));
+      }
       renderCart();
     }
 
     if (remove) {
-      writeCart(items.filter((entry) => entry.slug !== remove.dataset.cartRemove));
+      const removedItem = items.find((entry) => entry.slug === remove.dataset.cartRemove);
+      if (writeCart(items.filter((entry) => entry.slug !== remove.dataset.cartRemove)) && removedItem) {
+        trackCartMutation('remove_from_cart', removedItem, removedItem.quantity);
+      }
       renderCart();
     }
   });
 
   clearButton?.addEventListener('click', () => {
-    writeCart([]);
+    const items = readCart();
+    if (writeCart([])) items.forEach((item) => trackCartMutation('remove_from_cart', item, item.quantity));
     renderCart();
   });
 

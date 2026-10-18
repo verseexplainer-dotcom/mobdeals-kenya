@@ -1,0 +1,69 @@
+<aside class="consent-banner" data-consent-banner hidden aria-label="Cookie and privacy choices">
+  <div class="consent-copy">
+    <p class="consent-title">Your privacy choices</p>
+    <p>We use necessary browser storage for site features. With your permission, analytics and advertising tools help us understand visits and measure campaigns.</p>
+  </div>
+  <div class="consent-actions">
+    <button type="button" data-consent-reject>Reject optional</button>
+    <button type="button" data-consent-manage>Choose settings</button>
+    <button type="button" class="consent-primary" data-consent-accept>Accept all</button>
+  </div>
+</aside>
+
+<dialog class="consent-dialog" data-consent-dialog aria-labelledby="consent-dialog-title">
+  <form method="dialog" class="consent-panel">
+    <button type="button" class="consent-close" aria-label="Close privacy settings" data-consent-close>×</button>
+    <p class="consent-eyebrow">Privacy settings</p>
+    <h2 id="consent-dialog-title">Choose what you allow</h2>
+    <p class="consent-description">Necessary storage keeps core site features working. You can change optional choices at any time from the footer.</p>
+    <p class="consent-notice" data-consent-notice aria-live="polite"></p>
+    <div class="consent-option">
+      <div><h3>Necessary</h3><p>Cart contents and your privacy choices on this site.</p></div>
+      <span class="consent-always">Always on</span>
+    </div>
+    <label class="consent-option" for="consent-analytics">
+      <span><h3>Analytics</h3><p>Google Analytics and Microsoft Clarity, when configured.</p></span>
+      <input id="consent-analytics" type="checkbox" data-consent-analytics />
+    </label>
+    <label class="consent-option" for="consent-marketing">
+      <span><h3>Advertising and social media</h3><p>Google advertising and Meta Pixel, when configured.</p></span>
+      <input id="consent-marketing" type="checkbox" data-consent-marketing />
+    </label>
+    <div class="consent-dialog-actions">
+      <button type="button" data-consent-reject-all>Reject optional</button>
+      <button type="button" data-consent-save>Save choices</button>
+      <button type="button" class="consent-primary" data-consent-accept-all>Accept all</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+  import '@lib/analytics/consent';
+</script>
+
+<style>
+  .consent-banner { position: fixed; z-index: 100; inset: auto 1rem 1rem; display: grid; gap: 1rem; max-width: 70rem; margin-inline: auto; padding: 1rem; color: #f8f5ee; background: #102a2a; border: 1px solid #55706d; border-radius: 1rem; box-shadow: 0 1rem 3rem #0005; font: 400 0.9rem/1.5 system-ui, sans-serif; }
+  .consent-banner[hidden] { display: none; }
+  .consent-title { margin: 0 0 0.2rem; font-weight: 700; }
+  .consent-copy p:last-child { max-width: 52rem; margin: 0; color: #d1ddd8; }
+  .consent-actions, .consent-dialog-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; }
+  .consent-banner button, .consent-dialog button { min-height: 2.65rem; padding: 0.55rem 0.85rem; border: 1px solid #839895; border-radius: 0.5rem; color: inherit; background: transparent; font: 600 0.85rem/1.2 system-ui, sans-serif; cursor: pointer; }
+  .consent-banner .consent-primary, .consent-dialog .consent-primary { color: #17221f; background: #f97316; border-color: #f97316; }
+  .consent-dialog { width: min(36rem, calc(100vw - 2rem)); max-height: min(90vh, 48rem); padding: 0; color: #162424; border: 0; border-radius: 1rem; box-shadow: 0 1rem 4rem #0006; }
+  .consent-dialog::backdrop { background: #071313b8; }
+  .consent-panel { position: relative; display: grid; gap: 1rem; padding: 1.5rem; font: 400 0.9rem/1.5 system-ui, sans-serif; }
+  .consent-panel h2, .consent-panel h3, .consent-panel p { margin: 0; }
+  .consent-panel h2 { padding-right: 2rem; font: 700 1.5rem/1.2 system-ui, sans-serif; }
+  .consent-panel h3 { font: 700 0.95rem/1.3 system-ui, sans-serif; }
+  .consent-panel p { color: #536362; }
+  .consent-panel .consent-eyebrow { color: #b64d09; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+  .consent-option { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 0.9rem 0; border-top: 1px solid #d8e0de; }
+  .consent-option p { margin-top: 0.2rem; font-size: 0.82rem; }
+  .consent-option input { width: 1.25rem; height: 1.25rem; accent-color: #b64d09; }
+  .consent-option input:disabled { opacity: 0.55; }
+  .consent-always { white-space: nowrap; color: #536362; font-size: 0.8rem; }
+  .consent-dialog .consent-dialog-actions { justify-content: flex-end; margin-top: 0.3rem; }
+  .consent-dialog button { color: #162424; border-color: #8d9c99; }
+  .consent-dialog .consent-close { position: absolute; top: 0.9rem; right: 0.9rem; width: 2.5rem; min-height: 2.5rem; padding: 0; font-size: 1.5rem; }
+  @media (min-width: 800px) { .consent-banner { inset-inline: 1.5rem; grid-template-columns: 1fr auto; align-items: center; padding: 1.25rem 1.5rem; } }
+</style>

@@ -6,6 +6,7 @@ import { formatProductPrice } from '@lib/products';
 import { stringifyJsonLd } from '@lib/seo';
 import ProductImage from '@components/product/ProductImage.astro';
 import ScrollFilm from '../components/ScrollFilm.astro';
+import CookieConsent from '@components/privacy/CookieConsent.astro';
 import { homeMedia } from '@data/home-media';
 
 const shop = siteConfig.siteUrl;
@@ -30,7 +31,7 @@ const trust = [
 ];
 ---
 <!doctype html>
-<html lang="en-KE">
+<html lang="en-KE" data-site-role="marketing">
   <head>
     <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#102A2A" />
@@ -100,6 +101,11 @@ const trust = [
 
       <section class="final-section" aria-labelledby="final-title"><div class="wrap"><p class="eyebrow">Your next chapter starts here</p><h2 id="final-title">Make it<br />MobDeals.</h2><a class="cta" href={shop}>Shop MobDeals <span aria-hidden="true">↗</span></a></div></section>
     </main>
-    <footer class="marketing-footer solid"><div class="wrap"><a class="footer-brand" href="/">MobDeals Kenya</a><p>© {new Date().getFullYear()} MobDeals Kenya</p><nav aria-label="Footer navigation"><a href={`${shop}/warranty`}>Warranty</a><a href={`${shop}/delivery`}>Delivery</a><a href={chat}>WhatsApp ↗</a></nav></div></footer>
+    <footer class="marketing-footer solid"><div class="wrap"><a class="footer-brand" href="/">MobDeals Kenya</a><p>© {new Date().getFullYear()} MobDeals Kenya</p><nav aria-label="Footer navigation"><a href={`${shop}/warranty`}>Warranty</a><a href={`${shop}/delivery`}>Delivery</a><a href={chat}>WhatsApp ↗</a></nav><nav aria-label="Privacy and legal links"><a href={`${shop}/privacy-policy`}>Privacy Policy</a><a href={`${shop}/cookie-policy`}>Cookie Policy</a><a href="#privacy-choices" data-cookie-settings>Cookie settings</a><a href="#privacy-choices" data-privacy-opt-out>Do Not Sell or Share My Personal Information</a></nav></div></footer>
+    <CookieConsent />
+    <script>
+      import { initializeAnalytics } from '@lib/analytics/client';
+      initializeAnalytics();
+    </script>
   </body>
 </html>

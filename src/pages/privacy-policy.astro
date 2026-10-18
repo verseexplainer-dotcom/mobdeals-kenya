@@ -1,0 +1,33 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Section from '@components/ui/Section.astro';
+import { siteConfig } from '@config/site';
+
+const lastUpdated = '18 October 2026';
+---
+
+<BaseLayout seo={{ title: 'Privacy Policy', description: 'How MobDeals Kenya handles information when you use our marketing site and online shop.', pathname: '/privacy-policy' }}>
+  <Section containerSize="md" spacing="lg">
+    <p class="text-label-xs uppercase text-ses-accent">MobDeals Kenya</p>
+    <h1 class="mt-3 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">Privacy Policy</h1>
+    <p class="mt-4 text-body-sm text-on-surface-variant">Last updated {lastUpdated}</p>
+
+    <div class="mt-8 grid gap-7 text-body-md leading-7 text-on-surface-variant">
+      <section><h2 class="font-display text-title-lg text-on-surface">Who we are</h2><p class="mt-2">MobDeals Kenya operates the marketing website at <a class="text-ses-accent underline" href="https://mobdeals.co.ke">mobdeals.co.ke</a> and the online shop at <a class="text-ses-accent underline" href="https://shop.mobdeals.co.ke">shop.mobdeals.co.ke</a>. We are based at {siteConfig.address}. For privacy questions or requests, contact <a class="text-ses-accent underline" href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>.</p></section>
+
+      <section><h2 class="font-display text-title-lg text-on-surface">Information handled by the sites</h2><ul class="mt-2 list-disc space-y-2 pl-6"><li>Cart items are stored in your browser. A session-only campaign source and short reference code may be added to WhatsApp messages prepared by the site; review or edit the message before sending. The shop does not create customer accounts or process online payments.</li><li>If you contact us through a form, email, phone or WhatsApp, we may receive the details and message you choose to provide, such as your name, contact details, product interest or delivery question.</li><li>Our hosting and security providers may process technical request information, such as an IP address, browser details and requested pages, to deliver and protect the sites.</li><li>If you allow optional analytics or advertising, configured services may receive information about site visits, device or browser activity, campaign source and interactions. These tools are not loaded before the relevant consent is given.</li><li>Product images are delivered from Supabase Storage. Opening WhatsApp, email, maps or other external links connects your browser to that provider.</li></ul></section>
+
+      <section><h2 class="font-display text-title-lg text-on-surface">How we use information</h2><p class="mt-2">We use information to operate and secure the websites, keep your cart available in your browser, respond to enquiries, discuss product availability and delivery, and—only when permitted by your choices—measure site use and advertising campaigns.</p></section>
+
+      <section><h2 class="font-display text-title-lg text-on-surface">When information is shared</h2><p class="mt-2">We share information with service providers that help host, secure or operate the sites and with a third-party service when you choose to contact it. Optional Google Analytics, Microsoft Clarity, Google advertising and Meta Pixel tools may receive browsing or interaction data only when configured and allowed in your privacy choices. These providers may process information in locations outside Kenya under their own terms and privacy notices.</p></section>
+
+      <section><h2 class="font-display text-title-lg text-on-surface">WhatsApp and enquiries</h2><p class="mt-2">The cart and enquiry tools prepare a message for WhatsApp; they do not submit an order to a MobDeals server. Review the message before sending it. Information you send to us through WhatsApp, email or phone is handled by the relevant provider as well as by MobDeals when we receive it.</p></section>
+
+      <section><h2 class="font-display text-title-lg text-on-surface">Retention and your choices</h2><p class="mt-2">Cart items remain in local browser storage until you change or clear them. Campaign attribution is kept for the browser session. Your optional privacy choice is remembered for up to 180 days and shared between the marketing site and shop. Enquiry information is kept as needed to respond and manage the resulting business relationship or records. You can ask us about access, correction or deletion of information we hold by emailing {siteConfig.email}. You can also withdraw optional tracking permission using Cookie settings in the footer.</p></section>
+
+      <section id="privacy-choices"><h2 class="font-display text-title-lg text-on-surface">Do Not Sell or Share</h2><p class="mt-2">Use the <a href="#privacy-choices" data-privacy-opt-out class="text-ses-accent underline">Do Not Sell or Share My Personal Information</a> control in the footer to turn off advertising and social media tools in this browser. We also honor the Global Privacy Control browser signal by keeping those tools off while the signal is active. The preference is shared between the marketing site and shop. Clearing browser storage may remove a saved choice.</p></section>
+
+      <section><h2 class="font-display text-title-lg text-on-surface">Updates and contact</h2><p class="mt-2">We may update this notice when our services or data practices change. The current version and update date will be posted on this page. Contact <a class="text-ses-accent underline" href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a> with privacy questions.</p></section>
+    </div>
+  </Section>
+</BaseLayout>

@@ -10,5 +10,8 @@ export default defineConfig({
   publicDir: fileURLToPath(new URL('./.marketing/public/', import.meta.url)),
   outDir: fileURLToPath(new URL('./dist-marketing/', import.meta.url)),
   cacheDir: fileURLToPath(new URL('./marketing/.astro/', import.meta.url)),
-  envDir: fileURLToPath(new URL('./', import.meta.url))
+  vite: {
+    ...storefront.vite,
+    envDir: fileURLToPath(new URL('./', import.meta.url))
+  }
 });

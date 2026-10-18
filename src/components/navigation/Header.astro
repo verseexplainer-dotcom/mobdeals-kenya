@@ -67,6 +67,8 @@ import SearchBar from './SearchBar.astro';
 
 <script>
   import { readCart, writeCart, updateCartCount, normalizeCart } from '@lib/cart';
+  import { trackEvent } from '@lib/analytics';
+  import { getAttributionEventProperties } from '@lib/analytics/attribution';
 
   const header = document.getElementById('site-header');
 
@@ -99,6 +101,25 @@ import SearchBar from './SearchBar.astro';
     if (existing) existing.quantity += 1;
     else items.push(cartProduct);
     const saved = writeCart(items);
+    if (saved) {
+      const price = cartProduct.price?.amount ?? 0;
+      trackEvent({
+        name: 'add_to_cart',
+        properties: {
+          currency: 'KES',
+          value: price,
+          items: [{
+            item_id: cartProduct.slug,
+            item_name: cartProduct.name,
+            item_brand: cartProduct.brand ?? '',
+            item_category: cartProduct.category ?? '',
+            price,
+            quantity: 1
+          }],
+          ...getAttributionEventProperties()
+        }
+      });
+    }
     const originalLabel = button.dataset.cartLabel || button.textContent || 'ADD TO CART';
     button.dataset.cartLabel = originalLabel;
     button.textContent = saved ? 'ADDED TO CART' : 'ENABLE STORAGE TO ADD';

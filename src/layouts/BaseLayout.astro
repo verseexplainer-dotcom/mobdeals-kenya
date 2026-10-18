@@ -4,6 +4,7 @@ import { createOrganizationSchema, createSeoMeta, stringifyJsonLd, type SeoInput
 import { siteConfig } from '@config/site';
 import Header from '@components/navigation/Header.astro';
 import Footer from '@components/navigation/Footer.astro';
+import CookieConsent from '@components/privacy/CookieConsent.astro';
 
 interface Props {
   seo?: SeoInput;
@@ -27,7 +28,7 @@ const organizationSchema = stringifyJsonLd(createOrganizationSchema());
 ---
 
 <!doctype html>
-<html lang={siteConfig.locale} class="scroll-smooth">
+<html lang={siteConfig.locale} class="scroll-smooth" data-site-role="shop">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -61,7 +62,6 @@ const organizationSchema = stringifyJsonLd(createOrganizationSchema());
     <meta name="twitter:card" content={meta.image ? 'summary_large_image' : 'summary'} />
     {meta.image && <meta name="twitter:image" content={meta.image} />}
     <script is:inline type="application/ld+json" set:html={organizationSchema} />
-    <script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9876261469782990" crossorigin="anonymous"></script>
     <slot name="head" />
   </head>
   <body class={`min-h-screen bg-background text-on-background antialiased ${bodyClass}`}>
@@ -84,6 +84,11 @@ const organizationSchema = stringifyJsonLd(createOrganizationSchema());
       </svg>
       <span class="hidden sm:inline">WhatsApp</span>
     </a>
+    <CookieConsent />
     {showFooter && <Footer />}
+    <script>
+      import { initializeAnalytics } from '@lib/analytics/client';
+      initializeAnalytics();
+    </script>
   </body>
 </html>

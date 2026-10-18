@@ -14,6 +14,17 @@ Both use production branch `main`. The marketing build uses
 `npm run dev:marketing` for port 4322. `scripts/prepare-marketing.mjs` copies shared
 brand/home assets into ignored `.marketing/public` before development/build.
 
+## Analytics and consent
+
+The shop and marketing site share `PUBLIC_GA4_MEASUREMENT_ID` so a visitor journey
+between the two subdomains can be reported in one GA4 stream. Each Pages project
+uses its own Clarity ID, selected by the `data-site-role` on the document root:
+`PUBLIC_CLARITY_SHOP_PROJECT_ID` for the shop and
+`PUBLIC_CLARITY_MARKETING_PROJECT_ID` for the marketing site. Set these public
+build variables in both Cloudflare Pages projects as well as local `.env` files.
+GA4, Clarity, and advertising scripts load only after the visitor permits the
+relevant category in the shared consent banner.
+
 ## Verification
 
 ```sh

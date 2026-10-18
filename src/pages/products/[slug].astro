@@ -64,7 +64,15 @@ const breadcrumbSchema = stringifyJsonLd(createBreadcrumbSchema([
           <Badge variant={product.inStock ? 'success' : 'neutral'} size="md">{product.inStock ? 'In stock' : 'Check availability'}</Badge>
         </div>
 
-        <h1 class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl lg:text-[2.75rem] lg:leading-[1.1]">{product.name}</h1>
+        <h1
+          class="mt-5 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl lg:text-[2.75rem] lg:leading-[1.1]"
+          data-analytics-product
+          data-item-id={product.id}
+          data-item-name={product.name}
+          data-item-brand={product.brand ?? ''}
+          data-item-category={category?.slug ?? product.category}
+          data-item-price={product.price.amount}
+        >{product.name}</h1>
 
         <div class="mt-7 border-y border-ses-line py-5">
           <p class="text-label-xs uppercase text-ses-accent">Price</p>

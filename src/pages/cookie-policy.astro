@@ -1,0 +1,27 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Section from '@components/ui/Section.astro';
+import { siteConfig } from '@config/site';
+
+const lastUpdated = '18 October 2026';
+---
+
+<BaseLayout seo={{ title: 'Cookie Policy', description: 'Browser storage and optional analytics and advertising tools used by MobDeals Kenya.', pathname: '/cookie-policy' }}>
+  <Section containerSize="md" spacing="lg">
+    <p class="text-label-xs uppercase text-ses-accent">MobDeals Kenya</p>
+    <h1 class="mt-3 font-display text-display-lg-mobile text-on-surface sm:text-headline-xl">Cookie Policy</h1>
+    <p class="mt-4 text-body-sm text-on-surface-variant">Last updated {lastUpdated}</p>
+
+    <div class="mt-8 grid gap-7 text-body-md leading-7 text-on-surface-variant">
+      <section><h2 class="font-display text-title-lg text-on-surface">How browser storage is used</h2><p class="mt-2">MobDeals uses browser storage to keep core site features working. The shop stores cart contents in local storage. Campaign attribution is kept for the current browser session to preserve the first visit source across the marketing site and shop. Your optional privacy choice is saved in local storage and in a first-party cookie shared by mobdeals.co.ke and shop.mobdeals.co.ke for up to 180 days.</p></section>
+
+      <section><h2 class="font-display text-title-lg text-on-surface">Optional tools</h2><p class="mt-2">If enabled in our site configuration, Google Analytics and Microsoft Clarity are used for analytics, while Google advertising and Meta Pixel are used for advertising measurement. They are loaded only after you allow the relevant category. Those providers may set cookies or use similar browser technologies under their own policies. Optional tools will remain inactive when an ID is not configured. When you choose to open a WhatsApp link, the prepared message may include a short source and reference tag; you can review or edit it before sending.</p></section>
+
+      <section><h2 class="font-display text-title-lg text-on-surface">Your choices</h2><p class="mt-2">On your first visit, optional analytics and advertising tools are off. Choose Accept all, Reject optional, or Choose settings in the consent banner. You can reopen the settings from the footer at any time. Necessary browser storage cannot be turned off through these controls because cart and consent preferences depend on it.</p><p class="mt-2">The <a href="#privacy-choices" data-privacy-opt-out class="text-ses-accent underline">Do Not Sell or Share My Personal Information</a> link turns off advertising and social media tools for this browser. MobDeals also honors the Global Privacy Control browser signal by keeping those tools off while it is active.</p></section>
+
+      <section><h2 class="font-display text-title-lg text-on-surface">Managing storage in your browser</h2><p class="mt-2">You can clear or block local storage and cookies through your browser settings. Blocking necessary storage may prevent the cart or saved privacy choices from working. If you clear storage, the consent banner may appear again and optional tools will remain off until you choose otherwise.</p></section>
+
+      <section id="privacy-choices"><h2 class="font-display text-title-lg text-on-surface">Questions</h2><p class="mt-2">For questions about browser storage or privacy choices, contact <a class="text-ses-accent underline" href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>. See our <a class="text-ses-accent underline" href="/privacy-policy">Privacy Policy</a> for more about information handled by the sites.</p></section>
+    </div>
+  </Section>
+</BaseLayout>
