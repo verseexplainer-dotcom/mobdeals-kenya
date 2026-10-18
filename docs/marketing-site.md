@@ -21,9 +21,18 @@ between the two subdomains can be reported in one GA4 stream. Each Pages project
 uses its own Clarity ID, selected by the `data-site-role` on the document root:
 `PUBLIC_CLARITY_SHOP_PROJECT_ID` for the shop and
 `PUBLIC_CLARITY_MARKETING_PROJECT_ID` for the marketing site. Set these public
-build variables in both Cloudflare Pages projects as well as local `.env` files.
+build variables in both Cloudflare Pages production environments as well as local `.env` files.
 GA4, Clarity, and advertising scripts load only after the visitor permits the
 relevant category in the shared consent banner.
+
+Both projects need `PUBLIC_SUPABASE_URL` for exact product photos, including
+marketing's four selected products. Configure the public anon key where the
+browser Supabase client is used. Preview deployments also receive these public
+Supabase settings, but their GA4 and Clarity IDs are explicitly empty so test
+visits do not enter production reports. Synchronize the build variables with
+`python3 scripts/configure_cloudflare_pages.py --apply`, then rebuild the affected
+production or preview deployment; changing variables does not rewrite existing
+static assets.
 
 ## Verification
 
@@ -87,7 +96,8 @@ The marketing Pages project is separate. Connect `mobdeals.co.ke` and
 the preview and completing the assets. Inspect existing apex DNS before switching
 it. Keep mail records and unrelated records intact.
 
-Marketing `_redirects` sends `www` to the apex and legacy product/category routes
+The Pages Function in `functions/_middleware.js` sends `www` to the apex;
+marketing `_redirects` sends legacy product/category routes
 to the shop. The apex sitemap contains one URL. All product canonical tags, Product
 schema and shop sitemap entries use the shop origin even if an old
 `PUBLIC_SITE_URL` environment value is present.

@@ -6,7 +6,7 @@ MobDeals Kenya is a static-first Astro ecommerce frontend optimized for Cloudfla
 
 - Astro builds the storefront as static HTML in `dist`; global SSR is intentionally not enabled.
 - Cloudflare Pages should build from `main` with `npm run build` and serve `dist`.
-- Cloudflare Workers, Pages Functions, KV, D1, R2, and other paid or runtime services are outside the core storefront unless a future feature explicitly justifies them.
+- The existing Pages Function in `functions/_middleware.js` redirects `www` to the marketing apex and delegates other requests to static hosting. Workers, KV, D1, R2, and additional runtime services are outside the core storefront unless a feature explicitly justifies them.
 - The current cart is a client-side `localStorage` cart that prepares WhatsApp checkout messages. It is not an order, payment, auth, or inventory backend.
 
 ## Data And Media

@@ -2,6 +2,31 @@
 
 Project automation scripts belong here. Keep scripts repeatable and safe for local development.
 
+## Cloudflare Pages build variables
+
+Check the public build variables for both existing Pages projects:
+
+```sh
+python3 scripts/configure_cloudflare_pages.py
+```
+
+Apply reviewed differences, then rebuild the affected deployments:
+
+```sh
+python3 scripts/configure_cloudflare_pages.py --apply
+```
+
+The script reads local `.env` files or shell variables. It only publishes the
+public site origin, Supabase URL/anon key, and GA4/Clarity settings; it never
+publishes the Cloudflare token or Supabase service-role key. Production uses the
+configured analytics IDs. Preview GA4 and Clarity IDs are explicitly empty to
+keep test traffic out of production reports. Existing unrelated public variables
+are preserved. Use `--project mobdeals-marketing` or `--project mobdeals-kenya`
+to limit the operation. The script verifies each update and does not deploy.
+It requires `CLOUDFLARE_ACCOUNT_ID`, a `CLOUDFLARE_API_TOKEN` with Pages Write
+access, `PUBLIC_SUPABASE_URL`, and `PUBLIC_SUPABASE_ANON_KEY`. Keep the Cloudflare
+credentials local; the `PUBLIC_` variables are the only new build settings sent.
+
 ## Product Catalog Import
 
 The current catalog source is `product drop/products_for_supabase.csv`. Product images live in the categorized folders beside that CSV. The entire `product drop/` directory remains ignored because it is a local import package rather than a deployment artifact.
