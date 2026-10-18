@@ -20,7 +20,7 @@ const display = exact || fallback;
     loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : 'auto'} decoding="async"
     data-product-photo data-gallery-main={gallery || undefined}
     data-fallback-src={fallback.src} data-fallback-alt={fallback.alt}
-    class="size-full object-contain p-3 sm:p-5" />
+    class:list={['size-full object-contain', gallery ? 'p-3 sm:p-5' : 'p-1 sm:p-2']} />
   <span class="image-unavailable absolute inset-0 items-center justify-center p-6 text-center text-body-sm text-on-surface-variant">Photo unavailable. Ask us for a product photo.</span>
   <span class="image-caption absolute inset-x-2 bottom-2 rounded-sm bg-background px-2 py-1 text-center text-xs text-on-background">Representative image · exact model may differ</span>
 </div>

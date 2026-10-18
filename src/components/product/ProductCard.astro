@@ -30,8 +30,8 @@ const discountPercent =
 
 ---
 
-<article class={classNames('premium-card flex h-full flex-col overflow-hidden', className)}>
-  <a href={productHref} class="relative block bg-surface-container-low p-2.5 sm:p-3" aria-label={`View ${product.name}`}>
+<article class={classNames('product-card premium-card flex h-full min-w-0 flex-col overflow-hidden', className)}>
+  <a href={productHref} class="relative block bg-surface-container-low p-1.5 sm:p-2" aria-label={`View ${product.name}`}>
     {discountPercent !== null && (
       <span class="absolute left-3.5 top-3.5 z-10 rounded-pill bg-error px-2 py-0.5 text-label-xs font-semibold text-on-error shadow-xs">
         -{discountPercent}%
@@ -42,45 +42,74 @@ const discountPercent =
     </div>
   </a>
 
-  <div class="flex flex-1 flex-col p-4 sm:p-5">
-    <div class="flex flex-wrap items-center gap-2">
-      <Badge variant={product.inStock ? 'success' : 'neutral'}>{product.inStock ? 'In stock' : 'Check availability'}</Badge>
-      {product.featured && <Badge variant="primary">Featured</Badge>}
-      {product.condition && <Badge variant="neutral">{product.condition === 'Refurbished' ? 'Ex-UK' : product.condition}</Badge>}
+  <div class="flex min-w-0 flex-1 flex-col p-3 sm:p-4">
+    <div class="flex flex-wrap items-center gap-1.5">
+      <Badge class="product-card-badge" variant={product.inStock ? 'success' : 'neutral'}>{product.inStock ? 'In stock' : 'Check availability'}</Badge>
+      {product.featured && <Badge class="product-card-badge" variant="primary">Featured</Badge>}
+      {product.condition && <Badge class="product-card-badge" variant="neutral">{product.condition === 'Refurbished' ? 'Ex-UK' : product.condition}</Badge>}
     </div>
 
-    <h3 class="mt-3 line-clamp-2 text-title-md text-on-surface">
+    <h3 class="mt-2.5 line-clamp-3 text-sm leading-snug font-bold wrap-anywhere text-on-surface sm:text-title-sm">
       <a href={productHref} class="hover:text-ses-accent">{product.name}</a>
     </h3>
 
-    {product.brand && <p class="mt-1 text-body-sm text-on-surface-variant">{product.brand}</p>}
+    {product.brand && <p class="mt-1 text-xs wrap-anywhere text-on-surface-variant sm:text-body-sm">{product.brand}</p>}
 
     {visibleSpecs.length > 0 && (
       <dl class="mt-3 hidden gap-1.5 border-t border-ses-line pt-3 sm:grid">
         {visibleSpecs.map((spec) => (
-          <div class="flex items-start justify-between gap-3 text-body-sm">
+          <div class="flex items-start justify-between gap-2 text-xs sm:text-body-sm">
             <dt class="shrink-0 text-on-surface-variant">{spec.label}</dt>
-            <dd class="text-right text-on-surface">{spec.value}</dd>
+            <dd class="min-w-0 text-right wrap-anywhere text-on-surface">{spec.value}</dd>
           </div>
         ))}
       </dl>
     )}
 
-    <div class="mt-auto pt-4">
-      <div class="flex items-baseline gap-2">
-        <p class="text-headline-lg text-on-surface">{formatProductPrice(product.price)}</p>
+    <div class="mt-auto pt-3">
+      <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+        <p class="text-base leading-snug font-bold wrap-anywhere text-on-surface sm:text-xl">{formatProductPrice(product.price)}</p>
         {product.price.compareAtAmount && (
-          <p class="text-body-sm text-on-surface-variant line-through">
+          <p class="text-xs wrap-anywhere text-on-surface-variant line-through sm:text-body-sm">
             {formatProductPrice({ amount: product.price.compareAtAmount, currency: product.price.currency })}
           </p>
         )}
       </div>
     </div>
 
-    <div class="mt-4">
-      <Button href={productHref} variant="primary" size="sm" class="w-full" ariaLabel={`View ${product.name}`}>
+    <div class="mt-3">
+      <Button href={productHref} variant="primary" size="sm" class="product-card-cta w-full" ariaLabel={`View ${product.name}`}>
         {ctaLabel}
       </Button>
     </div>
   </div>
 </article>
+
+<style>
+  .product-card :global(.product-card-badge) {
+    max-width: 100%;
+    padding-inline: 0.5rem;
+    font-size: 0.6875rem;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+  }
+
+  .product-card :global(.product-card-cta) {
+    min-height: 2.75rem;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+  @media (min-width: 40rem) {
+    .product-card :global(.product-card-badge) {
+      font-size: 0.75rem;
+    }
+
+    .product-card :global(.product-card-cta) {
+      font-size: 0.875rem;
+    }
+  }
+</style>
