@@ -8,7 +8,7 @@ const categoryLabels: Record<string, string> = {
 export function categoryImage(category: string): ProductImage {
   const key = Object.hasOwn(categoryLabels, category) ? category : 'laptops';
   return {
-    src: `/images/home/category-${key}.webp`,
+    src: `/images/home/teal-orange-v2/category-${key}.webp`,
     alt: `Representative ${categoryLabels[key].toLowerCase()} image, not an exact product photo`,
     width: 800, height: 800, representative: true
   };
