@@ -53,7 +53,7 @@ const itemListSchema = stringifyJsonLd(createItemListSchema(products, `/category
       description={`${products.length} product${products.length === 1 ? '' : 's'} available to compare by price, condition and specifications.`}
     />
     {products.length > 0 ? (
-      <Grid columns="products" gap="md" class="mt-8">
+      <Grid columns="catalog" gap="md" class="mt-8">
         {products.map((product) => <ProductCard product={product} />)}
       </Grid>
     ) : (

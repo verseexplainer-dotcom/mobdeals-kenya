@@ -4,7 +4,7 @@ import { classNames } from '@lib/utils/classNames';
 interface Props {
   as?: keyof HTMLElementTagNameMap;
   class?: string;
-  columns?: 'auto' | 'products' | 'features' | 'two' | 'three' | 'four';
+  columns?: 'auto' | 'products' | 'catalog' | 'features' | 'two' | 'three' | 'four';
   gap?: 'xs' | 'sm' | 'md' | 'lg';
   [attribute: string]: unknown;
 }
@@ -20,6 +20,7 @@ const {
 const columnClasses: Record<NonNullable<Props['columns']>, string> = {
   auto: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3',
   products: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4',
+  catalog: 'grid-cols-2 xl:grid-cols-4',
   features: 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3',
   two: 'grid-cols-1 md:grid-cols-2',
   three: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3',

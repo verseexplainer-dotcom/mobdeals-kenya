@@ -78,7 +78,7 @@ const filteredProducts = categoryProducts.filter((product) => productMatchesCata
       description={`${filteredProducts.length} matching product${filteredProducts.length === 1 ? '' : 's'}.`}
     />
     {filteredProducts.length > 0 ? (
-      <Grid columns="products" gap="md" class="mt-8">
+      <Grid columns="catalog" gap="md" class="mt-8">
         {filteredProducts.map((product) => <ProductCard product={product} />)}
       </Grid>
     ) : (
