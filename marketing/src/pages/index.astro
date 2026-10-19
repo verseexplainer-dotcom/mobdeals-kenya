@@ -13,6 +13,7 @@ const shop = siteConfig.siteUrl;
 const chat = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent('Hello MobDeals Kenya, please help me choose the right technology.')}`;
 const quote = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent('Hello MobDeals Kenya, I would like a quotation for business or office equipment.')}`;
 const hero = homeMedia.student.desktopSrc;
+const sharingImage = new URL(siteConfig.defaultImage, siteConfig.marketingUrl).toString();
 const mobileHero = homeMedia.student.mobileSrc;
 const film = homeMedia.film;
 const title = 'MobDeals Kenya | Technology for your next chapter';
@@ -44,9 +45,14 @@ const trust = [
     <meta property="og:type" content="website" /><meta property="og:locale" content="en_KE" />
     <meta property="og:site_name" content={siteConfig.name} /><meta property="og:title" content={title} />
     <meta property="og:description" content={description} /><meta property="og:url" content="https://mobdeals.co.ke/" />
-    <meta property="og:image" content={`${siteConfig.marketingUrl}${hero}`} />
+    <meta property="og:image" content={sharingImage} />
+    <meta property="og:image:type" content={siteConfig.defaultImageType} />
+    <meta property="og:image:width" content={String(siteConfig.defaultImageWidth)} />
+    <meta property="og:image:height" content={String(siteConfig.defaultImageHeight)} />
+    <meta property="og:image:alt" content={siteConfig.defaultImageAlt} />
     <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} /><meta name="twitter:image" content={`${siteConfig.marketingUrl}${hero}`} />
+    <meta name="twitter:description" content={description} /><meta name="twitter:image" content={sharingImage} />
+    <meta name="twitter:image:alt" content={siteConfig.defaultImageAlt} />
     <script is:inline type="application/ld+json" set:html={stringifyJsonLd(schema)} />
   </head>
   <body class="marketing">

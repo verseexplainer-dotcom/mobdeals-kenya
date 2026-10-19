@@ -24,6 +24,7 @@ const {
 
 const pathname = Astro.url.pathname;
 const meta = createSeoMeta({ pathname, ...seo });
+const usesDefaultImage = meta.image === new URL(siteConfig.defaultImage, siteConfig.siteUrl).toString();
 const organizationSchema = stringifyJsonLd(createOrganizationSchema());
 ---
 
@@ -57,10 +58,17 @@ const organizationSchema = stringifyJsonLd(createOrganizationSchema());
     <meta property="og:type" content={meta.type} />
     {meta.canonical && <meta property="og:url" content={meta.canonical} />}
     {meta.image && <meta property="og:image" content={meta.image} />}
+    {usesDefaultImage && <>
+      <meta property="og:image:type" content={siteConfig.defaultImageType} />
+      <meta property="og:image:width" content={String(siteConfig.defaultImageWidth)} />
+      <meta property="og:image:height" content={String(siteConfig.defaultImageHeight)} />
+      <meta property="og:image:alt" content={siteConfig.defaultImageAlt} />
+    </>}
     <meta name="twitter:title" content={meta.title} />
     <meta name="twitter:description" content={meta.description} />
     <meta name="twitter:card" content={meta.image ? 'summary_large_image' : 'summary'} />
     {meta.image && <meta name="twitter:image" content={meta.image} />}
+    {usesDefaultImage && <meta name="twitter:image:alt" content={siteConfig.defaultImageAlt} />}
     <script is:inline type="application/ld+json" set:html={organizationSchema} />
     <slot name="head" />
   </head>
