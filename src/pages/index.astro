@@ -4,79 +4,125 @@ import {
   BrandCarousel,
   CategoryScroller,
   FeaturedProducts,
-  HomeHeroSlider,
   NeedHelpChoosing,
   TrustBar
 } from '@components/home';
 import {
   featuredBrands,
   featuredProducts,
-  heroSlides,
   homeCategories,
   trustItems
 } from '@data/homepage';
+import { siteConfig } from '@config/site';
 ---
 
 <BaseLayout
-  mainClass="overflow-hidden"
+  mainClass="overflow-hidden bg-[#f6f7f3] text-[#102a2a]"
   seo={{
-    title: 'Electronics in Nairobi',
-    description: 'Shop laptops, printers, monitors, tablets and electronics from MobDeals Kenya. Nairobi store, warranty support and countrywide delivery.'
+    title: 'Electronics in Nairobi | MobDeals Kenya',
+    description: 'Shop laptops, smartphones, printers, monitors and electronics from MobDeals Kenya. Visit our Nairobi CBD store or arrange countrywide delivery.'
   }}
 >
-  <HomeHeroSlider slides={heroSlides} />
+  <section class="relative overflow-hidden bg-[#f6f7f3]" aria-labelledby="home-hero-title">
+    <div class="pointer-events-none absolute -top-48 right-[-8rem] size-[34rem] rounded-full bg-[#dfeee8] blur-3xl" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -bottom-56 left-[28%] size-[28rem] rounded-full bg-[#f9e5d3]/70 blur-3xl" aria-hidden="true"></div>
+
+    <div class="relative mx-auto grid w-full max-w-[80rem] items-center gap-8 px-5 py-10 sm:px-8 sm:py-14 lg:min-h-[38rem] lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-8 lg:px-10 lg:py-12">
+      <div class="relative z-10 mx-auto flex w-full min-w-0 max-w-[34rem] flex-col items-center text-center lg:mx-0 lg:items-start lg:text-left">
+        <p class="inline-flex items-center justify-center gap-2.5 text-[0.6875rem] font-bold leading-5 tracking-[0.14em] text-[#0f766e] uppercase sm:text-xs">
+          <span class="h-px w-6 bg-[#f97316]" aria-hidden="true"></span>
+          MobDeals Kenya · Everyday technology
+        </p>
+        <h1 id="home-hero-title" class="mt-5 w-full font-display text-[clamp(2.5rem,6vw,4.25rem)] leading-[1.06] font-bold tracking-[-0.04em] text-[#102a2a]">
+          <span class="block">Tech that</span>
+          <span class="block text-[#d95708]">moves you</span>
+          <span class="block">forward.</span>
+        </h1>
+        <p class="mt-5 w-full max-w-[29rem] text-base leading-[1.7] text-[#49615c] sm:text-lg">
+          Laptops, smartphones and office essentials for your next chapter. Get help choosing from our Nairobi team, with delivery options across Kenya.
+        </p>
+        <div class="mt-7 flex w-full max-w-[26rem] flex-col items-stretch justify-center gap-3 sm:max-w-none sm:flex-row sm:flex-wrap lg:justify-start">
+          <a href="/shop" class="inline-flex min-h-[3.25rem] items-center justify-center gap-3 rounded-pill bg-[#f97316] px-6 text-sm font-bold text-[#102a2a] shadow-[0_10px_24px_rgba(249,115,22,0.18)] transition hover:-translate-y-0.5 hover:bg-[#fb923c]">
+            Explore devices
+            <span class="flex size-7 items-center justify-center rounded-full bg-[#102a2a] text-white" aria-hidden="true">→</span>
+          </a>
+          <a
+            href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent('Hello MobDeals Kenya, please help me find the right device.')}`}
+            target="_blank"
+            rel="noreferrer"
+            class="inline-flex min-h-[3.25rem] items-center justify-center rounded-pill border border-[#b8cec6] bg-white/70 px-6 text-sm font-semibold text-[#16423d] transition hover:border-[#0f766e] hover:bg-white"
+          >
+            Talk to our team
+          </a>
+        </div>
+        <div class="mt-5 flex w-full flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-medium leading-5 text-[#49615c] sm:text-sm lg:justify-start">
+          <span class="inline-flex items-center gap-2"><span class="text-[#0f766e]" aria-hidden="true">✓</span> Nairobi CBD store</span>
+          <span class="inline-flex items-center gap-2"><span class="text-[#0f766e]" aria-hidden="true">✓</span> Delivery across Kenya</span>
+        </div>
+      </div>
+
+      <div class="relative mx-auto aspect-[1.08] w-full min-w-0 max-w-[36rem]" aria-label="Featured technology: desktop computer, laptop and smartphone">
+        <div class="absolute left-[18%] top-[10%] size-[66%] rounded-full border border-[#b8d7ca] bg-[#e5f0eb]/70" aria-hidden="true"></div>
+        <div class="absolute right-[9%] top-[2%] h-2/3 w-1/2 rounded-[2rem] bg-[#0f766e]/10" aria-hidden="true"></div>
+        <div class="absolute right-[3%] top-[5%] z-10 w-[43%] rotate-[5deg] overflow-hidden rounded-[1.4rem] border-[5px] border-white bg-white shadow-[0_20px_45px_rgba(16,42,42,0.18)] sm:border-[7px]">
+          <img src="/images/home/smartphone_banner_card.webp" alt="Smartphone with an abstract teal and orange display" width="1254" height="1254" class="aspect-square w-full object-cover" loading="eager" decoding="async" />
+        </div>
+        <div class="absolute bottom-[4%] left-[4%] z-20 w-[57%] -rotate-[5deg] overflow-hidden rounded-[1.5rem] border-[5px] border-white bg-white shadow-[0_24px_55px_rgba(16,42,42,0.22)] sm:border-[8px]">
+          <img src="/images/home/desktop_banner_card.webp" alt="Desktop computer and monitor on a teal display plinth" width="1254" height="1254" class="aspect-square w-full object-cover" loading="eager" decoding="async" />
+        </div>
+        <div class="absolute bottom-[1%] right-[5%] z-30 w-[36%] rotate-[5deg] overflow-hidden rounded-[1.2rem] border-[5px] border-white bg-white shadow-[0_16px_40px_rgba(16,42,42,0.18)] sm:border-[7px]">
+          <img src="/images/home/teal-orange-v2/category-laptops.webp" alt="Silver laptop with a teal and orange display" width="800" height="800" class="aspect-square w-full object-cover" loading="eager" decoding="async" />
+        </div>
+        <div class="absolute bottom-[12%] right-[1%] z-40 hidden rounded-pill border border-[#f5c49d] bg-white px-4 py-3 text-xs font-bold tracking-wide text-[#16423d] shadow-lg sm:block">
+          LOCAL SUPPORT, EVERY STEP
+        </div>
+        <div class="absolute left-[8%] top-[4%] z-20 flex size-12 items-center justify-center rounded-2xl bg-[#f97316] text-xl font-bold text-white shadow-lg sm:size-14" aria-hidden="true">✳</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#102a2a] px-5 py-10 text-white sm:px-8 sm:py-12" aria-labelledby="home-benefits-title">
+    <div class="mx-auto max-w-7xl">
+      <div class="mb-7 flex items-center gap-3">
+        <span class="h-px w-8 bg-[#f97316]" aria-hidden="true"></span>
+        <h2 id="home-benefits-title" class="text-[0.68rem] font-bold tracking-[0.2em] text-[#fbb17e] uppercase">A better way to shop tech</h2>
+      </div>
+      <div class="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-0">
+        <article class="min-w-0 rounded-2xl border border-[#315a56] bg-white/[0.03] p-4 sm:p-6 lg:rounded-none lg:border-0 lg:border-r lg:bg-transparent lg:px-7 lg:py-3 lg:pl-0">
+          <div class="mb-4 flex size-10 items-center justify-center rounded-xl bg-white/8 text-[#ff9b52]" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="size-6" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="m4.5 7.7 7.5 4.2 7.5-4.2M12 12v9"/></svg>
+          </div>
+          <h3 class="font-display text-sm leading-snug font-semibold sm:text-lg">Good tech, clearly chosen</h3>
+          <p class="mt-2 max-w-[20rem] text-xs leading-relaxed text-[#b7cbc5] sm:text-sm sm:leading-6">Compare practical options for work, school, business and home.</p>
+        </article>
+        <article class="min-w-0 rounded-2xl border border-[#315a56] bg-white/[0.03] p-4 sm:p-6 lg:rounded-none lg:border-0 lg:border-r lg:bg-transparent lg:px-7 lg:py-3">
+          <div class="mb-4 flex size-10 items-center justify-center rounded-xl bg-white/8 text-[#ff9b52]" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="size-6" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3a7 7 0 0 0-7 7v3a3 3 0 0 0 3 3h1v-5H6m6-8a7 7 0 0 1 7 7v3a3 3 0 0 1-3 3h-1v-5h3"/><path d="M9 20h4a3 3 0 0 0 3-3"/></svg>
+          </div>
+          <h3 class="font-display text-sm leading-snug font-semibold sm:text-lg">Advice from real people</h3>
+          <p class="mt-2 max-w-[20rem] text-xs leading-relaxed text-[#b7cbc5] sm:text-sm sm:leading-6">Tell us what you need and our Nairobi team can help you shortlist.</p>
+        </article>
+        <article class="min-w-0 rounded-2xl border border-[#315a56] bg-white/[0.03] p-4 sm:p-6 lg:rounded-none lg:border-0 lg:border-r lg:bg-transparent lg:px-7 lg:py-3">
+          <div class="mb-4 flex size-10 items-center justify-center rounded-xl bg-white/8 text-[#ff9b52]" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="size-6" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h11v11H3zM14 10h4l3 3v5h-7z"/><circle cx="7.5" cy="18" r="1.8"/><circle cx="17.5" cy="18" r="1.8"/><path d="M16 10v4h5"/></svg>
+          </div>
+          <h3 class="font-display text-sm leading-snug font-semibold sm:text-lg">Delivery across Kenya</h3>
+          <p class="mt-2 max-w-[20rem] text-xs leading-relaxed text-[#b7cbc5] sm:text-sm sm:leading-6">Shop online and ask us about delivery options wherever you are.</p>
+        </article>
+        <article class="min-w-0 rounded-2xl border border-[#315a56] bg-white/[0.03] p-4 sm:p-6 lg:rounded-none lg:border-0 lg:bg-transparent lg:py-3 lg:pr-0 lg:pl-7">
+          <div class="mb-4 flex size-10 items-center justify-center rounded-xl bg-white/8 text-[#ff9b52]" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="size-6" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h14v16H5zM8 8h8M8 12h5M8 16h3"/><path d="m15 15 2 2 4-5"/></svg>
+          </div>
+          <h3 class="font-display text-sm leading-snug font-semibold sm:text-lg">Clear product details</h3>
+          <p class="mt-2 max-w-[20rem] text-xs leading-relaxed text-[#b7cbc5] sm:text-sm sm:leading-6">Review prices, key specs and availability before you decide.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <FeaturedProducts products={featuredProducts.slice(0, 4)} />
   <TrustBar items={trustItems} />
   <CategoryScroller categories={homeCategories} />
-  <FeaturedProducts products={featuredProducts} />
   <BrandCarousel brands={featuredBrands} />
   <NeedHelpChoosing />
 </BaseLayout>
-
-<script>
-  import { gsap } from 'gsap';
-
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  if (!reduceMotion) {
-    const activeSlide = document.querySelector<HTMLElement>('[data-hero-slide][data-active="true"]');
-    const heroCopy = activeSlide?.querySelector<HTMLElement>('[data-hero-copy]');
-    const heroImage = activeSlide?.querySelector<HTMLElement>('[data-hero-image]');
-
-    if (heroCopy) {
-      gsap.from(heroCopy.children, {
-        opacity: 0,
-        y: 24,
-        duration: 0.65,
-        stagger: 0.08,
-        ease: 'power2.out',
-        clearProps: 'all'
-      });
-    }
-
-    if (heroImage) {
-      gsap.from(heroImage, {
-        scale: 1.045,
-        duration: 1.4,
-        ease: 'power2.out',
-        clearProps: 'transform'
-      });
-    }
-
-    const reveals = document.querySelectorAll<HTMLElement>('[data-home-reveal]');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        gsap.from(entry.target, {
-          opacity: 0,
-          y: 22,
-          duration: 0.6,
-          ease: 'power2.out',
-          clearProps: 'all'
-        });
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: 0.12 });
-
-    reveals.forEach((element) => observer.observe(element));
-  }
-</script>
