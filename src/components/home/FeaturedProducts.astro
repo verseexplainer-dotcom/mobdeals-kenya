@@ -3,7 +3,6 @@ import ProductCard from '@components/product/ProductCard.astro';
 import Badge from '@components/ui/Badge.astro';
 import Grid from '@components/ui/Grid.astro';
 import Section from '@components/ui/Section.astro';
-import SectionHeading from '@components/ui/SectionHeading.astro';
 import type { ProductSummary } from '@lib/products';
 
 interface Props {
@@ -13,15 +12,14 @@ interface Props {
 const { products } = Astro.props;
 ---
 
-<Section class="bg-surface-container-low" containerSize="xl" ariaLabelledby="featured-products-title">
+<Section class="bg-[#eef1eb]" containerSize="xl" ariaLabelledby="featured-products-title">
   <div data-home-reveal>
   <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-    <SectionHeading
-      id="featured-products-title"
-      eyebrow="Featured Products"
-      title="Featured Deals"
-      description="A considered mix of laptops, printers, monitors and tablets from the current catalogue."
-    />
+    <div>
+      <p class="text-label-xs uppercase tracking-[0.12em] text-[#b95716]">Featured products</p>
+      <h2 id="featured-products-title" class="mt-3 font-display text-headline-xl font-bold text-[#102a2a] sm:text-display-lg-mobile">Top picks for you</h2>
+      <p class="mt-4 max-w-[42rem] text-body-md text-[#49615c]">Explore popular devices from the MobDeals catalogue, with clear details and support when you need it.</p>
+    </div>
     <Badge variant="primary" size="md">Popular</Badge>
   </div>
 
@@ -35,7 +33,7 @@ const { products } = Astro.props;
     ))}
   </Grid>
   <div class="mt-10 flex justify-center">
-    <a href="/shop" class="inline-flex min-h-11 items-center gap-2 rounded-control border border-ses-line px-5 text-label-md text-on-surface transition-colors hover:border-tertiary hover:text-tertiary">
+    <a href="/shop" class="inline-flex min-h-11 items-center gap-2 rounded-pill border border-[#b8cec6] bg-white/60 px-5 text-label-md text-[#16423d] transition-colors hover:border-[#f97316] hover:text-[#b95716]">
       View the full catalogue <span aria-hidden="true">→</span>
     </a>
   </div>

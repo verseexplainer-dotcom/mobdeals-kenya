@@ -15,7 +15,7 @@ const display = exact || fallback;
 ---
 <div class="product-image relative size-full" data-product-image data-state={exact ? 'exact' : 'representative'}>
   <img src={display.src} alt={display.alt} width={display.width ?? 800} height={display.height ?? 800}
-    srcset={!exact ? `${fallback.src.replace('.webp', '-400.webp')} 400w, ${fallback.src} 800w` : undefined}
+    srcset={!exact && fallback.src.includes('/teal-orange-v2/') ? `${fallback.src.replace('.webp', '-400.webp')} 400w, ${fallback.src} 800w` : undefined}
     sizes={gallery ? '(max-width: 768px) 100vw, 50vw' : '(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 320px'}
     loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : 'auto'} decoding="async"
     data-product-photo data-gallery-main={gallery || undefined}

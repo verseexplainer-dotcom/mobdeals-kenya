@@ -1,6 +1,5 @@
 ---
 import Section from '@components/ui/Section.astro';
-import SectionHeading from '@components/ui/SectionHeading.astro';
 import type { HomeCategory } from '@data/homepage';
 
 interface Props {
@@ -8,11 +7,18 @@ interface Props {
 }
 
 const { categories } = Astro.props;
+const categorySrcset = (src: string) => src.includes('/teal-orange-v2/')
+  ? `${src.replace('.webp', '-400.webp')} 400w, ${src} 800w`
+  : undefined;
 ---
 
-<Section id="categories" containerSize="xl" ariaLabelledby="categories-title" containerClass="relative">
+<Section id="categories" class="bg-[#f6f7f3]" containerSize="xl" ariaLabelledby="categories-title" containerClass="relative">
   <div data-home-reveal>
-    <SectionHeading id="categories-title" eyebrow="Browse the catalogue" title="Start With What You Need" description="Real stock for work, school, business and home—organised so you can get to the right shortlist quickly." />
+    <div>
+      <p class="text-label-xs uppercase tracking-[0.12em] text-[#b95716]">Browse the catalogue</p>
+      <h2 id="categories-title" class="mt-3 font-display text-headline-xl font-bold text-[#102a2a] sm:text-display-lg-mobile">Start with what you need</h2>
+      <p class="mt-4 max-w-[42rem] text-body-md text-[#49615c]">Real stock for work, school, business and home—organised so you can get to the right shortlist quickly.</p>
+    </div>
 
     <div class="-mx-[var(--spacing-page)] mt-10 flex snap-x gap-4 overflow-x-auto px-[var(--spacing-page)] pb-4 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-2 md:overflow-visible md:px-0 xl:grid-cols-4 [&::-webkit-scrollbar]:hidden">
       {categories.map((category) => (
@@ -21,7 +27,7 @@ const { categories } = Astro.props;
           <div class="absolute inset-x-8 bottom-3 h-10 rounded-full bg-black/35 blur-xl" aria-hidden="true"></div>
           <img
             src={category.image.src}
-            srcset={`${category.image.src.replace('.webp', '-400.webp')} 400w, ${category.image.src} 800w`}
+            srcset={categorySrcset(category.image.src)}
             sizes="(max-width: 768px) 272px, (max-width: 1280px) 50vw, 320px"
             alt={category.image.alt}
             width="800"
