@@ -17,7 +17,7 @@ The production target is intentionally lean:
 Current storefront status:
 
 - Home, shop, category, filtered category, brand, search, cart, product detail, support, blog, and policy-style pages are implemented as static Astro routes.
-- Product data is generated from `product drop/products_for_supabase.csv` into `src/data/products.ts`; the current catalog contains 241 listings.
+- Product data is generated from the reviewed source CSV and merged product batches into `src/data/products.ts`; the current storefront catalog contains 357 listings.
 - Product cards, galleries, specs tables, related products, navigation, footer, homepage sections, and shared UI primitives are implemented as reusable Astro components.
 - SEO helpers generate page metadata plus product, breadcrumb, and item-list JSON-LD where applicable.
 - Cart behavior is browser-local through `localStorage` and sends checkout inquiries to WhatsApp. There is no backend payment, account, or order system yet.

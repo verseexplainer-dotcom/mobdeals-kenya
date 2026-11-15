@@ -79,6 +79,2248 @@ export const productCategories: ProductCategory[] = [
 
 const catalogProducts: Product[] = [
   {
+    "id": "HP-HP-ELITEBOOK-840-G6-I5-8TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-E5E4F4F0",
+    "slug": "hp-elitebook-840-g6-8th-gen",
+    "name": "HP EliteBook 840 G6 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 28500,
+      "currency": "KES",
+      "compareAtAmount": 35055
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g6-8th-gen/01.webp",
+        "alt": "HP EliteBook 840 G6 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g6-8th-gen-2/01.webp",
+        "alt": "HP EliteBook 840 G6 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished - image 2"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g6-8th-gen-4/01.webp",
+        "alt": "HP EliteBook 840 G6 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished - image 3"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g6-8th-gen/04.webp",
+        "alt": "HP EliteBook 840 G6 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished - image 4"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g6-8th-gen/05.webp",
+        "alt": "HP EliteBook 840 G6 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished - image 5"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g6-8th-gen/06.webp",
+        "alt": "HP EliteBook 840 G6 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished - image 6"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g6-8th-gen/07.webp",
+        "alt": "HP EliteBook 840 G6 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished - image 7"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-840-g6-8th-gen/08.webp",
+        "alt": "HP EliteBook 840 G6 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished - image 8"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook 840 G6 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 256GB SSD, and 8th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>HP EliteBook 840 G6 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 256GB SSD, and 8th Gen. Listed price is KES 28,500.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 8th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>HP EliteBook 840 G6 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for HP EliteBook 840 G6 is KES 28,500. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If HP EliteBook 840 G6 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "8th Gen",
+      "1yr warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "8th Gen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook 840 G6 - 8GB RAM and 256GB SSD",
+    "seoDescription": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-8th-gen#product",
+      "name": "HP EliteBook 840 G6 Intel Core i5 8th Gen 8GB RAM 256GB SSD Used / Refurbished",
+      "description": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-840-G6-I5-8TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-E5E4F4F0",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook 840 G6",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-8th-gen",
+        "priceCurrency": "KES",
+        "price": "28500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "hp-elitebook-840-g6-core-i5-8th-gen-8gb-256gb-ssd.webp"
+      ]
+    },
+    "featured": true
+  },
+  {
+    "id": "HP-HP-ELITEBOOK-X360-1030-G8-I7-11TH-GEN-8GB-256GB-SSD-TOUCHSCREEN-USE-AA24E375",
+    "slug": "hp-elitebook-x360-1030-g8-11th-gen",
+    "name": "HP EliteBook x360 1030 G8 Intel Core i7 11th Gen 8GB RAM 256GB SSD Touchscreen Used / Refurbished",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 47000,
+      "currency": "KES",
+      "compareAtAmount": 56870
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-elitebook-x360-1030-g8-11th-gen/01.webp",
+        "alt": "HP EliteBook x360 1030 G8 Intel Core i7 11th Gen 8GB RAM 256GB SSD Touchscreen Used / Refurbished"
+      }
+    ],
+    "inStock": true,
+    "description": "HP EliteBook x360 1030 G8 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i7, 8GB RAM, 256GB SSD, and 11th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>HP EliteBook x360 1030 G8 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i7, 8GB RAM, 256GB SSD, and 11th Gen. Listed price is KES 47,000.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i7 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i7, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 11th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>HP EliteBook x360 1030 G8 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for HP EliteBook x360 1030 G8 is KES 47,000. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If HP EliteBook x360 1030 G8 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "Intel Core i7",
+      "8GB RAM",
+      "256GB SSD",
+      "11th Gen",
+      "Touchscreen",
+      "1yr warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i7"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "11th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP EliteBook x360 1030 G8 - 8GB RAM and 256GB SSD",
+    "seoDescription": "HP EliteBook x360 1030 G8 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-elitebook-x360-1030-g8-11th-gen#product",
+      "name": "HP EliteBook x360 1030 G8 Intel Core i7 11th Gen 8GB RAM 256GB SSD Touchscreen Used / Refurbished",
+      "description": "HP EliteBook x360 1030 G8 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "HP-HP-ELITEBOOK-X360-1030-G8-I7-11TH-GEN-8GB-256GB-SSD-TOUCHSCREEN-USE-AA24E375",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP EliteBook x360 1030 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-elitebook-x360-1030-g8-11th-gen",
+        "priceCurrency": "KES",
+        "price": "47000",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "hp-elitebook-x360-1030-g8-core-i7-11th-gen-8gb-256gb-ssd-touchscreen.webp"
+      ]
+    },
+    "featured": true
+  },
+  {
+    "id": "DELL-DELL-VOSTRO-5301-I5-11TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-F80FE7C4",
+    "slug": "dell-vostro-5301-11th-gen",
+    "name": "Dell Vostro 5301 Intel Core i5 11th Gen 8GB RAM 256GB SSD Used / Refurbished",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 28000,
+      "currency": "KES",
+      "compareAtAmount": 31640
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-vostro-5301-11th-gen/01.webp",
+        "alt": "Dell Vostro 5301 Intel Core i5 11th Gen 8GB RAM 256GB SSD Used / Refurbished"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Vostro 5301 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 256GB SSD, and 11th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>Dell Vostro 5301 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 256GB SSD, and 11th Gen. Listed price is KES 28,000.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 11th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Dell Vostro 5301 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Dell Vostro 5301 is KES 28,000. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Dell Vostro 5301 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "11th Gen",
+      "1yr warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "11th Gen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Vostro 5301 - 8GB RAM and 256GB SSD",
+    "seoDescription": "Dell Vostro 5301 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-vostro-5301-11th-gen#product",
+      "name": "Dell Vostro 5301 Intel Core i5 11th Gen 8GB RAM 256GB SSD Used / Refurbished",
+      "description": "Dell Vostro 5301 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-VOSTRO-5301-I5-11TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-F80FE7C4",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Vostro 5301",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-vostro-5301-11th-gen",
+        "priceCurrency": "KES",
+        "price": "28000",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "dell-vostro-5301-core-i5-11th-gen-8gb-256gb-ssd.webp"
+      ]
+    },
+    "featured": true
+  },
+  {
+    "id": "DELL-DELL-LATITUDE-5290-2-IN-1-I5-8TH-GEN-8GB-256GB-SSD-TOUCHSCREEN-US-3C97EA8D",
+    "slug": "dell-latitude-5290-2-in-1-8th-gen",
+    "name": "Dell Latitude 5290 2-in-1 Intel Core i5 8th Gen 8GB RAM 256GB SSD Touchscreen Used / Refurbished",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 25500,
+      "currency": "KES",
+      "compareAtAmount": 28381
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-latitude-5290-2-in-1-8th-gen/01.webp",
+        "alt": "Dell Latitude 5290 2-in-1 Intel Core i5 8th Gen 8GB RAM 256GB SSD Touchscreen Used / Refurbished"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Latitude 5290 2-in-1 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 256GB SSD, and 8th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>Dell Latitude 5290 2-in-1 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 256GB SSD, and 8th Gen. Listed price is KES 25,500.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 8th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Dell Latitude 5290 2-in-1 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Dell Latitude 5290 2-in-1 is KES 25,500. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Dell Latitude 5290 2-in-1 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "8th Gen",
+      "Touchscreen",
+      "1yr warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "8th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Latitude 5290 2-in-1 - 8GB RAM and 256GB SSD",
+    "seoDescription": "Dell Latitude 5290 2-in-1 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-latitude-5290-2-in-1-8th-gen#product",
+      "name": "Dell Latitude 5290 2-in-1 Intel Core i5 8th Gen 8GB RAM 256GB SSD Touchscreen Used / Refurbished",
+      "description": "Dell Latitude 5290 2-in-1 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-LATITUDE-5290-2-IN-1-I5-8TH-GEN-8GB-256GB-SSD-TOUCHSCREEN-US-3C97EA8D",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Latitude 5290 2-in-1",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-latitude-5290-2-in-1-8th-gen",
+        "priceCurrency": "KES",
+        "price": "25500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "dell-latitude-5290-2-in-1-core-i5-8th-gen-8gb-256gb-ssd-detachable.webp"
+      ]
+    },
+    "featured": true
+  },
+  {
+    "id": "NEC-NEC-VERSAPRO-CORE-I5-I5-10TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-9102F81E",
+    "slug": "nec-versapro-core-i5-10th-gen",
+    "name": "NEC VersaPro Core i5 Intel Core i5 10th Gen 8GB RAM 256GB SSD Used / Refurbished",
+    "brand": "NEC",
+    "category": "laptops",
+    "price": {
+      "amount": 19500,
+      "currency": "KES",
+      "compareAtAmount": 23985
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/nec-versapro-core-i5-10th-gen/01.webp",
+        "alt": "NEC VersaPro Core i5 Intel Core i5 10th Gen 8GB RAM 256GB SSD Used / Refurbished"
+      }
+    ],
+    "inStock": true,
+    "description": "NEC VersaPro Core i5 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 256GB SSD, and 10th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>NEC VersaPro Core i5 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 256GB SSD, and 10th Gen. Listed price is KES 19,500.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 10th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>NEC VersaPro Core i5 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for NEC VersaPro Core i5 is KES 19,500. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If NEC VersaPro Core i5 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "10th Gen",
+      "1yr warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "10th Gen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "NEC VersaPro Core i5 - 8GB RAM and 256GB SSD",
+    "seoDescription": "NEC VersaPro Core i5 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/nec-versapro-core-i5-10th-gen#product",
+      "name": "NEC VersaPro Core i5 Intel Core i5 10th Gen 8GB RAM 256GB SSD Used / Refurbished",
+      "description": "NEC VersaPro Core i5 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "NEC-NEC-VERSAPRO-CORE-I5-I5-10TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-9102F81E",
+      "brand": {
+        "@type": "Brand",
+        "name": "NEC"
+      },
+      "model": "NEC VersaPro Core i5",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "10th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/nec-versapro-core-i5-10th-gen",
+        "priceCurrency": "KES",
+        "price": "19500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "nec-versapro-core-i5-10th-gen-8gb-256gb-ssd.webp"
+      ]
+    }
+  },
+  {
+    "id": "NEC-NEC-VERSAPRO-2-IN-1-I5-7TH-GEN-8GB-128GB-SSD-TOUCHSCREEN-USED-REFU-A78C2C56",
+    "slug": "nec-versapro-2-in-1-7th-gen",
+    "name": "NEC VersaPro 2-in-1 Intel Core i5 7th Gen 8GB RAM 128GB SSD Touchscreen Used / Refurbished",
+    "brand": "NEC",
+    "category": "laptops",
+    "price": {
+      "amount": 16500,
+      "currency": "KES",
+      "compareAtAmount": 16995
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/nec-versapro-2-in-1-7th-gen/01.webp",
+        "alt": "NEC VersaPro 2-in-1 Intel Core i5 7th Gen 8GB RAM 128GB SSD Touchscreen Used / Refurbished"
+      }
+    ],
+    "inStock": true,
+    "description": "NEC VersaPro 2-in-1 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 128GB SSD, and 7th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>NEC VersaPro 2-in-1 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 128GB SSD, and 7th Gen. Listed price is KES 16,500.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>128GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 128GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 128GB SSD</li>\n  <li>Generation: 7th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>NEC VersaPro 2-in-1 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for NEC VersaPro 2-in-1 is KES 16,500. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If NEC VersaPro 2-in-1 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "128GB SSD",
+      "7th Gen",
+      "Touchscreen",
+      "1yr warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "7th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "NEC VersaPro 2-in-1 - 8GB RAM and 128GB SSD",
+    "seoDescription": "NEC VersaPro 2-in-1 for office work, school, and multitasking in Kenya. 8GB RAM and 128GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/nec-versapro-2-in-1-7th-gen#product",
+      "name": "NEC VersaPro 2-in-1 Intel Core i5 7th Gen 8GB RAM 128GB SSD Touchscreen Used / Refurbished",
+      "description": "NEC VersaPro 2-in-1 for office work, school, and multitasking in Kenya. 8GB RAM and 128GB SSD. Order from Mobdeals online store today.",
+      "sku": "NEC-NEC-VERSAPRO-2-IN-1-I5-7TH-GEN-8GB-128GB-SSD-TOUCHSCREEN-USED-REFU-A78C2C56",
+      "brand": {
+        "@type": "Brand",
+        "name": "NEC"
+      },
+      "model": "NEC VersaPro 2-in-1",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "128GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/nec-versapro-2-in-1-7th-gen",
+        "priceCurrency": "KES",
+        "price": "16500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "nec-versapro-2-in-1-core-i5-7th-gen-8gb-128gb-ssd-detachable-stylus.webp"
+      ]
+    }
+  },
+  {
+    "id": "NEC-NEC-VERSAPRO-2-IN-1-I5-7TH-GEN-4GB-128GB-SSD-TOUCHSCREEN-USED-REFU-78E31104",
+    "slug": "nec-versapro-2-in-1-7th-gen-2",
+    "name": "NEC VersaPro 2-in-1 Intel Core i5 7th Gen 4GB RAM 128GB SSD Touchscreen Used / Refurbished",
+    "brand": "NEC",
+    "category": "laptops",
+    "price": {
+      "amount": 9800,
+      "currency": "KES",
+      "compareAtAmount": 10878
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/nec-versapro-2-in-1-7th-gen-2/01.webp",
+        "alt": "NEC VersaPro 2-in-1 Intel Core i5 7th Gen 4GB RAM 128GB SSD Touchscreen Used / Refurbished"
+      }
+    ],
+    "inStock": true,
+    "description": "NEC VersaPro 2-in-1 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 4GB RAM, 128GB SSD, and 7th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>NEC VersaPro 2-in-1 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 4GB RAM, 128GB SSD, and 7th Gen. Listed price is KES 9,800.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 4GB RAM support routine productivity</li>\n  <li>128GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 4GB RAM, and 128GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 4GB RAM</li>\n  <li>Storage: 128GB SSD</li>\n  <li>Generation: 7th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>NEC VersaPro 2-in-1 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for NEC VersaPro 2-in-1 is KES 9,800. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If NEC VersaPro 2-in-1 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "4GB RAM",
+      "128GB SSD",
+      "7th Gen",
+      "Touchscreen",
+      "1yr warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "4GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "7th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "NEC VersaPro 2-in-1 - 4GB RAM and 128GB SSD",
+    "seoDescription": "NEC VersaPro 2-in-1 for office work, school, and multitasking in Kenya. 4GB RAM and 128GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/nec-versapro-2-in-1-7th-gen-2#product",
+      "name": "NEC VersaPro 2-in-1 Intel Core i5 7th Gen 4GB RAM 128GB SSD Touchscreen Used / Refurbished",
+      "description": "NEC VersaPro 2-in-1 for office work, school, and multitasking in Kenya. 4GB RAM and 128GB SSD. Order from Mobdeals online store today.",
+      "sku": "NEC-NEC-VERSAPRO-2-IN-1-I5-7TH-GEN-4GB-128GB-SSD-TOUCHSCREEN-USED-REFU-78E31104",
+      "brand": {
+        "@type": "Brand",
+        "name": "NEC"
+      },
+      "model": "NEC VersaPro 2-in-1",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "7th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "4GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "128GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/nec-versapro-2-in-1-7th-gen-2",
+        "priceCurrency": "KES",
+        "price": "9800",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "nec-versapro-2-in-1-core-i5-7th-gen-4gb-128gb-ssd-tablet-no-keyboard.webp"
+      ]
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-X13-I5-10TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-456760C3",
+    "slug": "lenovo-thinkpad-x13-10th-gen",
+    "name": "Lenovo ThinkPad X13 Intel Core i5 10th Gen 8GB RAM 256GB SSD Used / Refurbished",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 25000,
+      "currency": "KES",
+      "compareAtAmount": 30750
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x13-10th-gen/01.webp",
+        "alt": "Lenovo ThinkPad X13 Intel Core i5 10th Gen 8GB RAM 256GB SSD Used / Refurbished"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x13-yoga-10th-gen-2/01.webp",
+        "alt": "Lenovo ThinkPad X13 Intel Core i5 10th Gen 8GB RAM 256GB SSD Used / Refurbished - image 2"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x13-10th-gen/03.webp",
+        "alt": "Lenovo ThinkPad X13 Intel Core i5 10th Gen 8GB RAM 256GB SSD Used / Refurbished - image 3"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad X13 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 256GB SSD, and 10th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>Lenovo ThinkPad X13 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 256GB SSD, and 10th Gen. Listed price is KES 25,000.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 10th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Lenovo ThinkPad X13 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Lenovo ThinkPad X13 is KES 25,000. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Lenovo ThinkPad X13 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "10th Gen",
+      "1yr warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "10th Gen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad X13 - 8GB RAM and 256GB SSD",
+    "seoDescription": "Lenovo ThinkPad X13 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x13-10th-gen#product",
+      "name": "Lenovo ThinkPad X13 Intel Core i5 10th Gen 8GB RAM 256GB SSD Used / Refurbished",
+      "description": "Lenovo ThinkPad X13 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-X13-I5-10TH-GEN-8GB-256GB-SSD-USED-REFURBISHED-456760C3",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad X13",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "10th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x13-10th-gen",
+        "priceCurrency": "KES",
+        "price": "25000",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "lenovo-thinkpad-x13-core-i5-10th-gen-8gb-256gb-ssd.webp"
+      ]
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-X13-I5-11TH-GEN-16GB-256GB-SSD-USED-REFURBISHED-91746435",
+    "slug": "lenovo-thinkpad-x13-11th-gen",
+    "name": "Lenovo ThinkPad X13 Intel Core i5 11th Gen 16GB RAM 256GB SSD Used / Refurbished",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 30500,
+      "currency": "KES",
+      "compareAtAmount": 37515
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x13-11th-gen/01.webp",
+        "alt": "Lenovo ThinkPad X13 Intel Core i5 11th Gen 16GB RAM 256GB SSD Used / Refurbished"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad X13 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 16GB RAM, 256GB SSD, and 11th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>Lenovo ThinkPad X13 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 16GB RAM, 256GB SSD, and 11th Gen. Listed price is KES 30,500.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 16GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 16GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 11th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Lenovo ThinkPad X13 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Lenovo ThinkPad X13 is KES 30,500. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Lenovo ThinkPad X13 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "16GB RAM",
+      "256GB SSD",
+      "11th Gen",
+      "1yr warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "11th Gen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad X13 - 16GB RAM and 256GB SSD",
+    "seoDescription": "Lenovo ThinkPad X13 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x13-11th-gen#product",
+      "name": "Lenovo ThinkPad X13 Intel Core i5 11th Gen 16GB RAM 256GB SSD Used / Refurbished",
+      "description": "Lenovo ThinkPad X13 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-X13-I5-11TH-GEN-16GB-256GB-SSD-USED-REFURBISHED-91746435",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad X13",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "11th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x13-11th-gen",
+        "priceCurrency": "KES",
+        "price": "30500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "lenovo-thinkpad-x13-core-i5-11th-gen-16gb-256gb-ssd.webp"
+      ]
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-X1-TABLET-GEN-3-I5-8TH-GEN-8GB-256GB-SSD-TOUCHS-BE50B0D5",
+    "slug": "lenovo-thinkpad-x1-tablet-gen-3-8th-gen",
+    "name": "Lenovo ThinkPad X1 Tablet Gen 3 Intel Core i5 8th Gen 8GB RAM 256GB SSD Touchscreen",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 28500,
+      "currency": "KES",
+      "compareAtAmount": 35055
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x1-tablet-gen-3-8th-gen/01.webp",
+        "alt": "Lenovo ThinkPad X1 Tablet Gen 3 Intel Core i5 8th Gen 8GB RAM 256GB SSD Touchscreen"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad X1 Tablet Gen 3 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 256GB SSD, and 8th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>Lenovo ThinkPad X1 Tablet Gen 3 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 256GB SSD, and 8th Gen. Listed price is KES 28,500.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 8th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Lenovo ThinkPad X1 Tablet Gen 3 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Lenovo ThinkPad X1 Tablet Gen 3 is KES 28,500. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Lenovo ThinkPad X1 Tablet Gen 3 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "8th Gen",
+      "Touchscreen",
+      "1yr warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "8th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad X1 Tablet Gen 3 - 8GB RAM and 256GB SSD",
+    "seoDescription": "Lenovo ThinkPad X1 Tablet Gen 3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x1-tablet-gen-3-8th-gen#product",
+      "name": "Lenovo ThinkPad X1 Tablet Gen 3 Intel Core i5 8th Gen 8GB RAM 256GB SSD Touchscreen",
+      "description": "Lenovo ThinkPad X1 Tablet Gen 3 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-X1-TABLET-GEN-3-I5-8TH-GEN-8GB-256GB-SSD-TOUCHS-BE50B0D5",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad X1 Tablet Gen 3",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x1-tablet-gen-3-8th-gen",
+        "priceCurrency": "KES",
+        "price": "28500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "lenovo-thinkpad-x1-tablet-gen-3-core-i5-8th-gen-8gb-256gb-ssd-detachable.webp"
+      ]
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-X1-CARBON-GEN-8-I5-10TH-GEN-16GB-256GB-SSD-TOUC-79F0AA0E",
+    "slug": "lenovo-thinkpad-x1-carbon-gen-8-10th-gen",
+    "name": "Lenovo ThinkPad X1 Carbon Gen 8 Intel Core i5 10th Gen 16GB RAM 256GB SSD Touchscreen",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 33500,
+      "currency": "KES",
+      "compareAtAmount": 41205
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x1-carbon-gen-8-10th-gen/01.webp",
+        "alt": "Lenovo ThinkPad X1 Carbon Gen 8 Intel Core i5 10th Gen 16GB RAM 256GB SSD Touchscreen"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad X1 Carbon Gen 8 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 16GB RAM, 256GB SSD, and 10th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>Lenovo ThinkPad X1 Carbon Gen 8 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 16GB RAM, 256GB SSD, and 10th Gen. Listed price is KES 33,500.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 16GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 16GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 10th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Lenovo ThinkPad X1 Carbon Gen 8 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Lenovo ThinkPad X1 Carbon Gen 8 is KES 33,500. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Lenovo ThinkPad X1 Carbon Gen 8 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "16GB RAM",
+      "256GB SSD",
+      "10th Gen",
+      "Touchscreen",
+      "1yr warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "10th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad X1 Carbon Gen 8 - 16GB RAM and 256GB SSD",
+    "seoDescription": "Lenovo ThinkPad X1 Carbon Gen 8 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x1-carbon-gen-8-10th-gen#product",
+      "name": "Lenovo ThinkPad X1 Carbon Gen 8 Intel Core i5 10th Gen 16GB RAM 256GB SSD Touchscreen",
+      "description": "Lenovo ThinkPad X1 Carbon Gen 8 for office work, school, and multitasking in Kenya. 16GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-X1-CARBON-GEN-8-I5-10TH-GEN-16GB-256GB-SSD-TOUC-79F0AA0E",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad X1 Carbon Gen 8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "10th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "16GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x1-carbon-gen-8-10th-gen",
+        "priceCurrency": "KES",
+        "price": "33500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "lenovo-thinkpad-x1-carbon-gen-8-core-i5-10th-gen-16gb-256gb-ssd-touchscreen.webp"
+      ]
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-X1-CARBON-GEN-8-I5-10TH-GEN-8GB-256GB-SSD-USED-FE5DCB0A",
+    "slug": "lenovo-thinkpad-x1-carbon-gen-8-10th-gen-2",
+    "name": "Lenovo ThinkPad X1 Carbon Gen 8 Intel Core i5 10th Gen 8GB RAM 256GB SSD Used / Refurbished",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 29000,
+      "currency": "KES",
+      "compareAtAmount": 35670
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x1-carbon-gen-8-10th-gen-2/01.webp",
+        "alt": "Lenovo ThinkPad X1 Carbon Gen 8 Intel Core i5 10th Gen 8GB RAM 256GB SSD Used / Refurbished"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad X1 Carbon Gen 8 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 256GB SSD, and 10th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>Lenovo ThinkPad X1 Carbon Gen 8 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 256GB SSD, and 10th Gen. Listed price is KES 29,000.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 10th Gen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Lenovo ThinkPad X1 Carbon Gen 8 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Lenovo ThinkPad X1 Carbon Gen 8 is KES 29,000. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Lenovo ThinkPad X1 Carbon Gen 8 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "10th Gen",
+      "1yr warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "10th Gen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad X1 Carbon Gen 8 - 8GB RAM and 256GB SSD",
+    "seoDescription": "Lenovo ThinkPad X1 Carbon Gen 8 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x1-carbon-gen-8-10th-gen-2#product",
+      "name": "Lenovo ThinkPad X1 Carbon Gen 8 Intel Core i5 10th Gen 8GB RAM 256GB SSD Used / Refurbished",
+      "description": "Lenovo ThinkPad X1 Carbon Gen 8 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-X1-CARBON-GEN-8-I5-10TH-GEN-8GB-256GB-SSD-USED-FE5DCB0A",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad X1 Carbon Gen 8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "10th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x1-carbon-gen-8-10th-gen-2",
+        "priceCurrency": "KES",
+        "price": "29000",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "lenovo-thinkpad-x1-carbon-gen-8-core-i5-10th-gen-8gb-256gb-ssd.webp"
+      ]
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-THINKPAD-X1-YOGA-I5-8TH-GEN-8GB-256GB-SSD-TOUCHSCREEN-US-18AAD60D",
+    "slug": "lenovo-thinkpad-x1-yoga-8th-gen",
+    "name": "Lenovo ThinkPad X1 Yoga Intel Core i5 8th Gen 8GB RAM 256GB SSD Touchscreen Used / Refurbished",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 29000,
+      "currency": "KES",
+      "compareAtAmount": 35670
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x1-yoga-8th-gen/01.webp",
+        "alt": "Lenovo ThinkPad X1 Yoga Intel Core i5 8th Gen 8GB RAM 256GB SSD Touchscreen Used / Refurbished"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x1-8th-gen/01.webp",
+        "alt": "Lenovo ThinkPad X1 Yoga Intel Core i5 8th Gen 8GB RAM 256GB SSD Touchscreen Used / Refurbished - image 2"
+      },
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-thinkpad-x1-yoga-8th-gen/03.webp",
+        "alt": "Lenovo ThinkPad X1 Yoga Intel Core i5 8th Gen 8GB RAM 256GB SSD Touchscreen Used / Refurbished - image 3"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo ThinkPad X1 Yoga suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Core i5, 8GB RAM, 256GB SSD, and 8th Gen. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>Lenovo ThinkPad X1 Yoga is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Core i5, 8GB RAM, 256GB SSD, and 8th Gen. Listed price is KES 29,000.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Core i5 and 8GB RAM support routine productivity</li>\n  <li>256GB SSD supports faster startup and file access</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Core i5, 8GB RAM, and 256GB SSD combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Generation: 8th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Lenovo ThinkPad X1 Yoga is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Lenovo ThinkPad X1 Yoga is KES 29,000. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Lenovo ThinkPad X1 Yoga matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "8th Gen",
+      "Touchscreen",
+      "1yr warranty"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i5"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD"
+      },
+      {
+        "label": "Generation",
+        "value": "8th Gen"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo ThinkPad X1 Yoga - 8GB RAM and 256GB SSD",
+    "seoDescription": "Lenovo ThinkPad X1 Yoga for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x1-yoga-8th-gen#product",
+      "name": "Lenovo ThinkPad X1 Yoga Intel Core i5 8th Gen 8GB RAM 256GB SSD Touchscreen Used / Refurbished",
+      "description": "Lenovo ThinkPad X1 Yoga for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-THINKPAD-X1-YOGA-I5-8TH-GEN-8GB-256GB-SSD-TOUCHSCREEN-US-18AAD60D",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo ThinkPad X1 Yoga",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Core i5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Generation",
+          "value": "8th Gen"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "8GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "256GB SSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x1-yoga-8th-gen",
+        "priceCurrency": "KES",
+        "price": "29000",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "lenovo-thinkpad-x1-yoga-core-i5-8th-gen-8gb-256gb-ssd-touchscreen.webp"
+      ]
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-IDEAPAD-D330-2-IN-1-CELERON-4GB-64GB-EMMC-TOUCHSCREEN-US-19863A87",
+    "slug": "lenovo-ideapad-d330-2-in-1-64gb-emmc",
+    "name": "Lenovo IdeaPad D330 2-in-1 Intel Celeron 4GB RAM 64GB eMMC Touchscreen Used / Refurbished",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 10600,
+      "currency": "KES",
+      "compareAtAmount": 13038
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-ideapad-d330-2-in-1-64gb-emmc/01.webp",
+        "alt": "Lenovo IdeaPad D330 2-in-1 Intel Celeron 4GB RAM 64GB eMMC Touchscreen Used / Refurbished"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo IdeaPad D330 2-in-1 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include Intel Celeron, 4GB RAM, and 64GB eMMC. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>Lenovo IdeaPad D330 2-in-1 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include Intel Celeron, 4GB RAM, and 64GB eMMC. Listed price is KES 10,600.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>Intel Celeron and 4GB RAM support routine productivity</li>\n  <li>64GB eMMC gives you practical space for everyday files</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the Intel Celeron, 4GB RAM, and 64GB eMMC combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>Processor: Intel Celeron</li>\n  <li>RAM: 4GB RAM</li>\n  <li>Storage: 64GB eMMC</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Lenovo IdeaPad D330 2-in-1 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Lenovo IdeaPad D330 2-in-1 is KES 10,600. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Lenovo IdeaPad D330 2-in-1 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "Intel Celeron",
+      "4GB RAM",
+      "64GB eMMC",
+      "Touchscreen",
+      "1yr warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Celeron"
+      },
+      {
+        "label": "Memory",
+        "value": "4GB RAM"
+      },
+      {
+        "label": "Feature",
+        "value": "64GB eMMC"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo IdeaPad D330 2-in-1 - 4GB RAM and 64GB eMMC",
+    "seoDescription": "Lenovo IdeaPad D330 2-in-1 for office work, school, and multitasking in Kenya. 4GB RAM and 64GB eMMC. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-ideapad-d330-2-in-1-64gb-emmc#product",
+      "name": "Lenovo IdeaPad D330 2-in-1 Intel Celeron 4GB RAM 64GB eMMC Touchscreen Used / Refurbished",
+      "description": "Lenovo IdeaPad D330 2-in-1 for office work, school, and multitasking in Kenya. 4GB RAM and 64GB eMMC. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-IDEAPAD-D330-2-IN-1-CELERON-4GB-64GB-EMMC-TOUCHSCREEN-US-19863A87",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo IdeaPad D330 2-in-1",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Processor",
+          "value": "Intel Celeron"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "4GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "64GB eMMC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-ideapad-d330-2-in-1-64gb-emmc",
+        "priceCurrency": "KES",
+        "price": "10600",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "lenovo-ideapad-d330-2-in-1-intel-celeron-4gb-64gb-emmc-detachable.webp"
+      ]
+    }
+  },
+  {
+    "id": "DELL-DELL-CHROMEBOOK-3100-2-IN-1-4GB-32GB-EMMC-TOUCHSCREEN-USED-REFURB-DE815437",
+    "slug": "dell-chromebook-3100-2-in-1-32gb-emmc",
+    "name": "Dell Chromebook 3100 2-in-1 4GB RAM 32GB eMMC Touchscreen Used / Refurbished",
+    "brand": "Dell",
+    "category": "laptops",
+    "price": {
+      "amount": 7800,
+      "currency": "KES",
+      "compareAtAmount": 9594
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/dell-chromebook-3100-2-in-1-32gb-emmc/01.webp",
+        "alt": "Dell Chromebook 3100 2-in-1 4GB RAM 32GB eMMC Touchscreen Used / Refurbished"
+      }
+    ],
+    "inStock": true,
+    "description": "Dell Chromebook 3100 2-in-1 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include 4GB RAM and 32GB eMMC. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>Dell Chromebook 3100 2-in-1 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include 4GB RAM and 32GB eMMC. Listed price is KES 7,800.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>4GB RAM helps with everyday multitasking</li>\n  <li>32GB eMMC gives you practical space for everyday files</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the 4GB RAM and 32GB eMMC combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>RAM: 4GB RAM</li>\n  <li>Storage: 32GB eMMC</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Dell Chromebook 3100 2-in-1 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Dell Chromebook 3100 2-in-1 is KES 7,800. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Dell Chromebook 3100 2-in-1 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "4GB RAM",
+      "32GB eMMC",
+      "Touchscreen",
+      "1yr warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "4GB RAM"
+      },
+      {
+        "label": "Feature",
+        "value": "32GB eMMC"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Dell Chromebook 3100 2-in-1 - 4GB RAM and 32GB eMMC",
+    "seoDescription": "Dell Chromebook 3100 2-in-1 for office work, school, and multitasking in Kenya. 4GB RAM and 32GB eMMC. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/dell-chromebook-3100-2-in-1-32gb-emmc#product",
+      "name": "Dell Chromebook 3100 2-in-1 4GB RAM 32GB eMMC Touchscreen Used / Refurbished",
+      "description": "Dell Chromebook 3100 2-in-1 for office work, school, and multitasking in Kenya. 4GB RAM and 32GB eMMC. Order from Mobdeals online store today.",
+      "sku": "DELL-DELL-CHROMEBOOK-3100-2-IN-1-4GB-32GB-EMMC-TOUCHSCREEN-USED-REFURB-DE815437",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dell"
+      },
+      "model": "Dell Chromebook 3100 2-in-1",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "4GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "32GB eMMC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/dell-chromebook-3100-2-in-1-32gb-emmc",
+        "priceCurrency": "KES",
+        "price": "7800",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "dell-chromebook-3100-2-in-1-4gb-ram-32gb-emmc-touchscreen.webp"
+      ]
+    }
+  },
+  {
+    "id": "HP-HP-CHROMEBOOK-11-G8-4GB-32GB-EMMC-USED-REFURBISHED-2F429C0B",
+    "slug": "hp-chromebook-11-g8-32gb-emmc",
+    "name": "HP Chromebook 11 G8 4GB RAM 32GB eMMC Used / Refurbished",
+    "brand": "HP",
+    "category": "laptops",
+    "price": {
+      "amount": 7500,
+      "currency": "KES",
+      "compareAtAmount": 9225
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/hp-chromebook-11-g8-32gb-emmc/01.webp",
+        "alt": "HP Chromebook 11 G8 4GB RAM 32GB eMMC Used / Refurbished"
+      }
+    ],
+    "inStock": true,
+    "description": "HP Chromebook 11 G8 suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include 4GB RAM and 32GB eMMC. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>HP Chromebook 11 G8 is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include 4GB RAM and 32GB eMMC. Listed price is KES 7,500.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>4GB RAM helps with everyday multitasking</li>\n  <li>32GB eMMC gives you practical space for everyday files</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the 4GB RAM and 32GB eMMC combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>RAM: 4GB RAM</li>\n  <li>Storage: 32GB eMMC</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>HP Chromebook 11 G8 is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for HP Chromebook 11 G8 is KES 7,500. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If HP Chromebook 11 G8 matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "4GB RAM",
+      "32GB eMMC",
+      "1yr warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "4GB RAM"
+      },
+      {
+        "label": "Feature",
+        "value": "32GB eMMC"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "HP Chromebook 11 G8 - 4GB RAM and 32GB eMMC",
+    "seoDescription": "HP Chromebook 11 G8 for office work, school, and multitasking in Kenya. Key details include 4GB RAM and 32GB eMMC. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/hp-chromebook-11-g8-32gb-emmc#product",
+      "name": "HP Chromebook 11 G8 4GB RAM 32GB eMMC Used / Refurbished",
+      "description": "HP Chromebook 11 G8 for office work, school, and multitasking in Kenya. Key details include 4GB RAM and 32GB eMMC. Order from Mobdeals online store today.",
+      "sku": "HP-HP-CHROMEBOOK-11-G8-4GB-32GB-EMMC-USED-REFURBISHED-2F429C0B",
+      "brand": {
+        "@type": "Brand",
+        "name": "HP"
+      },
+      "model": "HP Chromebook 11 G8",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "4GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "32GB eMMC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/hp-chromebook-11-g8-32gb-emmc",
+        "priceCurrency": "KES",
+        "price": "7500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "hp-chromebook-11-g8-4gb-ram-32gb-emmc.webp"
+      ]
+    }
+  },
+  {
+    "id": "LENOVO-LENOVO-CHROMEBOOK-300E-4GB-32GB-EMMC-TOUCHSCREEN-USED-REFURBISH-F79A8A3C",
+    "slug": "lenovo-chromebook-300e-32gb-emmc",
+    "name": "Lenovo Chromebook 300e 4GB RAM 32GB eMMC Touchscreen Used / Refurbished",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "price": {
+      "amount": 8500,
+      "currency": "KES",
+      "compareAtAmount": 10455
+    },
+    "images": [
+      {
+        "src": "",
+        "storageKey": "laptop/lenovo-chromebook-300e-32gb-emmc/01.webp",
+        "alt": "Lenovo Chromebook 300e 4GB RAM 32GB eMMC Touchscreen Used / Refurbished"
+      }
+    ],
+    "inStock": true,
+    "description": "Lenovo Chromebook 300e suits students, office users, and professionals who need reliable productivity and multitasking. Verified specs include 4GB RAM and 32GB eMMC. Available from Mobdeals online store in Nairobi with used / refurbished condition and 1yr warranty. The copy keeps to verified product details so Kenyan buyers can compare confidently before ordering.",
+    "descriptionHtml": "<p>Lenovo Chromebook 300e is a practical used / refurbished laptop for office work, school, and multitasking. This page uses verified details only, so you can compare confidently before buying. Key details include 4GB RAM and 32GB eMMC. Listed price is KES 8,500.</p>\n\n<h3>Quick Value Highlights</h3>\n<ul>\n  <li>4GB RAM helps with everyday multitasking</li>\n  <li>32GB eMMC gives you practical space for everyday files</li>\n  <li>Well suited to classes, office work, and multitasking</li>\n  <li>Clear used / refurbished condition for easier buying decisions</li>\n</ul>\n\n<h3>Who This Product Is Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n\n<h3>Who Should Not Buy This</h3>\n<ul>\n  <li>Buyers who need confirmed dedicated graphics for heavy gaming or rendering</li>\n  <li>Shoppers who need exact battery, port, or display details before paying</li>\n</ul>\n\n<h3>Real-World Performance</h3>\n<p>For daily work, the 4GB RAM and 32GB eMMC combination handles everyday office work for documents, browser tabs, meetings, and routine productivity. Confirm any missing battery, port, or GPU details before payment.</p>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>RAM: 4GB RAM</li>\n  <li>Storage: 32GB eMMC</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Used / Refurbished</li>\n  <li>Warranty: 1yr warranty</li>\n</ul>\n\n<h3>Why This Product Is a Smart Choice</h3>\n<p>Lenovo Chromebook 300e is a smart choice when you want dependable productivity specs without paying for unverified extras. The listed specs keep the buying decision grounded in what is actually confirmed. Read our <a href=\"#\">Buying Guide</a> for expert advice.</p>\n\n<h3>Condition</h3>\n<p>This item is listed as Refurbished, which suits buyers who want practical value and should confirm cosmetic details before ordering.</p>\n\n<h3>Warranty & Trust</h3>\n<p>Warranty is listed as 1yr warranty. The copy uses verified sheet data plus store defaults so the page stays easier to trust and compare. Confirm any missing detail with the store before payment.</p>\n\n<h3>Local Trust Signal</h3>\n<p>Available at Mobdeals online store, Tembo Cooperative House, Moi Avenue, Nairobi. Message ahead to confirm stock before visiting.</p>\n\n<h3>Price in Kenya</h3>\n<p>The listed price for Lenovo Chromebook 300e is KES 8,500. That gives Kenyan buyers a clear starting point when comparing condition, warranty, and verified specs.</p>\n\n<h3>Order & Delivery</h3>\n<p>If Lenovo Chromebook 300e matches your needs, message Mobdeals online store to confirm stock, delivery, and included items before dispatch.</p>\n\n<h3>Related Guides</h3>\n<ul>\n  <li><a href=\"#\">Laptop Buying Guide</a></li>\n  <li><a href=\"#\">Business Laptops</a></li>\n  <li><a href=\"#\">Student Laptop Deals</a></li>\n</ul>\n\n<p>Order via WhatsApp at +254701499849 for fast delivery in Nairobi and across Kenya.</p>",
+    "highlights": [
+      "4GB RAM",
+      "32GB eMMC",
+      "Touchscreen",
+      "1yr warranty",
+      "Confirm current stock and delivery timing before payment"
+    ],
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "4GB RAM"
+      },
+      {
+        "label": "Feature",
+        "value": "32GB eMMC"
+      },
+      {
+        "label": "Feature",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "Condition",
+        "value": "Used / Refurbished"
+      },
+      {
+        "label": "Warranty",
+        "value": "1yr warranty"
+      }
+    ],
+    "condition": "Refurbished",
+    "warranty": "1yr warranty",
+    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
+    "seoTitle": "Lenovo Chromebook 300e - 4GB RAM and 32GB eMMC",
+    "seoDescription": "Lenovo Chromebook 300e for office work, school, and multitasking in Kenya. Key details include 4GB RAM and 32GB eMMC. Order from Mobdeals online store today.",
+    "sourceJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://mobdeals.co.ke/product/lenovo-chromebook-300e-32gb-emmc#product",
+      "name": "Lenovo Chromebook 300e 4GB RAM 32GB eMMC Touchscreen Used / Refurbished",
+      "description": "Lenovo Chromebook 300e for office work, school, and multitasking in Kenya. Key details include 4GB RAM and 32GB eMMC. Order from Mobdeals online store today.",
+      "sku": "LENOVO-LENOVO-CHROMEBOOK-300E-4GB-32GB-EMMC-TOUCHSCREEN-USED-REFURBISH-F79A8A3C",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenovo"
+      },
+      "model": "Lenovo Chromebook 300e",
+      "category": "laptop",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "RAM",
+          "value": "4GB RAM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage",
+          "value": "32GB eMMC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Condition",
+          "value": "Used / Refurbished"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Warranty",
+          "value": "1yr warranty"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://mobdeals.co.ke/product/lenovo-chromebook-300e-32gb-emmc",
+        "priceCurrency": "KES",
+        "price": "8500",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/RefurbishedCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Mobdeals online store"
+        },
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 12,
+            "unitCode": "MON"
+          }
+        }
+      },
+      "image": [
+        "lenovo-chromebook-300e-4gb-ram-32gb-emmc-touchscreen.webp"
+      ]
+    }
+  },
+  {
     "id": "LENOVO-LENOVO-THINKPAD-T470S-I5-7TH-GEN-8GB-256GB-SSD-14-INCH-NON-TOUC-179379BD",
     "slug": "lenovo-thinkpad-t470s-7th-gen",
     "name": "Lenovo ThinkPad T470s | Intel Core i5 (7th Gen) | 8GB | 256GB SSD",
@@ -1373,142 +3615,6 @@ const catalogProducts: Product[] = [
     }
   },
   {
-    "id": "HP-HP-ELITEBOOK-840-G6-I7-8TH-GEN-16GB-512GB-SSD-14-INCH-FHD-TOUCHSCRE-B7E1BA88",
-    "slug": "hp-elitebook-840-g6-8th-gen",
-    "name": "HP EliteBook 840 G6 | Intel Core i7 (8th Generation) | 16GB | 512GB SSD",
-    "brand": "HP",
-    "category": "laptops",
-    "price": {
-      "amount": 48380,
-      "currency": "KES",
-      "compareAtAmount": 58056
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/hp-elitebook-840-g6-8th-gen/01.webp",
-        "alt": "HP EliteBook 840 G6 | Intel Core i7 (8th Generation) | 16GB | 512GB SSD"
-      }
-    ],
-    "inStock": true,
-    "description": "HP EliteBook 840 G6 is listed at KES 48,380 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 (8th Generation), 16GB RAM, 512GB SSD, 14-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
-    "descriptionHtml": "<p>HP EliteBook 840 G6 is listed at KES 48,380 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7 (8th Generation), 16GB RAM, 512GB SSD, 14-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7 (8th Generation)</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 14-inch FHD</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
-    "highlights": [
-      "Intel Core i7 (8th Generation)",
-      "16GB RAM",
-      "512GB SSD",
-      "14-inch FHD display",
-      "Touchscreen",
-      "6 months warranty"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i7 (8th Generation)"
-      },
-      {
-        "label": "Memory",
-        "value": "16GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "512GB SSD"
-      },
-      {
-        "label": "Display",
-        "value": "14-inch FHD display"
-      },
-      {
-        "label": "Feature",
-        "value": "Touchscreen"
-      },
-      {
-        "label": "Condition",
-        "value": "Ex UK"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "HP EliteBook 840 G6 Price in Kenya | Mobdeals",
-    "seoDescription": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-8th-gen#product",
-      "name": "HP EliteBook 840 G6 | Intel Core i7 (8th Generation) | 16GB | 512GB SSD",
-      "description": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
-      "sku": "HP-HP-ELITEBOOK-840-G6-I7-8TH-GEN-16GB-512GB-SSD-14-INCH-FHD-TOUCHSCRE-B7E1BA88",
-      "brand": {
-        "@type": "Brand",
-        "name": "HP"
-      },
-      "model": "HP EliteBook 840 G6",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i7 (8th Generation)"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "8th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "16GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "512GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Display",
-          "value": "14-inch FHD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Ex UK"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-8th-gen",
-        "priceCurrency": "KES",
-        "price": "48380",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/UsedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
     "id": "HP-HP-ELITEBOOK-840-G1-I5-4TH-GEN-8GB-256GB-SSD-14-INCH-HD-OPEN-BOX-AD3AF26F",
     "slug": "hp-elitebook-840-g1-4th-gen",
     "name": "HP EliteBook 840 G1 | Intel Core i5 (4th Generation) | 8GB | 256GB SSD",
@@ -2194,151 +4300,6 @@ const catalogProducts: Product[] = [
       }
     },
     "featured": true
-  },
-  {
-    "id": "HP-HP-ELITEBOOK-840-G6-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCREEN-EX-92432B74",
-    "slug": "hp-elitebook-840-g6-8th-gen-2",
-    "name": "HP EliteBook 840 G6 | Intel Core i5 8th Gen | 8GB | 256GB SSD",
-    "brand": "HP",
-    "category": "laptops",
-    "price": {
-      "amount": 36580,
-      "currency": "KES",
-      "compareAtAmount": 40970
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/hp-elitebook-840-g6-8th-gen-2/01.webp",
-        "alt": "HP EliteBook 840 G6 | Intel Core i5 8th Gen | 8GB | 256GB SSD"
-      }
-    ],
-    "inStock": true,
-    "description": "HP EliteBook 840 G6 is listed at KES 36,580 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Gen, 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
-    "descriptionHtml": "<p>HP EliteBook 840 G6 is listed at KES 36,580 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Gen, 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 8th Gen</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Connectivity: Wi-Fi, Bluetooth, HDMI, USB-C, USB 3.0</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
-    "highlights": [
-      "Intel Core i5 8th Gen",
-      "8GB RAM",
-      "256GB SSD",
-      "14-inch display",
-      "Wi-Fi, Bluetooth, HDMI, USB-C, USB 3.0",
-      "Touchscreen"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i5 8th Gen"
-      },
-      {
-        "label": "Memory",
-        "value": "8GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "256GB SSD"
-      },
-      {
-        "label": "Display",
-        "value": "14-inch display"
-      },
-      {
-        "label": "Feature",
-        "value": "Wi-Fi, Bluetooth, HDMI, USB-C, USB 3.0"
-      },
-      {
-        "label": "Feature",
-        "value": "Touchscreen"
-      },
-      {
-        "label": "Condition",
-        "value": "Ex UK"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "HP EliteBook 840 G6 Price in Kenya | Mobdeals",
-    "seoDescription": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-8th-gen-2#product",
-      "name": "HP EliteBook 840 G6 | Intel Core i5 8th Gen | 8GB | 256GB SSD",
-      "description": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-      "sku": "HP-HP-ELITEBOOK-840-G6-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCREEN-EX-92432B74",
-      "brand": {
-        "@type": "Brand",
-        "name": "HP"
-      },
-      "model": "HP EliteBook 840 G6",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i5 8th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "8th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "8GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "256GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Display",
-          "value": "14-inch"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Connectivity",
-          "value": "Wi-Fi, Bluetooth, HDMI, USB-C, USB 3.0"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Ex UK"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-8th-gen-2",
-        "priceCurrency": "KES",
-        "price": "36580",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/UsedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
   },
   {
     "id": "HP-HP-ELITEBOOK-820-G4-I5-7TH-GEN-8GB-256GB-SSD-12-5-INCH-TOUCHSCREEN-89931951",
@@ -3073,142 +5034,6 @@ const catalogProducts: Product[] = [
         "url": "https://mobdeals.co.ke/product/hp-elitebook-1040-g4-7th-gen",
         "priceCurrency": "KES",
         "price": "35400",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/UsedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
-    "id": "LENOVO-LENOVO-THINKPAD-X1-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCREEN-541974C5",
-    "slug": "lenovo-thinkpad-x1-8th-gen",
-    "name": "Lenovo ThinkPad X1 | Intel Core i5 (8th Generation) | 8GB | 256GB SSD",
-    "brand": "Lenovo",
-    "category": "laptops",
-    "price": {
-      "amount": 33040,
-      "currency": "KES",
-      "compareAtAmount": 37005
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/lenovo-thinkpad-x1-8th-gen/01.webp",
-        "alt": "Lenovo ThinkPad X1 | Intel Core i5 (8th Generation) | 8GB | 256GB SSD"
-      }
-    ],
-    "inStock": true,
-    "description": "Lenovo ThinkPad X1 is listed at KES 33,040 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (8th Generation), 8GB RAM, 256GB SSD, 14-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
-    "descriptionHtml": "<p>Lenovo ThinkPad X1 is listed at KES 33,040 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 (8th Generation), 8GB RAM, 256GB SSD, 14-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 (8th Generation)</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
-    "highlights": [
-      "Intel Core i5 (8th Generation)",
-      "8GB RAM",
-      "256GB SSD",
-      "14-inch display",
-      "Touchscreen",
-      "6 months warranty"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i5 (8th Generation)"
-      },
-      {
-        "label": "Memory",
-        "value": "8GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "256GB SSD"
-      },
-      {
-        "label": "Display",
-        "value": "14-inch display"
-      },
-      {
-        "label": "Feature",
-        "value": "Touchscreen"
-      },
-      {
-        "label": "Condition",
-        "value": "Ex UK"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "Lenovo ThinkPad X1 Price in Kenya | Mobdeals",
-    "seoDescription": "Lenovo ThinkPad X1 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x1-8th-gen#product",
-      "name": "Lenovo ThinkPad X1 | Intel Core i5 (8th Generation) | 8GB | 256GB SSD",
-      "description": "Lenovo ThinkPad X1 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-      "sku": "LENOVO-LENOVO-THINKPAD-X1-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-TOUCHSCREEN-541974C5",
-      "brand": {
-        "@type": "Brand",
-        "name": "Lenovo"
-      },
-      "model": "Lenovo ThinkPad X1",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i5 (8th Generation)"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "8th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "8GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "256GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Display",
-          "value": "14-inch"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Ex UK"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x1-8th-gen",
-        "priceCurrency": "KES",
-        "price": "33040",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/UsedCondition",
         "seller": {
@@ -13802,155 +15627,6 @@ const catalogProducts: Product[] = [
     }
   },
   {
-    "id": "HP-HP-ELITEBOOK-X360-1030-G8-I7-11TH-GEN-16GB-512GB-SSD-13-3-INCH-TOUC-39C7CC87",
-    "slug": "hp-elitebook-x360-1030-g8-11th-gen",
-    "name": "HP EliteBook x360 1030 G8 | Intel Core i7 | 16GB | 512GB SSD",
-    "brand": "HP",
-    "category": "laptops",
-    "price": {
-      "amount": 67260,
-      "currency": "KES",
-      "compareAtAmount": 76811
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/hp-elitebook-x360-1030-g8-11th-gen/01.webp",
-        "alt": "HP EliteBook x360 1030 G8 | Intel Core i7 | 16GB | 512GB SSD"
-      }
-    ],
-    "inStock": true,
-    "description": "HP EliteBook x360 1030 G8 is listed at KES 67,260 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 512GB SSD, 13.3-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
-    "descriptionHtml": "<p>HP EliteBook x360 1030 G8 is listed at KES 67,260 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i7, 16GB RAM, 512GB SSD, 13.3-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i7</li>\n  <li>RAM: 16GB RAM</li>\n  <li>Storage: 512GB SSD</li>\n  <li>Display: 13.3-inch</li>\n  <li>Generation: 11th Gen</li>\n  <li>Connectivity: HDMI, Thunderbolt, USB-C</li>\n  <li>Feature: Touchscreen</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
-    "highlights": [
-      "Intel Core i7",
-      "16GB RAM",
-      "512GB SSD",
-      "13.3-inch display",
-      "11th Gen",
-      "HDMI, Thunderbolt, USB-C"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i7"
-      },
-      {
-        "label": "Memory",
-        "value": "16GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "512GB SSD"
-      },
-      {
-        "label": "Display",
-        "value": "13.3-inch display"
-      },
-      {
-        "label": "Generation",
-        "value": "11th Gen"
-      },
-      {
-        "label": "Feature",
-        "value": "HDMI, Thunderbolt, USB-C"
-      },
-      {
-        "label": "Feature",
-        "value": "Touchscreen"
-      },
-      {
-        "label": "Condition",
-        "value": "Ex UK"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "HP EliteBook x360 1030 G8 Price in Kenya | Mobdeals",
-    "seoDescription": "HP EliteBook x360 1030 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/hp-elitebook-x360-1030-g8-11th-gen#product",
-      "name": "HP EliteBook x360 1030 G8 | Intel Core i7 | 16GB | 512GB SSD",
-      "description": "HP EliteBook x360 1030 G8 for office work, school, and multitasking in Kenya. 16GB RAM and 512GB SSD. Order from Mobdeals online store today.",
-      "sku": "HP-HP-ELITEBOOK-X360-1030-G8-I7-11TH-GEN-16GB-512GB-SSD-13-3-INCH-TOUC-39C7CC87",
-      "brand": {
-        "@type": "Brand",
-        "name": "HP"
-      },
-      "model": "HP EliteBook x360 1030 G8",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i7"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "11th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "16GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "512GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Display",
-          "value": "13.3-inch"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Connectivity",
-          "value": "HDMI, Thunderbolt, USB-C"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Ex UK"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/hp-elitebook-x360-1030-g8-11th-gen",
-        "priceCurrency": "KES",
-        "price": "67260",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/UsedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
     "id": "HP-HP-ELITEBOOK-1030-G4-I7-8TH-GEN-16GB-512GB-SSD-13-3-INCH-FHD-TOUCHS-A342711F",
     "slug": "hp-elitebook-1030-g4-8th-gen",
     "name": "HP EliteBook 1030 G4 | Intel Core i7 8th Generation Processor | 16GB | 512GB SSD",
@@ -14236,151 +15912,6 @@ const catalogProducts: Product[] = [
     }
   },
   {
-    "id": "HP-HP-ELITEBOOK-840-G6-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-FHD-NON-TOUCH-F386A9E9",
-    "slug": "hp-elitebook-840-g6-8th-gen-4",
-    "name": "HP EliteBook 840 G6 | Intel Core i5 8th Generation | 8GB | 256GB SSD",
-    "brand": "HP",
-    "category": "laptops",
-    "price": {
-      "amount": 33630,
-      "currency": "KES",
-      "compareAtAmount": 38405
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/hp-elitebook-840-g6-8th-gen-4/01.webp",
-        "alt": "HP EliteBook 840 G6 | Intel Core i5 8th Generation | 8GB | 256GB SSD"
-      }
-    ],
-    "inStock": true,
-    "description": "HP EliteBook 840 G6 is listed at KES 33,630 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Generation, 8GB RAM, 256GB SSD, 14-inch FHD display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
-    "descriptionHtml": "<p>HP EliteBook 840 G6 is listed at KES 33,630 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5 8th Generation, 8GB RAM, 256GB SSD, 14-inch FHD display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5 8th Generation</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 14-inch FHD</li>\n  <li>Connectivity: HDMI</li>\n  <li>Feature: Non-Touch</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
-    "highlights": [
-      "Intel Core i5 8th Generation",
-      "8GB RAM",
-      "256GB SSD",
-      "14-inch FHD display",
-      "HDMI",
-      "Non-Touch"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i5 8th Generation"
-      },
-      {
-        "label": "Memory",
-        "value": "8GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "256GB SSD"
-      },
-      {
-        "label": "Display",
-        "value": "14-inch FHD display"
-      },
-      {
-        "label": "Feature",
-        "value": "HDMI"
-      },
-      {
-        "label": "Feature",
-        "value": "Non-Touch"
-      },
-      {
-        "label": "Condition",
-        "value": "Ex UK"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "HP EliteBook 840 G6 Price in Kenya | Mobdeals",
-    "seoDescription": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-8th-gen-4#product",
-      "name": "HP EliteBook 840 G6 | Intel Core i5 8th Generation | 8GB | 256GB SSD",
-      "description": "HP EliteBook 840 G6 for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-      "sku": "HP-HP-ELITEBOOK-840-G6-I5-8TH-GEN-8GB-256GB-SSD-14-INCH-FHD-NON-TOUCH-F386A9E9",
-      "brand": {
-        "@type": "Brand",
-        "name": "HP"
-      },
-      "model": "HP EliteBook 840 G6",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i5 8th Generation"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "8th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "8GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "256GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Display",
-          "value": "14-inch FHD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Connectivity",
-          "value": "HDMI"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Ex UK"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/hp-elitebook-840-g6-8th-gen-4",
-        "priceCurrency": "KES",
-        "price": "33630",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/UsedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
     "id": "LENOVO-LENOVO-THINKPAD-T14S-I7-10TH-GEN-32GB-512GB-SSD-14-INCH-TOUCHSC-5A6E6450",
     "slug": "lenovo-thinkpad-t14s-10th-gen",
     "name": "Lenovo ThinkPad T14s | Intel Core i7 | 32GB | 512GB SSD",
@@ -14512,146 +16043,6 @@ const catalogProducts: Product[] = [
         "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-t14s-10th-gen",
         "priceCurrency": "KES",
         "price": "59000",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/UsedCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Mobdeals online store"
-        },
-        "warranty": {
-          "@type": "WarrantyPromise",
-          "durationOfWarranty": {
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "MON"
-          }
-        }
-      }
-    }
-  },
-  {
-    "id": "LENOVO-LENOVO-THINKPAD-X13-YOGA-I5-10TH-GEN-8GB-256GB-SSD-13-3-INCH-TO-40A33ED0",
-    "slug": "lenovo-thinkpad-x13-yoga-10th-gen-2",
-    "name": "Lenovo ThinkPad X13 Yoga | Intel Core i5 | 8GB | 256GB SSD",
-    "brand": "Lenovo",
-    "category": "laptops",
-    "price": {
-      "amount": 35400,
-      "currency": "KES",
-      "compareAtAmount": 40427
-    },
-    "images": [
-      {
-        "src": "",
-        "storageKey": "laptop/lenovo-thinkpad-x13-yoga-10th-gen-2/01.webp",
-        "alt": "Lenovo ThinkPad X13 Yoga | Intel Core i5 | 8GB | 256GB SSD"
-      }
-    ],
-    "inStock": true,
-    "description": "Lenovo ThinkPad X13 Yoga is listed at KES 35,400 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, 13.3-inch display. Visit Mobdeals at Tembo Cooperative House on Moi Avenue, Nairobi CBD, or contact the store to confirm availability, included items and delivery arrangements before placing your order.",
-    "descriptionHtml": "<p>Lenovo ThinkPad X13 Yoga is listed at KES 35,400 in Kenya, in ex uk condition with 6 months warranty. This configuration includes Intel Core i5, 8GB RAM, 256GB SSD, 13.3-inch display.</p>\n<h3>Key Specifications</h3>\n<ul>\n  <li>Processor: Intel Core i5</li>\n  <li>RAM: 8GB RAM</li>\n  <li>Storage: 256GB SSD</li>\n  <li>Display: 13.3-inch</li>\n  <li>Generation: 10th Gen</li>\n  <li>Feature: Touchscreen</li>\n  <li>Condition: Ex UK</li>\n</ul>\n<h3>Best For</h3>\n<ul>\n  <li>Students handling research, assignments, and online classes</li>\n  <li>Professionals managing email, documents, meetings, and browsing</li>\n  <li>SMEs that need dependable everyday productivity</li>\n</ul>\n<p>Read the <a href=\"https://shop.mobdeals.co.ke/blog/laptop-buying-nairobi\">Laptop Buying Checklist in Nairobi</a> for help planning your purchase. Compare the configuration above with the requirements of the software, devices or accessories you intend to use. Ask about any feature that is essential to your setup but is not listed here, and confirm which accessories are included. The product warranty shown above applies to this listing; see <a href=\"https://shop.mobdeals.co.ke/warranty\">Warranty Information</a> and ask the store about coverage for your specific unit before payment. For an organisation or a multi-item order, use <a href=\"https://shop.mobdeals.co.ke/business\">Business Supply</a> to discuss your requirements.</p>\n<p>Visit our <a href=\"https://shop.mobdeals.co.ke/store\">Nairobi store</a> at Tembo Cooperative House along Moi Avenue, Nairobi CBD. Contact the store with the product name and configuration so staff can check the item you want before your visit. For dispatch, review <a href=\"https://shop.mobdeals.co.ke/delivery\">Delivery Information</a> and confirm your destination, delivery fee and timing before payment. Provide the receiver name and contact details when arranging your order. Check the item and included accessories on receipt, and keep your purchase details available for any follow-up questions.</p>",
-    "highlights": [
-      "Intel Core i5",
-      "8GB RAM",
-      "256GB SSD",
-      "13.3-inch display",
-      "10th Gen",
-      "Touchscreen"
-    ],
-    "specs": [
-      {
-        "label": "Processor",
-        "value": "Intel Core i5"
-      },
-      {
-        "label": "Memory",
-        "value": "8GB RAM"
-      },
-      {
-        "label": "Storage",
-        "value": "256GB SSD"
-      },
-      {
-        "label": "Display",
-        "value": "13.3-inch display"
-      },
-      {
-        "label": "Generation",
-        "value": "10th Gen"
-      },
-      {
-        "label": "Feature",
-        "value": "Touchscreen"
-      },
-      {
-        "label": "Condition",
-        "value": "Ex UK"
-      },
-      {
-        "label": "Warranty",
-        "value": "6 months warranty"
-      }
-    ],
-    "condition": "Refurbished",
-    "warranty": "6 months warranty",
-    "availabilityNote": "In stock. Confirm current availability and delivery timing before payment.",
-    "seoTitle": "Lenovo ThinkPad X13 Yoga Price in Kenya | Mobdeals",
-    "seoDescription": "Lenovo ThinkPad X13 Yoga for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-    "sourceJsonLd": {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "@id": "https://mobdeals.co.ke/product/lenovo-thinkpad-x13-yoga-10th-gen-2#product",
-      "name": "Lenovo ThinkPad X13 Yoga | Intel Core i5 | 8GB | 256GB SSD",
-      "description": "Lenovo ThinkPad X13 Yoga for office work, school, and multitasking in Kenya. 8GB RAM and 256GB SSD. Order from Mobdeals online store today.",
-      "sku": "LENOVO-LENOVO-THINKPAD-X13-YOGA-I5-10TH-GEN-8GB-256GB-SSD-13-3-INCH-TO-40A33ED0",
-      "brand": {
-        "@type": "Brand",
-        "name": "Lenovo"
-      },
-      "model": "Lenovo ThinkPad X13 Yoga",
-      "category": "laptop",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Processor",
-          "value": "Intel Core i5"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Generation",
-          "value": "10th Gen"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "RAM",
-          "value": "8GB RAM"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Storage",
-          "value": "256GB SSD"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Display",
-          "value": "13.3-inch"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Condition",
-          "value": "Ex UK"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Warranty",
-          "value": "6 months warranty"
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "url": "https://mobdeals.co.ke/product/lenovo-thinkpad-x13-yoga-10th-gen-2",
-        "priceCurrency": "KES",
-        "price": "35400",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/UsedCondition",
         "seller": {

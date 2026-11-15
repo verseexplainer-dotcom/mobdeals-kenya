@@ -1,6 +1,6 @@
 # Codex and MCP context policy
 
-This project does not require an MCP server for ordinary source edits. `supabase`, `openaiDeveloperDocs`, and `playwright` are enabled in the project config for availability; invoke them only when the user requests them or the task needs their external capability.
+This project does not require an MCP server for ordinary source edits. `supabase`, `openaiDeveloperDocs`, and `playwright` are disabled in the project config until a task needs them and each server has a valid connection configuration.
 
 ## Keep available, use deliberately
 
@@ -24,6 +24,6 @@ This project does not require an MCP server for ordinary source edits. `supabase
 
 ## Current verified facts
 
-- `src/data/products.ts`: 346 product records after the September 2026 batch merge.
+- `src/data/products.ts`: 357 product records after the November 2026 batch merge.
 - Supabase bucket: `product-images`.
 - `npm run build`: 407 static pages verified on 2026-09-27.
