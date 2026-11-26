@@ -140,7 +140,8 @@ export const footerNavigation = [
     title: 'Company',
     links: [
       { label: 'Nairobi Store', href: '/store' },
-      { label: 'Business Supply', href: '/business' }
+      { label: 'Business Supply', href: '/business' },
+      { label: 'Buying Guides', href: '/blog' }
     ]
   }
 ] as const;
